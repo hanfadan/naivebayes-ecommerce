@@ -1,0 +1,11 @@
+untuk konfigurasi database dan lainnya buka file app/config/config.php
+
+yang bisa diubah dari bari 9 sampai baris 19
+
+untuk login admin
+user = 0812345678
+pass = 123
+
+user biasa :
+user = 081234567890
+salamander
