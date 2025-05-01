@@ -47,4 +47,30 @@ class ProductModel extends Model {
     public function update($id, $data){
         return $this->db->where('id', $id)->update('products', $data);
 	}
+
+    /**
+ * Ambil produk terlaris (qty terbanyak di transactions_details)
+ * @param string|null $slug   slug kategori, null = semua
+ * @param int         $limit  default 5
+ * @return array
+ */
+public function bestSellers(?string $slug = null, int $limit = 5): array
+{
+    $sql = "
+      SELECT SUM(td.qty) AS sold, p.*, c.name AS category
+      FROM transactions_details td
+      JOIN products   p ON p.id = td.product_id
+      JOIN categories c ON c.id = p.category_id
+      /**where**/
+      GROUP BY td.product_id
+      ORDER BY sold DESC
+      LIMIT {$limit}";
+    if ($slug) {
+        $sql = str_replace('/**where**/', "WHERE c.slug = '{$slug}'", $sql);
+    } else {
+        $sql = str_replace('/**where**/', '', $sql);
+    }
+    return $this->db->rawQuery($sql);
+}
+
 }

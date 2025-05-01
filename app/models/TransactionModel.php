@@ -75,63 +75,88 @@ class TransactionModel extends Model {
 		return $this->db->getValue('users', 'count(id)') ?: 0;
 	}
 
-    private function loadTrainingSet(string $csv = null): void
+    private function loadTrainingSet(string $csvPath = null): void
     {
-        if ($this->trainingSet) return;   // sudah ada
-
-        /* --------- ambil data transaksi (DB) --------- */
-        $sql = "SELECT
-                    CASE
-                        WHEN TIMESTAMPDIFF(YEAR, u.birth, CURDATE()) BETWEEN 18 AND 24 THEN '18-24'
-                        WHEN TIMESTAMPDIFF(YEAR, u.birth, CURDATE()) BETWEEN 25 AND 34 THEN '25-34'
-                        ELSE '35+'
-                    END                    AS umur,
-                    c.name                 AS kategori,
-                    u.gender               AS gender,
-                    IF(p.stok > 50, 1, 0)  AS status   -- label
+        if ($this->trainingSet) return;      // sudah pernah dimuat
+    
+        /* ---------- 1. coba query lengkap (dengan users) ---------- */
+        $sqlFull = "
+        SELECT
+          CASE
+            WHEN TIMESTAMPDIFF(YEAR,u.birth,CURDATE()) BETWEEN 18 AND 24 THEN '18-24'
+            WHEN TIMESTAMPDIFF(YEAR,u.birth,CURDATE()) BETWEEN 25 AND 34 THEN '25-34'
+            ELSE '35+'
+          END                                       AS umur,
+          c.name                                    AS kategori,
+          u.gender                                  AS gender,
+          /*—— label continuous = stok ÷ (terjual+1) ——*/
+          (p.stok / (SUM(td.qty)+1))                AS status,
+          SUM(td.qty)                               AS terjual,
+          p.stok                                    AS stok
+        FROM transactions_details td
+        JOIN products   p ON p.id = td.product_id
+        JOIN categories c ON c.id = p.category_id
+        JOIN users      u ON u.id = td.user_id
+        GROUP BY p.id
+        ";
+    
+        try {
+            $this->trainingSet = $this->db->rawQuery($sqlFull);
+        } catch (\Exception $e) {
+            /* ---------- 2. fallback: tidak ada tabel users ---------- */
+            error_log('Bayes fallback (no users table): '.$e->getMessage());
+    
+            $sqlFallback = "
+                SELECT
+                    c.name             AS kategori,
+                    IF(p.stok > 50,1,0) AS status
                 FROM transactions_details td
-                JOIN products       p ON p.id = td.product_id
-                JOIN categories     c ON c.id = p.category_id
-                JOIN users          u ON u.id = td.user_id";
-        $this->trainingSet = $this->db->rawQuery($sql);
-
-        /* --------- (opsional) gabung CSV kuesioner --------- */
-        if ($csv && is_readable($csv)) {
-            if (($h = fopen($csv, 'r')) !== false) {
-                $header = array_map('trim', fgetcsv($h));
-                while ($row = fgetcsv($h)) {
-                    $assoc = array_combine($header, $row);
-                    $this->trainingSet[] = [
-                        'umur'     => $assoc['Usia'],
-                        'kategori' => $assoc['Apa gaya berpakaian...'],  // sesuaikan nama kolom
-                        'gender'   => strtolower($assoc['Jenis Kelamin']) === 'laki-laki' ? 'm' : 'f',
-                        'status'   => (int)$assoc['Label Persediaan']     // tambahkan kolom label di CSV
-                    ];
-                }
-                fclose($h);
+                JOIN products   p ON p.id  = td.product_id
+                JOIN categories c ON c.id  = p.category_id
+            ";
+            $this->trainingSet = $this->db->rawQuery($sqlFallback);
+        }
+    
+        /* ---------- 3. gabung (opsional) dataset CSV ---------- */
+        if ($csvPath && is_readable($csvPath)) {
+            $csv = array_map('str_getcsv', file($csvPath));
+            $header = array_map('trim', array_shift($csv));
+            foreach ($csv as $row) {
+                $this->trainingSet[] = array_combine($header, $row);
             }
         }
-    }
+    }    
 
     public function trainNaiveBayes(string $csv = null): void
     {
-        $this->loadTrainingSet($csv);   // isi $this->trainingSet
-
-        $freq   = [];   // [$field][$value][$label] => count
-        $labels = [];   // [$label] => count
-        $N      = count($this->trainingSet);
-
+        /* -- isi $this->trainingSet ------------------------------------------------ */
+        $this->loadTrainingSet($csv);
+    
+        $freq   = [];          // [$field][$value][$bucket] => count
+        $labels = [];          // [$bucket] => count
+        $N      = 0;           // total contoh (setelah bucket)
+    
         foreach ($this->trainingSet as $row) {
-            $label = $row['status'];
-            $labels[$label] = ($labels[$label] ?? 0) + 1;
+            if (!isset($row['status'])) continue;
+    
+            /* ----------- BUCKET stok/terjual -------------------------------------- */
+            $w = (float)$row['status'];                // 0 … ∞
+            if     ($w < 1) { $bkt = 0; }              // stok kecil
+            elseif ($w < 2) { $bkt = 1; }              // stok sedang
+            else            { $bkt = 2; }              // stok besar
+    
+            /* ----------- hitung label & frekuensi --------------------------------- */
+            $labels[$bkt] = ($labels[$bkt] ?? 0) + 1;
             foreach ($row as $k => $v) {
-                if ($k === 'status') continue;
-                $freq[$k][$v][$label] = ($freq[$k][$v][$label] ?? 0) + 1;
+                if (in_array($k, ['status','stok','terjual'])) continue;
+                $freq[$k][$v][$bkt] = ($freq[$k][$v][$bkt] ?? 0) + 1;
             }
+            $N++;
         }
-
+    
         $this->model = compact('freq', 'labels', 'N');
     }
+    
 
         /**
      * @param array $x contoh: ['umur'=>'18-24','kategori'=>'Kasual','gender'=>'m']
@@ -167,26 +192,68 @@ class TransactionModel extends Model {
 
     public function recommendProducts(array $x, int $limit = 8): array
     {
-        // 1. latih / muat model (cache di properti)
-        $this->trainNaiveBayes(APP_PATH.'/assets/survey.csv');
-
-        // 2. prediksi kategori yg paling mungkin
-        $predict = $this->predictNaiveBayes($x);      // ['posterior'=>…, 'label'=>1]
-        $topKat  = $x['kategori'];                    // pakai input gaya
-        // kalau mau mapping otomatis:
-        // $topKat = array_key_first($predict['posterior_per_kategori']);
-
-        // 3. ambil produk laris sesuai kategori (persediaan banyak)
-        $sql = "SELECT SUM(td.qty) qty, p.*, c.name category
-                FROM transactions_details td
-                JOIN products  p ON p.id = td.product_id
-                JOIN categories c ON c.id = p.category_id
-                WHERE c.name = ?                  /* hasil prediksi */
-                GROUP BY td.product_id
-                ORDER BY qty DESC
-                LIMIT ?";
-        return $this->db->rawQuery($sql, [$topKat, $limit]);
+        /* ---------- 0. Apakah user memilih kategori secara eksplisit? ---------- */
+        $userCat = $x['kategori'] ?? null;             // slug atau nama dari form
+        if ($userCat && $userCat !== 'all') {
+            /* form mengirim slug (mis. "jaket"), konversi ke name */
+            $userCatName = $this->db->where('slug',$userCat)
+                                    ->getValue('categories','name');
+            if (!$userCatName) $userCatName = ucfirst(str_replace('-',' ',$userCat));
+            $topCats = [$userCatName];                 // pakai kategori user saja
+        } else {
+            /* ---------- 1. Hint keyword pencarian (opsional) ---------- */
+            if (!empty(post('search'))) {
+                $kw = trim(post('search'));
+                $catHint = $this->db->rawQueryOne(
+                     "SELECT c.name FROM products p
+                      JOIN categories c ON c.id=p.category_id
+                      WHERE p.name LIKE ? LIMIT 1", ['%'.$kw.'%']);
+                if ($catHint) $x['kategori'] = $catHint['name'];
+            }
+    
+            /* ---------- 2. Dapatkan top-kategori via Naive Bayes ---------- */
+            $posterior = $this->posteriorPerKategori($x);
+            $topCats   = array_slice(array_keys($posterior), 0, 7);   // 7 teratas
+        }
+    
+        /* ---------- 3. Query produk stok>0 di kategori pilihan ---------- */
+        $this->db->where('p.stok', 0, '>');
+        $this->db->where('c.name', $topCats, 'IN');
+        $this->db->join('categories c','c.id=p.category_id','LEFT');
+        $rows = $this->db->get('products p', null, 'p.*, c.name AS category');
+    
+        /* ---------- 4. Acak, pilih $limit ---------- */
+        shuffle($rows);
+        return array_slice($rows, 0, $limit);
     }
+    
+    
+
+    /**
+ * Hitung posterior untuk setiap nilai kategori
+ * – mengasumsikan $this->model sudah berisi ['freq','labels','N']
+ * – menggunakan Laplace smoothing (alpha = 1)
+ *
+ * @return array  ex: ['Kasual'=>0.45,'Formal'=>0.32,'Vintage'=>0.10 …]
+ */
+public function posteriorPerKategori(array $x, float $alpha = 1): array
+{
+    if (!$this->model) {
+        $this->trainNaiveBayes();           // pastikan sudah ter-train
+    }
+    $field = 'kategori';                    // fitur yang kita ranking
+    extract($this->model);                  // $freq, $labels, $N
+
+    $post = [];
+    foreach ($freq[$field] as $catVal => $dummy) {
+        $x[$field] = $catVal;               // set kategori yang diuji
+        /* re-gunakan fungsi predict() untuk label 1 & 0 */
+        $probTrue  = $this->predictNaiveBayes($x, $alpha)['posterior'][1] ?? 0;
+        $post[$catVal] = $probTrue;
+    }
+    arsort($post);                          // urutkan tinggi->rendah
+    return $post;
+}
 
 
 }

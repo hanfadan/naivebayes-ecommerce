@@ -8,6 +8,9 @@ class Product extends Controller {
         $count = $mCart->total();
         $products = $this->model('product')->findHome(get('search'), get('category'));
         $categories = $this->model('category');
+        $slugCat = get('category') ?: null;          // ?category=jaket
+        $bestSellers = $this->model('product')->bestSellers($slugCat, 5); // 5 item
+
 
         $search = $this->model('search');
 
@@ -31,14 +34,16 @@ class Product extends Controller {
         }
 
         $this->page('product', [
-            'home' => false,
-            'page' => 'product',
-            'carts' => $carts,
-            'count' => $count,
-            'sidebars' => $categories->sidebars(),
-            'products' => $products,
-            'dropdowns' => $categories->dropdownMenu(),
-            'categories' => $categories->selectTree()
+            'home'        => false,
+            'page'        => 'product',
+            'carts'       => $carts,
+            'count'       => $count,
+            'sidebars'    => $categories->sidebars(),   // ← cukup sekali
+            'products'    => $products,
+            'bestSellers' => $bestSellers,              // terlaris
+            'dropdowns'   => $categories->dropdownMenu(),
+            'categories'  => $categories->selectTree()
         ]);
+        
     }
 }

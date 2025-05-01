@@ -26,7 +26,46 @@
                 <div class="col-lg-9 col-md-8 col-12">
                     <div class="row">
                         <div class="col-12">
-                            <div class="shop-top"></div>
+<!-- ===== PRODUK TERLARIS / REKOMENDASI ===== -->
+<div class="shop-top">
+  <h4 class="mb-3">
+    <?php if (get('category')): ?>
+      Terlaris di Kategori “<?= htmlspecialchars(ucwords(str_replace('-',' ',get('category')))) ?>”
+    <?php else: ?>
+      Produk Terlaris di Toko
+    <?php endif; ?>
+  </h4>
+
+  <?php if (!empty($bestSellers)): ?>
+    <div class="row">
+      <?php foreach ($bestSellers as $bs): ?>
+        <div class="col-md-4 col-lg-3 col-6 mb-3">
+          <a href="javascript:void(0);" class="text-decoration-none text-dark btn-view"
+             data-id="<?= $bs['id']?>"
+             data-name="<?= $bs['name']?>"
+             data-info="<?= $bs['description']?>"
+             data-stok="<?= price($bs['stok'])?>"
+             data-price="<?= price($bs['price'])?>"
+             data-image="<?= image('05_'.$bs['image'])?>"
+             data-category="<?= $bs['category']?>">
+
+            <div class="card border-0 shadow-sm h-100">
+              <img src="<?= image('03_'.$bs['image'])?>" class="card-img-top" alt="<?= $bs['name']?>">
+              <div class="card-body p-2">
+                <p class="card-title small mb-1"><?= $bs['name']?></p>
+                <p class="mb-0 text-primary fw-bold"><?= price($bs['price'])?></p>
+              </div>
+            </div>
+          </a>
+        </div>
+      <?php endforeach; ?>
+    </div>
+  <?php else: ?>
+    <div class="alert alert-info">Belum ada data penjualan di kategori ini.</div>
+  <?php endif; ?>
+</div>
+<!-- ===== /PRODUK TERLARIS ===== -->
+
                         </div>
                     </div>
                     <div class="row">

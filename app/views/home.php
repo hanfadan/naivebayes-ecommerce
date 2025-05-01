@@ -1,26 +1,69 @@
-    <section class="hero-slider">
+<?php
+/* helper kecil supaya <select> tetap menampilkan nilai terpilih */
+if (!function_exists('h_selected')) {
+    function h_selected($src, $key, $val) {
+        return !empty($src[$key]) && $src[$key]===$val ? 'selected' : '';
+    }
+}
+?>
+
+<section class="hero-slider">
 		<div class="single-slider">
 			<div class="container">
-				<div class="row no-gutters">
-					<div class="col-lg-9 offset-lg-3 col-12">
-						<div class="text-inner">
-							<div class="row">
-								<div class="col-lg-7 col-12">
-									<div class="hero-text">
-										<h1></h1>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
 			</div>
 		</div>
 	</section>
 
-    <?php if(!empty($naivebayes)):?>
     <div class="product-area section">
         <div class="container">
+            <!-- ==== FORM KUESIONER (PINDAHAN) ==== -->
+<div class="bg-white shadow-sm rounded p-4 mb-4">
+<div class="row">
+                <div class="col-12">
+                    <div class="section-title">
+                        <h2>Dapatkan Rekomendasi Produk</h2>
+                    </div>
+                </div>
+            </div>
+    <form method="post">
+        <div class="row">
+            <!-- UMUR -->
+            <div class="col-md-3 mb-2">
+                <label class="small text-muted mx-3 my-2">Kelompok Umur</label>
+                <select name="umur" class="form-control" required>
+                    <option value="18-24" <?=h_selected($formInput??[],'umur','18-24')?>>18-24</option>
+                    <option value="25-34" <?=h_selected($formInput??[],'umur','25-34')?>>25-34</option>
+                    <option value="35+"   <?=h_selected($formInput??[],'umur','35+')?>>35+</option>
+                </select>
+            </div>
+
+            <!-- GENDER -->
+            <div class="col-md-3 mb-2">
+                <label class="small text-muted mx-3 my-2">Gender</label>
+                <select name="gender" class="form-control" required>
+                    <option value="m" <?=h_selected($formInput??[],'gender','m')?>>Laki-laki</option>
+                    <option value="f" <?=h_selected($formInput??[],'gender','f')?>>Perempuan</option>
+                </select>
+            </div>
+
+            <!-- KATEGORI -->
+            <div class="col-md-4 mb-2">
+                <label class="small text-muted mx-3 my-2">Gaya / Kategori Favorit</label>
+                <select name="kategori" class="form-control" required>
+                    <option value="all">– Semua –</option>
+                    <?= $kategoriOptions ?? '' ?>
+                </select>
+            </div>
+
+            <!-- BUTTON -->
+            <div class="col-md-2 d-flex align-items-end mb-2">
+                <button class="btn btn-primary w-100">Tampilkan</button>
+            </div>
+        </div>
+    </form>
+</div>
+<!-- ==== /FORM ==== -->
+<?php if(!empty($naivebayes)):?>
             <div class="row">
                 <div class="col-12">
                     <div class="section-title">
@@ -66,8 +109,17 @@
             </div>
         </div>
     </div>
-    <?php endif;?>
-
+    <?php else: ?>
+      <!-- ========= ALERT LEBAR PENUH ========= -->
+      <div class="row">
+        <div class="col-12">
+          <div class="alert alert-info w-100 text-center py-4">
+            Belum ada rekomendasi untuk pilihanmu.<br>
+            Coba ubah kategori atau parameter lain, ya!
+          </div>
+        </div>
+      </div>
+    <?php endif; ?>
     <div class="product-area section">
         <div class="container">
             <div class="row">

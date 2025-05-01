@@ -4,26 +4,42 @@ class Home extends Controller {
     public function index()
     {
         $model = $this->model('cart');
-
         $carts = $model->findAll(session('user'));
         $count = $model->total();
         $products = $this->model('product')->findLast(8);
         $categories = $this->model('category');
-        $naivebayes = $this->model('transaction')->naiveBayes();
-        $trxModel   = $this->model('transaction');   // sudah kita refactor
+        $catModel   = $this->model('category');
 
-        if (request()->isPost()) {
-            /* tangkap jawaban user */
-            $input = [
-                'umur'     => post('umur'),       // ex: 18-24
-                'kategori' => post('kategori'),   // ex: Kasual
-                'gender'   => post('gender')      // m / f
+        
+
+        $trxModel   = $this->model('transaction');
+        $formInput  = [];                 // untuk sticky value di view
+        $naivebayes = $trxModel->naiveBayes();   // default lama
+
+        if (
+            $_SERVER['REQUEST_METHOD'] === 'POST' &&
+            post('umur') && post('kategori') && post('gender')
+        ) {
+            $formInput = [
+                'umur'     => post('umur'),
+                'kategori' => post('kategori'),
+                'gender'   => post('gender')
             ];
-            /* rekomendasi via Naive Bayes */
-            $naivebayes = $trxModel->recommendProducts($input, 8);
-        } else {
-            $input      = [];        // supaya view bisa tahu “belum ada jawaban”
-            $naivebayes = [];        // blok rekomendasi tidak muncul
+
+            /* gunakan rekomendasi baru jika method tersedia */
+            if (method_exists($trxModel, 'recommendProducts')) {
+                $naivebayes = $trxModel->recommendProducts($formInput, 8);
+            }
+        }
+
+        $kategoriOptions = $catModel->selectTree();   // sudah berupa string opsi
+        if (!empty($formInput['kategori'])) {
+            // sisipkan selected supaya tetap terpilih setelah POST
+            $kategoriOptions = str_replace(
+                'value="'.$formInput['kategori'].'"',
+                'value="'.$formInput['kategori'].'" selected',
+                $kategoriOptions
+            );
         }
 
         $this->page('home', [
@@ -32,11 +48,11 @@ class Home extends Controller {
             'carts' => $carts,
             'count' => $count,
             'products' => $products,
-            'dropdowns' => $categories->dropdownMenu(),
-            'categories' => $categories->selectTree(),
+            'dropdowns'   => $categories->dropdownMenu(),
+            'categories'  => $categories->selectTree(),
             'naivebayes' => $naivebayes,
-            'formInput'   => $input,                       // untuk sticky value
-            'kategoriOpt' => $catModel->selectTree()       // list kategori utk <select>
+            'formInput'   => $formInput,              // supaya <select> tetap terisi
+            'kategoriOptions' => $kategoriOptions   
         ]);
     }
 
