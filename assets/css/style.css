@@ -4950,3 +4950,7 @@ Version:1.0
 	color:#fff;
 	text-decoration:underline;
 }
+
+fieldset.border { border: 1px solid #ddd; }
+fieldset legend { font-size: 0.9rem; padding: 0 5px; }
+.form-check { display: inline-block; margin-right: 1rem; }

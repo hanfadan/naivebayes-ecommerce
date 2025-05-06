@@ -7,6 +7,20 @@ if (!function_exists('h_selected')) {
 }
 ?>
 
+<?php
+if (! function_exists('slugify')) {
+  function slugify(string $text): string
+  {
+      $text = preg_replace('~[^\pL\d]+~u', '-', $text);
+      $text = iconv('utf-8', 'us-ascii//TRANSLIT', $text);
+      $text = preg_replace('~[^-\w]+~', '', $text);
+      $text = trim($text, '-');
+      $text = preg_replace('~-+~', '-', $text);
+      return strtolower($text);
+  }
+}
+?>
+
 <section class="hero-slider">
 		<div class="single-slider">
 			<div class="container">
@@ -25,45 +39,135 @@ if (!function_exists('h_selected')) {
                     </div>
                 </div>
             </div>
-    <form method="post">
-        <div class="row">
-            <!-- UMUR -->
-            <div class="col-md-3 mb-2">
-                <label class="small text-muted mx-3 my-2">Kelompok Umur</label>
-                <select name="umur" class="form-control" required>
-                    <option value="18-24" <?=h_selected($formInput??[],'umur','18-24')?>>18-24</option>
-                    <option value="25-34" <?=h_selected($formInput??[],'umur','25-34')?>>25-34</option>
-                    <option value="35+"   <?=h_selected($formInput??[],'umur','35+')?>>35+</option>
-                </select>
-            </div>
 
-            <!-- GENDER -->
-            <div class="col-md-3 mb-2">
-                <label class="small text-muted mx-3 my-2">Gender</label>
-                <select name="gender" class="form-control" required>
-                    <option value="m" <?=h_selected($formInput??[],'gender','m')?>>Laki-laki</option>
-                    <option value="f" <?=h_selected($formInput??[],'gender','f')?>>Perempuan</option>
-                </select>
-            </div>
-
-            <!-- KATEGORI -->
-            <div class="col-md-4 mb-2">
-                <label class="small text-muted mx-3 my-2">Gaya / Kategori Favorit</label>
-                <select name="kategori" class="form-control" required>
-                    <option value="all">– Semua –</option>
-                    <?= $kategoriOptions ?? '' ?>
-                </select>
-            </div>
-
-            <!-- BUTTON -->
-            <div class="col-md-2 d-flex align-items-end mb-2">
-                <button class="btn btn-primary w-100">Tampilkan</button>
-            </div>
+            <form method="post" class="mb-5">
+  <!-- Kelompok Umur -->
+  <fieldset class="border rounded-3 p-3 mb-4">
+    <legend class="small text-muted px-2">Kelompok Umur</legend>
+    <div class="row">
+      <?php foreach (['18-24','25-34','35+'] as $age): ?>
+      <div class="col-auto mb-2">
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="umur"
+            id="umur-<?=slugify($age)?>"
+            value="<?= $age ?>"
+            required
+            <?= h_selected($formInput??[],'umur',$age) ?>>
+          <label class="form-check-label" for="umur-<?=slugify($age)?>">
+            <?= $age ?>
+          </label>
         </div>
-    </form>
+      </div>
+      <?php endforeach;?>
+    </div>
+  </fieldset>
+
+  <!-- Gender -->
+  <fieldset class="border rounded-3 p-3 mb-4">
+    <legend class="small text-muted px-2">Gender</legend>
+    <div class="row">
+      <?php foreach (['m'=>'Laki-laki','f'=>'Perempuan'] as $val=>$label): ?>
+      <div class="col-auto mb-2">
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="gender"
+            id="gender-<?= $val ?>"
+            value="<?= $val ?>"
+            required
+            <?= h_selected($formInput??[],'gender',$val) ?>>
+          <label class="form-check-label" for="gender-<?= $val ?>">
+            <?= $label ?>
+          </label>
+        </div>
+      </div>
+      <?php endforeach;?>
+    </div>
+  </fieldset>
+
+  <!-- Gaya / Kategori Favorit -->
+  <fieldset class="border rounded p-3 mb-4">
+  <legend class="w-auto small text-muted">Gaya / Kategori Favorit</legend>
+  <div class="row">
+    <?php foreach ($kategoriList as $slug => $label): ?>
+      <div class="col-auto">
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="kategori"
+            id="cat_<?= $slug ?>"
+            value="<?= $slug ?>"
+            required
+            <?= isset($formInput['kategori']) && $formInput['kategori']===$slug ? 'checked' : '' ?>>
+          <label class="form-check-label" for="cat_<?= $slug ?>">
+            <?= htmlspecialchars($label) ?>
+          </label>
+        </div>
+      </div>
+    <?php endforeach; ?>
+  </div>
+</fieldset>
+
+  <!-- Frekuensi Belanja -->
+  <fieldset class="border rounded-3 p-3 mb-4">
+    <legend class="small text-muted px-2">Frekuensi Belanja</legend>
+    <div class="row">
+      <?php foreach (['Setiap minggu','Setiap bulan','Beberapa bulan','Jarang'] as $f): ?>
+      <div class="col-auto mb-2">
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="buy_freq"
+            id="buy_freq-<?=slugify($f)?>"
+            value="<?= $f ?>"
+            required
+            <?= h_selected($formInput??[],'buy_freq',$f) ?>>
+          <label class="form-check-label" for="buy_freq-<?=slugify($f)?>">
+            <?= $f ?>
+          </label>
+        </div>
+      </div>
+      <?php endforeach;?>
+    </div>
+  </fieldset>
+
+  <!-- Budget per Transaksi -->
+  <fieldset class="border rounded-3 p-3 mb-4">
+    <legend class="small text-muted px-2">Budget per Transaksi</legend>
+    <div class="row">
+      <?php foreach (['<100k','100-300k','300-600k','>600k'] as $b): ?>
+      <div class="col-auto mb-2">
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="budget_band"
+            id="budget_band-<?=slugify($b)?>"
+            value="<?= $b ?>"
+            required
+            <?= h_selected($formInput??[],'budget_band',$b) ?>>
+          <label class="form-check-label" for="budget_band-<?=slugify($b)?>">
+            <?= $b ?>
+          </label>
+        </div>
+      </div>
+      <?php endforeach;?>
+    </div>
+  </fieldset>
+
+  <div class="d-flex justify-content-end">
+    <button type="submit" class="btn btn-primary">Tampilkan</button>
+  </div>
+</form>
 </div>
 <!-- ==== /FORM ==== -->
-<?php if(!empty($naivebayes)):?>
+<?php if ($_SERVER['REQUEST_METHOD']==='POST' && !empty($naivebayes)): ?>
             <div class="row">
                 <div class="col-12">
                     <div class="section-title">
@@ -93,7 +197,14 @@ if (!function_exists('h_selected')) {
                                     <a title="Daftar Keinginan" href="javascript:void(0);" class="btn-wishlist" data-product="<?php echo $product['id'];?>"><i class="ti-heart "></i><span>Tambahkan ke Daftar Keinginan</span></a>
                                 </div>
                                 <div class="product-action-2">
-                                    <a title="Tambah ke Keranjang" href="javascript:void(0);" class="btn-cart" data-product="<?php echo $product['id'];?>">Tambah ke Keranjang</a>
+                                <a href="#"
+   class="btn-cart"
+   data-url="<?= url('home/addCart') ?>"
+   data-product="<?= $product['id'] ?>"
+   data-qty="1"
+   data-price="<?php echo $product['price'];?>">
+  Tambah ke Keranjang
+</a>
                                 </div>
                             </div>
                         </div>
@@ -151,7 +262,14 @@ if (!function_exists('h_selected')) {
                                     <a title="Daftar Keinginan" href="javascript:void(0);" class="btn-wishlist" data-product="<?php echo $product['id'];?>"><i class="ti-heart "></i><span>Tambahkan ke Daftar Keinginan</span></a>
                                 </div>
                                 <div class="product-action-2">
-                                    <a title="Tambah ke Keranjang" href="javascript:void(0);" class="btn-cart" data-product="<?php echo $product['id'];?>">Tambah ke Keranjang</a>
+                                <a href="#"
+   class="btn-cart"
+   data-url="<?= url('home/addCart') ?>"
+   data-product="<?= $product['id'] ?>"
+   data-qty="1"
+   data-price="<?php echo $product['price'];?>">
+  Tambah ke Keranjang
+</a>
                                 </div>
                             </div>
                         </div>

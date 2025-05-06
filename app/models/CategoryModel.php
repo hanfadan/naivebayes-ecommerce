@@ -103,4 +103,15 @@ class CategoryModel extends Model {
     public function update($id, $data){
         return $this->db->where('id', $id)->update('categories', $data);
 	}
+
+    /**
+     * Ambil semua kategori (dengan parent_id) 
+     * untuk dibangun radio list di form
+     */
+    public function getAllForForm(): array
+    {
+        return $this->db
+                    ->orderBy('parent_id','ASC')
+                    ->get('categories', null, 'id, name, slug, parent_id');
+    }
 }

@@ -75,154 +75,193 @@ class TransactionModel extends Model {
 		return $this->db->getValue('users', 'count(id)') ?: 0;
 	}
 
+    /**
+     * Muat dataset transaksi + demografi + kuisioner + preferensi
+     */
     private function loadTrainingSet(string $csvPath = null): void
     {
-        if ($this->trainingSet) return;      // sudah pernah dimuat
-    
-        /* ---------- 1. coba query lengkap (dengan users) ---------- */
-        $sqlFull = "
-        SELECT
-          CASE
-            WHEN TIMESTAMPDIFF(YEAR,u.birth,CURDATE()) BETWEEN 18 AND 24 THEN '18-24'
-            WHEN TIMESTAMPDIFF(YEAR,u.birth,CURDATE()) BETWEEN 25 AND 34 THEN '25-34'
-            ELSE '35+'
-          END                                       AS umur,
-          c.name                                    AS kategori,
-          u.gender                                  AS gender,
-          /*—— label continuous = stok ÷ (terjual+1) ——*/
-          (p.stok / (SUM(td.qty)+1))                AS status,
-          SUM(td.qty)                               AS terjual,
-          p.stok                                    AS stok
-        FROM transactions_details td
-        JOIN products   p ON p.id = td.product_id
-        JOIN categories c ON c.id = p.category_id
-        JOIN users      u ON u.id = td.user_id
-        GROUP BY p.id
-        ";
-    
+        if ($this->trainingSet) return;
+
+        $sql = <<<SQL
+SELECT
+  CASE
+    WHEN TIMESTAMPDIFF(YEAR,u.birth,CURDATE()) BETWEEN 18 AND 24 THEN '18-24'
+    WHEN TIMESTAMPDIFF(YEAR,u.birth,CURDATE()) BETWEEN 25 AND 34 THEN '25-34'
+    ELSE '35+'
+  END          AS umur,
+  u.gender     AS gender,
+  c.name       AS kategori,
+  (p.stok / (SUM(td.qty)+1)) AS status,
+  SUM(td.qty)  AS terjual,
+  p.stok       AS stok,
+  sr_buy.answer    AS buy_freq,
+  sr_budget.answer AS budget_band,
+  sr_factor.answer AS buy_factor,
+  sr_channel.answer AS channel_main,
+  sr_review.answer  AS review_consider,
+  sr_eco1.answer    AS eco_interest,
+  sr_eco2.answer    AS eco_paymore,
+  us.style_slug     AS style_pref,
+  uc.color_slug     AS color_pref,
+  ub.brand_name     AS brand_pref
+FROM transactions_details td
+JOIN products   p ON p.id    = td.product_id
+JOIN categories c ON c.id    = p.category_id
+JOIN users      u ON u.id    = td.user_id
+LEFT JOIN survey_responses sr_buy    ON sr_buy.user_id=u.id    AND sr_buy.qcode='buy_freq'
+LEFT JOIN survey_responses sr_budget ON sr_budget.user_id=u.id AND sr_budget.qcode='budget_band'
+LEFT JOIN survey_responses sr_factor ON sr_factor.user_id=u.id AND sr_factor.qcode='buy_factor'
+LEFT JOIN survey_responses sr_channel ON sr_channel.user_id=u.id AND sr_channel.qcode='channel_main'
+LEFT JOIN survey_responses sr_review  ON sr_review.user_id=u.id  AND sr_review.qcode='review_consider'
+LEFT JOIN survey_responses sr_eco1    ON sr_eco1.user_id=u.id    AND sr_eco1.qcode='eco_interest'
+LEFT JOIN survey_responses sr_eco2    ON sr_eco2.user_id=u.id    AND sr_eco2.qcode='eco_paymore'
+LEFT JOIN (
+  SELECT user_id, style_slug
+  FROM user_styles
+  GROUP BY user_id
+  ORDER BY COUNT(*) DESC
+) us ON us.user_id = u.id
+LEFT JOIN (
+  SELECT user_id, color_slug
+  FROM user_colors
+  GROUP BY user_id
+  ORDER BY COUNT(*) DESC
+) uc ON uc.user_id = u.id
+LEFT JOIN (
+  SELECT user_id, brand_name
+  FROM user_brands
+  ORDER BY FIELD(freq,'Sering','Kadang','Jarang')
+  LIMIT 1
+) ub ON ub.user_id = u.id
+GROUP BY td.id
+SQL;
+
         try {
-            $this->trainingSet = $this->db->rawQuery($sqlFull);
+            $this->trainingSet = $this->db->rawQuery($sql);
         } catch (\Exception $e) {
-            /* ---------- 2. fallback: tidak ada tabel users ---------- */
-            error_log('Bayes fallback (no users table): '.$e->getMessage());
-    
-            $sqlFallback = "
-                SELECT
-                    c.name             AS kategori,
-                    IF(p.stok > 50,1,0) AS status
-                FROM transactions_details td
-                JOIN products   p ON p.id  = td.product_id
-                JOIN categories c ON c.id  = p.category_id
-            ";
-            $this->trainingSet = $this->db->rawQuery($sqlFallback);
+            error_log("Bayes fallback: ".$e->getMessage());
+            // fallback minimal
+            $this->trainingSet = $this->db->rawQuery(
+                "SELECT c.name AS kategori,
+                        IF(p.stok>50,1,0) AS status
+                 FROM transactions_details td
+                 JOIN products p ON p.id=td.product_id
+                 JOIN categories c ON c.id=p.category_id"
+            );
         }
-    
-        /* ---------- 3. gabung (opsional) dataset CSV ---------- */
+
+        // gabung CSV tambahan kalau ada
         if ($csvPath && is_readable($csvPath)) {
-            $csv = array_map('str_getcsv', file($csvPath));
+            $csv    = array_map('str_getcsv', file($csvPath));
             $header = array_map('trim', array_shift($csv));
             foreach ($csv as $row) {
                 $this->trainingSet[] = array_combine($header, $row);
             }
         }
-    }    
+    }
 
+/**
+     * Bangun model frekuensi + prior dengan Laplace smoothing
+     */
     public function trainNaiveBayes(string $csv = null): void
     {
-        /* -- isi $this->trainingSet ------------------------------------------------ */
         $this->loadTrainingSet($csv);
-    
-        $freq   = [];          // [$field][$value][$bucket] => count
-        $labels = [];          // [$bucket] => count
-        $N      = 0;           // total contoh (setelah bucket)
-    
+
+        $freq   = []; // [$feature][$value][$bucket] => count
+        $labels = []; // [$bucket] => count
+        $N      = 0;
+
         foreach ($this->trainingSet as $row) {
             if (!isset($row['status'])) continue;
-    
-            /* ----------- BUCKET stok/terjual -------------------------------------- */
-            $w = (float)$row['status'];                // 0 … ∞
-            if     ($w < 1) { $bkt = 0; }              // stok kecil
-            elseif ($w < 2) { $bkt = 1; }              // stok sedang
-            else            { $bkt = 2; }              // stok besar
-    
-            /* ----------- hitung label & frekuensi --------------------------------- */
+
+            // bucket continuous label
+            $w   = (float)$row['status'];
+            $bkt = $w < 1 ? 0 : ($w < 2 ? 1 : 2);
+
             $labels[$bkt] = ($labels[$bkt] ?? 0) + 1;
+
             foreach ($row as $k => $v) {
+                // skip internal kolom numerik
                 if (in_array($k, ['status','stok','terjual'])) continue;
+                $v = $v ?: 'unknown'; // kategorikan kosong
                 $freq[$k][$v][$bkt] = ($freq[$k][$v][$bkt] ?? 0) + 1;
             }
             $N++;
         }
-    
-        $this->model = compact('freq', 'labels', 'N');
+
+        $this->model = compact('freq','labels','N');
     }
     
 
-        /**
-     * @param array $x contoh: ['umur'=>'18-24','kategori'=>'Kasual','gender'=>'m']
-     * @return array hasil: ['label'=>1, 'confidence'=>0.83, 'posterior'=>[1=>0.83,0=>0.17]]
+/**
+     * Hitung posterior tiap bucket (0/1/2) untuk input $x
      */
     public function predictNaiveBayes(array $x, float $alpha = 1): array
     {
-        if (!$this->model) $this->trainNaiveBayes();   // auto-train
+        if (!$this->model) $this->trainNaiveBayes();
 
-        extract($this->model); // $freq, $labels, $N
+        extract($this->model); // $freq,$labels,$N
         $post = [];
 
         foreach ($labels as $lbl => $cnt) {
-            // prior
+            // prior P(Y=lbl)
             $p = ($cnt + $alpha) / ($N + $alpha * count($labels));
-            foreach ($x as $field => $val) {
-                $num = $freq[$field][$val][$lbl] ?? 0;
-                $den = $cnt;
-                $kCard = isset($freq[$field]) ? count($freq[$field]) : 1;
-                $p *= ($num + $alpha) / ($den + $alpha * $kCard);
+            foreach ($x as $f => $v) {
+                $num  = $freq[$f][$v][$lbl] ?? 0;
+                $den  = $cnt;
+                $kCard= isset($freq[$f]) ? count($freq[$f]) : 1;
+                $p   *= ($num + $alpha) / ($den + $alpha * $kCard);
             }
             $post[$lbl] = $p;
         }
+
+        // normalisasi & sorting
         $sum = array_sum($post);
-        foreach ($post as $lbl => $v) $post[$lbl] = $v / $sum;
+        foreach ($post as $lbl => $v) {
+            $post[$lbl] = $sum>0 ? $v/$sum : 0;
+        }
         arsort($post);
 
-        $labelPred   = (int)array_key_first($post);
-        $confidence  = reset($post);
-
-        return ['label' => $labelPred, 'confidence' => $confidence, 'posterior' => $post];
+        return [
+            'label'     => (int)array_key_first($post),
+            'confidence'=> reset($post),
+            'posterior' => $post
+        ];
     }
 
+    /**
+     * Rekomendasikan produk: 
+     * - pakai kategori user bila dipilih, 
+     * - else ranking kategori dari posterior Bayes,
+     * - lalu ambil produk stok>0 di kategori itu, shuffle & slice.
+     */
     public function recommendProducts(array $x, int $limit = 8): array
     {
-        /* ---------- 0. Apakah user memilih kategori secara eksplisit? ---------- */
-        $userCat = $x['kategori'] ?? null;             // slug atau nama dari form
+        $userCat = $x['kategori'] ?? null;
         if ($userCat && $userCat !== 'all') {
-            /* form mengirim slug (mis. "jaket"), konversi ke name */
-            $userCatName = $this->db->where('slug',$userCat)
-                                    ->getValue('categories','name');
-            if (!$userCatName) $userCatName = ucfirst(str_replace('-',' ',$userCat));
-            $topCats = [$userCatName];                 // pakai kategori user saja
+            $catName = $this->db->where('slug',$userCat)->getValue('categories','name')
+                     ?: ucfirst(str_replace('-',' ',$userCat));
+            $topCats = [$catName];
         } else {
-            /* ---------- 1. Hint keyword pencarian (opsional) ---------- */
+            // opsi: hint keyword
             if (!empty(post('search'))) {
-                $kw = trim(post('search'));
-                $catHint = $this->db->rawQueryOne(
-                     "SELECT c.name FROM products p
-                      JOIN categories c ON c.id=p.category_id
-                      WHERE p.name LIKE ? LIMIT 1", ['%'.$kw.'%']);
-                if ($catHint) $x['kategori'] = $catHint['name'];
+                $hint = $this->db->rawQueryOne(
+                    "SELECT c.name FROM products p 
+                     JOIN categories c ON c.id=p.category_id
+                     WHERE p.name LIKE ? LIMIT 1", ['%'.post('search').'%']
+                );
+                if ($hint) $x['kategori'] = $hint['name'];
             }
-    
-            /* ---------- 2. Dapatkan top-kategori via Naive Bayes ---------- */
-            $posterior = $this->posteriorPerKategori($x);
-            $topCats   = array_slice(array_keys($posterior), 0, 7);   // 7 teratas
+            // ranking kategori
+            $postCats = $this->posteriorPerKategori($x);
+            $topCats   = array_slice(array_keys($postCats), 0, 7);
         }
-    
-        /* ---------- 3. Query produk stok>0 di kategori pilihan ---------- */
+
         $this->db->where('p.stok', 0, '>');
         $this->db->where('c.name', $topCats, 'IN');
         $this->db->join('categories c','c.id=p.category_id','LEFT');
         $rows = $this->db->get('products p', null, 'p.*, c.name AS category');
-    
-        /* ---------- 4. Acak, pilih $limit ---------- */
+
         shuffle($rows);
         return array_slice($rows, 0, $limit);
     }
@@ -230,30 +269,22 @@ class TransactionModel extends Model {
     
 
     /**
- * Hitung posterior untuk setiap nilai kategori
- * – mengasumsikan $this->model sudah berisi ['freq','labels','N']
- * – menggunakan Laplace smoothing (alpha = 1)
- *
- * @return array  ex: ['Kasual'=>0.45,'Formal'=>0.32,'Vintage'=>0.10 …]
- */
-public function posteriorPerKategori(array $x, float $alpha = 1): array
-{
-    if (!$this->model) {
-        $this->trainNaiveBayes();           // pastikan sudah ter-train
-    }
-    $field = 'kategori';                    // fitur yang kita ranking
-    extract($this->model);                  // $freq, $labels, $N
+     * Ranking posterior per kategori
+     */
+    public function posteriorPerKategori(array $x, float $alpha = 1): array
+    {
+        if (!$this->model) $this->trainNaiveBayes();
 
-    $post = [];
-    foreach ($freq[$field] as $catVal => $dummy) {
-        $x[$field] = $catVal;               // set kategori yang diuji
-        /* re-gunakan fungsi predict() untuk label 1 & 0 */
-        $probTrue  = $this->predictNaiveBayes($x, $alpha)['posterior'][1] ?? 0;
-        $post[$catVal] = $probTrue;
-    }
-    arsort($post);                          // urutkan tinggi->rendah
-    return $post;
-}
+        extract($this->model);
+        $field = 'kategori';
+        $post  = [];
 
+        foreach ($freq[$field] as $catVal => $_) {
+            $x[$field] = $catVal;
+            $post[$catVal] = $this->predictNaiveBayes($x,$alpha)['posterior'][1] ?? 0;
+        }
+        arsort($post);
+        return $post;
+    }
 
 }

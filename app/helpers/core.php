@@ -56,8 +56,31 @@ if ( ! function_exists('get'))
 
 if ( ! function_exists('image'))
 {
-    function image($file)
+    /**
+     * Cari file gambar di beberapa prefix (03_,04_,05_) atau langsung nama file.
+     * Kalau tidak ada satupun, pakai no-image.jpg.
+     */
+    function image(string $file): string
     {
+        // // sesuaikan folder image produk-mu
+        // $baseUrl = url('images/');            
+        // $basePath = $_SERVER['DOCUMENT_ROOT'] . '/images/'; 
+
+        // // urutan coba: file apa adanya, 03_, 04_, 05_
+        // $candidates = [
+        //     $file,
+        //     '03_'.$file,
+        //     '04_'.$file,
+        //     '05_'.$file,
+        // ];
+
+        // foreach ($candidates as $f) {
+        //     if (is_file($basePath . $f)) {
+        //         return $baseUrl . $f;
+        //     }
+        // }
+        // // fallback
+        // return $baseUrl . 'no-image.jpg';
         return url('images/'.$file);
     }
 }

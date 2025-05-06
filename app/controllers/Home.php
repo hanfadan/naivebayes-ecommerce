@@ -3,56 +3,70 @@
 class Home extends Controller {
     public function index()
     {
-        $model = $this->model('cart');
-        $carts = $model->findAll(session('user'));
-        $count = $model->total();
-        $products = $this->model('product')->findLast(8);
-        $categories = $this->model('category');
-        $catModel   = $this->model('category');
+        // 1) Keranjang & count
+        $cartModel = $this->model('cart');
+        $carts     = $cartModel->findAll(session('user'));
+        $count     = $cartModel->total();
 
-        
+        // 2) Produk terbaru & kategori untuk header/nav
+        $products  = $this->model('product')->findLast(8);
+        $catModel  = $this->model('category');
+        $dropdowns = $catModel->dropdownMenu();
+        $treeOpts  = $catModel->selectTree();
 
+        // 3) Siapkan list kategori leaf (slug=>name) untuk form radio
+        $allCats     = $catModel->getAllForForm();
+        $kategoriList = [];
+        foreach ($allCats as $c) {
+            if ((int)$c['parent_id'] !== 0) {
+                $kategoriList[$c['slug']] = $c['name'];
+            }
+        }
+
+        // 4) List opsi kuisioner lain
+        $buyFreqList    = ['Setiap minggu','Setiap bulan','Beberapa bulan','Jarang'];
+        $budgetBandList = ['<100k','100-300k','300-600k','>600k'];
+
+        // 5) Default rekomendasi = best-seller (lama)
         $trxModel   = $this->model('transaction');
-        $formInput  = [];                 // untuk sticky value di view
-        $naivebayes = $trxModel->naiveBayes();   // default lama
+        $naivebayes = [];
+        $formInput  = [];
 
+        // 6) Kalau form POST lengkap → pakai Bayes
         if (
-            $_SERVER['REQUEST_METHOD'] === 'POST' &&
-            post('umur') && post('kategori') && post('gender')
+            $_SERVER['REQUEST_METHOD']==='POST' &&
+            post('umur')        &&
+            post('kategori')    &&
+            post('gender')      &&
+            post('buy_freq')    &&
+            post('budget_band')
         ) {
             $formInput = [
-                'umur'     => post('umur'),
-                'kategori' => post('kategori'),
-                'gender'   => post('gender')
+                'umur'        => post('umur'),
+                'kategori'    => post('kategori'),
+                'gender'      => post('gender'),
+                'buy_freq'    => post('buy_freq'),
+                'budget_band' => post('budget_band'),
             ];
-
-            /* gunakan rekomendasi baru jika method tersedia */
-            if (method_exists($trxModel, 'recommendProducts')) {
+            if (method_exists($trxModel,'recommendProducts')) {
                 $naivebayes = $trxModel->recommendProducts($formInput, 8);
             }
         }
 
-        $kategoriOptions = $catModel->selectTree();   // sudah berupa string opsi
-        if (!empty($formInput['kategori'])) {
-            // sisipkan selected supaya tetap terpilih setelah POST
-            $kategoriOptions = str_replace(
-                'value="'.$formInput['kategori'].'"',
-                'value="'.$formInput['kategori'].'" selected',
-                $kategoriOptions
-            );
-        }
-
+        // 7) Render view
         $this->page('home', [
-            'home' => true,
-            'page' => 'home',
-            'carts' => $carts,
-            'count' => $count,
-            'products' => $products,
-            'dropdowns'   => $categories->dropdownMenu(),
-            'categories'  => $categories->selectTree(),
-            'naivebayes' => $naivebayes,
-            'formInput'   => $formInput,              // supaya <select> tetap terisi
-            'kategoriOptions' => $kategoriOptions   
+            'home'           => true,
+            'page'           => 'home',
+            'carts'          => $carts,
+            'count'          => $count,
+            'products'       => $products,
+            'dropdowns'      => $dropdowns,
+            'categories'     => $treeOpts,
+            'kategoriList'   => $kategoriList,
+            'buyFreqList'    => $buyFreqList,
+            'budgetBandList' => $budgetBandList,
+            'formInput'      => $formInput,
+            'naivebayes'     => $naivebayes,
         ]);
     }
 

@@ -1,2 +1,2 @@
-# naivebayes-ecommerce
+# -ecommerce
  

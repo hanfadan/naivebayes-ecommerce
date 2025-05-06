@@ -1,0 +1,773 @@
+user_id,gender,age_group,income_band,job_status,buy_freq,budget_band,style,category,label
+2,m,,,,,,,Kaos,0
+2,m,,,,,,,"Kaos Polo",0
+2,m,,,,,,,"Kaos Polo",0
+2,m,,,,,,,Sweater,0
+2,m,,,,,,,Jaket,1
+5,m,35-44,2-5jt,Pelajar,Jarang,>600k,"bohemian,minimalis",Kaos,0
+5,m,35-44,2-5jt,Pelajar,Jarang,>600k,"bohemian,minimalis",Jaket,0
+5,m,35-44,2-5jt,Pelajar,Jarang,>600k,"bohemian,minimalis",Jaket,0
+5,m,35-44,2-5jt,Pelajar,Jarang,>600k,"bohemian,minimalis",Kaos,0
+6,f,18-24,2-5jt,Wiraswasta,"Setiap minggu",100-300k,"kasual,vintage",Sweater,0
+6,f,18-24,2-5jt,Wiraswasta,"Setiap minggu",100-300k,"kasual,vintage",Dress,0
+6,f,18-24,2-5jt,Wiraswasta,"Setiap minggu",100-300k,"kasual,vintage",Jaket,1
+7,m,45+,>10jt,Lainnya,"Setiap minggu",100-300k,"bohemian,formal,kasual",Jaket,0
+7,m,45+,>10jt,Lainnya,"Setiap minggu",100-300k,"bohemian,formal,kasual",Kaos,0
+7,m,45+,>10jt,Lainnya,"Setiap minggu",100-300k,"bohemian,formal,kasual","Kaos Polo",0
+7,m,45+,>10jt,Lainnya,"Setiap minggu",100-300k,"bohemian,formal,kasual",Kemeja,0
+8,m,18-24,>10jt,Pelajar,"Setiap minggu",<100k,kasual,Jaket,0
+8,m,18-24,>10jt,Pelajar,"Setiap minggu",<100k,kasual,Kaos,0
+8,m,18-24,>10jt,Pelajar,"Setiap minggu",<100k,kasual,Kemeja,0
+8,m,18-24,>10jt,Pelajar,"Setiap minggu",<100k,kasual,Kemeja,0
+9,m,45+,5-10jt,Freelance,"Beberapa bulan",300-600k,"bohemian,minimalis,sporty",Kaos,0
+9,m,45+,5-10jt,Freelance,"Beberapa bulan",300-600k,"bohemian,minimalis,sporty","Kaos Polo",0
+9,m,45+,5-10jt,Freelance,"Beberapa bulan",300-600k,"bohemian,minimalis,sporty",Kaos,0
+10,f,18-24,2-5jt,Pegawai,Jarang,300-600k,"minimalis,sporty","Kaos Polo",0
+11,m,45+,2-5jt,Pelajar,"Setiap bulan",300-600k,vintage,Kaos,0
+11,m,45+,2-5jt,Pelajar,"Setiap bulan",300-600k,vintage,Sweater,0
+11,m,45+,2-5jt,Pelajar,"Setiap bulan",300-600k,vintage,Jaket,1
+11,m,45+,2-5jt,Pelajar,"Setiap bulan",300-600k,vintage,Jaket,0
+12,f,25-34,<2jt,Mahasiswa,Jarang,300-600k,"minimalis,sporty,vintage",Jaket,0
+13,m,45+,5-10jt,Mahasiswa,"Beberapa bulan",<100k,minimalis,Kaos,0
+13,m,45+,5-10jt,Mahasiswa,"Beberapa bulan",<100k,minimalis,Dress,0
+13,m,45+,5-10jt,Mahasiswa,"Beberapa bulan",<100k,minimalis,Sweater,0
+13,m,45+,5-10jt,Mahasiswa,"Beberapa bulan",<100k,minimalis,Kaos,1
+14,f,18-24,5-10jt,Mahasiswa,"Beberapa bulan",<100k,"formal,minimalis",Sweater,0
+14,f,18-24,5-10jt,Mahasiswa,"Beberapa bulan",<100k,"formal,minimalis",Sweater,0
+15,m,35-44,<2jt,Freelance,"Beberapa bulan",100-300k,formal,Dress,0
+16,f,18-24,>10jt,Pelajar,"Beberapa bulan",<100k,"formal,kasual,vintage",Jaket,0
+16,f,18-24,>10jt,Pelajar,"Beberapa bulan",<100k,"formal,kasual,vintage","Kaos Polo",0
+16,f,18-24,>10jt,Pelajar,"Beberapa bulan",<100k,"formal,kasual,vintage",Jaket,0
+17,m,35-44,5-10jt,Mahasiswa,"Setiap minggu",>600k,"formal,minimalis",Kaos,0
+17,m,35-44,5-10jt,Mahasiswa,"Setiap minggu",>600k,"formal,minimalis","Kaos Polo",0
+17,m,35-44,5-10jt,Mahasiswa,"Setiap minggu",>600k,"formal,minimalis",Dress,0
+17,m,35-44,5-10jt,Mahasiswa,"Setiap minggu",>600k,"formal,minimalis",Kemeja,0
+18,f,25-34,5-10jt,Pelajar,"Setiap bulan",>600k,"minimalis,sporty,vintage",Kaos,0
+18,f,25-34,5-10jt,Pelajar,"Setiap bulan",>600k,"minimalis,sporty,vintage",Jaket,1
+19,m,35-44,>10jt,Mahasiswa,"Beberapa bulan",<100k,vintage,"Kaos Polo",0
+19,m,35-44,>10jt,Mahasiswa,"Beberapa bulan",<100k,vintage,"Kaos Polo",0
+19,m,35-44,>10jt,Mahasiswa,"Beberapa bulan",<100k,vintage,Kaos,1
+19,m,35-44,>10jt,Mahasiswa,"Beberapa bulan",<100k,vintage,Jaket,1
+20,f,35-44,5-10jt,Wiraswasta,Jarang,>600k,formal,"Kaos Polo",0
+20,f,35-44,5-10jt,Wiraswasta,Jarang,>600k,formal,Jaket,1
+21,m,18-24,>10jt,Lainnya,Jarang,300-600k,"bohemian,kasual,minimalis",Kaos,0
+21,m,18-24,>10jt,Lainnya,Jarang,300-600k,"bohemian,kasual,minimalis",Dress,0
+21,m,18-24,>10jt,Lainnya,Jarang,300-600k,"bohemian,kasual,minimalis",Kaos,1
+21,m,18-24,>10jt,Lainnya,Jarang,300-600k,"bohemian,kasual,minimalis",Kemeja,0
+22,f,25-34,<2jt,Wiraswasta,"Beberapa bulan",300-600k,"formal,kasual,vintage","Kaos Polo",0
+22,f,25-34,<2jt,Wiraswasta,"Beberapa bulan",300-600k,"formal,kasual,vintage",Batik,0
+23,m,45+,5-10jt,Pelajar,"Setiap bulan",<100k,"formal,minimalis",Jaket,0
+24,f,18-24,<2jt,Wiraswasta,"Setiap bulan",>600k,formal,Kemeja,0
+24,f,18-24,<2jt,Wiraswasta,"Setiap bulan",>600k,formal,Kaos,1
+24,f,18-24,<2jt,Wiraswasta,"Setiap bulan",>600k,formal,Dress,0
+25,m,45+,2-5jt,Freelance,"Beberapa bulan",>600k,"formal,kasual",Kaos,1
+26,f,45+,2-5jt,Lainnya,"Setiap minggu",>600k,"bohemian,vintage",Sweater,0
+26,f,45+,2-5jt,Lainnya,"Setiap minggu",>600k,"bohemian,vintage","Kaos Polo",0
+27,m,35-44,2-5jt,Lainnya,Jarang,100-300k,kasual,Jaket,0
+27,m,35-44,2-5jt,Lainnya,Jarang,100-300k,kasual,Kaos,0
+27,m,35-44,2-5jt,Lainnya,Jarang,100-300k,kasual,Batik,0
+27,m,35-44,2-5jt,Lainnya,Jarang,100-300k,kasual,Kemeja,1
+28,f,25-34,>10jt,Pelajar,Jarang,<100k,kasual,Kaos,0
+28,f,25-34,>10jt,Pelajar,Jarang,<100k,kasual,Kemeja,0
+29,m,18-24,2-5jt,Freelance,Jarang,>600k,vintage,Sweater,0
+29,m,18-24,2-5jt,Freelance,Jarang,>600k,vintage,Dress,0
+30,f,18-24,<2jt,Mahasiswa,"Beberapa bulan",100-300k,"kasual,sporty,vintage","Kaos Polo",0
+30,f,18-24,<2jt,Mahasiswa,"Beberapa bulan",100-300k,"kasual,sporty,vintage",Jaket,1
+31,m,25-34,5-10jt,Pelajar,"Setiap minggu",>600k,"formal,kasual",Jaket,0
+31,m,25-34,5-10jt,Pelajar,"Setiap minggu",>600k,"formal,kasual","Kaos Polo",0
+31,m,25-34,5-10jt,Pelajar,"Setiap minggu",>600k,"formal,kasual",Kemeja,0
+31,m,25-34,5-10jt,Pelajar,"Setiap minggu",>600k,"formal,kasual",Jaket,1
+32,f,18-24,5-10jt,Mahasiswa,"Beberapa bulan",100-300k,"formal,kasual,vintage",Jaket,0
+33,m,25-34,5-10jt,Lainnya,"Setiap minggu",100-300k,"formal,kasual,vintage",Batik,1
+34,f,35-44,<2jt,Pegawai,"Setiap bulan",300-600k,"bohemian,formal,minimalis",Jaket,1
+35,m,25-34,2-5jt,Freelance,"Beberapa bulan",300-600k,"formal,kasual,vintage",Kaos,0
+35,m,25-34,2-5jt,Freelance,"Beberapa bulan",300-600k,"formal,kasual,vintage",Jaket,0
+35,m,25-34,2-5jt,Freelance,"Beberapa bulan",300-600k,"formal,kasual,vintage",Jaket,0
+36,f,45+,2-5jt,Pelajar,"Setiap minggu",<100k,"minimalis,vintage","Kaos Polo",0
+36,f,45+,2-5jt,Pelajar,"Setiap minggu",<100k,"minimalis,vintage",Kaos,0
+36,f,45+,2-5jt,Pelajar,"Setiap minggu",<100k,"minimalis,vintage",Kemeja,1
+37,m,18-24,5-10jt,Pegawai,Jarang,100-300k,"formal,vintage","Kaos Polo",0
+37,m,18-24,5-10jt,Pegawai,Jarang,100-300k,"formal,vintage",Kemeja,0
+38,f,35-44,2-5jt,Mahasiswa,"Setiap bulan",<100k,sporty,Kaos,0
+39,m,45+,>10jt,Lainnya,"Setiap minggu",300-600k,vintage,Sweater,0
+39,m,45+,>10jt,Lainnya,"Setiap minggu",300-600k,vintage,Kaos,0
+40,f,18-24,5-10jt,Pegawai,Jarang,300-600k,"formal,kasual,minimalis",Kemeja,1
+41,m,18-24,2-5jt,Wiraswasta,"Beberapa bulan",<100k,bohemian,Jaket,1
+42,f,35-44,<2jt,Pegawai,"Beberapa bulan",100-300k,"formal,sporty",Kaos,0
+43,m,25-34,5-10jt,Mahasiswa,"Beberapa bulan",>600k,kasual,Kaos,0
+43,m,25-34,5-10jt,Mahasiswa,"Beberapa bulan",>600k,kasual,Kaos,1
+44,f,25-34,<2jt,Pegawai,"Setiap minggu",100-300k,sporty,"Kaos Polo",0
+44,f,25-34,<2jt,Pegawai,"Setiap minggu",100-300k,sporty,Jaket,1
+45,m,18-24,5-10jt,Pegawai,Jarang,100-300k,"kasual,sporty,vintage",Jaket,0
+45,m,18-24,5-10jt,Pegawai,Jarang,100-300k,"kasual,sporty,vintage","Pakaian Pria",0
+46,f,25-34,<2jt,Mahasiswa,Jarang,100-300k,"formal,kasual",Kemeja,0
+46,f,25-34,<2jt,Mahasiswa,Jarang,100-300k,"formal,kasual",Jaket,0
+47,m,18-24,<2jt,Mahasiswa,"Setiap minggu",>600k,"minimalis,sporty,vintage",Jaket,0
+47,m,18-24,<2jt,Mahasiswa,"Setiap minggu",>600k,"minimalis,sporty,vintage","Kaos Polo",0
+48,f,35-44,5-10jt,Pegawai,"Setiap minggu",<100k,"formal,kasual,minimalis",Dress,0
+48,f,35-44,5-10jt,Pegawai,"Setiap minggu",<100k,"formal,kasual,minimalis",Kemeja,0
+49,m,35-44,5-10jt,Freelance,"Beberapa bulan",300-600k,"minimalis,sporty",Dress,0
+49,m,35-44,5-10jt,Freelance,"Beberapa bulan",300-600k,"minimalis,sporty",Kaos,0
+49,m,35-44,5-10jt,Freelance,"Beberapa bulan",300-600k,"minimalis,sporty",Kemeja,0
+50,f,35-44,<2jt,Mahasiswa,"Setiap minggu",300-600k,"minimalis,vintage",Jaket,0
+50,f,35-44,<2jt,Mahasiswa,"Setiap minggu",300-600k,"minimalis,vintage","Kaos Polo",0
+51,m,35-44,5-10jt,Wiraswasta,"Setiap minggu",<100k,"bohemian,kasual,vintage",Sweater,0
+52,f,35-44,5-10jt,Freelance,"Setiap bulan",>600k,bohemian,Dress,0
+52,f,35-44,5-10jt,Freelance,"Setiap bulan",>600k,bohemian,"Kaos Polo",0
+52,f,35-44,5-10jt,Freelance,"Setiap bulan",>600k,bohemian,Batik,0
+53,m,25-34,>10jt,Pelajar,"Setiap bulan",>600k,"formal,vintage",Kaos,0
+53,m,25-34,>10jt,Pelajar,"Setiap bulan",>600k,"formal,vintage",Kaos,0
+53,m,25-34,>10jt,Pelajar,"Setiap bulan",>600k,"formal,vintage",Jaket,1
+53,m,25-34,>10jt,Pelajar,"Setiap bulan",>600k,"formal,vintage",Jaket,1
+54,f,25-34,2-5jt,Freelance,"Setiap bulan",<100k,vintage,Kaos,0
+54,f,25-34,2-5jt,Freelance,"Setiap bulan",<100k,vintage,Sweater,0
+55,m,45+,<2jt,Mahasiswa,Jarang,100-300k,"formal,kasual,vintage","Pakaian Pria",0
+56,f,18-24,2-5jt,Mahasiswa,"Beberapa bulan",100-300k,"formal,minimalis","Pakaian Pria",0
+56,f,18-24,2-5jt,Mahasiswa,"Beberapa bulan",100-300k,"formal,minimalis",Kaos,0
+56,f,18-24,2-5jt,Mahasiswa,"Beberapa bulan",100-300k,"formal,minimalis",Kaos,0
+57,m,35-44,5-10jt,Freelance,Jarang,<100k,"kasual,vintage",Dress,0
+58,f,25-34,<2jt,Mahasiswa,Jarang,100-300k,bohemian,Jaket,0
+58,f,25-34,<2jt,Mahasiswa,Jarang,100-300k,bohemian,"Kaos Polo",0
+58,f,25-34,<2jt,Mahasiswa,Jarang,100-300k,bohemian,Kaos,1
+59,m,18-24,<2jt,Pegawai,"Beberapa bulan",300-600k,"minimalis,sporty",Jaket,0
+59,m,18-24,<2jt,Pegawai,"Beberapa bulan",300-600k,"minimalis,sporty","Pakaian Pria",0
+59,m,18-24,<2jt,Pegawai,"Beberapa bulan",300-600k,"minimalis,sporty","Kaos Polo",0
+59,m,18-24,<2jt,Pegawai,"Beberapa bulan",300-600k,"minimalis,sporty",Kaos,0
+60,f,35-44,>10jt,Lainnya,"Setiap minggu",100-300k,"bohemian,minimalis",Kaos,0
+60,f,35-44,>10jt,Lainnya,"Setiap minggu",100-300k,"bohemian,minimalis",Dress,0
+60,f,35-44,>10jt,Lainnya,"Setiap minggu",100-300k,"bohemian,minimalis",Kaos,1
+60,f,35-44,>10jt,Lainnya,"Setiap minggu",100-300k,"bohemian,minimalis",Dress,0
+61,m,35-44,<2jt,Pelajar,"Setiap bulan",100-300k,"bohemian,minimalis",Jaket,1
+61,m,35-44,<2jt,Pelajar,"Setiap bulan",100-300k,"bohemian,minimalis",Jaket,0
+62,f,45+,5-10jt,Wiraswasta,Jarang,300-600k,minimalis,"Pakaian Pria",0
+62,f,45+,5-10jt,Wiraswasta,Jarang,300-600k,minimalis,Batik,0
+62,f,45+,5-10jt,Wiraswasta,Jarang,300-600k,minimalis,Kaos,1
+63,m,45+,2-5jt,Pelajar,"Setiap minggu",>600k,"bohemian,kasual","Kaos Polo",0
+63,m,45+,2-5jt,Pelajar,"Setiap minggu",>600k,"bohemian,kasual",Kemeja,0
+64,f,45+,<2jt,Pelajar,"Setiap bulan",>600k,"bohemian,kasual,minimalis",Jaket,0
+64,f,45+,<2jt,Pelajar,"Setiap bulan",>600k,"bohemian,kasual,minimalis",Kemeja,0
+64,f,45+,<2jt,Pelajar,"Setiap bulan",>600k,"bohemian,kasual,minimalis",Jaket,0
+65,m,35-44,5-10jt,Pelajar,"Beberapa bulan",<100k,"bohemian,vintage","Kaos Polo",0
+65,m,35-44,5-10jt,Pelajar,"Beberapa bulan",<100k,"bohemian,vintage",Kemeja,0
+66,f,18-24,5-10jt,Freelance,Jarang,300-600k,"bohemian,kasual,sporty","Kaos Polo",0
+67,m,35-44,<2jt,Mahasiswa,"Setiap bulan",<100k,"minimalis,sporty,vintage","Pakaian Pria",0
+67,m,35-44,<2jt,Mahasiswa,"Setiap bulan",<100k,"minimalis,sporty,vintage",Sweater,0
+67,m,35-44,<2jt,Mahasiswa,"Setiap bulan",<100k,"minimalis,sporty,vintage",Kaos,0
+68,f,18-24,5-10jt,Pegawai,"Beberapa bulan",100-300k,"formal,minimalis,vintage",Batik,0
+69,m,25-34,2-5jt,Lainnya,"Setiap minggu",>600k,vintage,Kemeja,0
+69,m,25-34,2-5jt,Lainnya,"Setiap minggu",>600k,vintage,Kaos,1
+69,m,25-34,2-5jt,Lainnya,"Setiap minggu",>600k,vintage,Jaket,1
+70,f,35-44,<2jt,Mahasiswa,Jarang,>600k,formal,Kemeja,0
+70,f,35-44,<2jt,Mahasiswa,Jarang,>600k,formal,Kaos,0
+71,m,45+,<2jt,Freelance,"Beberapa bulan",100-300k,formal,Jaket,0
+71,m,45+,<2jt,Freelance,"Beberapa bulan",100-300k,formal,Batik,1
+71,m,45+,<2jt,Freelance,"Beberapa bulan",100-300k,formal,Jaket,0
+72,f,18-24,<2jt,Lainnya,Jarang,>600k,"bohemian,kasual,sporty",Jaket,1
+72,f,18-24,<2jt,Lainnya,Jarang,>600k,"bohemian,kasual,sporty",Batik,0
+72,f,18-24,<2jt,Lainnya,Jarang,>600k,"bohemian,kasual,sporty",Jaket,0
+73,m,45+,5-10jt,Freelance,"Setiap minggu",100-300k,"bohemian,formal,minimalis",Kaos,0
+73,m,45+,5-10jt,Freelance,"Setiap minggu",100-300k,"bohemian,formal,minimalis","Pakaian Pria",0
+73,m,45+,5-10jt,Freelance,"Setiap minggu",100-300k,"bohemian,formal,minimalis","Kaos Polo",0
+73,m,45+,5-10jt,Freelance,"Setiap minggu",100-300k,"bohemian,formal,minimalis",Kaos,0
+74,f,45+,5-10jt,Lainnya,"Setiap bulan",<100k,"formal,kasual",Jaket,1
+75,m,35-44,<2jt,Mahasiswa,"Setiap bulan",<100k,"bohemian,formal",Dress,0
+75,m,35-44,<2jt,Mahasiswa,"Setiap bulan",<100k,"bohemian,formal",Jaket,0
+76,f,18-24,<2jt,Mahasiswa,"Setiap minggu",100-300k,"kasual,sporty,vintage",Kaos,0
+76,f,18-24,<2jt,Mahasiswa,"Setiap minggu",100-300k,"kasual,sporty,vintage",Jaket,0
+76,f,18-24,<2jt,Mahasiswa,"Setiap minggu",100-300k,"kasual,sporty,vintage",Jaket,1
+77,m,18-24,>10jt,Pelajar,"Setiap minggu",100-300k,"formal,kasual,sporty","Kaos Polo",0
+77,m,18-24,>10jt,Pelajar,"Setiap minggu",100-300k,"formal,kasual,sporty",Kaos,1
+78,f,45+,2-5jt,Mahasiswa,"Setiap bulan",<100k,"bohemian,sporty","Pakaian Pria",0
+78,f,45+,2-5jt,Mahasiswa,"Setiap bulan",<100k,"bohemian,sporty",Dress,0
+78,f,45+,2-5jt,Mahasiswa,"Setiap bulan",<100k,"bohemian,sporty",Kemeja,0
+79,m,18-24,>10jt,Pegawai,Jarang,100-300k,"bohemian,sporty,vintage",Dress,0
+79,m,18-24,>10jt,Pegawai,Jarang,100-300k,"bohemian,sporty,vintage",Jaket,1
+79,m,18-24,>10jt,Pegawai,Jarang,100-300k,"bohemian,sporty,vintage",Jaket,0
+80,f,35-44,<2jt,Lainnya,"Beberapa bulan",300-600k,"formal,kasual",Jaket,0
+80,f,35-44,<2jt,Lainnya,"Beberapa bulan",300-600k,"formal,kasual",Dress,0
+80,f,35-44,<2jt,Lainnya,"Beberapa bulan",300-600k,"formal,kasual","Kaos Polo",0
+80,f,35-44,<2jt,Lainnya,"Beberapa bulan",300-600k,"formal,kasual",Kemeja,0
+81,m,18-24,5-10jt,Lainnya,Jarang,<100k,"formal,sporty,vintage",Dress,0
+81,m,18-24,5-10jt,Lainnya,Jarang,<100k,"formal,sporty,vintage",Jaket,1
+82,f,18-24,2-5jt,Wiraswasta,"Setiap bulan",>600k,"formal,minimalis,sporty",Jaket,0
+82,f,18-24,2-5jt,Wiraswasta,"Setiap bulan",>600k,"formal,minimalis,sporty",Sweater,0
+82,f,18-24,2-5jt,Wiraswasta,"Setiap bulan",>600k,"formal,minimalis,sporty",Kaos,0
+83,m,45+,2-5jt,Wiraswasta,"Setiap minggu",<100k,"bohemian,formal",Jaket,1
+83,m,45+,2-5jt,Wiraswasta,"Setiap minggu",<100k,"bohemian,formal",Kaos,0
+83,m,45+,2-5jt,Wiraswasta,"Setiap minggu",<100k,"bohemian,formal",Kemeja,1
+83,m,45+,2-5jt,Wiraswasta,"Setiap minggu",<100k,"bohemian,formal",Jaket,1
+84,f,25-34,2-5jt,Freelance,"Setiap minggu",<100k,"bohemian,kasual,vintage",Jaket,0
+84,f,25-34,2-5jt,Freelance,"Setiap minggu",<100k,"bohemian,kasual,vintage",Jaket,0
+84,f,25-34,2-5jt,Freelance,"Setiap minggu",<100k,"bohemian,kasual,vintage",Dress,0
+84,f,25-34,2-5jt,Freelance,"Setiap minggu",<100k,"bohemian,kasual,vintage",Kaos,0
+85,m,18-24,5-10jt,Freelance,"Setiap bulan",>600k,minimalis,Jaket,0
+85,m,18-24,5-10jt,Freelance,"Setiap bulan",>600k,minimalis,Dress,0
+85,m,18-24,5-10jt,Freelance,"Setiap bulan",>600k,minimalis,Dress,0
+85,m,18-24,5-10jt,Freelance,"Setiap bulan",>600k,minimalis,Kaos,0
+86,f,45+,2-5jt,Freelance,Jarang,100-300k,"formal,kasual","Kaos Polo",0
+86,f,45+,2-5jt,Freelance,Jarang,100-300k,"formal,kasual",Kaos,1
+86,f,45+,2-5jt,Freelance,Jarang,100-300k,"formal,kasual",Kemeja,0
+87,m,18-24,<2jt,Wiraswasta,Jarang,<100k,"formal,minimalis,vintage",Kaos,0
+87,m,18-24,<2jt,Wiraswasta,Jarang,<100k,"formal,minimalis,vintage",Kaos,0
+87,m,18-24,<2jt,Wiraswasta,Jarang,<100k,"formal,minimalis,vintage","Kaos Polo",0
+87,m,18-24,<2jt,Wiraswasta,Jarang,<100k,"formal,minimalis,vintage",Batik,0
+88,f,25-34,5-10jt,Pelajar,"Beberapa bulan",300-600k,"bohemian,formal,vintage",Jaket,0
+88,f,25-34,5-10jt,Pelajar,"Beberapa bulan",300-600k,"bohemian,formal,vintage","Kaos Polo",0
+88,f,25-34,5-10jt,Pelajar,"Beberapa bulan",300-600k,"bohemian,formal,vintage",Dress,0
+88,f,25-34,5-10jt,Pelajar,"Beberapa bulan",300-600k,"bohemian,formal,vintage",Jaket,0
+89,m,18-24,>10jt,Pelajar,"Beberapa bulan",<100k,kasual,Dress,0
+90,f,45+,>10jt,Lainnya,"Beberapa bulan",100-300k,"bohemian,minimalis,vintage",Kaos,0
+90,f,45+,>10jt,Lainnya,"Beberapa bulan",100-300k,"bohemian,minimalis,vintage","Kaos Polo",0
+90,f,45+,>10jt,Lainnya,"Beberapa bulan",100-300k,"bohemian,minimalis,vintage","Kaos Polo",0
+91,m,18-24,2-5jt,Pelajar,"Setiap bulan",100-300k,vintage,Jaket,0
+91,m,18-24,2-5jt,Pelajar,"Setiap bulan",100-300k,vintage,Sweater,0
+91,m,18-24,2-5jt,Pelajar,"Setiap bulan",100-300k,vintage,Batik,0
+91,m,18-24,2-5jt,Pelajar,"Setiap bulan",100-300k,vintage,Dress,0
+92,f,25-34,2-5jt,Freelance,"Setiap minggu",300-600k,sporty,Kaos,0
+93,m,18-24,5-10jt,Mahasiswa,"Setiap bulan",300-600k,bohemian,Jaket,1
+94,f,45+,>10jt,Freelance,"Setiap bulan",>600k,"bohemian,kasual,sporty","Kaos Polo",0
+94,f,45+,>10jt,Freelance,"Setiap bulan",>600k,"bohemian,kasual,sporty","Kaos Polo",0
+94,f,45+,>10jt,Freelance,"Setiap bulan",>600k,"bohemian,kasual,sporty",Kaos,0
+95,m,25-34,>10jt,Freelance,"Setiap bulan",300-600k,bohemian,Kemeja,0
+95,m,25-34,>10jt,Freelance,"Setiap bulan",300-600k,bohemian,Batik,0
+96,f,45+,<2jt,Wiraswasta,Jarang,300-600k,"kasual,minimalis","Pakaian Pria",0
+96,f,45+,<2jt,Wiraswasta,Jarang,300-600k,"kasual,minimalis",Sweater,0
+97,m,25-34,2-5jt,Mahasiswa,"Setiap minggu",300-600k,"formal,kasual,minimalis",Jaket,0
+97,m,25-34,2-5jt,Mahasiswa,"Setiap minggu",300-600k,"formal,kasual,minimalis",Kaos,0
+98,f,35-44,5-10jt,Pegawai,Jarang,100-300k,"bohemian,formal",Kaos,0
+98,f,35-44,5-10jt,Pegawai,Jarang,100-300k,"bohemian,formal",Sweater,0
+98,f,35-44,5-10jt,Pegawai,Jarang,100-300k,"bohemian,formal",Dress,0
+98,f,35-44,5-10jt,Pegawai,Jarang,100-300k,"bohemian,formal","Kaos Polo",0
+99,m,45+,2-5jt,Pegawai,"Setiap bulan",<100k,"bohemian,formal","Kaos Polo",0
+100,f,25-34,2-5jt,Pegawai,"Setiap minggu",<100k,bohemian,Jaket,0
+101,m,45+,2-5jt,Mahasiswa,"Setiap bulan",<100k,minimalis,Kemeja,1
+101,m,45+,2-5jt,Mahasiswa,"Setiap bulan",<100k,minimalis,Kaos,0
+102,f,25-34,>10jt,Mahasiswa,"Setiap bulan",<100k,kasual,Kaos,0
+103,m,35-44,<2jt,Lainnya,"Setiap bulan",100-300k,"minimalis,sporty,vintage",Dress,0
+103,m,35-44,<2jt,Lainnya,"Setiap bulan",100-300k,"minimalis,sporty,vintage",Jaket,1
+104,f,45+,>10jt,Lainnya,"Setiap minggu",>600k,vintage,Jaket,0
+104,f,45+,>10jt,Lainnya,"Setiap minggu",>600k,vintage,Kaos,0
+105,m,18-24,>10jt,Pelajar,Jarang,>600k,"bohemian,formal,kasual",Jaket,0
+105,m,18-24,>10jt,Pelajar,Jarang,>600k,"bohemian,formal,kasual",Dress,0
+105,m,18-24,>10jt,Pelajar,Jarang,>600k,"bohemian,formal,kasual",Jaket,1
+106,f,25-34,5-10jt,Mahasiswa,"Beberapa bulan",>600k,bohemian,Jaket,0
+107,m,45+,<2jt,Freelance,"Beberapa bulan",<100k,"minimalis,vintage",Jaket,1
+108,f,45+,5-10jt,Mahasiswa,"Beberapa bulan",<100k,formal,Batik,0
+108,f,45+,5-10jt,Mahasiswa,"Beberapa bulan",<100k,formal,Dress,0
+108,f,45+,5-10jt,Mahasiswa,"Beberapa bulan",<100k,formal,Batik,0
+109,m,18-24,<2jt,Pegawai,"Beberapa bulan",300-600k,bohemian,Jaket,0
+109,m,18-24,<2jt,Pegawai,"Beberapa bulan",300-600k,bohemian,Kaos,0
+109,m,18-24,<2jt,Pegawai,"Beberapa bulan",300-600k,bohemian,Kaos,0
+109,m,18-24,<2jt,Pegawai,"Beberapa bulan",300-600k,bohemian,Kaos,1
+110,f,18-24,<2jt,Wiraswasta,Jarang,100-300k,"kasual,minimalis",Jaket,0
+110,f,18-24,<2jt,Wiraswasta,Jarang,100-300k,"kasual,minimalis",Kaos,0
+110,f,18-24,<2jt,Wiraswasta,Jarang,100-300k,"kasual,minimalis","Kaos Polo",0
+110,f,18-24,<2jt,Wiraswasta,Jarang,100-300k,"kasual,minimalis",Sweater,1
+111,m,45+,<2jt,Pegawai,"Setiap minggu",<100k,sporty,Kaos,0
+111,m,45+,<2jt,Pegawai,"Setiap minggu",<100k,sporty,Kaos,0
+111,m,45+,<2jt,Pegawai,"Setiap minggu",<100k,sporty,Kaos,0
+111,m,45+,<2jt,Pegawai,"Setiap minggu",<100k,sporty,"Kaos Polo",0
+112,f,18-24,5-10jt,Mahasiswa,"Beberapa bulan",<100k,"bohemian,minimalis,vintage",Kaos,0
+112,f,18-24,5-10jt,Mahasiswa,"Beberapa bulan",<100k,"bohemian,minimalis,vintage","Kaos Polo",0
+113,m,25-34,5-10jt,Pelajar,"Setiap bulan",100-300k,"bohemian,minimalis,vintage",Kaos,0
+114,f,35-44,5-10jt,Lainnya,"Setiap minggu",<100k,"bohemian,kasual,vintage",Kaos,1
+114,f,35-44,5-10jt,Lainnya,"Setiap minggu",<100k,"bohemian,kasual,vintage",Jaket,1
+115,m,18-24,<2jt,Pegawai,Jarang,300-600k,"formal,vintage",Kemeja,0
+115,m,18-24,<2jt,Pegawai,Jarang,300-600k,"formal,vintage",Jaket,0
+116,f,18-24,>10jt,Pegawai,"Setiap bulan",>600k,"minimalis,sporty,vintage",Jaket,0
+116,f,18-24,>10jt,Pegawai,"Setiap bulan",>600k,"minimalis,sporty,vintage",Kaos,0
+116,f,18-24,>10jt,Pegawai,"Setiap bulan",>600k,"minimalis,sporty,vintage",Sweater,0
+116,f,18-24,>10jt,Pegawai,"Setiap bulan",>600k,"minimalis,sporty,vintage","Kaos Polo",0
+117,m,18-24,5-10jt,Pelajar,"Setiap minggu",100-300k,"bohemian,sporty",Sweater,0
+117,m,18-24,5-10jt,Pelajar,"Setiap minggu",100-300k,"bohemian,sporty",Batik,0
+117,m,18-24,5-10jt,Pelajar,"Setiap minggu",100-300k,"bohemian,sporty",Jaket,1
+118,f,25-34,2-5jt,Wiraswasta,Jarang,>600k,kasual,Jaket,0
+118,f,25-34,2-5jt,Wiraswasta,Jarang,>600k,kasual,Kemeja,0
+119,m,18-24,<2jt,Pelajar,"Setiap minggu",>600k,"formal,minimalis",Jaket,0
+119,m,18-24,<2jt,Pelajar,"Setiap minggu",>600k,"formal,minimalis",Kaos,0
+119,m,18-24,<2jt,Pelajar,"Setiap minggu",>600k,"formal,minimalis",Dress,0
+119,m,18-24,<2jt,Pelajar,"Setiap minggu",>600k,"formal,minimalis",Kemeja,0
+120,f,35-44,<2jt,Lainnya,"Setiap bulan",300-600k,sporty,Sweater,0
+121,m,25-34,>10jt,Wiraswasta,"Beberapa bulan",100-300k,"bohemian,kasual,vintage",Sweater,0
+121,m,25-34,>10jt,Wiraswasta,"Beberapa bulan",100-300k,"bohemian,kasual,vintage",Dress,0
+121,m,25-34,>10jt,Wiraswasta,"Beberapa bulan",100-300k,"bohemian,kasual,vintage","Kaos Polo",0
+121,m,25-34,>10jt,Wiraswasta,"Beberapa bulan",100-300k,"bohemian,kasual,vintage",Kemeja,0
+122,f,25-34,<2jt,Lainnya,Jarang,<100k,bohemian,"Pakaian Pria",0
+122,f,25-34,<2jt,Lainnya,Jarang,<100k,bohemian,Dress,0
+122,f,25-34,<2jt,Lainnya,Jarang,<100k,bohemian,Dress,0
+122,f,25-34,<2jt,Lainnya,Jarang,<100k,bohemian,Kaos,0
+123,m,25-34,<2jt,Wiraswasta,"Beberapa bulan",>600k,"formal,kasual,vintage",Dress,0
+123,m,25-34,<2jt,Wiraswasta,"Beberapa bulan",>600k,"formal,kasual,vintage","Kaos Polo",0
+123,m,25-34,<2jt,Wiraswasta,"Beberapa bulan",>600k,"formal,kasual,vintage",Kemeja,0
+123,m,25-34,<2jt,Wiraswasta,"Beberapa bulan",>600k,"formal,kasual,vintage",Jaket,1
+124,f,45+,>10jt,Pelajar,"Beberapa bulan",<100k,kasual,Sweater,0
+124,f,45+,>10jt,Pelajar,"Beberapa bulan",<100k,kasual,Kemeja,1
+124,f,45+,>10jt,Pelajar,"Beberapa bulan",<100k,kasual,Jaket,0
+124,f,45+,>10jt,Pelajar,"Beberapa bulan",<100k,kasual,Jaket,0
+125,m,35-44,2-5jt,Lainnya,Jarang,>600k,sporty,Jaket,0
+125,m,35-44,2-5jt,Lainnya,Jarang,>600k,sporty,"Kaos Polo",0
+125,m,35-44,2-5jt,Lainnya,Jarang,>600k,sporty,Batik,0
+125,m,35-44,2-5jt,Lainnya,Jarang,>600k,sporty,Kaos,1
+126,f,35-44,<2jt,Lainnya,Jarang,100-300k,minimalis,Jaket,0
+126,f,35-44,<2jt,Lainnya,Jarang,100-300k,minimalis,Kaos,0
+126,f,35-44,<2jt,Lainnya,Jarang,100-300k,minimalis,Kemeja,0
+127,m,35-44,>10jt,Lainnya,"Setiap minggu",300-600k,"bohemian,kasual,vintage","Kaos Polo",0
+128,f,25-34,5-10jt,Pelajar,"Beberapa bulan",300-600k,kasual,"Pakaian Pria",0
+128,f,25-34,5-10jt,Pelajar,"Beberapa bulan",300-600k,kasual,Dress,0
+128,f,25-34,5-10jt,Pelajar,"Beberapa bulan",300-600k,kasual,Kemeja,1
+128,f,25-34,5-10jt,Pelajar,"Beberapa bulan",300-600k,kasual,Jaket,1
+129,m,35-44,<2jt,Lainnya,Jarang,>600k,minimalis,Kaos,1
+129,m,35-44,<2jt,Lainnya,Jarang,>600k,minimalis,Dress,0
+129,m,35-44,<2jt,Lainnya,Jarang,>600k,minimalis,Kaos,1
+130,f,35-44,>10jt,Pegawai,"Setiap bulan",>600k,"formal,minimalis,sporty",Sweater,0
+131,m,18-24,<2jt,Lainnya,Jarang,<100k,"formal,kasual,sporty",Kaos,0
+131,m,18-24,<2jt,Lainnya,Jarang,<100k,"formal,kasual,sporty",Kaos,1
+131,m,18-24,<2jt,Lainnya,Jarang,<100k,"formal,kasual,sporty",Jaket,1
+132,f,45+,>10jt,Wiraswasta,"Setiap bulan",300-600k,"kasual,minimalis,vintage",Kaos,0
+132,f,45+,>10jt,Wiraswasta,"Setiap bulan",300-600k,"kasual,minimalis,vintage",Batik,0
+132,f,45+,>10jt,Wiraswasta,"Setiap bulan",300-600k,"kasual,minimalis,vintage",Jaket,0
+133,m,25-34,<2jt,Wiraswasta,"Setiap bulan",100-300k,kasual,Dress,0
+133,m,25-34,<2jt,Wiraswasta,"Setiap bulan",100-300k,kasual,Batik,0
+134,f,35-44,2-5jt,Mahasiswa,"Beberapa bulan",<100k,bohemian,Batik,0
+134,f,35-44,2-5jt,Mahasiswa,"Beberapa bulan",<100k,bohemian,Jaket,0
+134,f,35-44,2-5jt,Mahasiswa,"Beberapa bulan",<100k,bohemian,Jaket,1
+134,f,35-44,2-5jt,Mahasiswa,"Beberapa bulan",<100k,bohemian,Jaket,1
+135,m,25-34,<2jt,Mahasiswa,Jarang,100-300k,"formal,sporty",Jaket,0
+135,m,25-34,<2jt,Mahasiswa,Jarang,100-300k,"formal,sporty",Kaos,0
+135,m,25-34,<2jt,Mahasiswa,Jarang,100-300k,"formal,sporty","Kaos Polo",0
+135,m,25-34,<2jt,Mahasiswa,Jarang,100-300k,"formal,sporty",Kaos,0
+136,f,25-34,2-5jt,Freelance,"Setiap minggu",>600k,"bohemian,minimalis,sporty","Kaos Polo",0
+136,f,25-34,2-5jt,Freelance,"Setiap minggu",>600k,"bohemian,minimalis,sporty","Kaos Polo",0
+136,f,25-34,2-5jt,Freelance,"Setiap minggu",>600k,"bohemian,minimalis,sporty",Dress,0
+136,f,25-34,2-5jt,Freelance,"Setiap minggu",>600k,"bohemian,minimalis,sporty",Kaos,1
+137,m,35-44,5-10jt,Lainnya,Jarang,>600k,"formal,vintage",Sweater,0
+137,m,35-44,5-10jt,Lainnya,Jarang,>600k,"formal,vintage","Kaos Polo",0
+138,f,18-24,>10jt,Lainnya,"Setiap minggu",<100k,"bohemian,kasual,minimalis",Kaos,0
+138,f,18-24,>10jt,Lainnya,"Setiap minggu",<100k,"bohemian,kasual,minimalis","Kaos Polo",0
+138,f,18-24,>10jt,Lainnya,"Setiap minggu",<100k,"bohemian,kasual,minimalis",Dress,1
+138,f,18-24,>10jt,Lainnya,"Setiap minggu",<100k,"bohemian,kasual,minimalis",Jaket,0
+139,m,35-44,<2jt,Freelance,"Beberapa bulan",100-300k,"formal,sporty,vintage",Kaos,0
+139,m,35-44,<2jt,Freelance,"Beberapa bulan",100-300k,"formal,sporty,vintage",Dress,0
+139,m,35-44,<2jt,Freelance,"Beberapa bulan",100-300k,"formal,sporty,vintage",Kaos,0
+140,f,45+,5-10jt,Mahasiswa,"Setiap bulan",100-300k,"kasual,vintage",Dress,0
+141,m,45+,2-5jt,Pegawai,"Setiap minggu",>600k,"bohemian,kasual,minimalis",Jaket,0
+142,f,25-34,2-5jt,Pegawai,Jarang,>600k,"formal,sporty,vintage",Jaket,0
+142,f,25-34,2-5jt,Pegawai,Jarang,>600k,"formal,sporty,vintage",Jaket,0
+142,f,25-34,2-5jt,Pegawai,Jarang,>600k,"formal,sporty,vintage",Dress,0
+142,f,25-34,2-5jt,Pegawai,Jarang,>600k,"formal,sporty,vintage",Kemeja,1
+143,m,25-34,>10jt,Pegawai,"Beberapa bulan",>600k,"minimalis,sporty",Kemeja,1
+144,f,18-24,>10jt,Pelajar,Jarang,100-300k,"bohemian,formal,vintage",Kaos,1
+144,f,18-24,>10jt,Pelajar,Jarang,100-300k,"bohemian,formal,vintage",Kaos,1
+144,f,18-24,>10jt,Pelajar,Jarang,100-300k,"bohemian,formal,vintage",Jaket,1
+145,m,45+,>10jt,Pegawai,"Setiap minggu",300-600k,"bohemian,minimalis,sporty",Jaket,0
+145,m,45+,>10jt,Pegawai,"Setiap minggu",300-600k,"bohemian,minimalis,sporty","Kaos Polo",0
+145,m,45+,>10jt,Pegawai,"Setiap minggu",300-600k,"bohemian,minimalis,sporty",Jaket,1
+146,f,35-44,5-10jt,Mahasiswa,"Setiap bulan",300-600k,vintage,"Kaos Polo",0
+146,f,35-44,5-10jt,Mahasiswa,"Setiap bulan",300-600k,vintage,Jaket,0
+146,f,35-44,5-10jt,Mahasiswa,"Setiap bulan",300-600k,vintage,Kaos,1
+146,f,35-44,5-10jt,Mahasiswa,"Setiap bulan",300-600k,vintage,Jaket,0
+147,m,18-24,>10jt,Mahasiswa,"Beberapa bulan",<100k,minimalis,Kaos,0
+147,m,18-24,>10jt,Mahasiswa,"Beberapa bulan",<100k,minimalis,Dress,0
+147,m,18-24,>10jt,Mahasiswa,"Beberapa bulan",<100k,minimalis,Kaos,1
+147,m,18-24,>10jt,Mahasiswa,"Beberapa bulan",<100k,minimalis,Jaket,0
+148,f,18-24,2-5jt,Pelajar,Jarang,300-600k,"formal,minimalis,sporty",Kaos,0
+148,f,18-24,2-5jt,Pelajar,Jarang,300-600k,"formal,minimalis,sporty",Dress,0
+148,f,18-24,2-5jt,Pelajar,Jarang,300-600k,"formal,minimalis,sporty",Kemeja,0
+148,f,18-24,2-5jt,Pelajar,Jarang,300-600k,"formal,minimalis,sporty",Kaos,0
+149,m,35-44,5-10jt,Lainnya,"Setiap bulan",>600k,"formal,sporty","Pakaian Pria",0
+149,m,35-44,5-10jt,Lainnya,"Setiap bulan",>600k,"formal,sporty",Kaos,0
+149,m,35-44,5-10jt,Lainnya,"Setiap bulan",>600k,"formal,sporty",Kaos,0
+150,f,18-24,>10jt,Wiraswasta,"Beberapa bulan",<100k,"kasual,sporty",Kaos,1
+150,f,18-24,>10jt,Wiraswasta,"Beberapa bulan",<100k,"kasual,sporty",Kaos,1
+151,m,25-34,<2jt,Lainnya,"Beberapa bulan",<100k,"bohemian,formal,vintage",Dress,0
+151,m,25-34,<2jt,Lainnya,"Beberapa bulan",<100k,"bohemian,formal,vintage",Kemeja,0
+152,f,25-34,<2jt,Lainnya,Jarang,100-300k,"kasual,minimalis,vintage","Kaos Polo",0
+152,f,25-34,<2jt,Lainnya,Jarang,100-300k,"kasual,minimalis,vintage",Sweater,0
+152,f,25-34,<2jt,Lainnya,Jarang,100-300k,"kasual,minimalis,vintage",Kaos,1
+153,m,25-34,2-5jt,Wiraswasta,"Setiap bulan",300-600k,"bohemian,formal,vintage","Kaos Polo",0
+154,f,18-24,5-10jt,Lainnya,"Setiap minggu",>600k,"kasual,minimalis,vintage",Sweater,0
+155,m,45+,5-10jt,Pelajar,"Setiap bulan",100-300k,"bohemian,kasual",Kemeja,0
+156,f,25-34,<2jt,Wiraswasta,"Beberapa bulan",300-600k,sporty,Batik,0
+157,m,18-24,>10jt,Lainnya,"Setiap bulan",>600k,"minimalis,vintage",Jaket,0
+157,m,18-24,>10jt,Lainnya,"Setiap bulan",>600k,"minimalis,vintage","Kaos Polo",0
+157,m,18-24,>10jt,Lainnya,"Setiap bulan",>600k,"minimalis,vintage",Jaket,1
+158,f,25-34,5-10jt,Mahasiswa,"Beberapa bulan",100-300k,formal,Dress,0
+158,f,25-34,5-10jt,Mahasiswa,"Beberapa bulan",100-300k,formal,Kaos,1
+158,f,25-34,5-10jt,Mahasiswa,"Beberapa bulan",100-300k,formal,Jaket,1
+159,m,35-44,2-5jt,Wiraswasta,"Beberapa bulan",100-300k,minimalis,"Pakaian Pria",0
+160,f,35-44,>10jt,Wiraswasta,"Beberapa bulan",>600k,kasual,Jaket,0
+161,m,35-44,5-10jt,Mahasiswa,"Setiap minggu",<100k,sporty,Kaos,0
+161,m,35-44,5-10jt,Mahasiswa,"Setiap minggu",<100k,sporty,Kemeja,0
+162,f,35-44,<2jt,Wiraswasta,"Setiap minggu",300-600k,"formal,kasual,vintage",Kaos,0
+162,f,35-44,<2jt,Wiraswasta,"Setiap minggu",300-600k,"formal,kasual,vintage",Kaos,0
+162,f,35-44,<2jt,Wiraswasta,"Setiap minggu",300-600k,"formal,kasual,vintage",Kaos,1
+162,f,35-44,<2jt,Wiraswasta,"Setiap minggu",300-600k,"formal,kasual,vintage",Jaket,1
+163,m,18-24,<2jt,Freelance,"Beberapa bulan",>600k,formal,Kaos,0
+164,f,25-34,5-10jt,Pegawai,"Beberapa bulan",<100k,vintage,Sweater,0
+164,f,25-34,5-10jt,Pegawai,"Beberapa bulan",<100k,vintage,Dress,0
+164,f,25-34,5-10jt,Pegawai,"Beberapa bulan",<100k,vintage,Dress,0
+164,f,25-34,5-10jt,Pegawai,"Beberapa bulan",<100k,vintage,Kaos,0
+165,m,18-24,5-10jt,Wiraswasta,Jarang,<100k,"bohemian,kasual","Kaos Polo",0
+165,m,18-24,5-10jt,Wiraswasta,Jarang,<100k,"bohemian,kasual","Kaos Polo",0
+165,m,18-24,5-10jt,Wiraswasta,Jarang,<100k,"bohemian,kasual",Batik,0
+165,m,18-24,5-10jt,Wiraswasta,Jarang,<100k,"bohemian,kasual",Jaket,1
+166,f,18-24,5-10jt,Freelance,Jarang,<100k,"kasual,sporty,vintage","Pakaian Pria",0
+166,f,18-24,5-10jt,Freelance,Jarang,<100k,"kasual,sporty,vintage",Dress,0
+167,m,45+,2-5jt,Freelance,"Setiap bulan",<100k,"formal,minimalis",Jaket,0
+167,m,45+,2-5jt,Freelance,"Setiap bulan",<100k,"formal,minimalis",Dress,0
+167,m,45+,2-5jt,Freelance,"Setiap bulan",<100k,"formal,minimalis",Kaos,1
+167,m,45+,2-5jt,Freelance,"Setiap bulan",<100k,"formal,minimalis",Dress,0
+168,f,18-24,>10jt,Wiraswasta,"Setiap bulan",<100k,"formal,sporty,vintage",Kaos,0
+168,f,18-24,>10jt,Wiraswasta,"Setiap bulan",<100k,"formal,sporty,vintage",Kaos,0
+168,f,18-24,>10jt,Wiraswasta,"Setiap bulan",<100k,"formal,sporty,vintage",Kaos,1
+169,m,35-44,<2jt,Lainnya,"Setiap bulan",100-300k,"minimalis,sporty",Jaket,0
+169,m,35-44,<2jt,Lainnya,"Setiap bulan",100-300k,"minimalis,sporty",Jaket,0
+169,m,35-44,<2jt,Lainnya,"Setiap bulan",100-300k,"minimalis,sporty",Kaos,0
+170,f,18-24,2-5jt,Lainnya,"Beberapa bulan",100-300k,bohemian,"Pakaian Pria",0
+170,f,18-24,2-5jt,Lainnya,"Beberapa bulan",100-300k,bohemian,Dress,0
+170,f,18-24,2-5jt,Lainnya,"Beberapa bulan",100-300k,bohemian,Sweater,0
+170,f,18-24,2-5jt,Lainnya,"Beberapa bulan",100-300k,bohemian,Batik,1
+171,m,18-24,2-5jt,Wiraswasta,"Setiap minggu",>600k,formal,Kaos,0
+171,m,18-24,2-5jt,Wiraswasta,"Setiap minggu",>600k,formal,Sweater,0
+172,f,18-24,2-5jt,Wiraswasta,Jarang,<100k,kasual,Dress,0
+172,f,18-24,2-5jt,Wiraswasta,Jarang,<100k,kasual,Jaket,1
+173,m,35-44,5-10jt,Pegawai,"Beberapa bulan",>600k,formal,Dress,0
+174,f,35-44,<2jt,Pegawai,Jarang,>600k,kasual,"Pakaian Pria",0
+174,f,35-44,<2jt,Pegawai,Jarang,>600k,kasual,Dress,0
+175,m,45+,5-10jt,Pelajar,Jarang,100-300k,vintage,Kaos,0
+175,m,45+,5-10jt,Pelajar,Jarang,100-300k,vintage,Kaos,0
+175,m,45+,5-10jt,Pelajar,Jarang,100-300k,vintage,Dress,0
+175,m,45+,5-10jt,Pelajar,Jarang,100-300k,vintage,Kaos,0
+176,f,45+,<2jt,Lainnya,"Setiap bulan",100-300k,"kasual,minimalis",Sweater,0
+176,f,45+,<2jt,Lainnya,"Setiap bulan",100-300k,"kasual,minimalis",Sweater,1
+176,f,45+,<2jt,Lainnya,"Setiap bulan",100-300k,"kasual,minimalis",Kemeja,1
+177,m,35-44,5-10jt,Mahasiswa,"Beberapa bulan",>600k,kasual,Jaket,0
+177,m,35-44,5-10jt,Mahasiswa,"Beberapa bulan",>600k,kasual,Jaket,0
+178,f,18-24,5-10jt,Pelajar,Jarang,<100k,"bohemian,sporty",Kaos,0
+179,m,45+,<2jt,Lainnya,"Setiap bulan",100-300k,bohemian,Sweater,0
+179,m,45+,<2jt,Lainnya,"Setiap bulan",100-300k,bohemian,Jaket,1
+179,m,45+,<2jt,Lainnya,"Setiap bulan",100-300k,bohemian,Jaket,0
+180,f,45+,<2jt,Pelajar,"Beberapa bulan",<100k,"formal,sporty,vintage",Jaket,0
+180,f,45+,<2jt,Pelajar,"Beberapa bulan",<100k,"formal,sporty,vintage",Jaket,0
+181,m,35-44,<2jt,Mahasiswa,"Setiap bulan",<100k,"bohemian,formal,kasual",Dress,0
+181,m,35-44,<2jt,Mahasiswa,"Setiap bulan",<100k,"bohemian,formal,kasual","Kaos Polo",0
+181,m,35-44,<2jt,Mahasiswa,"Setiap bulan",<100k,"bohemian,formal,kasual",Jaket,1
+182,f,25-34,>10jt,Pelajar,Jarang,100-300k,"bohemian,sporty,vintage",Jaket,0
+182,f,25-34,>10jt,Pelajar,Jarang,100-300k,"bohemian,sporty,vintage",Kaos,0
+182,f,25-34,>10jt,Pelajar,Jarang,100-300k,"bohemian,sporty,vintage","Kaos Polo",0
+182,f,25-34,>10jt,Pelajar,Jarang,100-300k,"bohemian,sporty,vintage",Kemeja,0
+183,m,45+,5-10jt,Pegawai,"Beberapa bulan",100-300k,"minimalis,vintage",Kemeja,0
+184,f,25-34,>10jt,Wiraswasta,"Setiap bulan",>600k,"minimalis,sporty,vintage",Kaos,1
+184,f,25-34,>10jt,Wiraswasta,"Setiap bulan",>600k,"minimalis,sporty,vintage",Jaket,0
+184,f,25-34,>10jt,Wiraswasta,"Setiap bulan",>600k,"minimalis,sporty,vintage",Kaos,1
+184,f,25-34,>10jt,Wiraswasta,"Setiap bulan",>600k,"minimalis,sporty,vintage",Jaket,1
+185,m,25-34,<2jt,Pelajar,"Beberapa bulan",300-600k,minimalis,Kaos,0
+185,m,25-34,<2jt,Pelajar,"Beberapa bulan",300-600k,minimalis,"Kaos Polo",0
+186,f,45+,5-10jt,Freelance,"Beberapa bulan",100-300k,"bohemian,formal,minimalis",Kemeja,0
+187,m,45+,>10jt,Wiraswasta,"Setiap bulan",100-300k,formal,Kaos,0
+187,m,45+,>10jt,Wiraswasta,"Setiap bulan",100-300k,formal,Dress,0
+188,f,45+,2-5jt,Mahasiswa,"Setiap minggu",<100k,sporty,Batik,0
+189,m,45+,2-5jt,Pegawai,"Setiap bulan",300-600k,"formal,kasual,sporty",Kaos,0
+189,m,45+,2-5jt,Pegawai,"Setiap bulan",300-600k,"formal,kasual,sporty",Dress,0
+189,m,45+,2-5jt,Pegawai,"Setiap bulan",300-600k,"formal,kasual,sporty",Dress,1
+190,f,45+,>10jt,Pegawai,Jarang,<100k,"bohemian,kasual",Kaos,0
+190,f,45+,>10jt,Pegawai,Jarang,<100k,"bohemian,kasual","Kaos Polo",0
+190,f,45+,>10jt,Pegawai,Jarang,<100k,"bohemian,kasual",Sweater,1
+191,m,25-34,2-5jt,Pelajar,Jarang,>600k,"bohemian,formal",Dress,0
+191,m,25-34,2-5jt,Pelajar,Jarang,>600k,"bohemian,formal",Jaket,1
+192,f,45+,5-10jt,Mahasiswa,"Setiap bulan",>600k,"formal,vintage",Dress,0
+192,f,45+,5-10jt,Mahasiswa,"Setiap bulan",>600k,"formal,vintage",Batik,0
+193,m,35-44,2-5jt,Mahasiswa,"Beberapa bulan",100-300k,"formal,kasual,vintage",Jaket,0
+193,m,35-44,2-5jt,Mahasiswa,"Beberapa bulan",100-300k,"formal,kasual,vintage",Dress,1
+194,f,18-24,>10jt,Freelance,"Beberapa bulan",>600k,"kasual,minimalis",Jaket,0
+194,f,18-24,>10jt,Freelance,"Beberapa bulan",>600k,"kasual,minimalis",Kaos,0
+194,f,18-24,>10jt,Freelance,"Beberapa bulan",>600k,"kasual,minimalis",Dress,1
+195,m,25-34,>10jt,Freelance,Jarang,100-300k,"formal,sporty,vintage",Sweater,0
+195,m,25-34,>10jt,Freelance,Jarang,100-300k,"formal,sporty,vintage",Dress,0
+195,m,25-34,>10jt,Freelance,Jarang,100-300k,"formal,sporty,vintage",Kaos,0
+196,f,25-34,5-10jt,Lainnya,"Setiap minggu",100-300k,"kasual,minimalis",Jaket,0
+196,f,25-34,5-10jt,Lainnya,"Setiap minggu",100-300k,"kasual,minimalis","Kaos Polo",0
+196,f,25-34,5-10jt,Lainnya,"Setiap minggu",100-300k,"kasual,minimalis",Jaket,1
+197,m,25-34,<2jt,Pelajar,"Setiap minggu",300-600k,"formal,minimalis","Kaos Polo",0
+197,m,25-34,<2jt,Pelajar,"Setiap minggu",300-600k,"formal,minimalis","Kaos Polo",0
+197,m,25-34,<2jt,Pelajar,"Setiap minggu",300-600k,"formal,minimalis",Jaket,1
+198,f,25-34,2-5jt,Freelance,Jarang,300-600k,kasual,Jaket,0
+198,f,25-34,2-5jt,Freelance,Jarang,300-600k,kasual,"Kaos Polo",0
+198,f,25-34,2-5jt,Freelance,Jarang,300-600k,kasual,Kaos,1
+198,f,25-34,2-5jt,Freelance,Jarang,300-600k,kasual,Kaos,0
+199,m,45+,>10jt,Lainnya,Jarang,300-600k,formal,Kaos,0
+199,m,45+,>10jt,Lainnya,Jarang,300-600k,formal,"Kaos Polo",0
+199,m,45+,>10jt,Lainnya,Jarang,300-600k,formal,"Kaos Polo",0
+199,m,45+,>10jt,Lainnya,Jarang,300-600k,formal,"Kaos Polo",0
+200,f,25-34,<2jt,Wiraswasta,"Setiap minggu",<100k,"bohemian,vintage",Jaket,0
+200,f,25-34,<2jt,Wiraswasta,"Setiap minggu",<100k,"bohemian,vintage",Sweater,0
+201,m,25-34,5-10jt,Wiraswasta,"Beberapa bulan",<100k,minimalis,Kaos,1
+202,f,25-34,2-5jt,Lainnya,"Beberapa bulan",>600k,minimalis,Kemeja,0
+203,m,35-44,>10jt,Wiraswasta,"Setiap bulan",300-600k,"kasual,minimalis,sporty",Jaket,0
+203,m,35-44,>10jt,Wiraswasta,"Setiap bulan",300-600k,"kasual,minimalis,sporty","Kaos Polo",0
+203,m,35-44,>10jt,Wiraswasta,"Setiap bulan",300-600k,"kasual,minimalis,sporty",Kaos,0
+203,m,35-44,>10jt,Wiraswasta,"Setiap bulan",300-600k,"kasual,minimalis,sporty",Kemeja,0
+204,f,45+,2-5jt,Mahasiswa,"Setiap minggu",<100k,"minimalis,vintage",Kaos,0
+204,f,45+,2-5jt,Mahasiswa,"Setiap minggu",<100k,"minimalis,vintage",Dress,0
+204,f,45+,2-5jt,Mahasiswa,"Setiap minggu",<100k,"minimalis,vintage",Jaket,1
+205,m,25-34,2-5jt,Wiraswasta,"Setiap bulan",100-300k,"formal,kasual",Kaos,0
+205,m,25-34,2-5jt,Wiraswasta,"Setiap bulan",100-300k,"formal,kasual",Kaos,1
+205,m,25-34,2-5jt,Wiraswasta,"Setiap bulan",100-300k,"formal,kasual",Kemeja,1
+206,f,35-44,>10jt,Wiraswasta,Jarang,>600k,"kasual,sporty,vintage",Dress,0
+206,f,35-44,>10jt,Wiraswasta,Jarang,>600k,"kasual,sporty,vintage",Kemeja,1
+206,f,35-44,>10jt,Wiraswasta,Jarang,>600k,"kasual,sporty,vintage",Kaos,0
+206,f,35-44,>10jt,Wiraswasta,Jarang,>600k,"kasual,sporty,vintage",Jaket,0
+207,m,35-44,5-10jt,Lainnya,Jarang,<100k,"bohemian,sporty","Kaos Polo",0
+207,m,35-44,5-10jt,Lainnya,Jarang,<100k,"bohemian,sporty",Kemeja,0
+208,f,25-34,2-5jt,Pegawai,"Setiap bulan",300-600k,minimalis,Dress,1
+208,f,25-34,2-5jt,Pegawai,"Setiap bulan",300-600k,minimalis,Jaket,1
+209,m,35-44,<2jt,Pegawai,"Setiap minggu",>600k,"sporty,vintage",Jaket,0
+209,m,35-44,<2jt,Pegawai,"Setiap minggu",>600k,"sporty,vintage","Kaos Polo",0
+209,m,35-44,<2jt,Pegawai,"Setiap minggu",>600k,"sporty,vintage",Jaket,0
+210,f,18-24,<2jt,Pelajar,"Setiap minggu",100-300k,"kasual,minimalis,vintage",Kaos,0
+210,f,18-24,<2jt,Pelajar,"Setiap minggu",100-300k,"kasual,minimalis,vintage",Sweater,0
+210,f,18-24,<2jt,Pelajar,"Setiap minggu",100-300k,"kasual,minimalis,vintage",Batik,0
+210,f,18-24,<2jt,Pelajar,"Setiap minggu",100-300k,"kasual,minimalis,vintage",Kaos,1
+211,m,25-34,5-10jt,Pegawai,"Setiap minggu",>600k,sporty,Jaket,0
+211,m,25-34,5-10jt,Pegawai,"Setiap minggu",>600k,sporty,Kaos,0
+211,m,25-34,5-10jt,Pegawai,"Setiap minggu",>600k,sporty,Dress,0
+211,m,25-34,5-10jt,Pegawai,"Setiap minggu",>600k,sporty,Jaket,0
+212,f,35-44,5-10jt,Pegawai,"Setiap bulan",<100k,"formal,kasual",Jaket,0
+212,f,35-44,5-10jt,Pegawai,"Setiap bulan",<100k,"formal,kasual",Kemeja,0
+212,f,35-44,5-10jt,Pegawai,"Setiap bulan",<100k,"formal,kasual",Kaos,0
+212,f,35-44,5-10jt,Pegawai,"Setiap bulan",<100k,"formal,kasual",Kemeja,0
+213,m,35-44,5-10jt,Wiraswasta,"Setiap bulan",<100k,minimalis,Batik,0
+214,f,45+,5-10jt,Pelajar,"Setiap bulan",<100k,bohemian,Kemeja,0
+214,f,45+,5-10jt,Pelajar,"Setiap bulan",<100k,bohemian,Dress,0
+215,m,25-34,5-10jt,Wiraswasta,Jarang,<100k,formal,Jaket,0
+215,m,25-34,5-10jt,Wiraswasta,Jarang,<100k,formal,Dress,0
+215,m,25-34,5-10jt,Wiraswasta,Jarang,<100k,formal,Dress,0
+215,m,25-34,5-10jt,Wiraswasta,Jarang,<100k,formal,Kaos,1
+216,f,25-34,>10jt,Lainnya,"Setiap minggu",100-300k,bohemian,"Kaos Polo",0
+216,f,25-34,>10jt,Lainnya,"Setiap minggu",100-300k,bohemian,Kaos,0
+217,m,18-24,5-10jt,Lainnya,Jarang,300-600k,"bohemian,kasual,sporty",Jaket,0
+218,f,45+,>10jt,Lainnya,"Setiap minggu",>600k,"minimalis,sporty,vintage",Kemeja,0
+218,f,45+,>10jt,Lainnya,"Setiap minggu",>600k,"minimalis,sporty,vintage",Jaket,0
+219,m,25-34,<2jt,Wiraswasta,Jarang,100-300k,"formal,sporty",Jaket,0
+220,f,45+,>10jt,Freelance,"Setiap bulan",>600k,"formal,kasual,sporty","Pakaian Pria",0
+220,f,45+,>10jt,Freelance,"Setiap bulan",>600k,"formal,kasual,sporty",Kaos,0
+220,f,45+,>10jt,Freelance,"Setiap bulan",>600k,"formal,kasual,sporty","Kaos Polo",0
+220,f,45+,>10jt,Freelance,"Setiap bulan",>600k,"formal,kasual,sporty","Kaos Polo",0
+221,m,45+,5-10jt,Pegawai,"Setiap bulan",<100k,bohemian,Kaos,0
+221,m,45+,5-10jt,Pegawai,"Setiap bulan",<100k,bohemian,Jaket,1
+222,f,35-44,>10jt,Freelance,Jarang,<100k,"formal,sporty,vintage",Jaket,0
+222,f,35-44,>10jt,Freelance,Jarang,<100k,"formal,sporty,vintage",Kaos,0
+222,f,35-44,>10jt,Freelance,Jarang,<100k,"formal,sporty,vintage",Kaos,0
+222,f,35-44,>10jt,Freelance,Jarang,<100k,"formal,sporty,vintage",Kemeja,0
+223,m,45+,2-5jt,Wiraswasta,"Setiap bulan",100-300k,"kasual,minimalis,sporty",Jaket,0
+223,m,45+,2-5jt,Wiraswasta,"Setiap bulan",100-300k,"kasual,minimalis,sporty",Kemeja,0
+223,m,45+,2-5jt,Wiraswasta,"Setiap bulan",100-300k,"kasual,minimalis,sporty",Jaket,1
+224,f,45+,<2jt,Pegawai,"Beberapa bulan",>600k,bohemian,"Kaos Polo",0
+224,f,45+,<2jt,Pegawai,"Beberapa bulan",>600k,bohemian,"Kaos Polo",0
+225,m,25-34,5-10jt,Pegawai,"Beberapa bulan",<100k,"kasual,minimalis,sporty",Kaos,0
+225,m,25-34,5-10jt,Pegawai,"Beberapa bulan",<100k,"kasual,minimalis,sporty",Sweater,0
+225,m,25-34,5-10jt,Pegawai,"Beberapa bulan",<100k,"kasual,minimalis,sporty",Jaket,0
+225,m,25-34,5-10jt,Pegawai,"Beberapa bulan",<100k,"kasual,minimalis,sporty",Jaket,1
+226,f,18-24,>10jt,Pegawai,"Setiap bulan",>600k,vintage,Kaos,0
+226,f,18-24,>10jt,Pegawai,"Setiap bulan",>600k,vintage,Kemeja,1
+226,f,18-24,>10jt,Pegawai,"Setiap bulan",>600k,vintage,Jaket,0
+226,f,18-24,>10jt,Pegawai,"Setiap bulan",>600k,vintage,Jaket,1
+227,m,25-34,>10jt,Lainnya,"Beberapa bulan",<100k,"bohemian,minimalis,sporty",Kaos,0
+227,m,25-34,>10jt,Lainnya,"Beberapa bulan",<100k,"bohemian,minimalis,sporty",Jaket,0
+228,f,25-34,>10jt,Freelance,Jarang,>600k,"formal,sporty,vintage","Pakaian Pria",0
+228,f,25-34,>10jt,Freelance,Jarang,>600k,"formal,sporty,vintage","Kaos Polo",0
+228,f,25-34,>10jt,Freelance,Jarang,>600k,"formal,sporty,vintage",Jaket,0
+228,f,25-34,>10jt,Freelance,Jarang,>600k,"formal,sporty,vintage",Kaos,0
+229,m,18-24,>10jt,Freelance,"Beberapa bulan",100-300k,vintage,"Pakaian Pria",0
+229,m,18-24,>10jt,Freelance,"Beberapa bulan",100-300k,vintage,Jaket,0
+230,f,25-34,>10jt,Freelance,Jarang,100-300k,"formal,sporty,vintage",Kaos,0
+230,f,25-34,>10jt,Freelance,Jarang,100-300k,"formal,sporty,vintage",Kaos,0
+230,f,25-34,>10jt,Freelance,Jarang,100-300k,"formal,sporty,vintage",Kemeja,0
+230,f,25-34,>10jt,Freelance,Jarang,100-300k,"formal,sporty,vintage",Dress,0
+231,m,35-44,<2jt,Lainnya,"Setiap minggu",<100k,"formal,sporty",Kaos,0
+231,m,35-44,<2jt,Lainnya,"Setiap minggu",<100k,"formal,sporty",Dress,0
+231,m,35-44,<2jt,Lainnya,"Setiap minggu",<100k,"formal,sporty",Kaos,0
+232,f,25-34,5-10jt,Lainnya,"Setiap bulan",>600k,"bohemian,minimalis,sporty",Kaos,0
+232,f,25-34,5-10jt,Lainnya,"Setiap bulan",>600k,"bohemian,minimalis,sporty",Kaos,0
+232,f,25-34,5-10jt,Lainnya,"Setiap bulan",>600k,"bohemian,minimalis,sporty",Kaos,1
+233,m,45+,5-10jt,Freelance,"Setiap minggu",<100k,bohemian,Jaket,0
+233,m,45+,5-10jt,Freelance,"Setiap minggu",<100k,bohemian,"Kaos Polo",0
+233,m,45+,5-10jt,Freelance,"Setiap minggu",<100k,bohemian,Kemeja,0
+234,f,18-24,>10jt,Pelajar,"Beberapa bulan",100-300k,kasual,Jaket,0
+234,f,18-24,>10jt,Pelajar,"Beberapa bulan",100-300k,kasual,"Pakaian Pria",0
+234,f,18-24,>10jt,Pelajar,"Beberapa bulan",100-300k,kasual,Dress,0
+234,f,18-24,>10jt,Pelajar,"Beberapa bulan",100-300k,kasual,Sweater,0
+235,m,45+,>10jt,Pelajar,"Setiap bulan",100-300k,formal,Sweater,0
+235,m,45+,>10jt,Pelajar,"Setiap bulan",100-300k,formal,"Kaos Polo",0
+235,m,45+,>10jt,Pelajar,"Setiap bulan",100-300k,formal,"Kaos Polo",0
+235,m,45+,>10jt,Pelajar,"Setiap bulan",100-300k,formal,Jaket,0
+236,f,45+,>10jt,Pelajar,Jarang,300-600k,sporty,Jaket,0
+236,f,45+,>10jt,Pelajar,Jarang,300-600k,sporty,Kemeja,1
+236,f,45+,>10jt,Pelajar,Jarang,300-600k,sporty,Batik,1
+236,f,45+,>10jt,Pelajar,Jarang,300-600k,sporty,Jaket,1
+237,m,25-34,5-10jt,Freelance,"Beberapa bulan",100-300k,kasual,Jaket,1
+237,m,25-34,5-10jt,Freelance,"Beberapa bulan",100-300k,kasual,Kaos,0
+237,m,25-34,5-10jt,Freelance,"Beberapa bulan",100-300k,kasual,Jaket,0
+238,f,25-34,>10jt,Pegawai,"Beberapa bulan",>600k,"kasual,minimalis,sporty",Kaos,0
+238,f,25-34,>10jt,Pegawai,"Beberapa bulan",>600k,"kasual,minimalis,sporty",Kemeja,0
+239,m,18-24,<2jt,Mahasiswa,"Setiap minggu",>600k,"bohemian,kasual,sporty",Jaket,0
+240,f,35-44,>10jt,Lainnya,"Setiap minggu",100-300k,"kasual,minimalis,vintage",Kaos,0
+240,f,35-44,>10jt,Lainnya,"Setiap minggu",100-300k,"kasual,minimalis,vintage",Dress,0
+240,f,35-44,>10jt,Lainnya,"Setiap minggu",100-300k,"kasual,minimalis,vintage","Kaos Polo",0
+241,m,18-24,>10jt,Lainnya,"Beberapa bulan",300-600k,"bohemian,formal,vintage",Jaket,0
+241,m,18-24,>10jt,Lainnya,"Beberapa bulan",300-600k,"bohemian,formal,vintage",Kemeja,0
+242,f,25-34,>10jt,Freelance,"Setiap minggu",100-300k,"formal,minimalis,sporty",Jaket,0
+242,f,25-34,>10jt,Freelance,"Setiap minggu",100-300k,"formal,minimalis,sporty","Kaos Polo",0
+242,f,25-34,>10jt,Freelance,"Setiap minggu",100-300k,"formal,minimalis,sporty",Kemeja,0
+242,f,25-34,>10jt,Freelance,"Setiap minggu",100-300k,"formal,minimalis,sporty",Kaos,0
+243,m,25-34,<2jt,Pelajar,"Beberapa bulan",100-300k,minimalis,Batik,0
+243,m,25-34,<2jt,Pelajar,"Beberapa bulan",100-300k,minimalis,Jaket,1
+244,f,25-34,5-10jt,Wiraswasta,"Setiap bulan",<100k,kasual,Jaket,0
+244,f,25-34,5-10jt,Wiraswasta,"Setiap bulan",<100k,kasual,"Kaos Polo",0
+244,f,25-34,5-10jt,Wiraswasta,"Setiap bulan",<100k,kasual,Sweater,1
+245,m,18-24,5-10jt,Lainnya,Jarang,300-600k,bohemian,Kaos,0
+245,m,18-24,5-10jt,Lainnya,Jarang,300-600k,bohemian,Dress,0
+245,m,18-24,5-10jt,Lainnya,Jarang,300-600k,bohemian,Kaos,1
+246,f,35-44,<2jt,Freelance,Jarang,>600k,"bohemian,kasual",Kaos,0
+246,f,35-44,<2jt,Freelance,Jarang,>600k,"bohemian,kasual",Batik,0
+246,f,35-44,<2jt,Freelance,Jarang,>600k,"bohemian,kasual",Kaos,0
+247,m,18-24,5-10jt,Wiraswasta,Jarang,<100k,"bohemian,formal",Kemeja,0
+247,m,18-24,5-10jt,Wiraswasta,Jarang,<100k,"bohemian,formal",Kemeja,0
+248,f,18-24,5-10jt,Lainnya,Jarang,100-300k,"bohemian,sporty",Jaket,0
+248,f,18-24,5-10jt,Lainnya,Jarang,100-300k,"bohemian,sporty",Dress,0
+248,f,18-24,5-10jt,Lainnya,Jarang,100-300k,"bohemian,sporty",Kaos,1
+249,m,18-24,<2jt,Freelance,"Setiap minggu",<100k,sporty,Dress,0
+250,f,45+,<2jt,Pelajar,"Beberapa bulan",100-300k,"bohemian,minimalis",Dress,0
+250,f,45+,<2jt,Pelajar,"Beberapa bulan",100-300k,"bohemian,minimalis","Kaos Polo",0
+250,f,45+,<2jt,Pelajar,"Beberapa bulan",100-300k,"bohemian,minimalis",Sweater,0
+250,f,45+,<2jt,Pelajar,"Beberapa bulan",100-300k,"bohemian,minimalis",Dress,0
+251,m,35-44,2-5jt,Lainnya,Jarang,>600k,"formal,sporty,vintage","Kaos Polo",0
+251,m,35-44,2-5jt,Lainnya,Jarang,>600k,"formal,sporty,vintage",Jaket,0
+251,m,35-44,2-5jt,Lainnya,Jarang,>600k,"formal,sporty,vintage",Kaos,1
+251,m,35-44,2-5jt,Lainnya,Jarang,>600k,"formal,sporty,vintage",Dress,0
+252,f,18-24,<2jt,Pegawai,"Setiap bulan",<100k,"formal,kasual,sporty",Kaos,0
+252,f,18-24,<2jt,Pegawai,"Setiap bulan",<100k,"formal,kasual,sporty","Kaos Polo",0
+252,f,18-24,<2jt,Pegawai,"Setiap bulan",<100k,"formal,kasual,sporty",Dress,1
+252,f,18-24,<2jt,Pegawai,"Setiap bulan",<100k,"formal,kasual,sporty",Jaket,0
+253,m,35-44,2-5jt,Mahasiswa,"Beberapa bulan",>600k,"kasual,minimalis",Sweater,1
+253,m,35-44,2-5jt,Mahasiswa,"Beberapa bulan",>600k,"kasual,minimalis",Batik,0
+253,m,35-44,2-5jt,Mahasiswa,"Beberapa bulan",>600k,"kasual,minimalis",Kemeja,0
+253,m,35-44,2-5jt,Mahasiswa,"Beberapa bulan",>600k,"kasual,minimalis",Kemeja,0
+254,f,35-44,5-10jt,Lainnya,"Beberapa bulan",>600k,formal,Dress,0
+254,f,35-44,5-10jt,Lainnya,"Beberapa bulan",>600k,formal,Jaket,0
+254,f,35-44,5-10jt,Lainnya,"Beberapa bulan",>600k,formal,Kaos,1
+254,f,35-44,5-10jt,Lainnya,"Beberapa bulan",>600k,formal,Kemeja,0
+255,m,18-24,>10jt,Mahasiswa,"Beberapa bulan",<100k,minimalis,Kemeja,0
+255,m,18-24,>10jt,Mahasiswa,"Beberapa bulan",<100k,minimalis,Kaos,1
+256,f,45+,<2jt,Freelance,Jarang,100-300k,"formal,kasual,vintage",Kaos,0
+256,f,45+,<2jt,Freelance,Jarang,100-300k,"formal,kasual,vintage","Kaos Polo",0
+256,f,45+,<2jt,Freelance,Jarang,100-300k,"formal,kasual,vintage",Dress,0
+256,f,45+,<2jt,Freelance,Jarang,100-300k,"formal,kasual,vintage",Jaket,1
+257,m,35-44,2-5jt,Pegawai,Jarang,100-300k,"bohemian,minimalis,sporty",Batik,0
+258,f,35-44,5-10jt,Lainnya,"Beberapa bulan",100-300k,"kasual,sporty,vintage",Jaket,0
+258,f,35-44,5-10jt,Lainnya,"Beberapa bulan",100-300k,"kasual,sporty,vintage",Kaos,0
+258,f,35-44,5-10jt,Lainnya,"Beberapa bulan",100-300k,"kasual,sporty,vintage",Kaos,1
+259,m,35-44,<2jt,Wiraswasta,Jarang,300-600k,vintage,"Kaos Polo",0
+259,m,35-44,<2jt,Wiraswasta,Jarang,300-600k,vintage,Kaos,1
+260,f,18-24,>10jt,Mahasiswa,"Setiap minggu",300-600k,"formal,minimalis",Dress,1
+260,f,18-24,>10jt,Mahasiswa,"Setiap minggu",300-600k,"formal,minimalis",Dress,0
+260,f,18-24,>10jt,Mahasiswa,"Setiap minggu",300-600k,"formal,minimalis",Jaket,1
+261,m,25-34,>10jt,Lainnya,"Setiap minggu",300-600k,"bohemian,formal,minimalis",Jaket,0
+261,m,25-34,>10jt,Lainnya,"Setiap minggu",300-600k,"bohemian,formal,minimalis",Sweater,0
+261,m,25-34,>10jt,Lainnya,"Setiap minggu",300-600k,"bohemian,formal,minimalis","Kaos Polo",0
+262,f,25-34,>10jt,Mahasiswa,"Beberapa bulan",<100k,"bohemian,kasual",Kaos,0
+263,m,45+,>10jt,Pelajar,Jarang,<100k,"formal,kasual,minimalis","Kaos Polo",0
+263,m,45+,>10jt,Pelajar,Jarang,<100k,"formal,kasual,minimalis",Batik,1
+263,m,45+,>10jt,Pelajar,Jarang,<100k,"formal,kasual,minimalis",Jaket,1
+264,f,18-24,5-10jt,Pegawai,"Setiap minggu",100-300k,kasual,Kaos,0
+265,m,25-34,<2jt,Lainnya,Jarang,>600k,"minimalis,vintage","Kaos Polo",0
+266,f,25-34,>10jt,Mahasiswa,Jarang,<100k,"formal,kasual",Sweater,1
+266,f,25-34,>10jt,Mahasiswa,Jarang,<100k,"formal,kasual",Dress,0
+267,m,25-34,<2jt,Lainnya,"Setiap bulan",<100k,"formal,sporty",Sweater,0
+267,m,25-34,<2jt,Lainnya,"Setiap bulan",<100k,"formal,sporty",Sweater,0
+267,m,25-34,<2jt,Lainnya,"Setiap bulan",<100k,"formal,sporty",Jaket,1
+267,m,25-34,<2jt,Lainnya,"Setiap bulan",<100k,"formal,sporty",Jaket,1
+268,f,45+,<2jt,Freelance,"Setiap minggu",>600k,minimalis,Jaket,0
+268,f,45+,<2jt,Freelance,"Setiap minggu",>600k,minimalis,Kemeja,0
+268,f,45+,<2jt,Freelance,"Setiap minggu",>600k,minimalis,Jaket,0
+269,m,25-34,5-10jt,Pelajar,Jarang,<100k,"kasual,minimalis,vintage",Sweater,0
+270,f,25-34,5-10jt,Mahasiswa,"Setiap minggu",<100k,"bohemian,minimalis",Jaket,0
+270,f,25-34,5-10jt,Mahasiswa,"Setiap minggu",<100k,"bohemian,minimalis",Jaket,0
+270,f,25-34,5-10jt,Mahasiswa,"Setiap minggu",<100k,"bohemian,minimalis",Jaket,1
+271,m,45+,5-10jt,Mahasiswa,"Setiap minggu",<100k,"bohemian,vintage",Kemeja,1
+272,f,18-24,5-10jt,Lainnya,"Setiap minggu",>600k,vintage,Kaos,0
+272,f,18-24,5-10jt,Lainnya,"Setiap minggu",>600k,vintage,Batik,1
+272,f,18-24,5-10jt,Lainnya,"Setiap minggu",>600k,vintage,Kemeja,1
+273,m,18-24,<2jt,Wiraswasta,"Beberapa bulan",<100k,"kasual,sporty,vintage",Kaos,0
+274,f,25-34,>10jt,Mahasiswa,Jarang,100-300k,"bohemian,formal","Pakaian Pria",0
+274,f,25-34,>10jt,Mahasiswa,Jarang,100-300k,"bohemian,formal","Kaos Polo",0
+275,m,35-44,5-10jt,Pelajar,"Setiap minggu",100-300k,"bohemian,kasual,minimalis",Jaket,0
+276,f,18-24,>10jt,Pelajar,Jarang,<100k,"kasual,minimalis",Jaket,0
+277,m,18-24,>10jt,Wiraswasta,"Setiap minggu",300-600k,"bohemian,formal",Kaos,0
+278,f,25-34,>10jt,Wiraswasta,Jarang,<100k,"formal,sporty,vintage","Pakaian Pria",0
+279,m,35-44,<2jt,Freelance,"Setiap minggu",100-300k,"minimalis,sporty,vintage",Batik,0
+279,m,35-44,<2jt,Freelance,"Setiap minggu",100-300k,"minimalis,sporty,vintage",Jaket,1
+280,f,18-24,5-10jt,Freelance,"Setiap minggu",>600k,"formal,sporty,vintage",Kaos,0
+280,f,18-24,5-10jt,Freelance,"Setiap minggu",>600k,"formal,sporty,vintage",Dress,0
+280,f,18-24,5-10jt,Freelance,"Setiap minggu",>600k,"formal,sporty,vintage",Dress,0
+280,f,18-24,5-10jt,Freelance,"Setiap minggu",>600k,"formal,sporty,vintage",Jaket,0
+281,m,25-34,>10jt,Freelance,"Beberapa bulan",100-300k,"bohemian,vintage",Jaket,0
+282,f,18-24,5-10jt,Freelance,"Setiap minggu",300-600k,"kasual,minimalis",Kemeja,1
+282,f,18-24,5-10jt,Freelance,"Setiap minggu",300-600k,"kasual,minimalis",Jaket,0
+283,m,35-44,2-5jt,Pelajar,"Setiap minggu",300-600k,"formal,kasual",Kaos,0
+283,m,35-44,2-5jt,Pelajar,"Setiap minggu",300-600k,"formal,kasual",Kemeja,0
+284,f,35-44,2-5jt,Pelajar,"Setiap bulan",300-600k,"sporty,vintage",Jaket,0
+284,f,35-44,2-5jt,Pelajar,"Setiap bulan",300-600k,"sporty,vintage",Kemeja,0
+285,m,35-44,<2jt,Pegawai,"Setiap bulan",100-300k,"bohemian,formal,sporty","Kaos Polo",0
+286,f,25-34,5-10jt,Lainnya,"Setiap minggu",300-600k,minimalis,Kaos,0
+286,f,25-34,5-10jt,Lainnya,"Setiap minggu",300-600k,minimalis,Dress,0
+286,f,25-34,5-10jt,Lainnya,"Setiap minggu",300-600k,minimalis,Jaket,1
+287,m,18-24,>10jt,Wiraswasta,"Setiap minggu",<100k,"bohemian,kasual,minimalis",Dress,0
+288,f,18-24,5-10jt,Pegawai,"Beberapa bulan",300-600k,"kasual,sporty",Kaos,0
+288,f,18-24,5-10jt,Pegawai,"Beberapa bulan",300-600k,"kasual,sporty",Jaket,0
+289,m,35-44,>10jt,Freelance,"Setiap bulan",>600k,kasual,Sweater,0
+289,m,35-44,>10jt,Freelance,"Setiap bulan",>600k,kasual,Sweater,0
+289,m,35-44,>10jt,Freelance,"Setiap bulan",>600k,kasual,Kaos,1
+289,m,35-44,>10jt,Freelance,"Setiap bulan",>600k,kasual,Kaos,1
+290,f,25-34,5-10jt,Mahasiswa,"Setiap bulan",300-600k,"formal,kasual",Kaos,0
+290,f,25-34,5-10jt,Mahasiswa,"Setiap bulan",300-600k,"formal,kasual",Sweater,0
+291,m,18-24,<2jt,Lainnya,Jarang,>600k,"bohemian,minimalis","Kaos Polo",0
+291,m,18-24,<2jt,Lainnya,Jarang,>600k,"bohemian,minimalis","Kaos Polo",0
+291,m,18-24,<2jt,Lainnya,Jarang,>600k,"bohemian,minimalis",Sweater,0
+292,f,18-24,>10jt,Wiraswasta,"Setiap bulan",100-300k,sporty,Dress,0
+292,f,18-24,>10jt,Wiraswasta,"Setiap bulan",100-300k,sporty,Sweater,0
+292,f,18-24,>10jt,Wiraswasta,"Setiap bulan",100-300k,sporty,Kaos,0
+293,m,45+,>10jt,Lainnya,Jarang,<100k,"bohemian,formal",Kaos,0
+294,f,35-44,<2jt,Pelajar,"Setiap bulan",<100k,"kasual,vintage",Jaket,0
+295,m,35-44,5-10jt,Freelance,"Beberapa bulan",<100k,"bohemian,kasual,minimalis",Kaos,0
+296,f,35-44,>10jt,Lainnya,"Setiap minggu",100-300k,kasual,Kaos,1
+297,m,25-34,5-10jt,Pelajar,"Setiap bulan",100-300k,vintage,Kaos,1
+298,f,45+,<2jt,Mahasiswa,"Setiap minggu",>600k,"bohemian,kasual,sporty",Sweater,0
+298,f,45+,<2jt,Mahasiswa,"Setiap minggu",>600k,"bohemian,kasual,sporty",Sweater,0
+299,m,45+,>10jt,Pelajar,Jarang,<100k,formal,Jaket,0
+299,m,45+,>10jt,Pelajar,Jarang,<100k,formal,Sweater,0
+299,m,45+,>10jt,Pelajar,Jarang,<100k,formal,Kemeja,0
+300,f,25-34,2-5jt,Freelance,"Beberapa bulan",<100k,sporty,Jaket,0
+301,m,25-34,<2jt,Mahasiswa,"Beberapa bulan",300-600k,sporty,Kaos,0
+301,m,25-34,<2jt,Mahasiswa,"Beberapa bulan",300-600k,sporty,Jaket,0
+301,m,25-34,<2jt,Mahasiswa,"Beberapa bulan",300-600k,sporty,Jaket,0
+301,m,25-34,<2jt,Mahasiswa,"Beberapa bulan",300-600k,sporty,Jaket,1
+302,f,45+,>10jt,Freelance,"Setiap bulan",>600k,"formal,kasual",Jaket,0
+302,f,45+,>10jt,Freelance,"Setiap bulan",>600k,"formal,kasual","Kaos Polo",0
+302,f,45+,>10jt,Freelance,"Setiap bulan",>600k,"formal,kasual",Batik,0
+302,f,45+,>10jt,Freelance,"Setiap bulan",>600k,"formal,kasual",Sweater,0
+303,m,35-44,5-10jt,Wiraswasta,"Beberapa bulan",<100k,"formal,minimalis",Jaket,0
+303,m,35-44,5-10jt,Wiraswasta,"Beberapa bulan",<100k,"formal,minimalis","Kaos Polo",0
+303,m,35-44,5-10jt,Wiraswasta,"Beberapa bulan",<100k,"formal,minimalis",Dress,0
+303,m,35-44,5-10jt,Wiraswasta,"Beberapa bulan",<100k,"formal,minimalis",Jaket,1
+304,f,25-34,<2jt,Pegawai,Jarang,<100k,"minimalis,sporty",Sweater,1
+304,f,25-34,<2jt,Pegawai,Jarang,<100k,"minimalis,sporty",Batik,1
+304,f,25-34,<2jt,Pegawai,Jarang,<100k,"minimalis,sporty",Jaket,0
+305,m,18-24,<2jt,Pelajar,"Setiap bulan",100-300k,"bohemian,sporty,vintage",Dress,0
+306,f,35-44,>10jt,Mahasiswa,"Beberapa bulan",100-300k,"kasual,minimalis,sporty",Jaket,0
+306,f,35-44,>10jt,Mahasiswa,"Beberapa bulan",100-300k,"kasual,minimalis,sporty",Jaket,0
+306,f,35-44,>10jt,Mahasiswa,"Beberapa bulan",100-300k,"kasual,minimalis,sporty","Kaos Polo",0
+306,f,35-44,>10jt,Mahasiswa,"Beberapa bulan",100-300k,"kasual,minimalis,sporty","Kaos Polo",0
+307,m,25-34,<2jt,Mahasiswa,Jarang,100-300k,"bohemian,formal,kasual",Sweater,0
+307,m,25-34,<2jt,Mahasiswa,Jarang,100-300k,"bohemian,formal,kasual",Kaos,1
+308,f,25-34,2-5jt,Mahasiswa,"Beberapa bulan",100-300k,minimalis,Dress,1
