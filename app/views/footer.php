@@ -57,7 +57,7 @@
 </div>
 <footer class="footer">
     <div class="footer-top section">
-        <div class="container">
+    <div class="container">
             <div class="row">
                 <div class="col-lg-5 col-md-6 col-12">
                     <div class="single-footer about">
@@ -72,7 +72,7 @@
         </div>
     </div>
     <div class="copyright">
-        <div class="container">
+    <div class="container">
             <div class="inner">
                 <div class="row">
                     <div class="col-lg-6 col-12">

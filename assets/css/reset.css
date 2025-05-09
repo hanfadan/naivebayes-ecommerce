@@ -231,13 +231,13 @@ big {
 }
 
 .section {
-	padding: 100px 0;
-	position: relative;
+    padding: 5vw 0;
+    position: relative;
 }
 .section-title {
 	text-align: center;
 	margin-bottom: 50px;
-	padding: 0 215px;
+	padding: 0 5%; 
 }
 .section-title h2 {
 	font-size: 30px;
@@ -264,7 +264,7 @@ big {
 	color: #666;
 }
 .container{
-	max-width:1170px;
+	max-width:1440px;
 }
 .overlay{
 	position:relative

@@ -27,8 +27,6 @@ if (! function_exists('slugify')) {
 			</div>
 		</div>
 	</section>
-
-    <div class="product-area section">
         <div class="container">
             <!-- ==== FORM KUESIONER (PINDAHAN) ==== -->
 <div class="bg-white shadow-sm rounded p-4 mb-4">
@@ -41,126 +39,85 @@ if (! function_exists('slugify')) {
             </div>
 
             <form method="post" class="mb-5">
-  <!-- Kelompok Umur -->
-  <fieldset class="border rounded-3 p-3 mb-4">
-    <legend class="small text-muted px-2">Kelompok Umur</legend>
-    <div class="row">
-      <?php foreach (['18-24','25-34','35+'] as $age): ?>
-      <div class="col-auto mb-2">
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="umur"
-            id="umur-<?=slugify($age)?>"
-            value="<?= $age ?>"
-            required
-            <?= h_selected($formInput??[],'umur',$age) ?>>
-          <label class="form-check-label" for="umur-<?=slugify($age)?>">
-            <?= $age ?>
-          </label>
-        </div>
-      </div>
-      <?php endforeach;?>
-    </div>
-  </fieldset>
-
-  <!-- Gender -->
-  <fieldset class="border rounded-3 p-3 mb-4">
-    <legend class="small text-muted px-2">Gender</legend>
-    <div class="row">
-      <?php foreach (['m'=>'Laki-laki','f'=>'Perempuan'] as $val=>$label): ?>
-      <div class="col-auto mb-2">
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="gender"
-            id="gender-<?= $val ?>"
-            value="<?= $val ?>"
-            required
-            <?= h_selected($formInput??[],'gender',$val) ?>>
-          <label class="form-check-label" for="gender-<?= $val ?>">
-            <?= $label ?>
-          </label>
-        </div>
-      </div>
-      <?php endforeach;?>
-    </div>
-  </fieldset>
-
-  <!-- Gaya / Kategori Favorit -->
-  <fieldset class="border rounded p-3 mb-4">
-  <legend class="w-auto small text-muted">Gaya / Kategori Favorit</legend>
   <div class="row">
-    <?php foreach ($kategoriList as $slug => $label): ?>
-      <div class="col-auto">
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="kategori"
-            id="cat_<?= $slug ?>"
-            value="<?= $slug ?>"
-            required
-            <?= isset($formInput['kategori']) && $formInput['kategori']===$slug ? 'checked' : '' ?>>
-          <label class="form-check-label" for="cat_<?= $slug ?>">
-            <?= htmlspecialchars($label) ?>
-          </label>
-        </div>
-      </div>
-    <?php endforeach; ?>
+    <!-- Kelompok Umur -->
+    <div class="col-md-4">
+      <fieldset class="border rounded-3 p-3 mb-4">
+        <legend class="small text-muted px-2">Kelompok Umur</legend>
+        <select name="umur" class="form-select" required>
+          <option value="" disabled<?= !isset($formInput['umur']) ? ' selected' : '' ?>>Pilih Kelompok Umur</option>
+          <?php foreach (['18-24','25-34','35+'] as $age): ?>
+            <option value="<?= $age ?>" <?= h_selected($formInput ?? [], 'umur', $age) ?>>
+              <?= $age ?>
+            </option>
+          <?php endforeach; ?>
+        </select>
+      </fieldset>
+    </div>
+
+    <!-- Gender -->
+    <div class="col-md-4">
+      <fieldset class="border rounded-3 p-3 mb-4">
+        <legend class="small text-muted px-2">Gender</legend>
+        <select name="gender" class="form-select" required>
+          <option value="" disabled<?= !isset($formInput['gender']) ? ' selected' : '' ?>>Pilih Gender</option>
+          <?php foreach (['m' => 'Laki-laki','f' => 'Perempuan'] as $val => $label): ?>
+            <option value="<?= $val ?>" <?= h_selected($formInput ?? [], 'gender', $val) ?>>
+              <?= $label ?>
+            </option>
+          <?php endforeach; ?>
+        </select>
+      </fieldset>
+    </div>
+
+    <!-- Gaya / Kategori Favorit -->
+    <div class="col-md-4">
+      <fieldset class="border rounded p-3 mb-4">
+        <legend class="w-auto small text-muted">Gaya / Kategori Favorit</legend>
+        <select name="kategori" class="form-select" required>
+          <option value="" disabled<?= empty($formInput['kategori']) ? ' selected' : '' ?>>Pilih Kategori</option>
+          <?php foreach ($kategoriList as $slug => $label): ?>
+            <option value="<?= $slug ?>" <?= isset($formInput['kategori']) && $formInput['kategori'] === $slug ? 'selected' : '' ?>>
+              <?= htmlspecialchars($label) ?>
+            </option>
+          <?php endforeach; ?>
+        </select>
+      </fieldset>
+    </div>
   </div>
-</fieldset>
 
-  <!-- Frekuensi Belanja -->
-  <fieldset class="border rounded-3 p-3 mb-4">
-    <legend class="small text-muted px-2">Frekuensi Belanja</legend>
-    <div class="row">
-      <?php foreach (['Setiap minggu','Setiap bulan','Beberapa bulan','Jarang'] as $f): ?>
-      <div class="col-auto mb-2">
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="buy_freq"
-            id="buy_freq-<?=slugify($f)?>"
-            value="<?= $f ?>"
-            required
-            <?= h_selected($formInput??[],'buy_freq',$f) ?>>
-          <label class="form-check-label" for="buy_freq-<?=slugify($f)?>">
-            <?= $f ?>
-          </label>
-        </div>
-      </div>
-      <?php endforeach;?>
+  <div class="row">
+    <!-- Frekuensi Belanja -->
+    <div class="col-md-4">
+      <fieldset class="border rounded-3 p-3 mb-4">
+        <legend class="small text-muted px-2">Frekuensi Belanja</legend>
+        <select name="buy_freq" class="form-select" required>
+          <option value="" disabled<?= !isset($formInput['buy_freq']) ? ' selected' : '' ?>>Pilih Frekuensi Belanja</option>
+          <?php foreach (['Setiap minggu','Setiap bulan','Beberapa bulan','Jarang'] as $f): ?>
+            <option value="<?= $f ?>" <?= h_selected($formInput ?? [], 'buy_freq', $f) ?>>
+              <?= $f ?>
+            </option>
+          <?php endforeach; ?>
+        </select>
+      </fieldset>
     </div>
-  </fieldset>
 
-  <!-- Budget per Transaksi -->
-  <fieldset class="border rounded-3 p-3 mb-4">
-    <legend class="small text-muted px-2">Budget per Transaksi</legend>
-    <div class="row">
-      <?php foreach (['<100k','100-300k','300-600k','>600k'] as $b): ?>
-      <div class="col-auto mb-2">
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="budget_band"
-            id="budget_band-<?=slugify($b)?>"
-            value="<?= $b ?>"
-            required
-            <?= h_selected($formInput??[],'budget_band',$b) ?>>
-          <label class="form-check-label" for="budget_band-<?=slugify($b)?>">
-            <?= $b ?>
-          </label>
-        </div>
-      </div>
-      <?php endforeach;?>
+    <!-- Budget per Transaksi -->
+    <div class="col-md-4">
+      <fieldset class="border rounded-3 p-3 mb-4">
+        <legend class="small text-muted px-2">Budget per Transaksi</legend>
+        <select name="budget_band" class="form-select" required>
+          <option value="" disabled<?= !isset($formInput['budget_band']) ? ' selected' : '' ?>>Pilih Budget per Transaksi</option>
+          <?php foreach (['<100k','100-300k','300-600k','>600k'] as $b): ?>
+            <option value="<?= $b ?>" <?= h_selected($formInput ?? [], 'budget_band', $b) ?>>
+              <?= $b ?>
+            </option>
+          <?php endforeach; ?>
+        </select>
+      </fieldset>
     </div>
-  </fieldset>
-
+  </div>
+  
   <div class="d-flex justify-content-end">
     <button type="submit" class="btn btn-primary">Tampilkan</button>
   </div>
@@ -231,7 +188,6 @@ if (! function_exists('slugify')) {
         </div>
       </div>
     <?php endif; ?>
-    <div class="product-area section">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -287,7 +243,7 @@ if (! function_exists('slugify')) {
     </div>
 
     <section class="shop-services section home">
-		<div class="container">
+    <div class="container">
 			<div class="row">
 				<div class="col-lg-3 col-md-6 col-12">
 					<div class="single-service">
