@@ -23,28 +23,41 @@
                             <h3>Masuk menggunakan akun Anda</h3>
                         </div>
                         <?php Flasher::output();?>
-                        <form class="form" method="post" action="<?php echo url('login');?>">
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="form-group">
-                                        <label>Nomor Telepon<span>*</span></label>
-                                        <input name="identity" type="text" required="">
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-group">
-                                        <label>Kata Sandi<span>*</span></label>
-                                        <input name="password" type="password" required="">
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-group button">
-                                        <input name="submit" value="login" type="hidden">
-                                        <button type="submit" class="btn">Masuk</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
+<form class="form" method="post" action="<?php echo url('login');?>">
+  <div class="row">
+    <div class="col-12">
+      <div class="form-group">
+        <label>Email atau Nomor Telepon <span>*</span></label>
+        <input
+          name="identity"
+          type="text"
+          class="form-control"
+          placeholder="you@example.com atau 0812345678"
+          required
+          value="<?= htmlspecialchars(post('identity') ?? '') ?>"
+        >
+      </div>
+    </div>
+    <div class="col-12">
+      <div class="form-group">
+        <label>Kata Sandi <span>*</span></label>
+        <input
+          name="password"
+          type="password"
+          class="form-control"
+          required
+        >
+      </div>
+    </div>
+    <div class="col-12">
+      <div class="form-group button">
+        <input name="submit" value="login" type="hidden">
+        <button type="submit" class="btn">Masuk</button>
+      </div>
+    </div>
+  </div>
+</form>
+
                     </div>
                 </div>
                 <div class="col-lg-4 col-12">

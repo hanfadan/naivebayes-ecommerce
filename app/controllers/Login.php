@@ -5,27 +5,36 @@ class Login extends Controller {
     {
         $categories = $this->model('category');
 
-        if ( ! empty(post('submit'))) {
-            $password = sha1(md5(post('password')));
-            $user = $this->model('user')->login(post('identity'), $password);
+        if (!empty(post('submit'))) {
+            $cred = trim(post('identity'));
+            $pw   = post('password');
 
-            if ( ! empty($user)) {
+            // hash sesuai yang Anda pakai; contoh memakai sha1(md5())
+            $hash = sha1(md5($pw));
+
+            // dapatkan user by email OR phone
+            $user = $this->model('user')->login($cred, $hash);
+
+            if (!empty($user)) {
+                // sukses login
                 if ($user === 'admin') {
                     redirect(url('admin/dashboard'));
                 } else {
                     redirect(url());
                 }
-            } else {
-                Flasher::danger('Gagal', 'Nomor telepon atau kata sandi salah!');
             }
+
+            // gagal
+            Flasher::danger('Gagal', 'Email/Telepon atau kata sandi salah!');
         }
 
         $this->page('login', [
-            'home' => false,
-            'page' => 'home',
-            'count' => 0,
-            'dropdowns' => $categories->dropdownMenu(),
+            'home'       => false,
+            'page'       => 'home',
+            'count'      => 0,
+            'dropdowns'  => $categories->dropdownMenu(),
             'categories' => $categories->selectTree()
         ]);
     }
 }
+

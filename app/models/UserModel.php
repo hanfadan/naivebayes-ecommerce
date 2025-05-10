@@ -17,28 +17,47 @@ class UserModel extends Model {
         return $this->db->where($key, $val)->getOne('users');
 	}
 
-    public function login($phone, $password){
-        $this->db->where('phone', $phone);
+    /**
+     * Login dengan email atau telepon.
+     *
+     * @param  string $identity  Email atau nomor telepon
+     * @param  string $password  (Sudah di-hash sesuai controller)
+     * @return string|false      'admin' atau 'user' kalau sukses, false kalau gagal
+     */
+    public function login(string $identity, string $password)
+    {
+        // Cari user di kolom phone ATAU email
+        $this->db->where('phone', $identity);
+        $this->db->orWhere('email', $identity);
         $user = $this->db->getOne('users');
 
         if (empty($user)) {
             return false;
         }
 
+        if ( ! $user || $user['password'] !== $password) {
+            return false;
+        }
+
+        // Cocokkan password
         if ($user['password'] === $password) {
-            sessave('user', $user['id']);
-            sessave('name', $user['name']);
-            sessave('phone', $phone);
+            // Simpan session
+            sessave('user',  $user['id']);
+            sessave('name',  $user['name']);
+            sessave('phone', $user['phone']);
+
             if ($user['role'] === 'admin') {
                 sessave('isAdmin', true);
+                return 'admin';
             } else {
                 sessave('isUser', true);
+                return 'user';
             }
-            return $user['role'];
         }
-        
-		return false;
-	}
+
+        return false;
+    }
+
 
     public function store($data){
         if ($this->db->insert('users', $data)) {

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Waktu pembuatan: 06 Bulan Mei 2025 pada 02.24
+-- Waktu pembuatan: 10 Bulan Mei 2025 pada 03.14
 -- Versi server: 10.4.32-MariaDB
 -- Versi PHP: 8.0.30
 
@@ -173,36 +173,36 @@ INSERT INTO `products` (`id`, `category_id`, `name`, `slug`, `image`, `stok`, `p
 (44, 12, 'kaos 12 125k', 'kaos-12-125k', '1718731943.jpg', 0, 125000, '', 1, '2024-06-19', '2024-06-19'),
 (45, 12, 'kaos 11 125k', 'kaos-11-125k', '1718731963.jpg', 0, 125000, '', 1, '2024-06-19', '2024-06-19'),
 (46, 12, 'kaos 10 125k', 'kaos-10-125k', '1718731987.jpg', 0, 125000, '', 1, '2024-06-19', '2024-06-19'),
-(47, 100, 'Jaket Dummy 1', 'jaket-1', '1718557521.jpg', 70, 159320, 'Produk dummy kategori Jaket', 1, '2025-05-04', NULL),
-(48, 101, 'Kaos Dummy 1', 'kaos-1', '1718557587.jpg', 15, 69119, 'Produk dummy kategori Kaos', 1, '2025-05-04', NULL),
-(49, 102, 'Sweater Dummy 1', 'sweater-1', '1718557709.jpg', 42, 229385, 'Produk dummy kategori Sweater', 1, '2025-05-04', NULL),
-(50, 103, 'Batik Dummy 1', 'batik-1', '1718557768.jpg', 19, 86251, 'Produk dummy kategori Batik', 1, '2025-05-04', NULL),
-(51, 104, 'Kemeja Dummy 1', 'kemeja-1', '1718557885.jpg', 26, 124313, 'Produk dummy kategori Kemeja', 1, '2025-05-04', NULL),
-(52, 105, 'Dress Dummy 1', 'dress-1', '1718730364.jpg', 45, 135687, 'Produk dummy kategori Dress', 1, '2025-05-04', NULL),
-(53, 100, 'Jaket Dummy 2', 'jaket-2', '1718730432.jpg', 0, 209247, 'Produk dummy kategori Jaket', 1, '2025-05-04', NULL),
-(54, 101, 'Kaos Dummy 2', 'kaos-2', '1718730453.jpg', 78, 104510, 'Produk dummy kategori Kaos', 1, '2025-05-04', NULL),
-(55, 102, 'Sweater Dummy 2', 'sweater-2', '1718730502.jpg', 40, 52474, 'Produk dummy kategori Sweater', 1, '2025-05-04', NULL),
-(56, 103, 'Batik Dummy 2', 'batik-2', '1718730668.jpg', 33, 206423, 'Produk dummy kategori Batik', 1, '2025-05-04', NULL),
-(57, 104, 'Kemeja Dummy 2', 'kemeja-2', '1718730696.jpg', 73, 199778, 'Produk dummy kategori Kemeja', 1, '2025-05-04', NULL),
-(58, 105, 'Dress Dummy 2', 'dress-2', '1718730749.jpg', 27, 87972, 'Produk dummy kategori Dress', 1, '2025-05-04', NULL),
-(59, 100, 'Jaket Dummy 3', 'jaket-3', '1718730778.jpg', 0, 223475, 'Produk dummy kategori Jaket', 1, '2025-05-04', NULL),
-(60, 101, 'Kaos Dummy 3', 'kaos-3', '1718730815.jpg', 5, 204288, 'Produk dummy kategori Kaos', 1, '2025-05-04', NULL),
-(61, 102, 'Sweater Dummy 3', 'sweater-3', '1718730864.jpg', 51, 220193, 'Produk dummy kategori Sweater', 1, '2025-05-04', NULL),
-(62, 103, 'Batik Dummy 3', 'batik-3', '1718730883.jpg', 21, 95079, 'Produk dummy kategori Batik', 1, '2025-05-04', NULL),
-(63, 104, 'Kemeja Dummy 3', 'kemeja-3', '1718730906.jpg', 1, 174766, 'Produk dummy kategori Kemeja', 1, '2025-05-04', NULL),
-(64, 105, 'Dress Dummy 3', 'dress-3', '1718730932.jpg', 94, 214851, 'Produk dummy kategori Dress', 1, '2025-05-04', NULL),
-(65, 100, 'Jaket Dummy 4', 'jaket-4', '1718730951.jpg', 29, 59283, 'Produk dummy kategori Jaket', 1, '2025-05-04', NULL),
-(66, 101, 'Kaos Dummy 4', 'kaos-4', '1718730977.jpg', 34, 142713, 'Produk dummy kategori Kaos', 1, '2025-05-04', NULL),
-(67, 102, 'Sweater Dummy 4', 'sweater-4', '1718731065.jpg', 25, 128003, 'Produk dummy kategori Sweater', 1, '2025-05-04', NULL),
-(68, 103, 'Batik Dummy 4', 'batik-4', '1718731086.jpg', 76, 97648, 'Produk dummy kategori Batik', 1, '2025-05-04', NULL),
-(69, 104, 'Kemeja Dummy 4', 'kemeja-4', '1718731185.jpg', 35, 53282, 'Produk dummy kategori Kemeja', 1, '2025-05-04', NULL),
-(70, 105, 'Dress Dummy 4', 'dress-4', '1718731228.jpg', 27, 83542, 'Produk dummy kategori Dress', 1, '2025-05-04', NULL),
-(71, 100, 'Jaket Dummy 5', 'jaket-5', '1718731251.jpg', 43, 57769, 'Produk dummy kategori Jaket', 1, '2025-05-04', NULL),
-(72, 101, 'Kaos Dummy 5', 'kaos-5', '1718731299.jpg', 53, 95739, 'Produk dummy kategori Kaos', 1, '2025-05-04', NULL),
-(73, 102, 'Sweater Dummy 5', 'sweater-5', '1718731328.jpg', 13, 249126, 'Produk dummy kategori Sweater', 1, '2025-05-04', NULL),
-(74, 103, 'Batik Dummy 5', 'batik-5', '1718731351.jpg', 41, 221751, 'Produk dummy kategori Batik', 1, '2025-05-04', NULL),
-(75, 104, 'Kemeja Dummy 5', 'kemeja-5', '1718731436.jpg', 50, 121130, 'Produk dummy kategori Kemeja', 1, '2025-05-04', NULL),
-(76, 105, 'Dress Dummy 5', 'dress-5', '1718731454.jpg', 0, 55714, 'Produk dummy kategori Dress', 1, '2025-05-04', NULL),
+(47, 4, 'Jaket Dummy 1', 'jaket-1', '1718557521.jpg', 70, 159320, 'Produk dummy kategori Jaket', 1, '2025-05-04', NULL),
+(48, 5, 'Kaos Dummy 1', 'kaos-1', '1718557587.jpg', 15, 69119, 'Produk dummy kategori Kaos', 1, '2025-05-04', NULL),
+(49, 6, 'Sweater Dummy 1', 'sweater-1', '1718557709.jpg', 42, 229385, 'Produk dummy kategori Sweater', 1, '2025-05-04', NULL),
+(50, 7, 'Batik Dummy 1', 'batik-1', '1718557768.jpg', 19, 86251, 'Produk dummy kategori Batik', 1, '2025-05-04', NULL),
+(51, 8, 'Kemeja Dummy 1', 'kemeja-1', '1718557885.jpg', 26, 124313, 'Produk dummy kategori Kemeja', 1, '2025-05-04', NULL),
+(52, 11, 'Dress Dummy 1', 'dress-1', '1718730364.jpg', 45, 135687, 'Produk dummy kategori Dress', 1, '2025-05-04', NULL),
+(53, 4, 'Jaket Dummy 2', 'jaket-2', '1718730432.jpg', 0, 209247, 'Produk dummy kategori Jaket', 1, '2025-05-04', NULL),
+(54, 5, 'Kaos Dummy 2', 'kaos-2', '1718730453.jpg', 78, 104510, 'Produk dummy kategori Kaos', 1, '2025-05-04', NULL),
+(55, 6, 'Sweater Dummy 2', 'sweater-2', '1718730502.jpg', 40, 52474, 'Produk dummy kategori Sweater', 1, '2025-05-04', NULL),
+(56, 7, 'Batik Dummy 2', 'batik-2', '1718730668.jpg', 33, 206423, 'Produk dummy kategori Batik', 1, '2025-05-04', NULL),
+(57, 8, 'Kemeja Dummy 2', 'kemeja-2', '1718730696.jpg', 73, 199778, 'Produk dummy kategori Kemeja', 1, '2025-05-04', NULL),
+(58, 11, 'Dress Dummy 2', 'dress-2', '1718730749.jpg', 27, 87972, 'Produk dummy kategori Dress', 1, '2025-05-04', NULL),
+(59, 4, 'Jaket Dummy 3', 'jaket-3', '1718730778.jpg', 0, 223475, 'Produk dummy kategori Jaket', 1, '2025-05-04', NULL),
+(60, 5, 'Kaos Dummy 3', 'kaos-3', '1718730815.jpg', 5, 204288, 'Produk dummy kategori Kaos', 1, '2025-05-04', NULL),
+(61, 6, 'Sweater Dummy 3', 'sweater-3', '1718730864.jpg', 51, 220193, 'Produk dummy kategori Sweater', 1, '2025-05-04', NULL),
+(62, 7, 'Batik Dummy 3', 'batik-3', '1718730883.jpg', 21, 95079, 'Produk dummy kategori Batik', 1, '2025-05-04', NULL),
+(63, 8, 'Kemeja Dummy 3', 'kemeja-3', '1718730906.jpg', 1, 174766, 'Produk dummy kategori Kemeja', 1, '2025-05-04', NULL),
+(64, 11, 'Dress Dummy 3', 'dress-3', '1718730932.jpg', 94, 214851, 'Produk dummy kategori Dress', 1, '2025-05-04', NULL),
+(65, 4, 'Jaket Dummy 4', 'jaket-4', '1718730951.jpg', 29, 59283, 'Produk dummy kategori Jaket', 1, '2025-05-04', NULL),
+(66, 5, 'Kaos Dummy 4', 'kaos-4', '1718730977.jpg', 34, 142713, 'Produk dummy kategori Kaos', 1, '2025-05-04', NULL),
+(67, 6, 'Sweater Dummy 4', 'sweater-4', '1718731065.jpg', 25, 128003, 'Produk dummy kategori Sweater', 1, '2025-05-04', NULL),
+(68, 7, 'Batik Dummy 4', 'batik-4', '1718731086.jpg', 76, 97648, 'Produk dummy kategori Batik', 1, '2025-05-04', NULL),
+(69, 8, 'Kemeja Dummy 4', 'kemeja-4', '1718731185.jpg', 35, 53282, 'Produk dummy kategori Kemeja', 1, '2025-05-04', NULL),
+(70, 11, 'Dress Dummy 4', 'dress-4', '1718731228.jpg', 27, 83542, 'Produk dummy kategori Dress', 1, '2025-05-04', NULL),
+(71, 4, 'Jaket Dummy 5', 'jaket-5', '1718731251.jpg', 43, 57769, 'Produk dummy kategori Jaket', 1, '2025-05-04', NULL),
+(72, 5, 'Kaos Dummy 5', 'kaos-5', '1718731299.jpg', 53, 95739, 'Produk dummy kategori Kaos', 1, '2025-05-04', NULL),
+(73, 6, 'Sweater Dummy 5', 'sweater-5', '1718731328.jpg', 13, 249126, 'Produk dummy kategori Sweater', 1, '2025-05-04', NULL),
+(74, 7, 'Batik Dummy 5', 'batik-5', '1718731351.jpg', 41, 221751, 'Produk dummy kategori Batik', 1, '2025-05-04', NULL),
+(75, 8, 'Kemeja Dummy 5', 'kemeja-5', '1718731436.jpg', 50, 121130, 'Produk dummy kategori Kemeja', 1, '2025-05-04', NULL),
+(76, 11, 'Dress Dummy 5', 'dress-5', '1718731454.jpg', 0, 55714, 'Produk dummy kategori Dress', 1, '2025-05-04', NULL),
 (78, 5, 'Uniqlo Kaos 1', 'uniqlo-kaos-1', '1718731482.jpg', 14, 242892, 'Produk Kaos resmi Uniqlo', 1, '2025-05-04', NULL),
 (79, 5, 'Uniqlo Kaos 2', 'uniqlo-kaos-2', '1718731509.jpg', 9, 166269, 'Produk Kaos resmi Uniqlo', 1, '2025-05-04', NULL),
 (80, 5, 'Uniqlo Kaos 3', 'uniqlo-kaos-3', '1718731545.jpg', 85, 240943, 'Produk Kaos resmi Uniqlo', 1, '2025-05-04', NULL),
@@ -4037,7 +4037,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `phone`, `birth`, `gender`, `address`, `password`, `role`, `status`, `age_group`, `income_band`, `job_status`) VALUES
-(1, 'admin', 'admin@gmail.com', '1234567890', '1970-01-01', 'm', 'idjfi', 'b102ce1d5eebac2b6d74bda8c87c47a050c80491', 'admin', 1, NULL, NULL, NULL),
+(1, 'admin', 'admin@gmail.com', '081234567890', '1970-01-01', 'm', 'idjfi', '90b9aa7e25f80cf4f64e990b78a9fc5ebd6cecad', 'admin', 1, NULL, NULL, NULL),
 (2, 'dede', 'dede@gmail.com', '08987654321', '1970-01-01', 'm', 'k', 'caa1c169e6f2b673711faa838aba10533ab6fb02', 'user', 1, NULL, NULL, NULL),
 (5, 'dummy_1', 'd1@test', '089882233623', '2000-01-01', 'm', '-', '-', '0', 1, '35-44', '2-5jt', 'Pelajar'),
 (6, 'dummy_2', 'd2@test', '087234214960', '2000-01-01', 'f', '-', '-', '0', 1, '18-24', '2-5jt', 'Wiraswasta'),
@@ -4343,7 +4343,8 @@ INSERT INTO `users` (`id`, `name`, `email`, `phone`, `birth`, `gender`, `address
 (306, 'dummy_298', 'd298@test', '081519612015', '2000-01-01', 'f', '-', '-', '0', 1, '35-44', '>10jt', 'Mahasiswa'),
 (307, 'dummy_299', 'd299@test', '082443565539', '2000-01-01', 'm', '-', '-', '0', 1, '25-34', '<2jt', 'Mahasiswa'),
 (308, 'dummy_300', 'd300@test', '088067135237', '2000-01-01', 'f', '-', '-', '0', 1, '25-34', '2-5jt', 'Mahasiswa'),
-(309, 'test', 'a@com', '123', '2025-05-05', 'm', 'test123', 'adcd7048512e64b48da55b027577886ee5a36350', 'user', 1, NULL, NULL, NULL);
+(309, 'test', 'a@com', '123', '2025-05-05', 'm', 'test123', 'adcd7048512e64b48da55b027577886ee5a36350', 'user', 1, NULL, NULL, NULL),
+(310, 'Admin', 'admin@toko.com', '081234567890', '1980-01-01', 'm', 'Kantor Pusat', '$2y$10$wsY7UK8YC5U5RdiiRhB42.Rg60XeMlHllwyLq0KGNmDIw6wWHGplW', '0', 1, '45+', '>10jt', 'Pegawai');
 
 -- --------------------------------------------------------
 
@@ -5767,7 +5768,7 @@ ALTER TABLE `transactions_details`
 -- AUTO_INCREMENT untuk tabel `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=310;
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=311;
 
 --
 -- AUTO_INCREMENT untuk tabel `user_brands`
