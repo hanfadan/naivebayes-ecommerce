@@ -19,6 +19,12 @@ if (! function_exists('slugify')) {
       return strtolower($text);
   }
 }
+
+function product_src(string $prefix, string $img): string {
+    return filter_var($img, FILTER_VALIDATE_URL)
+      ? $img
+      : image($prefix . $img);
+}
 ?>
 
 <section class="hero-slider">
@@ -138,8 +144,12 @@ if (! function_exists('slugify')) {
                     <div class="single-product">
                         <div class="product-img">
                             <a href="javascript:void(0);">
-                                <img class="default-img" src="<?php echo image('03_'.$product['image']);?>" alt="<?php echo $product['name'];?>">
-                                <img class="hover-img" src="<?php echo image('03_'.$product['image']);?>" alt="<?php echo $product['name'];?>">
+<img class="default-img"
+     src="<?php echo product_src('03_', $product['image']);?>"
+     alt="<?php echo htmlspecialchars($product['name'], ENT_QUOTES);?>">
+<img class="hover-img"
+     src="<?php echo product_src('03_', $product['image']);?>"
+     alt="<?php echo htmlspecialchars($product['name'], ENT_QUOTES);?>">
                             </a>
                             <div class="button-head">
                                 <div class="product-action">
@@ -149,7 +159,7 @@ if (! function_exists('slugify')) {
                                        data-info="<?php echo $product['description'];?>"
                                        data-stok="<?php echo price($product['stok']);?>"
                                        data-price="<?php echo price($product['price']);?>"
-                                       data-image="<?php echo image('05_'.$product['image']);?>"
+data-image="<?php echo product_src('05_', $product['image']);?>"
                                        data-category="<?php echo $product['category'];?>"><i class="ti-eye"></i><span>Detail Produk</span></a>
                                     <a title="Daftar Keinginan" href="javascript:void(0);" class="btn-wishlist" data-product="<?php echo $product['id'];?>"><i class="ti-heart "></i><span>Tambahkan ke Daftar Keinginan</span></a>
                                 </div>
@@ -202,8 +212,12 @@ if (! function_exists('slugify')) {
                     <div class="single-product">
                         <div class="product-img">
                             <a href="javascript:void(0);">
-                                <img class="default-img" src="<?php echo image('03_'.$product['image']);?>" alt="<?php echo $product['name'];?>">
-                                <img class="hover-img" src="<?php echo image('03_'.$product['image']);?>" alt="<?php echo $product['name'];?>">
+<img class="default-img"
+     src="<?php echo product_src('03_', $product['image']);?>"
+     alt="<?php echo htmlspecialchars($product['name'], ENT_QUOTES);?>">
+<img class="hover-img"
+     src="<?php echo product_src('03_', $product['image']);?>"
+     alt="<?php echo htmlspecialchars($product['name'], ENT_QUOTES);?>">
                             </a>
                             <div class="button-head">
                                 <div class="product-action">
@@ -213,7 +227,8 @@ if (! function_exists('slugify')) {
                                        data-info="<?php echo $product['description'];?>"
                                        data-stok="<?php echo price($product['stok']);?>"
                                        data-price="<?php echo price($product['price']);?>"
-                                       data-image="<?php echo image('05_'.$product['image']);?>"
+data-image="<?php echo product_src('05_', $product['image']);?>"
+
                                        data-category="<?php echo $product['category'];?>"><i class="ti-eye"></i><span>Detail Produk</span></a>
                                     <a title="Daftar Keinginan" href="javascript:void(0);" class="btn-wishlist" data-product="<?php echo $product['id'];?>"><i class="ti-heart "></i><span>Tambahkan ke Daftar Keinginan</span></a>
                                 </div>

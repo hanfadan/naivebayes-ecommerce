@@ -29,7 +29,14 @@
                                         <tr>
                                             <td style="text-align:center;"><?php echo $no;?></td>
                                             <td style="text-align:center;">
-                                                <img src="<?php echo image('01_'.$value['image']);?>" alt="<?php echo $value['name'];?>">
+<img
+  src="<?=
+    filter_var($value['image'], FILTER_VALIDATE_URL)
+      ? $value['image']
+      : image('01_' . $value['image']);
+  ?>"
+  alt="<?= htmlspecialchars($value['name'], ENT_QUOTES) ?>"
+>
                                             </td>
                                             <td><?php echo $value['name'];?></td>
                                             <td><?php echo $value['category'];?></td>

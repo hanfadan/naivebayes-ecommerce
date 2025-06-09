@@ -28,7 +28,16 @@
                         <tbody>
                         <?php foreach($wishlists as $val):?>
                             <tr>
-                                <td class="image" data-title="No"><img src="<?php echo image('02_'.$val['image']);?>" alt="<?php echo $val['name'];?>"></td>
+<td class="image" data-title="No">
+  <img
+    src="<?=
+      filter_var($val['image'], FILTER_VALIDATE_URL)
+        ? $val['image']
+        : image('02_' . $val['image'])
+    ?>"
+    alt="<?= htmlspecialchars($val['name'], ENT_QUOTES) ?>"
+  >
+</td>
                                 <td class="product-des" data-title="Description">
                                     <p class="product-name"><a href="javascript:void(0);"><?php echo $val['name'];?></a></p>
                                     <p class="product-des"><?php echo $val['description'];?></p>

@@ -80,36 +80,43 @@ class TransactionModel extends Model {
      */
     private function loadTrainingSet(string $csvPath = null): void
     {
-        if ($this->trainingSet) return;
+    // Enhanced loadTrainingSet to include new product features
+    if ($this->trainingSet) return;
 
-        $sql = <<<SQL
+    $sql = <<<SQL
 SELECT
   CASE
     WHEN TIMESTAMPDIFF(YEAR,u.birth,CURDATE()) BETWEEN 18 AND 24 THEN '18-24'
     WHEN TIMESTAMPDIFF(YEAR,u.birth,CURDATE()) BETWEEN 25 AND 34 THEN '25-34'
     ELSE '35+'
-  END          AS umur,
-  u.gender     AS gender,
-  c.name       AS kategori,
-  (p.stok / (SUM(td.qty)+1)) AS status,
-  SUM(td.qty)  AS terjual,
-  p.stok       AS stok,
+  END AS umur,
+  u.gender AS gender,
+  c.slug AS kategori,
+  CASE
+    WHEN p.price < 100000 THEN '<100k'
+    WHEN p.price BETWEEN 100000 AND 300000 THEN '100-300k'
+    WHEN p.price BETWEEN 300000 AND 600000 THEN '300-600k'
+    ELSE '>600k'
+  END AS budget_band,
+  CASE
+    WHEN p.price < 200000 THEN 'murah'
+    WHEN p.price BETWEEN 200000 AND 500000 THEN 'sedang'
+    ELSE 'mahal'
+  END AS price_band,
+  p.brand AS brand_pref,
   sr_buy.answer    AS buy_freq,
-  sr_budget.answer AS budget_band,
   sr_factor.answer AS buy_factor,
   sr_channel.answer AS channel_main,
   sr_review.answer  AS review_consider,
   sr_eco1.answer    AS eco_interest,
   sr_eco2.answer    AS eco_paymore,
   us.style_slug     AS style_pref,
-  uc.color_slug     AS color_pref,
-  ub.brand_name     AS brand_pref
+  uc.color_slug     AS color_pref
 FROM transactions_details td
 JOIN products   p ON p.id    = td.product_id
 JOIN categories c ON c.id    = p.category_id
 JOIN users      u ON u.id    = td.user_id
 LEFT JOIN survey_responses sr_buy    ON sr_buy.user_id=u.id    AND sr_buy.qcode='buy_freq'
-LEFT JOIN survey_responses sr_budget ON sr_budget.user_id=u.id AND sr_budget.qcode='budget_band'
 LEFT JOIN survey_responses sr_factor ON sr_factor.user_id=u.id AND sr_factor.qcode='buy_factor'
 LEFT JOIN survey_responses sr_channel ON sr_channel.user_id=u.id AND sr_channel.qcode='channel_main'
 LEFT JOIN survey_responses sr_review  ON sr_review.user_id=u.id  AND sr_review.qcode='review_consider'
@@ -127,37 +134,32 @@ LEFT JOIN (
   GROUP BY user_id
   ORDER BY COUNT(*) DESC
 ) uc ON uc.user_id = u.id
-LEFT JOIN (
-  SELECT user_id, brand_name
-  FROM user_brands
-  ORDER BY FIELD(freq,'Sering','Kadang','Jarang')
-  LIMIT 1
-) ub ON ub.user_id = u.id
 GROUP BY td.id
 SQL;
 
-        try {
-            $this->trainingSet = $this->db->rawQuery($sql);
-        } catch (\Exception $e) {
-            error_log("Bayes fallback: ".$e->getMessage());
-            // fallback minimal
-            $this->trainingSet = $this->db->rawQuery(
-                "SELECT c.name AS kategori,
-                        IF(p.stok>50,1,0) AS status
-                 FROM transactions_details td
-                 JOIN products p ON p.id=td.product_id
-                 JOIN categories c ON c.id=p.category_id"
-            );
-        }
+    try {
+        $this->trainingSet = $this->db->rawQuery($sql);
+    } catch (\Exception $e) {
+        error_log("Bayes fallback: ".$e->getMessage());
+        // fallback minimal
+        $this->trainingSet = $this->db->rawQuery("
+            SELECT c.slug AS kategori,
+                   CASE WHEN p.stok>50 THEN 'tersedia' ELSE 'kosong' END AS status
+            FROM transactions_details td
+            JOIN products p ON p.id=td.product_id
+            JOIN categories c ON c.id=p.category_id
+        ");
+    }
 
-        // gabung CSV tambahan kalau ada
-        if ($csvPath && is_readable($csvPath)) {
-            $csv    = array_map('str_getcsv', file($csvPath));
-            $header = array_map('trim', array_shift($csv));
-            foreach ($csv as $row) {
-                $this->trainingSet[] = array_combine($header, $row);
-            }
+    // Merge additional CSV if provided
+    if ($csvPath && is_readable($csvPath)) {
+        $csv    = array_map('str_getcsv', file($csvPath));
+        $header = array_map('trim', array_shift($csv));
+        foreach ($csv as $row) {
+            $this->trainingSet[] = array_combine($header, $row);
         }
+    }
+
     }
 
 /**
@@ -182,7 +184,7 @@ SQL;
 
             foreach ($row as $k => $v) {
                 // skip internal kolom numerik
-                if (in_array($k, ['status','stok','terjual'])) continue;
+if (in_array($k, ['status','stok','terjual'])) continue;
                 $v = $v ?: 'unknown'; // kategorikan kosong
                 $freq[$k][$v][$bkt] = ($freq[$k][$v][$bkt] ?? 0) + 1;
             }
@@ -199,6 +201,19 @@ SQL;
     public function predictNaiveBayes(array $x, float $alpha = 1): array
     {
         if (!$this->model) $this->trainNaiveBayes();
+        $result = $this->predictNaiveBayes([
+  'umur'=>'25-34',
+  'gender'=>'f',
+  'kategori'=>'dress',
+  'budget_band'=>'100-300k',
+  'price_band'=>'sedang',
+  'brand_pref'=>'Zara',
+  'buy_freq'=>'Setiap bulan',
+  'buy_factor'=>'...'
+  // ... isi semua fitur
+]);
+var_dump($result);
+
 
         extract($this->model); // $freq,$labels,$N
         $post = [];

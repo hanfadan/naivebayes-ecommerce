@@ -109,7 +109,16 @@
                                     <?php $price = intval($cart['qty'])*intval($cart['price']);?>
 										<li>
 											<a href="javascript:void(0);" class="remove btn-cart-remove" data-product="<?php echo $cart['id'];?>" title="Hapus barang ini"><i class="fa fa-remove"></i></a>
-											<a class="cart-img" href="javascript:void(0);"><img src="<?php echo image('01_'.$cart['image']);?>" alt="<?php echo $cart['name'];?>"></a>
+<a class="cart-img" href="javascript:void(0);">
+  <img
+    src="<?php
+      echo filter_var($cart['image'], FILTER_VALIDATE_URL)
+        ? $cart['image']
+        : image('01_' . $cart['image']);
+    ?>"
+    alt="<?php echo htmlspecialchars($cart['name'], ENT_QUOTES); ?>"
+  >
+</a>
 											<h4><a href="javascript:void(0);"><?php echo $cart['name'];?></a></h4>
                                             <p class="quantity"><?php echo $cart['qty'];?>x - <span class="amount"><?php echo price($cart['price']);?></span></p>
 										</li>

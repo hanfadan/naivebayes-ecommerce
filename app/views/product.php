@@ -50,7 +50,15 @@
              data-category="<?= $bs['category']?>">
 
             <div class="card border-0 shadow-sm h-100">
-              <img src="<?= image('03_'.$bs['image'])?>" class="card-img-top" alt="<?= $bs['name']?>">
+<img
+  src="<?=
+    filter_var($bs['image'], FILTER_VALIDATE_URL)
+      ? $bs['image']
+      : image('03_' . $bs['image'])
+  ?>"
+  class="card-img-top"
+  alt="<?= htmlspecialchars($bs['name'], ENT_QUOTES) ?>"
+>
               <div class="card-body p-2">
                 <p class="card-title small mb-1"><?= $bs['name']?></p>
                 <p class="mb-0 text-primary fw-bold"><?= price($bs['price'])?></p>
@@ -74,7 +82,13 @@
                             <div class="single-product">
                                 <div class="product-img">
                                     <a href="javascript:void(0);">
-                                        <img class="default-img" src="<?php echo image('04_'.$product['image']);?>" alt="<?php echo $product['name'];?>">
+<img class="default-img"
+     src="<?=
+       filter_var($product['image'], FILTER_VALIDATE_URL)
+         ? $product['image']
+         : image('04_' . $product['image']);
+     ?>"
+     alt="<?= htmlspecialchars($product['name'], ENT_QUOTES) ?>">
                                         <img class="hover-img" src="<?php echo image('04_'.$product['image']);?>" alt="<?php echo $product['name'];?>">
                                     </a>
                                     <div class="button-head">
