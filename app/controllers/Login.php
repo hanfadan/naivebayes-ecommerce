@@ -14,13 +14,6 @@ class Login extends Controller {
 
             // dapatkan user by email OR phone
             $user = $this->model('user')->login($cred, $hash);
-            echo '<pre>';
-echo 'Password Plain: [' . $pw . ']' . PHP_EOL;
-echo 'Password Hashed: ' . $hash . PHP_EOL;
-if (!empty($user)) {
-    echo 'Password di DB     : ' . $user['password'] . PHP_EOL;
-}
-echo '</pre>';
 
             if (!empty($user)) {
                 // sukses login
