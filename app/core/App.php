@@ -37,25 +37,26 @@ class App {
         else
         {
             $filename = 'app/controllers/'.ucfirst($url[0]).'.php';
-
-            if (file_exists($filename))
-            {
+            if (file_exists($filename)) {
                 $this->controller = ucfirst($url[0]);
                 unset($url[0]);
-            }
 
-            require_once $filename;
-            $this->controller = new $this->controller;
+        require_once $filename;
+        $this->controller = new $this->controller;
 
-            if (isset($url[1]))
-            {
-                if (method_exists($this->controller, $url[1]))
-                {
-                    $this->method =  $url[1];
-                    unset($url[1]);
-                }
-            }
+        if (isset($url[1]) && method_exists($this->controller, $url[1])) {
+            $this->method =  $url[1];
+            unset($url[1]);
         }
+    } else {
+        // Tidak ditemukan controller, fallback ke 404 atau Home
+        require_once 'app/controllers/Home.php';
+        $this->controller = new Home;
+        $this->method = 'notfound'; // Bisa ganti ke index atau bikin method error
+        $this->params = [];
+    }
+}
+
 
 		if (!empty($url))
         {
