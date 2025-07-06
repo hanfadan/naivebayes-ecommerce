@@ -110,20 +110,28 @@
 <script src="<?php echo js('active');?>"></script>
 <script>
     $(function(){
-        $(document).on('click','.btn-cart',function(){
-            let btn=$(this);
-            $.ajax({
-                url:'<?php echo url('home/addCart');?>',
-                data:{'price':btn.data('price'),'product':btn.data('product')},
-                type:'POST',
-                dataType:'json',
-                success:function(data){
-                    if(!data.error){
-                        window.location.reload(true);
-                    }
-                }
-            });
-        });
+$(document).on('click', '.btn-cart', function(e){
+    e.preventDefault();
+    let btn = $(this), img = $('.img-product');
+
+    // Isi konten modal sama seperti btn-view
+    $('#modal-view').modal();
+
+    $.each(img, function(){
+        $(this).prop('alt', btn.data('name'));
+        $(this).attr('src', btn.data('image'));
+    });
+
+    $('#name').html(btn.data('name'));
+    $('#price').html(btn.data('price'));
+    $('#info').html(btn.data('info'));
+
+    $('.add-cart-modal').attr('data-price', btn.data('price'));
+    $('.add-cart-modal').attr('data-product', btn.data('id'));
+
+    $('.add-wishlist-modal').attr('data-product', btn.data('id'));
+});
+
         $('.add-cart-modal').on('click',function(){
             let btn=$(this),qty=$('.modal-qty').val();
             $.ajax({

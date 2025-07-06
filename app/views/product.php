@@ -104,15 +104,19 @@
                                             <a title="Daftar Keinginan" href="javascript:void(0);" class="btn-wishlist" data-product="<?php echo $product['id'];?>"><i class="ti-heart "></i><span>Tambahkan ke Daftar Keinginan</span></a>
                                         </div>
                                         <div class="product-action-2">
-                                        <a href="#"
-     title="Tambah ke Keranjang"
-     class="btn-cart"
-     data-url="<?php echo url('home/addCart'); ?>"
-     data-product="<?php echo $product['id']; ?>"
-     data-qty="1"
-     data-price="<?php echo $product['price']; ?>">
-    Tambah ke Keranjang
-  </a>                                        </div>
+<a href="#"
+   title="Tambah ke Keranjang"
+   class="btn-cart"
+   data-url="<?= url('home/addCart'); ?>"
+   data-product="<?= $product['id']; ?>"
+   data-qty="1"
+   data-price="<?= $product['price']; ?>"
+   data-name="<?= htmlspecialchars($product['name'], ENT_QUOTES); ?>"
+   data-image="<?= filter_var($product['image'], FILTER_VALIDATE_URL) ? $product['image'] : image('05_' . $product['image']); ?>"
+   data-info="<?= htmlspecialchars($product['description'], ENT_QUOTES); ?>">
+   Tambah ke Keranjang
+</a>
+                                     </div>
                                     </div>
                                 </div>
                                 <div class="product-content">
@@ -130,32 +134,27 @@
         </div>
     </section>
 
-    <script>
+<script>
   $(document).on('click', '.btn-cart', function(e){
     e.preventDefault();
     const $btn = $(this);
-
     $.post($btn.data('url'), {
       product: $btn.data('product'),
       qty:     $btn.data('qty')   || 1,
       price:   $btn.data('price') || 0
     }, function(res){
       if (!res.error) {
-        // update badge
+        // Update badge keranjang
         let count = parseInt($('.total-count').text()) || 0;
         $('.total-count').text(count + 1);
 
-        // tampilkan toast singkat
-        $('<div class="cart-toast">✔ Produk ditambahkan!</div>')
-          .appendTo('body')
-          .css({
-            position: 'fixed', bottom:'20px', right:'20px',
-            background:'#28a745', color:'#fff', padding:'10px 15px',
-            'border-radius':'4px', 'z-index':9999
-          })
-          .fadeIn(200)
-          .delay(800)
-          .fadeOut(300, function(){ $(this).remove() });
+        // Tampilkan popup/modal dengan info produk
+        $('#cart-product-name').text($btn.data('name'));
+        $('#cart-product-image').attr('src', $btn.data('image'));
+        $('#cart-product-desc').text($btn.data('info'));
+        $('#cart-product-price').text('Rp ' + $btn.data('price').toLocaleString('id-ID'));
+
+        $('#cart-modal').fadeIn();
       } else {
         alert('Gagal menambahkan ke keranjang');
       }
@@ -165,3 +164,4 @@
     });
   });
 </script>
+
