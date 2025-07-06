@@ -135,33 +135,27 @@
     </section>
 
 <script>
-  $(document).on('click', '.btn-cart', function(e){
+$(document).on('click', '.btn-cart', function(e){
     e.preventDefault();
     const $btn = $(this);
-    $.post($btn.data('url'), {
-      product: $btn.data('product'),
-      qty:     $btn.data('qty')   || 1,
-      price:   $btn.data('price') || 0
-    }, function(res){
-      if (!res.error) {
-        // Update badge keranjang
-        let count = parseInt($('.total-count').text()) || 0;
-        $('.total-count').text(count + 1);
 
-        // Tampilkan popup/modal dengan info produk
-        $('#cart-product-name').text($btn.data('name'));
-        $('#cart-product-image').attr('src', $btn.data('image'));
-        $('#cart-product-desc').text($btn.data('info'));
-        $('#cart-product-price').text('Rp ' + $btn.data('price').toLocaleString('id-ID'));
-
-        $('#cart-modal').fadeIn();
-      } else {
-        alert('Gagal menambahkan ke keranjang');
-      }
-    }, 'json')
-    .fail(function(){
-      alert('Terjadi galat pada server');
+    // Update modal isi produk sesuai produk yang diklik
+    const img = $('.img-product');
+    $.each(img, function(){
+        $(this).prop('alt', $btn.closest('.single-product').find('h3 a').text());
+        $(this).attr('src', $btn.closest('.single-product').find('img.default-img').attr('src'));
     });
-  });
+
+    $('#name').html($btn.closest('.single-product').find('h3 a').text());
+    $('#price').html($btn.data('price'));
+    $('#info').html($btn.closest('.single-product').find('.product-img a').attr('title') || '');
+
+    $('.add-cart-modal').attr('data-price', $btn.data('price'));
+    $('.add-cart-modal').attr('data-product', $btn.data('product'));
+    $('.add-wishlist-modal').attr('data-product', $btn.data('product'));
+
+    $('#modal-view').modal('show');
+});
+
 </script>
 
