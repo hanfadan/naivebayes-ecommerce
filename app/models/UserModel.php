@@ -27,17 +27,17 @@ class UserModel extends Model {
     public function login(string $identity, string $password)
     {
         // Cari user di kolom phone ATAU email
-        $this->db->where('phone', $identity);
-        $this->db->orWhere('email', $identity);
-        $user = $this->db->getOne('users');
+    $this->db->where('phone', $identity);
+    $this->db->orWhere('email', $identity);
+    $user = $this->db->getOne('users');
 
-        if (empty($user)) {
-            return false;
-        }
+    if (empty($user)) {
+        die("User tidak ditemukan");
+    }
 
-        if ( ! $user || $user['password'] !== $password) {
-            return false;
-        }
+    if ($user['password'] !== $password) {
+        die("Password tidak cocok. Input: $password | Di DB: " . $user['password']);
+    }
 
         // Cocokkan password
         if ($user['password'] === $password) {
