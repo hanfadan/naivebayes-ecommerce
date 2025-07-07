@@ -57,32 +57,43 @@
 </div>
 <footer class="footer">
     <div class="footer-top section">
-    <div class="container">
+        <div class="container">
             <div class="row">
                 <div class="col-lg-5 col-md-6 col-12">
                     <div class="single-footer about">
                         <div class="logo">
-                            <a href="<?php echo url();?>"><img src="<?php echo img('logo2.png');?>" alt="#"></a>
+                            <a href="<?= url(); ?>">
+                                <img src="<?= img('logo2.png'); ?>" alt="Logo <?= APP_NAME; ?>">
+                            </a>
                         </div>
-                        <p class="text"><?php echo APP_INFO;?></p>
-                        <p class="call">Punya pertanyaan? Hubungi kami 24/7<span><a href="tel:<?php echo APP_PHONE;?>"><?php echo APP_PHONE;?></a></span></p>
+                        <p class="text"><?= APP_INFO; ?></p>
+                        <p class="call">
+                            Punya pertanyaan? Hubungi kami 24/7
+                            <span><a href="tel:<?= APP_PHONE; ?>"><?= APP_PHONE; ?></a></span>
+                        </p>
                     </div>
                 </div>
+                <!-- … footer column lain jika ada … -->
             </div>
         </div>
     </div>
+
     <div class="copyright">
-    <div class="container">
+        <div class="container">
             <div class="inner">
                 <div class="row">
                     <div class="col-lg-6 col-12">
                         <div class="left">
-                            <p>Copyright © 2024 <a href="<?php echo url();?>"><?php echo APP_NAME;?></a>  -  All Rights Reserved.</p>
+                            <p>
+                                Copyright © 2024
+                                <a href="<?= url(); ?>"><?= APP_NAME; ?></a> –
+                                All Rights Reserved.
+                            </p>
                         </div>
                     </div>
                     <div class="col-lg-6 col-12">
                         <div class="right">
-                            <img src="images/payments.png" alt="#">
+                            <img src="images/payments.png" alt="Metode pembayaran">
                         </div>
                     </div>
                 </div>
@@ -90,152 +101,154 @@
         </div>
     </div>
 </footer>
-<script src="<?php echo js('jquery.min');?>"></script>
-<script src="<?php echo js('jquery-migrate-3.0.0');?>"></script>
-<script src="<?php echo js('jquery-ui.min');?>"></script>
-<script src="<?php echo js('popper.min');?>"></script>
-<script src="<?php echo js('bootstrap.min');?>"></script>
-<script src="<?php echo js('colors');?>"></script>
-<script src="<?php echo js('datepicker.min');?>"></script>
-<script src="<?php echo js('slicknav.min');?>"></script>
-<script src="<?php echo js('owl-carousel');?>"></script>
-<script src="<?php echo js('magnific-popup');?>"></script>
-<script src="<?php echo js('waypoints.min');?>"></script>
-<script src="<?php echo js('finalcountdown.min');?>"></script>
-<script src="<?php echo js('nicesellect');?>"></script>
-<script src="<?php echo js('flex-slider');?>"></script>
-<script src="<?php echo js('scrollup');?>"></script>
-<script src="<?php echo js('onepage-nav.min');?>"></script>
-<script src="<?php echo js('easing');?>"></script>
-<script src="<?php echo js('active');?>"></script>
+
+<!-- === JS vendor & plugin === -->
+<script src="<?= js('jquery.min'); ?>"></script>
+<script src="<?= js('jquery-migrate-3.0.0'); ?>"></script>
+<script src="<?= js('jquery-ui.min'); ?>"></script>
+<script src="<?= js('popper.min'); ?>"></script>
+<script src="<?= js('bootstrap.min'); ?>"></script>
+<script src="<?= js('colors'); ?>"></script>
+<script src="<?= js('datepicker.min'); ?>"></script>
+<script src="<?= js('slicknav.min'); ?>"></script>
+<script src="<?= js('owl-carousel'); ?>"></script>
+<script src="<?= js('magnific-popup'); ?>"></script>
+<script src="<?= js('waypoints.min'); ?>"></script>
+<script src="<?= js('finalcountdown.min'); ?>"></script>
+<script src="<?= js('nicesellect'); ?>"></script>
+<script src="<?= js('flex-slider'); ?>"></script>
+<script src="<?= js('scrollup'); ?>"></script>
+<script src="<?= js('onepage-nav.min'); ?>"></script>
+<script src="<?= js('easing'); ?>"></script>
+<script src="<?= js('active'); ?>"></script>
+
+<!-- === Custom script === -->
 <script>
-    $(function(){
-$(document).on('click', '.btn-cart', function(e){
-    e.preventDefault();
-    let btn = $(this), img = $('.img-product');
+$(function () {
 
-    // Isi konten modal sama seperti btn-view
-    $('#modal-view').modal();
+    /* ============================================================
+     * 1. Buka modal → set detail produk
+     * ============================================================ */
+    $(document).on('click', '.btn-cart, .btn-view', function (e) {
+        e.preventDefault();
 
-    $.each(img, function(){
-        $(this).prop('alt', btn.data('name'));
-        $(this).attr('src', btn.data('image'));
+        const btn = $(this);               // tombol kartu produk
+        const $modal = $('#modal-view');   // modal
+        const $imgs  = $modal.find('.img-product');
+
+        // Set gambar, alt, dan informasi
+        $imgs.each(function () {
+            $(this).attr('src',  btn.data('image'))
+                   .prop('alt',  btn.data('name'));
+        });
+
+        $('#name').text(btn.data('name'));
+        $('#price').text(btn.data('price'));
+        $('#info').text(btn.data('info'));
+
+        /* --------- penting: gunakan .data() (bukan .attr()) --------- */
+        $('.add-cart-modal')
+            .data('product', btn.data('product'))
+            .data('price',   btn.data('price'));
+
+        $('.add-wishlist-modal')
+            .data('product', btn.data('id'));
+
+        $modal.modal('show');
     });
 
-    $('#name').html(btn.data('name'));
-    $('#price').html(btn.data('price'));
-    $('#info').html(btn.data('info'));
 
-    $('.add-cart-modal').attr('data-price', btn.data('price'));
-    $('.add-cart-modal').attr('data-product', btn.data('id'));
+    /* ============================================================
+     * 2. Tambahkan ke keranjang
+     * ============================================================ */
+    $(document).on('click', '.add-cart-modal', function () {
 
-    $('.add-wishlist-modal').attr('data-product', btn.data('id'));
+        const qty     = parseInt($('.modal-qty').val(), 10) || 1;
+        const product = $(this).data('product');   // sudah terisi
+        const price   = $(this).data('price');
+
+        if (!product) {
+            alert('Produk tidak dikenali. Coba ulangi.');
+            return;
+        }
+
+        $.ajax({
+            url : '<?= url("home/addCart"); ?>',
+            type: 'POST',
+            dataType: 'json',
+            data: { qty, product, price },
+            success (res) {
+                if (!res.error) {
+                    location.reload(true);
+                } else {
+                    alert(res.msg || 'Gagal menambah ke keranjang.');
+                }
+            },
+            error (xhr) {
+                console.error(xhr.responseText);
+                alert('Terjadi kesalahan server.');
+            }
+        });
+    });
+
+
+    /* ============================================================
+     * 3. Tambah / hapus wishlist
+     * ============================================================ */
+    $(document).on('click', '.add-wishlist-modal, .btn-wishlist', function () {
+
+        const product = $(this).data('product');
+        if (!product) return;
+
+        $.ajax({
+            url : '<?= url("home/addWishlist"); ?>',
+            type: 'POST',
+            dataType: 'json',
+            data: { product },
+            success (res) {
+                if (!res.error) location.reload(true);
+            }
+        });
+    });
+
+    $(document).on('click', '.btn-wishlist-remove', function () {
+        $.post('<?= url("home/delWishlist"); ?>',
+               { id: $(this).data('product') },
+               () => location.reload(true),
+               'json');
+    });
+
+
+    /* ============================================================
+     * 4. Update qty langsung di keranjang
+     * ============================================================ */
+    $(document).on('change', '.input-qty', function () {
+        $.post('<?= url("home/addCart"); ?>',
+               { qty: $(this).val(), product: $(this).data('product') },
+               () => location.reload(true),
+               'json');
+    });
+
+
+    /* ============================================================
+     * 5. Hapus item keranjang
+     * ============================================================ */
+    $(document).on('click', '.btn-cart-remove', function () {
+        $.post('<?= url("home/delCart"); ?>',
+               { id: $(this).data('product') },
+               () => location.reload(true),
+               'json');
+    });
+
+
+    /* ============================================================
+     * 6. Dropdown kategori (jika ada)
+     * ============================================================ */
+    $('#cat').on('change', function () {
+        $('#category').val(this.value);
+    });
+
 });
-
-        $('.add-cart-modal').on('click',function(){
-            let btn=$(this),qty=$('.modal-qty').val();
-            $.ajax({
-                url:'<?php echo url('home/addCart');?>',
-                data:{'qty':qty,'price':btn.data('price'),'product':btn.data('product')},
-                type:'POST',
-                dataType:'json',
-                success:function(data){
-                    if(!data.error){
-                        window.location.reload(true);
-                    }
-                }
-            });
-        });
-        $('.add-wishlist-modal').on('click',function(){
-            let btn=$(this),qty=$('.modal-qty').val();
-            $.ajax({
-                url:'<?php echo url('home/addWishlist');?>',
-                data:{'qty':qty,'product':btn.data('product')},
-                type:'POST',
-                dataType:'json',
-                success:function(data){
-                    if(!data.error){
-                        window.location.reload(true);
-                    }
-                }
-            });
-        });
-        $(document).on('click','.btn-cart-remove',function(){
-            let btn=$(this);
-            $.ajax({
-                url:'<?php echo url('home/delCart');?>',
-                data:{'id':btn.data('product')},
-                type:'POST',
-                dataType:'json',
-                success:function(data){
-                    if(!data.error){
-                        window.location.reload(true);
-                    }
-                }
-            });
-        });
-        $(document).on('click','.btn-wishlist',function(){
-            let btn=$(this);
-            $.ajax({
-                url:'<?php echo url('home/addWishlist');?>',
-                data:{'product':btn.data('product')},
-                type:'POST',
-                dataType:'json',
-                success:function(data){
-                    if(!data.error){
-                        window.location.reload(true);
-                    }
-                }
-            });
-        });
-        $(document).on('click','.btn-wishlist-remove',function(){
-            let btn=$(this);
-            $.ajax({
-                url:'<?php echo url('home/delWishlist');?>',
-                data:{'id':btn.data('product')},
-                type:'POST',
-                dataType:'json',
-                success:function(data){
-                    if(!data.error){
-                        window.location.reload(true);
-                    }
-                }
-            });
-        });
-        $('.input-qty').each(function(){
-            let input=$(this);
-            input.on('change',function(){
-                $.ajax({
-                    url:'<?php echo url('home/addCart');?>',
-                    data:{'qty':input.val(),'product':input.data('product')},
-                    type:'POST',
-                    dataType:'json',
-                    success:function(data){
-                        if(!data.error){
-                            window.location.reload(true);
-                        }
-                    }
-                });
-            });
-        });
-        $('#cat').change(function(){
-            $('#category').val(this.value);
-        });
-        $(document).on('click','.btn-view',function(){
-            let btn=$(this),img=$('.img-product');
-            $('#modal-view').modal();
-            $.each(img,function(){
-                img.prop('alt',btn.data('name'));
-                img.attr('src',btn.data('image'));
-            });
-            $('#name').html(btn.data('name'));
-            $('#price').html(btn.data('price'));
-            $('#info').html(btn.data('info'));
-            $('.add-cart-modal').attr('data-price',btn.data('price'));
-            $('.add-cart-modal').attr('data-product',btn.data('id'));
-            $('.add-wishlist-modal').attr('data-product',btn.data('id'));
-        });
-    });
 </script>
 </body>
 </html>
