@@ -2,21 +2,31 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="ti-close" aria-hidden="true"></span></button>
+                <button type="button" class="close" data-dismiss="modal"
+                        aria-label="Close"><span class="ti-close"></span></button>
             </div>
+
             <div class="modal-body">
                 <div class="row no-gutters">
-                    <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                    <!-- gambar -->
+                    <div class="col-lg-6 col-md-12 col-sm-12">
                         <div class="product-gallery">
                             <div class="quickview-slider-active">
-                                <div class="single-slider"><img class="img-product" alt=""></div>
-                                <div class="single-slider"><img class="img-product" alt=""></div>
+                                <div class="single-slider">
+                                    <img class="img-product" alt="">
+                                </div>
+                                <div class="single-slider">
+                                    <img class="img-product" alt="">
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+
+                    <!-- detail -->
+                    <div class="col-lg-6 col-md-12 col-sm-12">
                         <div class="quickview-content">
                             <h2 id="name"></h2>
+
                             <div class="quickview-ratting-review">
                                 <div class="quickview-ratting-wrap">
                                     <div class="quickview-ratting">
@@ -24,37 +34,59 @@
                                     </div>
                                 </div>
                             </div>
+
                             <h3 id="price"></h3>
+
                             <div class="quickview-peragraph">
                                 <p id="info"></p>
                             </div>
-                            <div class="size"></div>
-                            <div class="quantity">
+
+                            <div class="quantity mb-3">
                                 <div class="input-group">
                                     <div class="button minus">
-                                        <button type="button" class="btn btn-primary btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+                                        <button type="button" class="btn btn-primary btn-number"
+                                                data-type="minus" data-field="quant[1]" disabled>
                                             <i class="ti-minus"></i>
                                         </button>
                                     </div>
-                                    <input type="text" name="quant[1]" class="input-number modal-qty" data-min="1" data-max="1000" value="1">
+
+                                    <input type="text" name="quant[1]"
+                                           class="input-number modal-qty" value="1"
+                                           data-min="1" data-max="1000">
+
                                     <div class="button plus">
-                                        <button type="button" class="btn btn-primary btn-number" data-type="plus" data-field="quant[1]">
+                                        <button type="button" class="btn btn-primary btn-number"
+                                                data-type="plus" data-field="quant[1]">
                                             <i class="ti-plus"></i>
                                         </button>
                                     </div>
                                 </div>
                             </div>
+
                             <div class="add-to-cart">
-                                <a href="javascript:void(0);" class="btn add-cart-modal" data-price="" data-product="">Masukkan ke keranjang</a>
-                                <a href="javascript:void(0);" class="btn min add-wishlist-modal" data-product=""><i class="ti-heart"></i></a>
+                                <!-- data-* dikosongkan; nanti diset via JS -->
+                                <a href="javascript:void(0);"
+                                   class="btn add-cart-modal"
+                                   data-product="" data-price="">
+                                   Masukkan ke Keranjang
+                                </a>
+
+                                <a href="javascript:void(0);"
+                                   class="btn min add-wishlist-modal"
+                                   data-product="">
+                                   <i class="ti-heart"></i>
+                                </a>
                             </div>
-                        </div>
+                        </div><!-- /.quickview-content -->
                     </div>
-                </div>
-            </div>
+                </div><!-- /.row -->
+            </div><!-- /.modal-body -->
         </div>
     </div>
 </div>
+<!-- ========== /MODAL QUICKVIEW ========== -->
+
+
 <footer class="footer">
     <div class="footer-top section">
         <div class="container">
@@ -63,17 +95,19 @@
                     <div class="single-footer about">
                         <div class="logo">
                             <a href="<?= url(); ?>">
-                                <img src="<?= img('logo2.png'); ?>" alt="Logo <?= APP_NAME; ?>">
+                                <img src="<?= img('logo2.png'); ?>"
+                                     alt="Logo <?= APP_NAME; ?>">
                             </a>
                         </div>
                         <p class="text"><?= APP_INFO; ?></p>
                         <p class="call">
                             Punya pertanyaan? Hubungi kami 24/7
-                            <span><a href="tel:<?= APP_PHONE; ?>"><?= APP_PHONE; ?></a></span>
+                            <span><a href="tel:<?= APP_PHONE; ?>">
+                                   <?= APP_PHONE; ?></a></span>
                         </p>
                     </div>
                 </div>
-                <!-- … footer column lain jika ada … -->
+                <!-- kolom footer lain … -->
             </div>
         </div>
     </div>
@@ -84,11 +118,7 @@
                 <div class="row">
                     <div class="col-lg-6 col-12">
                         <div class="left">
-                            <p>
-                                Copyright © 2024
-                                <a href="<?= url(); ?>"><?= APP_NAME; ?></a> –
-                                All Rights Reserved.
-                            </p>
+                            <p>© 2024 <a href="<?= url(); ?>"><?= APP_NAME; ?></a></p>
                         </div>
                     </div>
                     <div class="col-lg-6 col-12">
@@ -102,7 +132,8 @@
     </div>
 </footer>
 
-<!-- === JS vendor & plugin === -->
+
+<!-- ========== JS VENDOR ========== -->
 <script src="<?= js('jquery.min'); ?>"></script>
 <script src="<?= js('jquery-migrate-3.0.0'); ?>"></script>
 <script src="<?= js('jquery-ui.min'); ?>"></script>
@@ -122,49 +153,56 @@
 <script src="<?= js('easing'); ?>"></script>
 <script src="<?= js('active'); ?>"></script>
 
-<!-- === Custom script === -->
+
+<!-- ========== CUSTOM SCRIPT ========== -->
 <script>
 $(function () {
 
-    /* ============================================================
-     * 1. Buka modal → set detail produk
-     * ============================================================ */
-    $(document).on('click', '.btn-cart, .btn-view', function (e) {
+    /* ------- helper fleksibel pengambil ID ------- */
+    function getProductId($el) {
+        return $el.data('product')      // prefer this
+            || $el.data('id')           // fallback lama
+            || $el.data('id_product');  // fallback lain
+    }
+
+    /* =================================================
+     * 1. Buka modal  (btn-view / btn-cart)
+     * ================================================= */
+    $(document).on('click', '.btn-view, .btn-cart', function (e) {
         e.preventDefault();
 
-        const btn = $(this);               // tombol kartu produk
-        const $modal = $('#modal-view');   // modal
-        const $imgs  = $modal.find('.img-product');
+        const $btn   = $(this);
+        const prodId = getProductId($btn);
+        const price  = $btn.data('price');
 
-        // Set gambar, alt, dan informasi
-        $imgs.each(function () {
-            $(this).attr('src',  btn.data('image'))
-                   .prop('alt',  btn.data('name'));
-        });
+        const $modal = $('#modal-view');
 
-        $('#name').text(btn.data('name'));
-        $('#price').text(btn.data('price'));
-        $('#info').text(btn.data('info'));
+        /* gambar & info */
+        $modal.find('.img-product')
+              .attr('src', $btn.data('image'))
+              .prop('alt', $btn.data('name'));
 
-        /* --------- penting: gunakan .data() (bukan .attr()) --------- */
-        $('.add-cart-modal')
-            .data('product', btn.data('product'))
-            .data('price',   btn.data('price'));
+        $('#name').text($btn.data('name'));
+        $('#price').text(price);
+        $('#info').text($btn.data('info'));
 
-        $('.add-wishlist-modal')
-            .data('product', btn.data('id'));
+        /* simpan ID & price di tombol modal */
+        $modal.find('.add-cart-modal')
+              .data({ product: prodId, price: price });
+
+        $modal.find('.add-wishlist-modal')
+              .data('product', prodId);
 
         $modal.modal('show');
     });
 
-
-    /* ============================================================
-     * 2. Tambahkan ke keranjang
-     * ============================================================ */
+    /* =================================================
+     * 2. Masukkan ke Keranjang (tombol di modal)
+     * ================================================= */
     $(document).on('click', '.add-cart-modal', function () {
 
         const qty     = parseInt($('.modal-qty').val(), 10) || 1;
-        const product = $(this).data('product');   // sudah terisi
+        const product = $(this).data('product');
         const price   = $(this).data('price');
 
         if (!product) {
@@ -172,80 +210,51 @@ $(function () {
             return;
         }
 
-        $.ajax({
-            url : '<?= url("home/addCart"); ?>',
-            type: 'POST',
-            dataType: 'json',
-            data: { qty, product, price },
-            success (res) {
-                if (!res.error) {
-                    location.reload(true);
-                } else {
-                    alert(res.msg || 'Gagal menambah ke keranjang.');
-                }
-            },
-            error (xhr) {
-                console.error(xhr.responseText);
-                alert('Terjadi kesalahan server.');
-            }
-        });
+        $.post('<?= url("home/addCart"); ?>',
+               { qty, product, price },
+               function (res) {
+                   if (!res.error) {
+                       location.reload(true);
+                   } else {
+                       alert(res.msg || 'Gagal menambah ke keranjang.');
+                   }
+               },
+               'json'
+        );
     });
 
-
-    /* ============================================================
-     * 3. Tambah / hapus wishlist
-     * ============================================================ */
+    /* =================================================
+     * 3. Wishlist (tambah & hapus)
+     * ================================================= */
     $(document).on('click', '.add-wishlist-modal, .btn-wishlist', function () {
-
         const product = $(this).data('product');
         if (!product) return;
 
-        $.ajax({
-            url : '<?= url("home/addWishlist"); ?>',
-            type: 'POST',
-            dataType: 'json',
-            data: { product },
-            success (res) {
-                if (!res.error) location.reload(true);
-            }
-        });
+        $.post('<?= url("home/addWishlist"); ?>',
+               { product }, () => location.reload(true), 'json');
     });
 
     $(document).on('click', '.btn-wishlist-remove', function () {
         $.post('<?= url("home/delWishlist"); ?>',
-               { id: $(this).data('product') },
-               () => location.reload(true),
-               'json');
+               { id: $(this).data('product') }, () => location.reload(true), 'json');
     });
 
-
-    /* ============================================================
-     * 4. Update qty langsung di keranjang
-     * ============================================================ */
+    /* =================================================
+     * 4. Update qty di keranjang
+     * ================================================= */
     $(document).on('change', '.input-qty', function () {
         $.post('<?= url("home/addCart"); ?>',
                { qty: $(this).val(), product: $(this).data('product') },
-               () => location.reload(true),
-               'json');
+               () => location.reload(true), 'json');
     });
 
-
-    /* ============================================================
+    /* =================================================
      * 5. Hapus item keranjang
-     * ============================================================ */
+     * ================================================= */
     $(document).on('click', '.btn-cart-remove', function () {
         $.post('<?= url("home/delCart"); ?>',
                { id: $(this).data('product') },
-               () => location.reload(true),
-               'json');
-    });
-
-
-    /* ============================================================
-     * 6. Dropdown kategori (jika ada)
-     * ============================================================ */
-    $('#cat').on('change', function () {
-        $('#category').val(this.value);
+               () => location.reload(true), 'json');
     });
 
 });
