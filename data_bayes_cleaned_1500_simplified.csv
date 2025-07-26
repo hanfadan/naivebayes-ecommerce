@@ -1,0 +1,1501 @@
+age_group,gender,category,budget_band,price_band,buy_freq,buy_factor,channel_main,review_consider,eco_interest,eco_paymore,brand_preference,style_pref
+25-34,m,jaket,300-600k,sedang,Beberapa bulan,Harga,Sosmed,Tak pernah,Tertarik,Tidak,merah,formal
+25-34,m,jaket,300-600k,sedang,Beberapa bulan,Merek,Web brand,Selalu,Tertarik,Mungkin,kuning,sporty
+25-34,m,jas,300-600k,sedang,Setiap minggu,Trend,Offline,Sering,Agak tertarik,Tidak,biru,minimalis
+25-34,m,pakaian-wanita,300-600k,sedang,Setiap minggu,Harga,Marketplace,Tak pernah,Agak tertarik,Ya,vibrant,sporty
+25-34,f,jaket,100-300k,murah,Setiap minggu,Harga,Sosmed,Selalu,Tidak tertarik,Tidak,coklat,kasual
+25-34,m,pakaian-pria,100-300k,sedang,Jarang,Trend,Sosmed,Kadang,Tidak tertarik,Tidak,biru,sporty
+25-34,m,jaket,300-600k,sedang,Setiap bulan,Harga,Web brand,Selalu,Agak tertarik,Ya,netral,vintage
+25-34,m,kaos,300-600k,sedang,Jarang,Kualitas,Web brand,Sering,Tidak tertarik,Mungkin,vibrant,sporty
+25-34,m,jas,100-300k,sedang,Beberapa bulan,Trend,Web brand,Tak pernah,Tidak tertarik,Mungkin,netral,vintage
+25-34,m,pakaian-pria,300-600k,sedang,Beberapa bulan,Harga,Marketplace,Tak pernah,Tidak tertarik,Ya,netral,kasual
+25-34,f,pakaian-pria,100-300k,murah,Setiap bulan,Harga,Sosmed,Tak pernah,Tidak tertarik,Ya,vibrant,kasual
+25-34,f,jaket,100-300k,sedang,Beberapa bulan,Kualitas,Offline,Selalu,Tertarik,Tidak,hitam,kasual
+25-34,f,celana,100-300k,sedang,Beberapa bulan,Kualitas,Marketplace,Tak pernah,Tertarik,Tidak,putih,formal
+25-34,m,pakaian-pria,100-300k,murah,Setiap minggu,Harga,Marketplace,Kadang,Tidak tertarik,Ya,hitam,kasual
+25-34,m,celana,100-300k,sedang,Jarang,Trend,Sosmed,Selalu,Tertarik,Ya,abu,minimalis
+25-34,f,jas,100-300k,sedang,Setiap minggu,Merek,Sosmed,Kadang,Tidak tertarik,Ya,netral,minimalis
+25-34,m,kemeja-casual,300-600k,sedang,Setiap minggu,Harga,Web brand,Kadang,Tidak tertarik,Ya,putih,kasual
+25-34,f,pakaian-pria,300-600k,sedang,Beberapa bulan,Kualitas,Marketplace,Selalu,Agak tertarik,Tidak,biru,formal
+25-34,m,jaket,300-600k,sedang,Beberapa bulan,Kualitas,Marketplace,Selalu,Tidak tertarik,Tidak,coklat,minimalis
+25-34,f,pakaian-pria,300-600k,sedang,Jarang,Trend,Sosmed,Selalu,Agak tertarik,Ya,pink,kasual
+25-34,f,kaos,300-600k,sedang,Jarang,Merek,Sosmed,Selalu,Tidak tertarik,Mungkin,coklat,kasual
+25-34,m,celana,100-300k,sedang,Setiap bulan,Merek,Marketplace,Sering,Tertarik,Ya,coklat,kasual
+25-34,f,celana,100-300k,sedang,Setiap minggu,Trend,Web brand,Tak pernah,Agak tertarik,Tidak,abu,kasual
+25-34,m,kaos,<100k,murah,Setiap bulan,Merek,Offline,Selalu,Agak tertarik,Ya,hitam,vintage
+25-34,f,sweater,300-600k,sedang,Beberapa bulan,Kualitas,Marketplace,Selalu,Tertarik,Ya,netral,sporty
+25-34,m,kaos-kaki,300-600k,sedang,Beberapa bulan,Merek,Offline,Selalu,Tertarik,Mungkin,hijau,sporty
+25-34,m,kaos,300-600k,sedang,Setiap bulan,Kualitas,Marketplace,Sering,Tidak tertarik,Tidak,merah,vintage
+25-34,m,kaos-polo,300-600k,sedang,Beberapa bulan,Trend,Web brand,Tak pernah,Tertarik,Ya,putih,minimalis
+25-34,f,kaos,300-600k,sedang,Jarang,Kualitas,Sosmed,Tak pernah,Tidak tertarik,Mungkin,putih,vintage
+25-34,f,celana,100-300k,sedang,Setiap bulan,Harga,Marketplace,Tak pernah,Agak tertarik,Ya,netral,kasual
+25-34,m,kaos,100-300k,murah,Setiap bulan,Trend,Marketplace,Selalu,Tidak tertarik,Mungkin,netral,minimalis
+25-34,m,kaos,<100k,murah,Jarang,Trend,Offline,Selalu,Agak tertarik,Tidak,kuning,formal
+25-34,m,pakaian-pria,100-300k,sedang,Setiap minggu,Trend,Sosmed,Sering,Tidak tertarik,Tidak,merah,vintage
+25-34,m,jaket,100-300k,murah,Jarang,Trend,Sosmed,Kadang,Tidak tertarik,Tidak,vibrant,formal
+25-34,m,kaos-polo,100-300k,sedang,Setiap minggu,Kualitas,Offline,Selalu,Agak tertarik,Mungkin,pink,vintage
+25-34,f,kaos,300-600k,sedang,Jarang,Kualitas,Sosmed,Sering,Tidak tertarik,Mungkin,hitam,formal
+25-34,m,jas,100-300k,sedang,Beberapa bulan,Merek,Marketplace,Tak pernah,Agak tertarik,Ya,vibrant,minimalis
+25-34,m,celana,100-300k,sedang,Setiap minggu,Trend,Marketplace,Kadang,Agak tertarik,Mungkin,pastel,formal
+25-34,m,jaket,100-300k,sedang,Setiap minggu,Merek,Sosmed,Selalu,Tidak tertarik,Tidak,pastel,minimalis
+25-34,f,sweater,100-300k,murah,Setiap minggu,Harga,Marketplace,Sering,Agak tertarik,Ya,earth,vintage
+25-34,m,jas,100-300k,sedang,Jarang,Kualitas,Marketplace,Tak pernah,Agak tertarik,Ya,netral,kasual
+25-34,m,pakaian-pria,300-600k,sedang,Setiap minggu,Harga,Marketplace,Tak pernah,Agak tertarik,Ya,vibrant,sporty
+25-34,m,jaket,300-600k,sedang,Setiap bulan,Harga,Offline,Sering,Tidak tertarik,Mungkin,pastel,minimalis
+25-34,m,pakaian-pria,300-600k,sedang,Setiap bulan,Harga,Offline,Selalu,Agak tertarik,Tidak,hitam,vintage
+25-34,m,kaos,<100k,murah,Setiap minggu,Harga,Sosmed,Sering,Tertarik,Ya,vibrant,vintage
+25-34,f,jaket,300-600k,sedang,Beberapa bulan,Merek,Marketplace,Selalu,Tidak tertarik,Tidak,earth,formal
+25-34,m,pakaian-pria,100-300k,murah,Setiap bulan,Merek,Sosmed,Tak pernah,Tertarik,Tidak,kuning,formal
+25-34,m,sweater,100-300k,murah,Beberapa bulan,Trend,Offline,Kadang,Tidak tertarik,Ya,netral,minimalis
+25-34,f,kaos,100-300k,murah,Setiap minggu,Harga,Marketplace,Kadang,Tidak tertarik,Mungkin,hijau,kasual
+25-34,m,kaos-kaki,100-300k,sedang,Setiap minggu,Merek,Sosmed,Kadang,Tertarik,Ya,putih,formal
+25-34,m,pakaian-pria,300-600k,sedang,Setiap bulan,Harga,Marketplace,Selalu,Agak tertarik,Mungkin,vibrant,sporty
+25-34,f,pakaian-wanita,100-300k,sedang,Setiap minggu,Harga,Marketplace,Kadang,Agak tertarik,Tidak,hitam,kasual
+25-34,f,kaos,100-300k,murah,Jarang,Trend,Offline,Sering,Agak tertarik,Ya,abu,formal
+25-34,m,jas,100-300k,sedang,Jarang,Kualitas,Marketplace,Sering,Agak tertarik,Tidak,coklat,vintage
+25-34,f,kaos,300-600k,sedang,Jarang,Trend,Web brand,Selalu,Tertarik,Ya,biru,kasual
+25-34,f,kaos-polo,300-600k,sedang,Setiap bulan,Kualitas,Web brand,Kadang,Tertarik,Tidak,putih,sporty
+25-34,m,jas,300-600k,sedang,Setiap minggu,Merek,Sosmed,Selalu,Tidak tertarik,Tidak,pastel,minimalis
+25-34,f,jas,100-300k,sedang,Beberapa bulan,Merek,Offline,Kadang,Tidak tertarik,Mungkin,vibrant,minimalis
+25-34,f,jaket,300-600k,sedang,Beberapa bulan,Kualitas,Web brand,Sering,Agak tertarik,Mungkin,biru,kasual
+25-34,f,pakaian-pria,300-600k,sedang,Setiap bulan,Kualitas,Sosmed,Tak pernah,Agak tertarik,Mungkin,abu,kasual
+25-34,m,kaos,300-600k,sedang,Jarang,Trend,Web brand,Tak pernah,Agak tertarik,Mungkin,putih,vintage
+25-34,m,pakaian-wanita,300-600k,sedang,Setiap bulan,Kualitas,Web brand,Kadang,Tertarik,Ya,putih,kasual
+25-34,f,kaos,100-300k,sedang,Setiap bulan,Kualitas,Sosmed,Sering,Agak tertarik,Tidak,vibrant,formal
+25-34,f,pakaian-wanita,100-300k,sedang,Beberapa bulan,Harga,Sosmed,Tak pernah,Agak tertarik,Tidak,netral,kasual
+25-34,m,pakaian-wanita,300-600k,sedang,Setiap bulan,Harga,Sosmed,Selalu,Tertarik,Ya,biru,formal
+25-34,f,kaos,300-600k,sedang,Beberapa bulan,Kualitas,Web brand,Tak pernah,Agak tertarik,Mungkin,putih,minimalis
+25-34,f,jaket,100-300k,murah,Jarang,Kualitas,Sosmed,Sering,Agak tertarik,Tidak,pastel,sporty
+25-34,m,jas,100-300k,sedang,Setiap minggu,Merek,Marketplace,Tak pernah,Tertarik,Ya,putih,vintage
+25-34,f,\N,>600k,mahal,Setiap bulan,Kualitas,Marketplace,Kadang,Tidak tertarik,Mungkin,pastel,vintage
+25-34,m,jaket,300-600k,sedang,Beberapa bulan,Merek,Marketplace,Kadang,Tidak tertarik,Tidak,abu,sporty
+25-34,f,pakaian-wanita,300-600k,sedang,Setiap bulan,Merek,Marketplace,Selalu,Tidak tertarik,Ya,biru,minimalis
+25-34,f,sweater,300-600k,sedang,Beberapa bulan,Kualitas,Marketplace,Tak pernah,Tertarik,Tidak,hitam,formal
+25-34,f,pakaian-wanita,300-600k,sedang,Setiap minggu,Trend,Sosmed,Selalu,Tertarik,Ya,netral,minimalis
+25-34,m,kaos,100-300k,murah,Jarang,Merek,Offline,Sering,Tertarik,Ya,vibrant,formal
+25-34,m,jaket,300-600k,sedang,Setiap minggu,Harga,Offline,Tak pernah,Agak tertarik,Mungkin,coklat,sporty
+25-34,f,pakaian-wanita,300-600k,sedang,Setiap bulan,Merek,Web brand,Selalu,Tidak tertarik,Tidak,pink,vintage
+25-34,f,pakaian-pria,300-600k,sedang,Setiap bulan,Harga,Offline,Sering,Agak tertarik,Mungkin,hitam,minimalis
+25-34,f,pakaian-pria,100-300k,murah,Jarang,Trend,Offline,Sering,Agak tertarik,Ya,abu,formal
+25-34,m,jas,300-600k,sedang,Setiap minggu,Trend,Web brand,Sering,Tertarik,Ya,hijau,formal
+25-34,m,jas,<100k,murah,Setiap minggu,Kualitas,Web brand,Kadang,Tertarik,Tidak,pastel,vintage
+25-34,f,jas,<100k,murah,Beberapa bulan,Trend,Web brand,Sering,Tertarik,Tidak,merah,formal
+25-34,f,pakaian-pria,300-600k,sedang,Setiap minggu,Harga,Web brand,Selalu,Agak tertarik,Mungkin,kuning,kasual
+25-34,f,kaos,100-300k,murah,Jarang,Merek,Web brand,Tak pernah,Agak tertarik,Tidak,putih,kasual
+25-34,f,pakaian-wanita,100-300k,murah,Beberapa bulan,Merek,Sosmed,Selalu,Tertarik,Tidak,netral,kasual
+25-34,f,jaket,300-600k,sedang,Setiap minggu,Harga,Sosmed,Sering,Agak tertarik,Ya,biru,kasual
+25-34,f,pakaian-pria,100-300k,murah,Jarang,Trend,Sosmed,Selalu,Agak tertarik,Ya,pink,kasual
+25-34,f,jas,100-300k,sedang,Beberapa bulan,Trend,Marketplace,Tak pernah,Tertarik,Tidak,pastel,formal
+25-34,f,jas,300-600k,sedang,Jarang,Trend,Offline,Sering,Agak tertarik,Ya,abu,vintage
+25-34,m,kaos,300-600k,sedang,Setiap bulan,Trend,Marketplace,Sering,Tidak tertarik,Mungkin,coklat,sporty
+25-34,f,kaos,100-300k,sedang,Setiap bulan,Kualitas,Sosmed,Tak pernah,Tidak tertarik,Ya,hitam,kasual
+25-34,m,kaos-kaki,100-300k,sedang,Beberapa bulan,Kualitas,Web brand,Tak pernah,Agak tertarik,Tidak,abu,formal
+25-34,f,jaket,300-600k,sedang,Setiap minggu,Kualitas,Web brand,Kadang,Agak tertarik,Ya,netral,kasual
+25-34,f,jaket,300-600k,sedang,Jarang,Harga,Sosmed,Kadang,Agak tertarik,Tidak,pastel,kasual
+25-34,f,jas,300-600k,sedang,Jarang,Merek,Offline,Sering,Tidak tertarik,Ya,vibrant,sporty
+25-34,m,kaos,300-600k,sedang,Jarang,Kualitas,Offline,Sering,Agak tertarik,Mungkin,vibrant,minimalis
+25-34,f,jas,100-300k,sedang,Beberapa bulan,Harga,Offline,Selalu,Tidak tertarik,Mungkin,putih,formal
+25-34,f,pakaian-pria,<100k,murah,Beberapa bulan,Merek,Marketplace,Selalu,Tidak tertarik,Tidak,earth,formal
+25-34,m,celana,100-300k,sedang,Setiap minggu,Trend,Web brand,Kadang,Tertarik,Mungkin,earth,minimalis
+25-34,m,pakaian-pria,100-300k,murah,Setiap minggu,Trend,Marketplace,Sering,Tertarik,Tidak,pastel,formal
+25-34,f,sweater,<100k,murah,Setiap minggu,Trend,Offline,Tak pernah,Agak tertarik,Mungkin,pink,kasual
+25-34,f,sweater,100-300k,murah,Beberapa bulan,Kualitas,Marketplace,Selalu,Tertarik,Ya,netral,formal
+25-34,m,jaket,100-300k,murah,Setiap bulan,Merek,Web brand,Sering,Agak tertarik,Ya,pastel,minimalis
+25-34,f,kaos,300-600k,sedang,Jarang,Harga,Offline,Tak pernah,Tertarik,Ya,netral,kasual
+25-34,f,pakaian-pria,300-600k,sedang,Jarang,Merek,Offline,Tak pernah,Tertarik,Ya,netral,sporty
+25-34,m,pakaian-wanita,300-600k,sedang,Setiap bulan,Merek,Marketplace,Selalu,Agak tertarik,Ya,pastel,minimalis
+25-34,f,jaket,300-600k,sedang,Beberapa bulan,Merek,Web brand,Selalu,Tertarik,Ya,putih,vintage
+25-34,m,pakaian-wanita,300-600k,sedang,Setiap bulan,Trend,Offline,Tak pernah,Tertarik,Mungkin,vibrant,formal
+25-34,f,kaos,300-600k,sedang,Jarang,Harga,Sosmed,Kadang,Tertarik,Ya,vibrant,vintage
+25-34,f,kaos,300-600k,sedang,Jarang,Harga,Web brand,Kadang,Tidak tertarik,Mungkin,pink,sporty
+25-34,f,kaos,300-600k,sedang,Setiap minggu,Harga,Sosmed,Sering,Agak tertarik,Ya,kuning,minimalis
+25-34,m,kaos,<100k,murah,Setiap minggu,Kualitas,Web brand,Tak pernah,Tertarik,Ya,putih,vintage
+25-34,m,kaos,300-600k,sedang,Beberapa bulan,Harga,Offline,Sering,Tertarik,Ya,hijau,sporty
+25-34,m,jaket,100-300k,murah,Jarang,Harga,Marketplace,Sering,Tidak tertarik,Ya,vibrant,vintage
+25-34,m,kaos,300-600k,sedang,Jarang,Kualitas,Sosmed,Tak pernah,Tertarik,Tidak,pink,sporty
+25-34,m,jaket,100-300k,murah,Setiap minggu,Trend,Web brand,Selalu,Agak tertarik,Ya,pastel,vintage
+25-34,m,kaos,100-300k,murah,Beberapa bulan,Merek,Sosmed,Tak pernah,Tidak tertarik,Tidak,netral,formal
+25-34,m,pakaian-pria,300-600k,sedang,Setiap bulan,Merek,Sosmed,Kadang,Agak tertarik,Ya,earth,vintage
+25-34,m,pakaian-wanita,300-600k,sedang,Setiap minggu,Trend,Marketplace,Kadang,Agak tertarik,Mungkin,vibrant,sporty
+25-34,f,pakaian-wanita,300-600k,sedang,Setiap minggu,Kualitas,Web brand,Selalu,Agak tertarik,Mungkin,kuning,kasual
+25-34,m,kaos,300-600k,sedang,Setiap bulan,Harga,Offline,Sering,Tidak tertarik,Mungkin,pastel,minimalis
+25-34,f,kaos,300-600k,sedang,Jarang,Kualitas,Offline,Selalu,Agak tertarik,Ya,biru,vintage
+25-34,f,pakaian-pria,100-300k,murah,Jarang,Harga,Marketplace,Kadang,Tidak tertarik,Mungkin,hitam,kasual
+25-34,f,kaos,100-300k,murah,Beberapa bulan,Kualitas,Offline,Kadang,Tidak tertarik,Tidak,pastel,minimalis
+25-34,m,jaket,100-300k,murah,Beberapa bulan,Harga,Marketplace,Kadang,Agak tertarik,Tidak,putih,minimalis
+25-34,m,pakaian-wanita,100-300k,murah,Setiap minggu,Kualitas,Offline,Selalu,Tertarik,Mungkin,pastel,formal
+25-34,m,jas,100-300k,sedang,Setiap minggu,Trend,Sosmed,Selalu,Tidak tertarik,Tidak,abu,minimalis
+25-34,f,pakaian-pria,100-300k,murah,Jarang,Merek,Offline,Tak pernah,Tidak tertarik,Tidak,pastel,kasual
+25-34,f,pakaian-pria,100-300k,sedang,Setiap bulan,Merek,Marketplace,Kadang,Agak tertarik,Ya,earth,minimalis
+25-34,f,pakaian-wanita,100-300k,murah,Setiap bulan,Harga,Web brand,Tak pernah,Tertarik,Tidak,biru,vintage
+25-34,f,jaket,100-300k,murah,Jarang,Merek,Offline,Selalu,Tertarik,Tidak,vibrant,formal
+25-34,m,jaket,100-300k,murah,Jarang,Merek,Offline,Sering,Agak tertarik,Mungkin,putih,sporty
+25-34,m,jaket,100-300k,sedang,Jarang,Merek,Sosmed,Sering,Tertarik,Ya,hitam,kasual
+25-34,f,jas,<100k,murah,Beberapa bulan,Kualitas,Offline,Tak pernah,Tertarik,Mungkin,coklat,minimalis
+25-34,m,jas,<100k,murah,Beberapa bulan,Trend,Marketplace,Selalu,Tidak tertarik,Tidak,pastel,vintage
+25-34,m,sweater,<100k,murah,Jarang,Trend,Web brand,Kadang,Agak tertarik,Mungkin,abu,minimalis
+25-34,f,jas,<100k,murah,Jarang,Harga,Web brand,Selalu,Tertarik,Tidak,netral,minimalis
+25-34,f,sweater,100-300k,sedang,Setiap bulan,Harga,Sosmed,Selalu,Tertarik,Tidak,pastel,minimalis
+25-34,f,celana,300-600k,sedang,Beberapa bulan,Kualitas,Web brand,Sering,Tidak tertarik,Tidak,coklat,minimalis
+25-34,m,kaos,100-300k,murah,Jarang,Kualitas,Marketplace,Kadang,Tidak tertarik,Tidak,earth,kasual
+25-34,f,pakaian-pria,<100k,murah,Setiap minggu,Kualitas,Sosmed,Tak pernah,Tertarik,Ya,biru,minimalis
+25-34,f,jaket,300-600k,sedang,Jarang,Harga,Sosmed,Kadang,Agak tertarik,Tidak,coklat,sporty
+25-34,f,kaos,300-600k,sedang,Setiap bulan,Kualitas,Marketplace,Selalu,Agak tertarik,Tidak,pastel,formal
+25-34,m,pakaian-wanita,300-600k,sedang,Setiap minggu,Harga,Sosmed,Sering,Agak tertarik,Ya,netral,kasual
+25-34,m,kaos,300-600k,sedang,Setiap bulan,Trend,Offline,Kadang,Tidak tertarik,Tidak,biru,kasual
+25-34,m,celana,100-300k,sedang,Setiap minggu,Trend,Marketplace,Sering,Tertarik,Tidak,pastel,formal
+25-34,f,pakaian-wanita,300-600k,sedang,Jarang,Merek,Web brand,Selalu,Agak tertarik,Mungkin,biru,kasual
+25-34,f,pakaian-pria,300-600k,sedang,Setiap bulan,Kualitas,Web brand,Kadang,Tertarik,Tidak,putih,kasual
+25-34,m,jaket,300-600k,sedang,Beberapa bulan,Kualitas,Offline,Tak pernah,Tidak tertarik,Mungkin,vibrant,formal
+25-34,m,pakaian-wanita,300-600k,sedang,Setiap bulan,Kualitas,Sosmed,Sering,Agak tertarik,Ya,abu,formal
+25-34,m,sweater,100-300k,murah,Setiap minggu,Harga,Marketplace,Tak pernah,Tidak tertarik,Mungkin,kuning,kasual
+25-34,m,kaos,300-600k,sedang,Setiap minggu,Trend,Web brand,Kadang,Tidak tertarik,Tidak,coklat,kasual
+25-34,f,jaket,300-600k,sedang,Setiap bulan,Kualitas,Offline,Tak pernah,Tertarik,Ya,netral,vintage
+25-34,f,kaos-polo,300-600k,sedang,Setiap bulan,Trend,Marketplace,Selalu,Tidak tertarik,Mungkin,kuning,sporty
+25-34,m,kaos,<100k,murah,Beberapa bulan,Trend,Sosmed,Kadang,Tertarik,Tidak,biru,vintage
+25-34,m,kaos-polo,100-300k,sedang,Beberapa bulan,Trend,Offline,Tak pernah,Agak tertarik,Mungkin,pastel,formal
+25-34,m,kaos-kaki,300-600k,sedang,Setiap minggu,Harga,Marketplace,Tak pernah,Agak tertarik,Ya,hitam,sporty
+25-34,f,pakaian-pria,300-600k,sedang,Beberapa bulan,Harga,Web brand,Kadang,Tidak tertarik,Mungkin,hitam,minimalis
+25-34,m,celana,100-300k,sedang,Jarang,Kualitas,Web brand,Tak pernah,Tidak tertarik,Mungkin,netral,kasual
+25-34,f,pakaian-wanita,300-600k,sedang,Setiap minggu,Trend,Offline,Selalu,Tertarik,Tidak,earth,sporty
+25-34,f,jaket,100-300k,murah,Setiap bulan,Kualitas,Offline,Selalu,Tidak tertarik,Ya,coklat,kasual
+25-34,f,kaos,100-300k,murah,Beberapa bulan,Merek,Marketplace,Selalu,Tertarik,Mungkin,hitam,minimalis
+25-34,m,kaos,<100k,murah,Setiap minggu,Trend,Sosmed,Tak pernah,Tidak tertarik,Tidak,hitam,minimalis
+25-34,f,dress,300-600k,sedang,Setiap minggu,Kualitas,Web brand,Sering,Tidak tertarik,Mungkin,hitam,sporty
+25-34,m,pakaian-pria,100-300k,murah,Setiap minggu,Trend,Marketplace,Sering,Tertarik,Tidak,pastel,formal
+25-34,m,celana,100-300k,sedang,Beberapa bulan,Trend,Marketplace,Selalu,Tidak tertarik,Tidak,pastel,vintage
+25-34,m,pakaian-pria,<100k,murah,Beberapa bulan,Trend,Sosmed,Tak pernah,Tidak tertarik,Tidak,netral,kasual
+25-34,f,kaos,300-600k,sedang,Setiap minggu,Kualitas,Offline,Sering,Tidak tertarik,Tidak,putih,vintage
+25-34,f,kaos,100-300k,murah,Beberapa bulan,Trend,Web brand,Kadang,Agak tertarik,Mungkin,merah,sporty
+25-34,m,jas,100-300k,sedang,Setiap bulan,Harga,Sosmed,Sering,Agak tertarik,Mungkin,hitam,vintage
+25-34,m,jas,100-300k,sedang,Setiap bulan,Harga,Offline,Selalu,Tidak tertarik,Tidak,hitam,kasual
+25-34,f,pakaian-pria,<100k,murah,Jarang,Kualitas,Marketplace,Selalu,Tertarik,Tidak,hitam,minimalis
+25-34,m,jas,<100k,murah,Setiap minggu,Trend,Web brand,Kadang,Tidak tertarik,Tidak,abu,kasual
+25-34,m,celana,100-300k,sedang,Setiap minggu,Trend,Offline,Sering,Agak tertarik,Tidak,biru,vintage
+25-34,m,kaos,100-300k,murah,Jarang,Merek,Sosmed,Sering,Tertarik,Ya,hitam,kasual
+25-34,m,kaos,100-300k,murah,Setiap minggu,Merek,Marketplace,Sering,Agak tertarik,Mungkin,hitam,minimalis
+25-34,m,kaos,100-300k,murah,Beberapa bulan,Trend,Offline,Tak pernah,Agak tertarik,Mungkin,pastel,formal
+25-34,f,kaos,300-600k,sedang,Setiap bulan,Trend,Marketplace,Kadang,Agak tertarik,Ya,putih,kasual
+25-34,f,jas,100-300k,sedang,Beberapa bulan,Harga,Web brand,Sering,Tertarik,Mungkin,pink,vintage
+25-34,f,pakaian-pria,100-300k,sedang,Beberapa bulan,Trend,Offline,Kadang,Tidak tertarik,Mungkin,earth,formal
+25-34,f,jaket,100-300k,murah,Setiap bulan,Merek,Web brand,Selalu,Tertarik,Mungkin,biru,minimalis
+25-34,m,kaos-polo,300-600k,sedang,Setiap minggu,Harga,Sosmed,Kadang,Tertarik,Ya,netral,sporty
+25-34,m,jaket,300-600k,sedang,Jarang,Merek,Offline,Tak pernah,Tertarik,Tidak,earth,minimalis
+25-34,f,pakaian-wanita,300-600k,sedang,Setiap minggu,Kualitas,Web brand,Selalu,Agak tertarik,Mungkin,vibrant,kasual
+25-34,f,celana,300-600k,sedang,Setiap minggu,Trend,Web brand,Kadang,Agak tertarik,Tidak,earth,vintage
+25-34,m,jaket,300-600k,sedang,Beberapa bulan,Merek,Web brand,Tak pernah,Tertarik,Ya,earth,minimalis
+25-34,m,kaos-polo,300-600k,sedang,Jarang,Harga,Sosmed,Selalu,Agak tertarik,Tidak,pastel,minimalis
+25-34,m,celana,100-300k,sedang,Setiap minggu,Harga,Marketplace,Kadang,Tidak tertarik,Ya,hitam,sporty
+25-34,f,\N,>600k,mahal,Setiap minggu,Trend,Web brand,Sering,Tertarik,Mungkin,putih,kasual
+25-34,f,pakaian-pria,300-600k,sedang,Jarang,Harga,Web brand,Tak pernah,Agak tertarik,Tidak,biru,vintage
+25-34,f,pakaian-pria,100-300k,murah,Beberapa bulan,Kualitas,Offline,Sering,Tidak tertarik,Ya,merah,kasual
+25-34,m,pakaian-pria,<100k,murah,Jarang,Merek,Sosmed,Sering,Tidak tertarik,Ya,putih,vintage
+25-34,f,jas,100-300k,sedang,Beberapa bulan,Merek,Offline,Selalu,Tertarik,Tidak,vibrant,formal
+25-34,m,pakaian-pria,<100k,murah,Beberapa bulan,Kualitas,Marketplace,Kadang,Tertarik,Ya,pink,sporty
+25-34,f,pakaian-wanita,300-600k,sedang,Setiap bulan,Kualitas,Web brand,Selalu,Agak tertarik,Ya,putih,vintage
+25-34,f,pakaian-pria,100-300k,sedang,Jarang,Merek,Offline,Selalu,Agak tertarik,Tidak,pink,kasual
+25-34,m,jas,<100k,murah,Jarang,Merek,Offline,Sering,Tertarik,Ya,hitam,formal
+25-34,f,kaos,100-300k,murah,Setiap bulan,Harga,Web brand,Sering,Agak tertarik,Mungkin,vibrant,vintage
+25-34,m,kaos,<100k,murah,Setiap bulan,Kualitas,Web brand,Kadang,Tertarik,Ya,merah,sporty
+25-34,m,kaos,<100k,murah,Setiap minggu,Kualitas,Web brand,Kadang,Tertarik,Tidak,pastel,vintage
+25-34,m,kaos,100-300k,murah,Beberapa bulan,Trend,Sosmed,Sering,Agak tertarik,Tidak,vibrant,minimalis
+25-34,m,jaket,300-600k,sedang,Jarang,Harga,Marketplace,Selalu,Tertarik,Tidak,biru,formal
+25-34,m,jaket,300-600k,sedang,Setiap bulan,Merek,Offline,Tak pernah,Tertarik,Mungkin,abu,kasual
+25-34,f,kemeja-casual,300-600k,sedang,Setiap minggu,Trend,Web brand,Tak pernah,Agak tertarik,Ya,pastel,minimalis
+25-34,f,kaos,100-300k,murah,Setiap minggu,Harga,Web brand,Tak pernah,Agak tertarik,Ya,hitam,vintage
+25-34,f,pakaian-pria,300-600k,sedang,Setiap minggu,Merek,Offline,Tak pernah,Agak tertarik,Tidak,netral,formal
+25-34,f,kaos,300-600k,sedang,Jarang,Harga,Web brand,Kadang,Tidak tertarik,Mungkin,pink,vintage
+25-34,m,kaos-polo,300-600k,sedang,Setiap minggu,Trend,Marketplace,Tak pernah,Tidak tertarik,Mungkin,netral,kasual
+25-34,m,celana,300-600k,sedang,Setiap minggu,Merek,Marketplace,Sering,Agak tertarik,Mungkin,vibrant,vintage
+25-34,f,pakaian-pria,100-300k,murah,Jarang,Harga,Sosmed,Kadang,Agak tertarik,Mungkin,pink,formal
+25-34,m,sweater,300-600k,sedang,Jarang,Trend,Offline,Selalu,Tidak tertarik,Mungkin,netral,sporty
+25-34,f,kaos,300-600k,sedang,Jarang,Kualitas,Sosmed,Tak pernah,Tidak tertarik,Mungkin,netral,minimalis
+25-34,m,dress,300-600k,sedang,Jarang,Harga,Sosmed,Kadang,Tertarik,Ya,putih,kasual
+25-34,m,jas,300-600k,sedang,Jarang,Trend,Offline,Sering,Agak tertarik,Mungkin,vibrant,minimalis
+25-34,f,pakaian-pria,<100k,murah,Setiap bulan,Harga,Sosmed,Kadang,Agak tertarik,Mungkin,putih,kasual
+25-34,f,pakaian-pria,100-300k,murah,Jarang,Merek,Sosmed,Selalu,Tertarik,Tidak,hitam,kasual
+25-34,m,kaos,100-300k,murah,Setiap bulan,Trend,Marketplace,Selalu,Tidak tertarik,Mungkin,pink,minimalis
+25-34,m,kaos,100-300k,murah,Beberapa bulan,Merek,Marketplace,Tak pernah,Tidak tertarik,Ya,hijau,kasual
+25-34,m,kaos,300-600k,sedang,Beberapa bulan,Harga,Marketplace,Sering,Tidak tertarik,Mungkin,vibrant,minimalis
+25-34,m,pakaian-pria,<100k,murah,Jarang,Merek,Sosmed,Kadang,Tidak tertarik,Tidak,biru,minimalis
+25-34,m,jaket,100-300k,sedang,Setiap minggu,Kualitas,Marketplace,Kadang,Tertarik,Ya,vibrant,kasual
+25-34,f,kaos-polo,<100k,murah,Jarang,Trend,Sosmed,Sering,Tertarik,Mungkin,biru,formal
+25-34,m,kaos,300-600k,sedang,Setiap minggu,Trend,Sosmed,Tak pernah,Tidak tertarik,Tidak,hijau,formal
+25-34,m,sweater,<100k,murah,Beberapa bulan,Kualitas,Marketplace,Tak pernah,Tertarik,Tidak,pink,formal
+25-34,f,sweater,100-300k,murah,Jarang,Trend,Marketplace,Selalu,Agak tertarik,Mungkin,vibrant,kasual
+25-34,m,kaos,100-300k,murah,Setiap minggu,Merek,Sosmed,Kadang,Tertarik,Ya,putih,formal
+25-34,f,jaket,300-600k,sedang,Setiap minggu,Kualitas,Web brand,Tak pernah,Tertarik,Mungkin,netral,minimalis
+25-34,m,pakaian-wanita,300-600k,sedang,Setiap minggu,Trend,Sosmed,Sering,Tidak tertarik,Tidak,merah,vintage
+25-34,m,kemeja-casual,300-600k,sedang,Setiap bulan,Merek,Offline,Selalu,Tidak tertarik,Mungkin,earth,sporty
+25-34,m,kaos,300-600k,sedang,Beberapa bulan,Trend,Sosmed,Tak pernah,Tidak tertarik,Tidak,netral,sporty
+25-34,m,pakaian-pria,300-600k,sedang,Beberapa bulan,Harga,Offline,Selalu,Agak tertarik,Tidak,biru,formal
+25-34,f,sweater,100-300k,murah,Jarang,Kualitas,Offline,Selalu,Tertarik,Ya,netral,kasual
+25-34,m,kaos,100-300k,sedang,Beberapa bulan,Merek,Sosmed,Tak pernah,Tidak tertarik,Tidak,netral,formal
+25-34,m,kaos,300-600k,sedang,Beberapa bulan,Kualitas,Marketplace,Kadang,Tertarik,Tidak,pink,vintage
+25-34,f,pakaian-pria,<100k,murah,Jarang,Kualitas,Marketplace,Selalu,Tertarik,Tidak,hitam,sporty
+25-34,m,pakaian-pria,<100k,murah,Jarang,Harga,Sosmed,Sering,Agak tertarik,Ya,earth,kasual
+25-34,f,sweater,<100k,murah,Jarang,Trend,Web brand,Kadang,Tidak tertarik,Ya,earth,minimalis
+25-34,f,jaket,300-600k,sedang,Jarang,Merek,Web brand,Kadang,Agak tertarik,Ya,kuning,kasual
+25-34,m,pakaian-pria,100-300k,murah,Setiap bulan,Merek,Sosmed,Sering,Tidak tertarik,Ya,coklat,vintage
+25-34,m,pakaian-pria,100-300k,sedang,Jarang,Kualitas,Marketplace,Kadang,Tidak tertarik,Tidak,netral,vintage
+25-34,m,pakaian-pria,300-600k,sedang,Jarang,Harga,Sosmed,Selalu,Agak tertarik,Mungkin,hijau,vintage
+25-34,f,kaos,100-300k,murah,Setiap minggu,Merek,Web brand,Kadang,Tertarik,Tidak,netral,sporty
+25-34,f,celana,100-300k,sedang,Setiap minggu,Kualitas,Sosmed,Tak pernah,Tidak tertarik,Ya,coklat,formal
+25-34,f,kaos,300-600k,sedang,Beberapa bulan,Trend,Web brand,Kadang,Tidak tertarik,Tidak,netral,vintage
+25-34,m,sweater,100-300k,murah,Setiap minggu,Merek,Offline,Tak pernah,Agak tertarik,Mungkin,earth,kasual
+25-34,m,pakaian-pria,100-300k,sedang,Beberapa bulan,Trend,Offline,Selalu,Tertarik,Mungkin,kuning,vintage
+25-34,m,jas,100-300k,sedang,Jarang,Kualitas,Offline,Sering,Agak tertarik,Tidak,pastel,formal
+25-34,f,pakaian-pria,300-600k,sedang,Jarang,Merek,Offline,Tak pernah,Tertarik,Ya,netral,sporty
+25-34,f,pakaian-pria,100-300k,sedang,Jarang,Harga,Sosmed,Sering,Tertarik,Ya,earth,sporty
+25-34,m,jaket,100-300k,murah,Setiap bulan,Merek,Web brand,Selalu,Tertarik,Ya,vibrant,minimalis
+25-34,f,pakaian-wanita,100-300k,sedang,Jarang,Harga,Sosmed,Selalu,Tidak tertarik,Mungkin,pastel,sporty
+25-34,f,jas,<100k,murah,Beberapa bulan,Harga,Offline,Selalu,Tertarik,Ya,pastel,kasual
+25-34,m,sweater,<100k,murah,Beberapa bulan,Harga,Marketplace,Sering,Tidak tertarik,Tidak,merah,formal
+25-34,m,sweater,100-300k,murah,Setiap minggu,Trend,Web brand,Selalu,Agak tertarik,Tidak,abu,minimalis
+25-34,f,kemeja-casual,300-600k,sedang,Setiap minggu,Merek,Sosmed,Kadang,Agak tertarik,Mungkin,pastel,minimalis
+25-34,f,jaket,100-300k,murah,Jarang,Harga,Offline,Selalu,Tidak tertarik,Tidak,netral,minimalis
+25-34,m,jaket,300-600k,sedang,Jarang,Merek,Offline,Kadang,Agak tertarik,Mungkin,abu,sporty
+25-34,f,sweater,100-300k,murah,Beberapa bulan,Harga,Marketplace,Tak pernah,Tertarik,Ya,pink,vintage
+25-34,f,jaket,300-600k,sedang,Jarang,Merek,Offline,Tak pernah,Tertarik,Ya,netral,kasual
+25-34,f,celana,100-300k,sedang,Beberapa bulan,Kualitas,Web brand,Kadang,Agak tertarik,Mungkin,hijau,formal
+25-34,f,kaos,100-300k,murah,Setiap minggu,Merek,Web brand,Kadang,Tertarik,Tidak,merah,sporty
+25-34,f,kaos,300-600k,sedang,Beberapa bulan,Harga,Offline,Selalu,Tidak tertarik,Mungkin,putih,sporty
+25-34,m,aksesori,<100k,murah,Beberapa bulan,Merek,Marketplace,Kadang,Tidak tertarik,Tidak,earth,formal
+25-34,f,kaos,<100k,murah,Setiap minggu,Harga,Marketplace,Selalu,Agak tertarik,Tidak,earth,formal
+25-34,m,pakaian-wanita,300-600k,sedang,Beberapa bulan,Trend,Web brand,Selalu,Agak tertarik,Mungkin,earth,sporty
+25-34,f,kaos,300-600k,sedang,Beberapa bulan,Kualitas,Web brand,Tak pernah,Agak tertarik,Mungkin,netral,sporty
+25-34,m,kaos-polo,100-300k,sedang,Jarang,Kualitas,Marketplace,Kadang,Tidak tertarik,Tidak,putih,sporty
+25-34,f,kaos-polo,300-600k,sedang,Jarang,Trend,Sosmed,Sering,Tidak tertarik,Mungkin,hitam,minimalis
+25-34,f,pakaian-pria,300-600k,sedang,Beberapa bulan,Merek,Marketplace,Selalu,Tidak tertarik,Mungkin,coklat,kasual
+25-34,m,kemeja-casual,300-600k,sedang,Jarang,Trend,Web brand,Kadang,Agak tertarik,Mungkin,biru,minimalis
+25-34,m,pakaian-pria,<100k,murah,Setiap bulan,Harga,Offline,Selalu,Agak tertarik,Tidak,vibrant,vintage
+25-34,m,pakaian-pria,100-300k,murah,Setiap minggu,Harga,Offline,Tak pernah,Tertarik,Tidak,abu,minimalis
+25-34,f,jas,100-300k,sedang,Beberapa bulan,Kualitas,Web brand,Sering,Tidak tertarik,Tidak,merah,sporty
+25-34,f,jaket,100-300k,murah,Setiap bulan,Trend,Sosmed,Selalu,Agak tertarik,Mungkin,vibrant,kasual
+25-34,m,pakaian-pria,300-600k,sedang,Setiap minggu,Kualitas,Offline,Selalu,Tertarik,Mungkin,biru,minimalis
+25-34,m,jas,100-300k,sedang,Setiap minggu,Trend,Offline,Sering,Agak tertarik,Tidak,earth,vintage
+25-34,m,sweater,<100k,murah,Beberapa bulan,Harga,Sosmed,Tak pernah,Agak tertarik,Ya,hitam,vintage
+25-34,m,pakaian-wanita,300-600k,sedang,Jarang,Trend,Sosmed,Selalu,Agak tertarik,Mungkin,netral,formal
+25-34,m,sweater,<100k,murah,Setiap minggu,Harga,Sosmed,Kadang,Tertarik,Mungkin,pastel,kasual
+25-34,m,kaos,300-600k,sedang,Setiap minggu,Merek,Marketplace,Sering,Agak tertarik,Mungkin,hitam,vintage
+25-34,m,pakaian-wanita,300-600k,sedang,Jarang,Trend,Web brand,Tak pernah,Agak tertarik,Mungkin,putih,kasual
+25-34,m,kaos-polo,<100k,murah,Jarang,Trend,Web brand,Selalu,Agak tertarik,Tidak,coklat,formal
+25-34,m,sweater,<100k,murah,Jarang,Kualitas,Web brand,Kadang,Tidak tertarik,Tidak,vibrant,vintage
+25-34,f,jaket,300-600k,sedang,Beberapa bulan,Merek,Marketplace,Sering,Tertarik,Tidak,kuning,vintage
+25-34,m,jaket,300-600k,sedang,Beberapa bulan,Merek,Offline,Sering,Tidak tertarik,Tidak,pastel,kasual
+25-34,m,jas,100-300k,sedang,Jarang,Kualitas,Sosmed,Tak pernah,Agak tertarik,Tidak,earth,formal
+25-34,m,kaos,300-600k,sedang,Jarang,Merek,Sosmed,Sering,Tidak tertarik,Ya,hitam,vintage
+25-34,m,kemeja-casual,300-600k,sedang,Setiap minggu,Harga,Offline,Tak pernah,Agak tertarik,Mungkin,vibrant,kasual
+25-34,f,pakaian-pria,100-300k,sedang,Setiap bulan,Harga,Web brand,Sering,Agak tertarik,Tidak,putih,vintage
+25-34,f,kaos,300-600k,sedang,Jarang,Trend,Marketplace,Kadang,Tidak tertarik,Ya,merah,formal
+25-34,m,kemeja-casual,300-600k,sedang,Setiap bulan,Harga,Offline,Sering,Tertarik,Ya,hitam,kasual
+25-34,f,sweater,<100k,murah,Setiap bulan,Kualitas,Web brand,Kadang,Tertarik,Tidak,putih,kasual
+25-34,f,sweater,300-600k,sedang,Beberapa bulan,Kualitas,Marketplace,Tak pernah,Tertarik,Tidak,putih,formal
+25-34,m,kaos,300-600k,sedang,Setiap minggu,Trend,Sosmed,Sering,Tidak tertarik,Tidak,merah,vintage
+25-34,m,kaos,<100k,murah,Jarang,Harga,Web brand,Tak pernah,Agak tertarik,Ya,merah,vintage
+25-34,f,kaos,300-600k,sedang,Setiap minggu,Merek,Marketplace,Tak pernah,Tidak tertarik,Tidak,merah,formal
+25-34,m,jas,300-600k,sedang,Setiap minggu,Trend,Offline,Selalu,Agak tertarik,Mungkin,vibrant,formal
+25-34,f,kaos,300-600k,sedang,Beberapa bulan,Kualitas,Web brand,Kadang,Agak tertarik,Ya,pastel,kasual
+25-34,f,celana,300-600k,sedang,Setiap minggu,Trend,Offline,Selalu,Agak tertarik,Tidak,hijau,formal
+25-34,m,jaket,300-600k,sedang,Beberapa bulan,Merek,Web brand,Tak pernah,Agak tertarik,Mungkin,abu,minimalis
+25-34,f,pakaian-pria,100-300k,murah,Setiap bulan,Kualitas,Marketplace,Tak pernah,Agak tertarik,Tidak,hijau,kasual
+25-34,f,pakaian-pria,100-300k,sedang,Beberapa bulan,Trend,Sosmed,Sering,Tertarik,Ya,netral,vintage
+25-34,m,pakaian-pria,300-600k,sedang,Beberapa bulan,Harga,Sosmed,Tak pernah,Agak tertarik,Mungkin,coklat,vintage
+25-34,m,celana,100-300k,sedang,Setiap bulan,Harga,Sosmed,Selalu,Agak tertarik,Mungkin,vibrant,vintage
+25-34,m,kaos-polo,<100k,murah,Jarang,Harga,Sosmed,Kadang,Tertarik,Ya,putih,sporty
+25-34,m,pakaian-pria,<100k,murah,Beberapa bulan,Merek,Offline,Kadang,Agak tertarik,Mungkin,kuning,sporty
+25-34,f,pakaian-pria,100-300k,murah,Jarang,Trend,Sosmed,Kadang,Agak tertarik,Tidak,hitam,minimalis
+25-34,f,pakaian-pria,300-600k,sedang,Beberapa bulan,Harga,Marketplace,Selalu,Tidak tertarik,Mungkin,vibrant,minimalis
+25-34,m,sweater,<100k,murah,Setiap minggu,Merek,Marketplace,Tak pernah,Tidak tertarik,Mungkin,putih,sporty
+25-34,f,pakaian-wanita,300-600k,sedang,Setiap bulan,Merek,Sosmed,Tak pernah,Agak tertarik,Tidak,pink,kasual
+25-34,f,kaos,100-300k,murah,Jarang,Harga,Web brand,Tak pernah,Agak tertarik,Mungkin,pink,minimalis
+25-34,f,kaos,300-600k,sedang,Setiap bulan,Kualitas,Sosmed,Kadang,Tidak tertarik,Tidak,netral,formal
+25-34,f,jaket,300-600k,sedang,Jarang,Merek,Offline,Kadang,Tertarik,Tidak,vibrant,kasual
+25-34,f,sweater,100-300k,murah,Beberapa bulan,Kualitas,Web brand,Sering,Tertarik,Tidak,pink,kasual
+25-34,f,kaos-polo,300-600k,sedang,Setiap bulan,Kualitas,Web brand,Sering,Tidak tertarik,Ya,netral,formal
+25-34,m,kaos,100-300k,murah,Setiap bulan,Harga,Marketplace,Kadang,Tertarik,Ya,vibrant,kasual
+25-34,m,kaos-polo,300-600k,sedang,Setiap bulan,Kualitas,Marketplace,Sering,Tertarik,Mungkin,putih,kasual
+25-34,f,jas,300-600k,sedang,Jarang,Trend,Offline,Sering,Agak tertarik,Ya,abu,formal
+25-34,f,kaos-kaki,300-600k,sedang,Setiap bulan,Harga,Sosmed,Kadang,Agak tertarik,Tidak,merah,kasual
+25-34,m,pakaian-wanita,<100k,murah,Jarang,Merek,Sosmed,Tak pernah,Agak tertarik,Mungkin,abu,vintage
+25-34,m,pakaian-wanita,100-300k,murah,Jarang,Merek,Offline,Selalu,Tertarik,Tidak,hitam,sporty
+25-34,m,kaos,300-600k,sedang,Jarang,Kualitas,Offline,Sering,Agak tertarik,Tidak,pastel,formal
+25-34,f,pakaian-pria,300-600k,sedang,Setiap minggu,Trend,Sosmed,Kadang,Agak tertarik,Ya,coklat,kasual
+25-34,f,pakaian-pria,100-300k,murah,Jarang,Kualitas,Marketplace,Sering,Agak tertarik,Ya,kuning,vintage
+25-34,f,pakaian-pria,100-300k,murah,Jarang,Kualitas,Sosmed,Sering,Tidak tertarik,Mungkin,pastel,kasual
+25-34,m,pakaian-pria,100-300k,sedang,Setiap minggu,Trend,Web brand,Tak pernah,Agak tertarik,Ya,putih,vintage
+25-34,f,kaos,100-300k,murah,Jarang,Harga,Offline,Tak pernah,Tertarik,Ya,netral,vintage
+25-34,m,pakaian-pria,300-600k,sedang,Setiap minggu,Kualitas,Sosmed,Sering,Tidak tertarik,Ya,coklat,minimalis
+25-34,m,pakaian-pria,100-300k,murah,Setiap bulan,Kualitas,Sosmed,Kadang,Tertarik,Mungkin,earth,formal
+25-34,f,pakaian-pria,<100k,murah,Beberapa bulan,Harga,Web brand,Kadang,Tertarik,Tidak,putih,minimalis
+25-34,f,jaket,300-600k,sedang,Beberapa bulan,Trend,Web brand,Kadang,Tertarik,Tidak,netral,sporty
+25-34,m,jas,100-300k,sedang,Setiap bulan,Trend,Marketplace,Kadang,Tertarik,Mungkin,kuning,formal
+25-34,f,jas,100-300k,sedang,Jarang,Merek,Marketplace,Tak pernah,Tertarik,Ya,putih,vintage
+25-34,f,kemeja-casual,300-600k,sedang,Setiap minggu,Kualitas,Web brand,Kadang,Tertarik,Mungkin,coklat,kasual
+25-34,m,kemeja-casual,300-600k,sedang,Setiap minggu,Kualitas,Sosmed,Selalu,Agak tertarik,Mungkin,coklat,kasual
+25-34,f,kaos,100-300k,murah,Setiap minggu,Harga,Web brand,Tak pernah,Agak tertarik,Ya,hijau,vintage
+25-34,f,jaket,100-300k,murah,Jarang,Merek,Offline,Selalu,Tertarik,Tidak,vibrant,kasual
+25-34,f,kemeja-casual,300-600k,sedang,Setiap bulan,Merek,Offline,Kadang,Tertarik,Mungkin,pink,formal
+25-34,m,pakaian-wanita,100-300k,sedang,Beberapa bulan,Harga,Offline,Kadang,Tidak tertarik,Mungkin,netral,sporty
+25-34,f,pakaian-wanita,300-600k,sedang,Beberapa bulan,Trend,Web brand,Sering,Agak tertarik,Mungkin,netral,vintage
+25-34,m,pakaian-wanita,100-300k,murah,Jarang,Harga,Web brand,Sering,Tidak tertarik,Mungkin,putih,sporty
+25-34,f,jaket,300-600k,sedang,Jarang,Trend,Marketplace,Tak pernah,Tertarik,Ya,abu,kasual
+25-34,m,kaos,100-300k,murah,Setiap bulan,Trend,Offline,Tak pernah,Tertarik,Ya,merah,minimalis
+25-34,m,pakaian-wanita,100-300k,sedang,Jarang,Kualitas,Sosmed,Selalu,Agak tertarik,Ya,vibrant,kasual
+25-34,m,kaos-polo,300-600k,sedang,Setiap bulan,Trend,Web brand,Sering,Agak tertarik,Ya,hitam,kasual
+25-34,m,pakaian-pria,100-300k,murah,Jarang,Merek,Offline,Selalu,Tertarik,Tidak,hitam,vintage
+25-34,f,pakaian-wanita,300-600k,sedang,Setiap minggu,Harga,Sosmed,Tak pernah,Agak tertarik,Mungkin,biru,minimalis
+25-34,f,kaos,100-300k,murah,Beberapa bulan,Merek,Offline,Selalu,Tidak tertarik,Tidak,earth,minimalis
+25-34,m,kaos,100-300k,murah,Setiap minggu,Kualitas,Offline,Sering,Tertarik,Mungkin,merah,vintage
+25-34,m,pakaian-pria,100-300k,murah,Jarang,Harga,Offline,Tak pernah,Tertarik,Ya,pastel,vintage
+25-34,m,kaos-polo,300-600k,sedang,Jarang,Merek,Web brand,Sering,Agak tertarik,Tidak,pink,minimalis
+25-34,f,jas,300-600k,sedang,Setiap bulan,Trend,Sosmed,Kadang,Tidak tertarik,Mungkin,hitam,sporty
+25-34,m,kaos-polo,300-600k,sedang,Beberapa bulan,Harga,Sosmed,Tak pernah,Tidak tertarik,Ya,putih,sporty
+25-34,m,celana,300-600k,sedang,Setiap minggu,Kualitas,Sosmed,Selalu,Tertarik,Mungkin,vibrant,vintage
+25-34,f,kaos,300-600k,sedang,Setiap bulan,Merek,Web brand,Selalu,Tidak tertarik,Tidak,pink,kasual
+25-34,m,kaos-kaki,100-300k,sedang,Setiap minggu,Harga,Offline,Tak pernah,Tertarik,Tidak,abu,formal
+25-34,m,sweater,100-300k,murah,Setiap bulan,Trend,Offline,Sering,Tertarik,Tidak,pink,sporty
+25-34,m,jas,100-300k,sedang,Beberapa bulan,Trend,Sosmed,Kadang,Tertarik,Tidak,biru,vintage
+25-34,m,pakaian-pria,<100k,murah,Jarang,Trend,Marketplace,Selalu,Agak tertarik,Ya,putih,formal
+25-34,f,celana,100-300k,sedang,Setiap minggu,Harga,Offline,Sering,Tidak tertarik,Ya,abu,minimalis
+25-34,m,kaos,300-600k,sedang,Setiap minggu,Harga,Web brand,Sering,Tertarik,Tidak,abu,formal
+25-34,f,pakaian-wanita,100-300k,murah,Beberapa bulan,Kualitas,Web brand,Kadang,Tertarik,Ya,netral,minimalis
+25-34,f,pakaian-pria,<100k,murah,Setiap bulan,Harga,Offline,Selalu,Tidak tertarik,Mungkin,coklat,formal
+25-34,f,kaos,100-300k,murah,Beberapa bulan,Trend,Web brand,Sering,Agak tertarik,Ya,merah,vintage
+25-34,m,kaos,<100k,murah,Jarang,Harga,Web brand,Kadang,Tidak tertarik,Mungkin,merah,formal
+25-34,f,jaket,100-300k,murah,Setiap minggu,Harga,Sosmed,Selalu,Tidak tertarik,Tidak,coklat,vintage
+25-34,f,jaket,100-300k,murah,Jarang,Kualitas,Offline,Selalu,Agak tertarik,Tidak,hitam,minimalis
+25-34,m,jas,100-300k,sedang,Jarang,Harga,Sosmed,Selalu,Tidak tertarik,Mungkin,merah,sporty
+25-34,m,jas,<100k,murah,Setiap bulan,Merek,Sosmed,Tak pernah,Tertarik,Tidak,kuning,formal
+25-34,f,kaos,<100k,murah,Setiap minggu,Harga,Marketplace,Sering,Tidak tertarik,Mungkin,pink,vintage
+25-34,m,celana,300-600k,sedang,Jarang,Trend,Marketplace,Kadang,Tidak tertarik,Tidak,vibrant,kasual
+25-34,m,pakaian-pria,300-600k,sedang,Setiap bulan,Kualitas,Offline,Kadang,Agak tertarik,Mungkin,biru,minimalis
+25-34,m,jas,300-600k,sedang,Jarang,Merek,Marketplace,Selalu,Tertarik,Tidak,putih,vintage
+25-34,f,jaket,300-600k,sedang,Beberapa bulan,Trend,Marketplace,Sering,Tidak tertarik,Ya,vibrant,kasual
+25-34,m,pakaian-wanita,300-600k,sedang,Setiap bulan,Kualitas,Sosmed,Kadang,Tertarik,Ya,hitam,kasual
+25-34,f,jaket,100-300k,murah,Beberapa bulan,Harga,Web brand,Tak pernah,Agak tertarik,Ya,abu,kasual
+25-34,f,kaos,<100k,murah,Jarang,Kualitas,Sosmed,Sering,Tertarik,Mungkin,hitam,kasual
+25-34,m,pakaian-wanita,300-600k,sedang,Setiap minggu,Kualitas,Sosmed,Selalu,Tertarik,Mungkin,putih,vintage
+25-34,m,jaket,300-600k,sedang,Setiap bulan,Harga,Sosmed,Sering,Tertarik,Tidak,netral,vintage
+25-34,m,jas,<100k,murah,Jarang,Trend,Offline,Sering,Tertarik,Tidak,hijau,minimalis
+25-34,m,celana,100-300k,sedang,Setiap bulan,Kualitas,Sosmed,Kadang,Tertarik,Mungkin,hitam,vintage
+25-34,f,pakaian-pria,300-600k,sedang,Setiap minggu,Trend,Offline,Kadang,Tertarik,Tidak,pastel,kasual
+25-34,m,sweater,300-600k,sedang,Setiap minggu,Harga,Sosmed,Sering,Agak tertarik,Ya,netral,sporty
+25-34,f,jaket,300-600k,sedang,Jarang,Harga,Web brand,Sering,Tidak tertarik,Tidak,earth,minimalis
+25-34,f,pakaian-wanita,<100k,murah,Beberapa bulan,Harga,Marketplace,Tak pernah,Tertarik,Mungkin,earth,kasual
+25-34,f,jas,100-300k,sedang,Setiap minggu,Merek,Sosmed,Sering,Agak tertarik,Mungkin,pink,formal
+25-34,f,kaos,300-600k,sedang,Jarang,Kualitas,Sosmed,Tak pernah,Tidak tertarik,Mungkin,putih,minimalis
+25-34,f,sweater,100-300k,murah,Jarang,Kualitas,Offline,Selalu,Agak tertarik,Ya,kuning,kasual
+25-34,f,pakaian-pria,100-300k,murah,Jarang,Harga,Marketplace,Kadang,Tidak tertarik,Mungkin,hitam,kasual
+25-34,m,jas,300-600k,sedang,Beberapa bulan,Harga,Offline,Selalu,Tertarik,Tidak,merah,kasual
+25-34,m,kaos-kaki,100-300k,sedang,Setiap bulan,Harga,Offline,Selalu,Tertarik,Ya,earth,vintage
+25-34,m,jaket,300-600k,sedang,Jarang,Trend,Sosmed,Selalu,Agak tertarik,Tidak,vibrant,formal
+25-34,f,jas,300-600k,sedang,Jarang,Harga,Web brand,Tak pernah,Tertarik,Ya,putih,vintage
+25-34,f,kaos,100-300k,murah,Beberapa bulan,Harga,Web brand,Kadang,Agak tertarik,Mungkin,putih,minimalis
+25-34,m,pakaian-pria,100-300k,murah,Beberapa bulan,Merek,Marketplace,Tak pernah,Tidak tertarik,Mungkin,earth,minimalis
+25-34,f,pakaian-wanita,300-600k,sedang,Setiap bulan,Trend,Offline,Kadang,Agak tertarik,Tidak,pastel,kasual
+25-34,m,pakaian-pria,<100k,murah,Setiap minggu,Merek,Web brand,Kadang,Agak tertarik,Tidak,earth,sporty
+25-34,m,kaos,300-600k,sedang,Beberapa bulan,Kualitas,Marketplace,Selalu,Tidak tertarik,Tidak,coklat,minimalis
+25-34,f,kaos,100-300k,murah,Jarang,Trend,Web brand,Selalu,Tertarik,Ya,pastel,kasual
+25-34,m,celana,300-600k,sedang,Beberapa bulan,Harga,Offline,Selalu,Tertarik,Tidak,merah,kasual
+25-34,f,kaos,300-600k,sedang,Jarang,Merek,Web brand,Tak pernah,Agak tertarik,Tidak,hitam,minimalis
+25-34,f,sweater,<100k,murah,Jarang,Trend,Sosmed,Tak pernah,Agak tertarik,Ya,merah,sporty
+25-34,m,jas,300-600k,sedang,Setiap minggu,Merek,Offline,Kadang,Tidak tertarik,Mungkin,pastel,sporty
+25-34,f,kaos,300-600k,sedang,Setiap minggu,Harga,Sosmed,Sering,Tidak tertarik,Tidak,vibrant,kasual
+25-34,m,jaket,300-600k,sedang,Setiap bulan,Trend,Offline,Kadang,Tidak tertarik,Tidak,pink,sporty
+25-34,f,jaket,100-300k,murah,Jarang,Kualitas,Sosmed,Sering,Agak tertarik,Tidak,putih,minimalis
+25-34,m,kaos,300-600k,sedang,Setiap minggu,Harga,Web brand,Tak pernah,Tidak tertarik,Tidak,hitam,vintage
+25-34,f,sweater,100-300k,murah,Beberapa bulan,Merek,Web brand,Selalu,Agak tertarik,Mungkin,kuning,vintage
+25-34,m,pakaian-pria,<100k,murah,Jarang,Trend,Offline,Sering,Tertarik,Tidak,hitam,vintage
+25-34,f,kaos-polo,300-600k,sedang,Setiap bulan,Trend,Marketplace,Sering,Tidak tertarik,Ya,pastel,sporty
+25-34,m,pakaian-wanita,300-600k,sedang,Beberapa bulan,Kualitas,Sosmed,Sering,Agak tertarik,Tidak,pastel,sporty
+25-34,f,kaos,300-600k,sedang,Beberapa bulan,Harga,Sosmed,Tak pernah,Agak tertarik,Tidak,netral,kasual
+25-34,f,kaos,<100k,murah,Setiap minggu,Kualitas,Web brand,Kadang,Tidak tertarik,Mungkin,pastel,formal
+25-34,f,jaket,100-300k,murah,Jarang,Harga,Offline,Kadang,Agak tertarik,Ya,biru,sporty
+25-34,m,pakaian-wanita,100-300k,sedang,Beberapa bulan,Merek,Offline,Selalu,Agak tertarik,Ya,coklat,vintage
+25-34,f,pakaian-wanita,100-300k,sedang,Jarang,Merek,Sosmed,Selalu,Tidak tertarik,Ya,coklat,formal
+25-34,m,pakaian-pria,<100k,murah,Setiap bulan,Trend,Sosmed,Tak pernah,Tertarik,Mungkin,merah,kasual
+25-34,m,jas,300-600k,sedang,Setiap bulan,Harga,Marketplace,Kadang,Tertarik,Ya,vibrant,kasual
+25-34,f,jas,<100k,murah,Setiap bulan,Kualitas,Sosmed,Sering,Agak tertarik,Ya,putih,vintage
+25-34,m,pakaian-pria,<100k,murah,Beberapa bulan,Harga,Marketplace,Selalu,Tertarik,Tidak,putih,vintage
+25-34,m,pakaian-wanita,300-600k,sedang,Setiap bulan,Trend,Offline,Kadang,Tertarik,Ya,merah,formal
+25-34,m,kaos-polo,300-600k,sedang,Setiap minggu,Trend,Web brand,Kadang,Tidak tertarik,Mungkin,coklat,vintage
+25-34,m,sweater,100-300k,sedang,Jarang,Trend,Sosmed,Selalu,Agak tertarik,Tidak,hitam,formal
+25-34,f,sweater,<100k,murah,Setiap minggu,Merek,Web brand,Sering,Tidak tertarik,Mungkin,earth,kasual
+25-34,f,kaos,<100k,murah,Beberapa bulan,Kualitas,Web brand,Sering,Tidak tertarik,Tidak,putih,kasual
+25-34,m,jas,300-600k,sedang,Setiap minggu,Kualitas,Offline,Selalu,Tertarik,Mungkin,biru,minimalis
+25-34,m,kaos,100-300k,murah,Jarang,Kualitas,Marketplace,Kadang,Tidak tertarik,Tidak,earth,minimalis
+25-34,f,jaket,300-600k,sedang,Jarang,Trend,Marketplace,Kadang,Tertarik,Mungkin,abu,formal
+25-34,m,jaket,300-600k,sedang,Beberapa bulan,Merek,Web brand,Tak pernah,Tertarik,Ya,earth,kasual
+25-34,m,jas,<100k,murah,Setiap bulan,Merek,Marketplace,Selalu,Agak tertarik,Tidak,abu,minimalis
+25-34,m,kaos,100-300k,murah,Jarang,Trend,Sosmed,Selalu,Tertarik,Ya,kuning,kasual
+25-34,m,jas,100-300k,sedang,Jarang,Trend,Offline,Tak pernah,Tertarik,Ya,hitam,minimalis
+25-34,m,kaos-polo,300-600k,sedang,Setiap bulan,Trend,Marketplace,Sering,Tidak tertarik,Tidak,netral,minimalis
+25-34,m,jas,100-300k,sedang,Setiap minggu,Trend,Offline,Sering,Agak tertarik,Tidak,biru,vintage
+25-34,m,pakaian-wanita,300-600k,sedang,Setiap minggu,Trend,Web brand,Sering,Tidak tertarik,Tidak,hitam,vintage
+25-34,m,pakaian-pria,<100k,murah,Beberapa bulan,Harga,Marketplace,Selalu,Tertarik,Tidak,earth,vintage
+25-34,f,kemeja-casual,300-600k,sedang,Jarang,Trend,Offline,Sering,Agak tertarik,Ya,abu,minimalis
+25-34,m,pakaian-pria,100-300k,murah,Setiap minggu,Kualitas,Sosmed,Selalu,Agak tertarik,Ya,merah,formal
+25-34,f,jaket,300-600k,sedang,Setiap minggu,Kualitas,Offline,Kadang,Agak tertarik,Ya,netral,minimalis
+25-34,m,kaos,<100k,murah,Setiap minggu,Merek,Marketplace,Tak pernah,Tertarik,Ya,putih,kasual
+25-34,f,jas,100-300k,sedang,Setiap minggu,Trend,Marketplace,Selalu,Agak tertarik,Mungkin,kuning,kasual
+25-34,m,pakaian-wanita,100-300k,sedang,Jarang,Trend,Offline,Sering,Tertarik,Tidak,earth,sporty
+25-34,m,jas,100-300k,sedang,Jarang,Trend,Sosmed,Kadang,Tertarik,Ya,putih,kasual
+25-34,f,kaos,<100k,murah,Setiap minggu,Trend,Web brand,Kadang,Tidak tertarik,Tidak,coklat,formal
+25-34,m,pakaian-wanita,100-300k,sedang,Setiap minggu,Harga,Marketplace,Kadang,Agak tertarik,Mungkin,merah,sporty
+25-34,f,pakaian-pria,300-600k,sedang,Setiap minggu,Trend,Marketplace,Sering,Tertarik,Mungkin,merah,minimalis
+25-34,m,pakaian-wanita,300-600k,sedang,Beberapa bulan,Merek,Marketplace,Tak pernah,Agak tertarik,Ya,vibrant,formal
+25-34,m,kaos,300-600k,sedang,Beberapa bulan,Kualitas,Web brand,Tak pernah,Agak tertarik,Tidak,abu,minimalis
+25-34,f,pakaian-pria,<100k,murah,Jarang,Trend,Offline,Kadang,Agak tertarik,Tidak,earth,kasual
+25-34,m,kaos,300-600k,sedang,Beberapa bulan,Merek,Offline,Tak pernah,Tidak tertarik,Mungkin,pink,kasual
+25-34,f,kemeja-casual,300-600k,sedang,Jarang,Harga,Web brand,Sering,Tidak tertarik,Tidak,earth,vintage
+25-34,f,sweater,300-600k,sedang,Setiap bulan,Harga,Web brand,Tak pernah,Tertarik,Tidak,vibrant,vintage
+25-34,m,kaos,100-300k,murah,Setiap bulan,Kualitas,Marketplace,Kadang,Tertarik,Mungkin,netral,formal
+25-34,m,jas,100-300k,sedang,Setiap bulan,Harga,Marketplace,Selalu,Tidak tertarik,Ya,pastel,minimalis
+25-34,f,jas,100-300k,sedang,Setiap bulan,Trend,Offline,Kadang,Agak tertarik,Tidak,pastel,formal
+25-34,f,jaket,300-600k,sedang,Jarang,Harga,Web brand,Kadang,Tertarik,Mungkin,merah,sporty
+25-34,f,pakaian-pria,100-300k,murah,Setiap minggu,Harga,Sosmed,Selalu,Tidak tertarik,Tidak,netral,kasual
+25-34,m,kaos-polo,100-300k,sedang,Setiap bulan,Trend,Web brand,Kadang,Agak tertarik,Mungkin,putih,kasual
+25-34,m,jaket,300-600k,sedang,Setiap minggu,Trend,Sosmed,Kadang,Agak tertarik,Ya,hijau,vintage
+25-34,f,kaos-kaki,100-300k,sedang,Setiap minggu,Merek,Web brand,Tak pernah,Agak tertarik,Ya,putih,minimalis
+25-34,m,\N,>600k,mahal,Beberapa bulan,Merek,Offline,Sering,Tidak tertarik,Mungkin,earth,kasual
+25-34,f,celana,100-300k,sedang,Setiap minggu,Trend,Marketplace,Sering,Agak tertarik,Mungkin,putih,vintage
+25-34,m,kaos-polo,300-600k,sedang,Beberapa bulan,Harga,Sosmed,Selalu,Tidak tertarik,Tidak,coklat,vintage
+25-34,m,kaos,300-600k,sedang,Jarang,Harga,Sosmed,Selalu,Agak tertarik,Tidak,biru,minimalis
+25-34,f,pakaian-pria,100-300k,sedang,Setiap minggu,Kualitas,Sosmed,Sering,Agak tertarik,Tidak,abu,kasual
+25-34,m,sweater,100-300k,sedang,Setiap bulan,Harga,Marketplace,Selalu,Tidak tertarik,Ya,pastel,kasual
+25-34,m,pakaian-pria,100-300k,murah,Jarang,Trend,Marketplace,Sering,Tertarik,Mungkin,hijau,kasual
+25-34,m,pakaian-pria,100-300k,murah,Setiap minggu,Merek,Marketplace,Tak pernah,Tertarik,Ya,putih,vintage
+25-34,m,kaos,300-600k,sedang,Setiap minggu,Harga,Sosmed,Kadang,Agak tertarik,Ya,vibrant,kasual
+25-34,m,pakaian-wanita,100-300k,sedang,Jarang,Kualitas,Marketplace,Selalu,Tertarik,Tidak,hitam,formal
+25-34,f,jaket,300-600k,sedang,Setiap minggu,Merek,Marketplace,Selalu,Tertarik,Mungkin,biru,sporty
+25-34,m,sweater,300-600k,sedang,Jarang,Kualitas,Sosmed,Sering,Tertarik,Tidak,biru,vintage
+25-34,f,celana,100-300k,sedang,Setiap minggu,Harga,Sosmed,Tak pernah,Agak tertarik,Mungkin,netral,minimalis
+25-34,m,pakaian-wanita,300-600k,sedang,Setiap bulan,Trend,Offline,Kadang,Tertarik,Ya,pastel,formal
+25-34,f,kaos,300-600k,sedang,Setiap minggu,Merek,Marketplace,Sering,Tidak tertarik,Tidak,pink,kasual
+25-34,m,pakaian-pria,<100k,murah,Setiap bulan,Kualitas,Offline,Kadang,Agak tertarik,Mungkin,biru,minimalis
+25-34,f,pakaian-pria,<100k,murah,Jarang,Harga,Offline,Tak pernah,Tertarik,Ya,netral,kasual
+25-34,f,kaos,100-300k,murah,Beberapa bulan,Harga,Offline,Tak pernah,Agak tertarik,Mungkin,hitam,sporty
+25-34,f,jaket,300-600k,sedang,Setiap bulan,Harga,Web brand,Sering,Agak tertarik,Mungkin,pastel,vintage
+25-34,f,pakaian-pria,<100k,murah,Setiap minggu,Kualitas,Sosmed,Sering,Tidak tertarik,Tidak,pastel,vintage
+25-34,f,jaket,300-600k,sedang,Setiap bulan,Harga,Sosmed,Tak pernah,Tidak tertarik,Ya,vibrant,minimalis
+25-34,f,jas,<100k,murah,Beberapa bulan,Kualitas,Web brand,Sering,Tertarik,Tidak,pink,kasual
+25-34,m,jas,300-600k,sedang,Setiap minggu,Harga,Web brand,Tak pernah,Tidak tertarik,Tidak,merah,minimalis
+25-34,m,pakaian-pria,<100k,murah,Jarang,Merek,Sosmed,Selalu,Agak tertarik,Tidak,hitam,minimalis
+25-34,f,kemeja-casual,300-600k,sedang,Setiap minggu,Merek,Web brand,Selalu,Tidak tertarik,Mungkin,vibrant,vintage
+25-34,f,pakaian-wanita,300-600k,sedang,Setiap bulan,Harga,Offline,Kadang,Agak tertarik,Tidak,earth,sporty
+25-34,f,pakaian-wanita,300-600k,sedang,Setiap bulan,Trend,Marketplace,Kadang,Tidak tertarik,Tidak,hitam,vintage
+25-34,f,sweater,300-600k,sedang,Jarang,Kualitas,Marketplace,Kadang,Agak tertarik,Tidak,pastel,vintage
+25-34,m,kaos,100-300k,murah,Setiap minggu,Merek,Offline,Sering,Agak tertarik,Mungkin,netral,formal
+25-34,f,kemeja-casual,300-600k,sedang,Beberapa bulan,Trend,Marketplace,Tak pernah,Agak tertarik,Mungkin,pastel,formal
+25-34,m,kaos,100-300k,murah,Setiap minggu,Kualitas,Offline,Tak pernah,Agak tertarik,Mungkin,abu,kasual
+25-34,f,pakaian-wanita,100-300k,sedang,Beberapa bulan,Harga,Offline,Sering,Tertarik,Mungkin,hitam,sporty
+25-34,m,pakaian-wanita,300-600k,sedang,Setiap minggu,Trend,Sosmed,Selalu,Tidak tertarik,Tidak,abu,minimalis
+25-34,m,jas,<100k,murah,Setiap minggu,Trend,Sosmed,Tak pernah,Agak tertarik,Tidak,hitam,kasual
+25-34,m,dress,300-600k,sedang,Setiap bulan,Kualitas,Sosmed,Tak pernah,Tidak tertarik,Ya,hitam,vintage
+25-34,m,jaket,300-600k,sedang,Setiap minggu,Trend,Offline,Sering,Tertarik,Ya,pink,sporty
+25-34,m,pakaian-wanita,300-600k,sedang,Setiap bulan,Kualitas,Web brand,Sering,Tertarik,Tidak,kuning,kasual
+25-34,f,jaket,100-300k,murah,Jarang,Kualitas,Web brand,Kadang,Tertarik,Mungkin,pink,vintage
+25-34,m,sweater,100-300k,murah,Setiap bulan,Merek,Offline,Selalu,Agak tertarik,Ya,hitam,vintage
+25-34,m,kaos,300-600k,sedang,Setiap bulan,Merek,Offline,Sering,Agak tertarik,Tidak,pastel,kasual
+25-34,f,pakaian-wanita,300-600k,sedang,Setiap minggu,Kualitas,Sosmed,Kadang,Tidak tertarik,Tidak,hitam,formal
+25-34,m,kaos-polo,300-600k,sedang,Jarang,Trend,Web brand,Sering,Tertarik,Tidak,merah,vintage
+25-34,f,\N,>600k,mahal,Beberapa bulan,Harga,Marketplace,Tak pernah,Tertarik,Mungkin,earth,kasual
+25-34,m,jas,<100k,murah,Jarang,Merek,Web brand,Selalu,Tertarik,Tidak,vibrant,sporty
+25-34,f,kaos,300-600k,sedang,Beberapa bulan,Kualitas,Web brand,Tak pernah,Agak tertarik,Tidak,earth,formal
+25-34,m,sweater,<100k,murah,Setiap bulan,Harga,Web brand,Kadang,Tidak tertarik,Ya,earth,minimalis
+25-34,m,jaket,100-300k,murah,Setiap bulan,Harga,Marketplace,Tak pernah,Tidak tertarik,Mungkin,coklat,sporty
+25-34,m,aksesori,<100k,murah,Jarang,Merek,Offline,Tak pernah,Tertarik,Tidak,earth,formal
+25-34,f,sweater,300-600k,sedang,Setiap minggu,Kualitas,Offline,Kadang,Agak tertarik,Tidak,vibrant,minimalis
+25-34,f,kaos,100-300k,murah,Setiap minggu,Merek,Sosmed,Kadang,Tidak tertarik,Tidak,coklat,formal
+25-34,m,kaos,<100k,murah,Setiap bulan,Merek,Offline,Tak pernah,Agak tertarik,Tidak,kuning,sporty
+25-34,m,kaos,300-600k,sedang,Setiap bulan,Kualitas,Marketplace,Kadang,Tidak tertarik,Ya,kuning,minimalis
+25-34,m,celana,300-600k,sedang,Jarang,Trend,Marketplace,Kadang,Agak tertarik,Ya,merah,kasual
+25-34,m,kaos,300-600k,sedang,Setiap minggu,Kualitas,Web brand,Tak pernah,Tertarik,Ya,merah,kasual
+25-34,f,jas,100-300k,sedang,Beberapa bulan,Harga,Web brand,Kadang,Tidak tertarik,Ya,vibrant,formal
+25-34,f,sweater,<100k,murah,Setiap minggu,Merek,Sosmed,Selalu,Agak tertarik,Ya,putih,vintage
+25-34,m,kaos,300-600k,sedang,Jarang,Harga,Sosmed,Selalu,Tertarik,Tidak,hitam,formal
+25-34,m,dress,300-600k,sedang,Setiap minggu,Kualitas,Offline,Kadang,Tertarik,Ya,abu,kasual
+25-34,m,pakaian-wanita,300-600k,sedang,Setiap bulan,Merek,Web brand,Sering,Agak tertarik,Ya,pastel,sporty
+25-34,m,pakaian-pria,300-600k,sedang,Setiap minggu,Harga,Sosmed,Sering,Tidak tertarik,Ya,abu,kasual
+25-34,m,kaos,300-600k,sedang,Jarang,Trend,Marketplace,Sering,Agak tertarik,Tidak,putih,vintage
+25-34,m,jaket,300-600k,sedang,Setiap minggu,Harga,Sosmed,Kadang,Tertarik,Tidak,hitam,kasual
+25-34,m,jaket,100-300k,sedang,Setiap minggu,Trend,Sosmed,Kadang,Agak tertarik,Tidak,hitam,minimalis
+25-34,f,jaket,300-600k,sedang,Jarang,Trend,Web brand,Selalu,Tertarik,Ya,pastel,vintage
+25-34,m,kemeja-casual,300-600k,sedang,Jarang,Kualitas,Sosmed,Tak pernah,Agak tertarik,Tidak,earth,formal
+25-34,f,pakaian-wanita,300-600k,sedang,Jarang,Merek,Web brand,Selalu,Agak tertarik,Ya,coklat,kasual
+25-34,m,kaos,<100k,murah,Setiap minggu,Harga,Offline,Sering,Tidak tertarik,Mungkin,abu,kasual
+25-34,m,kaos,100-300k,murah,Setiap minggu,Trend,Offline,Sering,Agak tertarik,Tidak,earth,kasual
+25-34,m,jas,100-300k,sedang,Setiap bulan,Harga,Offline,Kadang,Agak tertarik,Tidak,hitam,minimalis
+25-34,f,kaos,<100k,murah,Setiap minggu,Harga,Sosmed,Tak pernah,Agak tertarik,Tidak,hitam,vintage
+25-34,m,kaos,300-600k,sedang,Setiap minggu,Kualitas,Marketplace,Sering,Agak tertarik,Tidak,netral,formal
+25-34,m,pakaian-wanita,300-600k,sedang,Jarang,Kualitas,Web brand,Sering,Tidak tertarik,Mungkin,vibrant,sporty
+25-34,f,pakaian-pria,100-300k,murah,Jarang,Harga,Marketplace,Kadang,Tidak tertarik,Mungkin,netral,minimalis
+25-34,m,jaket,300-600k,sedang,Setiap minggu,Merek,Marketplace,Sering,Tertarik,Mungkin,pastel,sporty
+25-34,f,kaos-kaki,300-600k,sedang,Setiap minggu,Trend,Web brand,Sering,Tertarik,Mungkin,pastel,vintage
+25-34,f,aksesori,<100k,murah,Setiap bulan,Harga,Offline,Tak pernah,Tertarik,Tidak,hijau,formal
+25-34,f,pakaian-wanita,300-600k,sedang,Beberapa bulan,Trend,Web brand,Sering,Agak tertarik,Mungkin,vibrant,vintage
+25-34,f,pakaian-wanita,300-600k,sedang,Setiap minggu,Merek,Web brand,Selalu,Tidak tertarik,Mungkin,merah,kasual
+25-34,m,celana,100-300k,sedang,Jarang,Kualitas,Web brand,Tak pernah,Agak tertarik,Tidak,vibrant,kasual
+25-34,f,pakaian-pria,100-300k,sedang,Beberapa bulan,Trend,Sosmed,Selalu,Agak tertarik,Ya,pastel,vintage
+25-34,f,kaos,100-300k,murah,Beberapa bulan,Kualitas,Offline,Selalu,Tertarik,Tidak,vibrant,kasual
+25-34,f,kaos,100-300k,murah,Beberapa bulan,Harga,Marketplace,Tak pernah,Tertarik,Ya,pink,formal
+25-34,m,sweater,300-600k,sedang,Jarang,Trend,Offline,Sering,Agak tertarik,Mungkin,vibrant,kasual
+25-34,m,kaos,300-600k,sedang,Setiap minggu,Trend,Sosmed,Selalu,Tertarik,Mungkin,coklat,formal
+25-34,m,jas,300-600k,sedang,Setiap bulan,Trend,Offline,Tak pernah,Tertarik,Ya,hijau,minimalis
+25-34,f,pakaian-wanita,300-600k,sedang,Setiap bulan,Kualitas,Marketplace,Tak pernah,Agak tertarik,Tidak,hijau,formal
+25-34,f,jas,100-300k,sedang,Jarang,Merek,Marketplace,Selalu,Tertarik,Mungkin,putih,kasual
+25-34,f,aksesori,<100k,murah,Setiap minggu,Merek,Sosmed,Selalu,Tidak tertarik,Tidak,pink,sporty
+25-34,m,jaket,300-600k,sedang,Setiap bulan,Harga,Marketplace,Kadang,Agak tertarik,Ya,netral,minimalis
+25-34,f,kaos,100-300k,murah,Jarang,Trend,Marketplace,Selalu,Tertarik,Tidak,merah,kasual
+25-34,m,\N,>600k,mahal,Jarang,Trend,Marketplace,Sering,Agak tertarik,Ya,hitam,vintage
+25-34,m,kaos,<100k,murah,Setiap minggu,Merek,Sosmed,Sering,Agak tertarik,Tidak,abu,minimalis
+25-34,m,kaos,100-300k,murah,Beberapa bulan,Harga,Sosmed,Kadang,Tertarik,Tidak,hijau,kasual
+25-34,f,pakaian-wanita,300-600k,sedang,Setiap bulan,Harga,Sosmed,Tak pernah,Tidak tertarik,Ya,vibrant,kasual
+25-34,m,kaos-kaki,100-300k,sedang,Jarang,Trend,Sosmed,Kadang,Agak tertarik,Ya,hijau,vintage
+25-34,f,kemeja-casual,300-600k,sedang,Beberapa bulan,Trend,Sosmed,Selalu,Tertarik,Ya,vibrant,sporty
+25-34,m,kaos,<100k,murah,Setiap minggu,Trend,Offline,Kadang,Tidak tertarik,Ya,coklat,vintage
+25-34,f,kaos,<100k,murah,Setiap minggu,Trend,Web brand,Kadang,Tertarik,Tidak,merah,minimalis
+25-34,m,jaket,300-600k,sedang,Beberapa bulan,Harga,Marketplace,Kadang,Agak tertarik,Tidak,putih,minimalis
+25-34,m,kaos,100-300k,murah,Beberapa bulan,Harga,Marketplace,Sering,Tertarik,Mungkin,pastel,kasual
+25-34,m,celana,300-600k,sedang,Setiap minggu,Kualitas,Sosmed,Selalu,Tertarik,Mungkin,putih,vintage
+25-34,m,jas,100-300k,sedang,Jarang,Kualitas,Marketplace,Sering,Tertarik,Ya,merah,vintage
+25-34,m,aksesori,<100k,murah,Setiap minggu,Trend,Web brand,Kadang,Tertarik,Mungkin,earth,vintage
+25-34,f,pakaian-wanita,300-600k,sedang,Beberapa bulan,Harga,Marketplace,Tak pernah,Tertarik,Tidak,pink,kasual
+25-34,f,kaos,100-300k,murah,Beberapa bulan,Merek,Offline,Selalu,Tertarik,Tidak,pink,formal
+25-34,f,jas,<100k,murah,Jarang,Harga,Web brand,Tak pernah,Tertarik,Ya,putih,vintage
+25-34,m,jas,<100k,murah,Jarang,Trend,Offline,Selalu,Agak tertarik,Tidak,biru,formal
+25-34,f,jaket,100-300k,murah,Jarang,Harga,Sosmed,Sering,Tertarik,Tidak,abu,formal
+25-34,f,kaos,<100k,murah,Beberapa bulan,Merek,Sosmed,Kadang,Agak tertarik,Mungkin,hijau,kasual
+25-34,m,jaket,300-600k,sedang,Beberapa bulan,Merek,Offline,Tak pernah,Agak tertarik,Mungkin,pastel,sporty
+25-34,m,kaos,300-600k,sedang,Jarang,Trend,Web brand,Tak pernah,Agak tertarik,Mungkin,hitam,formal
+25-34,f,pakaian-pria,300-600k,sedang,Setiap bulan,Kualitas,Marketplace,Kadang,Agak tertarik,Tidak,hitam,vintage
+25-34,m,sweater,<100k,murah,Jarang,Trend,Web brand,Sering,Tertarik,Tidak,merah,minimalis
+25-34,f,dress,300-600k,sedang,Jarang,Kualitas,Web brand,Sering,Tertarik,Tidak,putih,vintage
+25-34,m,kaos-polo,100-300k,sedang,Setiap minggu,Merek,Offline,Tak pernah,Tidak tertarik,Mungkin,pastel,minimalis
+25-34,m,jas,100-300k,sedang,Jarang,Merek,Sosmed,Selalu,Tertarik,Ya,pastel,vintage
+25-34,f,kaos,<100k,murah,Jarang,Harga,Offline,Tak pernah,Tidak tertarik,Tidak,abu,minimalis
+25-34,f,jaket,100-300k,murah,Jarang,Trend,Sosmed,Tak pernah,Tidak tertarik,Tidak,coklat,formal
+25-34,f,pakaian-wanita,300-600k,sedang,Setiap minggu,Kualitas,Sosmed,Kadang,Tidak tertarik,Tidak,hitam,minimalis
+25-34,m,kaos,300-600k,sedang,Jarang,Harga,Marketplace,Selalu,Tertarik,Tidak,biru,formal
+25-34,f,jas,100-300k,sedang,Jarang,Trend,Marketplace,Tak pernah,Tertarik,Ya,abu,kasual
+25-34,f,kaos-polo,300-600k,sedang,Beberapa bulan,Harga,Marketplace,Kadang,Tertarik,Mungkin,earth,sporty
+25-34,m,jas,100-300k,sedang,Setiap minggu,Kualitas,Sosmed,Selalu,Tidak tertarik,Tidak,biru,vintage
+25-34,f,pakaian-pria,100-300k,murah,Setiap minggu,Merek,Sosmed,Sering,Tertarik,Mungkin,earth,minimalis
+25-34,f,jas,<100k,murah,Jarang,Harga,Offline,Tak pernah,Tidak tertarik,Ya,pink,sporty
+25-34,f,kaos,300-600k,sedang,Beberapa bulan,Harga,Web brand,Sering,Tertarik,Mungkin,hitam,formal
+25-34,f,pakaian-pria,100-300k,sedang,Jarang,Trend,Offline,Selalu,Tidak tertarik,Tidak,kuning,kasual
+25-34,m,jas,100-300k,sedang,Setiap bulan,Trend,Offline,Kadang,Tidak tertarik,Ya,coklat,formal
+25-34,m,pakaian-wanita,300-600k,sedang,Setiap bulan,Merek,Web brand,Sering,Agak tertarik,Ya,pastel,minimalis
+25-34,m,pakaian-pria,<100k,murah,Beberapa bulan,Merek,Sosmed,Sering,Agak tertarik,Mungkin,merah,kasual
+25-34,f,celana,300-600k,sedang,Beberapa bulan,Kualitas,Web brand,Sering,Tidak tertarik,Mungkin,earth,vintage
+35+,m,\N,>600k,mahal,Setiap bulan,Harga,Marketplace,Sering,Agak tertarik,Mungkin,netral,kasual
+25-34,f,jas,100-300k,sedang,Beberapa bulan,Harga,Sosmed,Sering,Tertarik,Mungkin,hitam,sporty
+25-34,m,kaos,100-300k,murah,Beberapa bulan,Kualitas,Sosmed,Sering,Tidak tertarik,Ya,pastel,sporty
+25-34,f,jaket,100-300k,murah,Setiap minggu,Kualitas,Offline,Selalu,Tertarik,Mungkin,putih,vintage
+25-34,f,kaos,100-300k,sedang,Setiap minggu,Harga,Offline,Selalu,Agak tertarik,Mungkin,pastel,minimalis
+25-34,m,sweater,300-600k,sedang,Jarang,Kualitas,Offline,Sering,Agak tertarik,Mungkin,vibrant,minimalis
+25-34,m,sweater,300-600k,sedang,Jarang,Merek,Offline,Kadang,Tertarik,Tidak,hijau,kasual
+25-34,f,jaket,300-600k,sedang,Setiap minggu,Trend,Offline,Tak pernah,Agak tertarik,Tidak,vibrant,formal
+25-34,m,sweater,100-300k,murah,Beberapa bulan,Merek,Sosmed,Tak pernah,Agak tertarik,Tidak,vibrant,sporty
+25-34,m,jas,100-300k,sedang,Setiap bulan,Harga,Offline,Selalu,Agak tertarik,Ya,hijau,kasual
+25-34,m,kaos,<100k,murah,Beberapa bulan,Kualitas,Sosmed,Selalu,Tertarik,Mungkin,earth,formal
+25-34,m,pakaian-pria,100-300k,sedang,Setiap bulan,Kualitas,Sosmed,Kadang,Tertarik,Mungkin,earth,formal
+25-34,m,jas,300-600k,sedang,Jarang,Merek,Sosmed,Kadang,Tidak tertarik,Tidak,biru,minimalis
+25-34,m,kaos,300-600k,sedang,Beberapa bulan,Merek,Offline,Sering,Tertarik,Ya,pink,kasual
+25-34,f,kaos-polo,300-600k,sedang,Setiap minggu,Kualitas,Marketplace,Sering,Tidak tertarik,Mungkin,abu,vintage
+25-34,f,sweater,100-300k,murah,Setiap minggu,Kualitas,Sosmed,Kadang,Tidak tertarik,Ya,netral,vintage
+25-34,m,kaos,300-600k,sedang,Setiap minggu,Trend,Web brand,Kadang,Tidak tertarik,Tidak,abu,sporty
+25-34,m,jaket,100-300k,murah,Setiap bulan,Kualitas,Web brand,Sering,Tertarik,Mungkin,vibrant,formal
+25-34,m,pakaian-pria,100-300k,murah,Beberapa bulan,Trend,Marketplace,Tak pernah,Tidak tertarik,Ya,vibrant,kasual
+25-34,f,kaos-polo,300-600k,sedang,Setiap bulan,Merek,Marketplace,Kadang,Tertarik,Ya,hitam,kasual
+25-34,f,sweater,<100k,murah,Setiap minggu,Kualitas,Sosmed,Selalu,Tertarik,Ya,pink,minimalis
+25-34,f,kaos,300-600k,sedang,Jarang,Harga,Sosmed,Sering,Tertarik,Ya,earth,sporty
+25-34,f,pakaian-pria,300-600k,sedang,Beberapa bulan,Kualitas,Marketplace,Selalu,Agak tertarik,Tidak,biru,kasual
+25-34,f,sweater,300-600k,sedang,Jarang,Kualitas,Marketplace,Sering,Agak tertarik,Ya,kuning,vintage
+25-34,f,pakaian-pria,300-600k,sedang,Beberapa bulan,Kualitas,Sosmed,Selalu,Agak tertarik,Mungkin,kuning,sporty
+25-34,f,\N,>600k,mahal,Setiap bulan,Harga,Web brand,Tak pernah,Tertarik,Ya,pastel,minimalis
+25-34,f,jaket,300-600k,sedang,Jarang,Kualitas,Sosmed,Sering,Agak tertarik,Tidak,putih,kasual
+25-34,f,kaos,100-300k,murah,Setiap bulan,Merek,Marketplace,Selalu,Tidak tertarik,Ya,biru,sporty
+25-34,m,pakaian-pria,300-600k,sedang,Setiap bulan,Merek,Sosmed,Tak pernah,Tertarik,Mungkin,hitam,vintage
+25-34,f,aksesori,<100k,murah,Beberapa bulan,Harga,Web brand,Tak pernah,Tidak tertarik,Mungkin,pastel,sporty
+25-34,f,kaos,300-600k,sedang,Setiap bulan,Merek,Web brand,Selalu,Tidak tertarik,Tidak,pink,sporty
+25-34,f,jas,100-300k,sedang,Jarang,Merek,Sosmed,Selalu,Tertarik,Tidak,pastel,formal
+25-34,m,pakaian-wanita,300-600k,sedang,Setiap minggu,Merek,Marketplace,Sering,Tidak tertarik,Mungkin,pastel,kasual
+25-34,m,jaket,100-300k,murah,Jarang,Merek,Sosmed,Selalu,Agak tertarik,Ya,pastel,sporty
+25-34,m,pakaian-pria,300-600k,sedang,Setiap bulan,Merek,Marketplace,Selalu,Agak tertarik,Ya,netral,minimalis
+25-34,f,jaket,300-600k,sedang,Setiap minggu,Harga,Marketplace,Kadang,Agak tertarik,Tidak,hitam,minimalis
+25-34,m,jas,100-300k,sedang,Beberapa bulan,Kualitas,Web brand,Selalu,Tidak tertarik,Mungkin,netral,kasual
+25-34,f,pakaian-pria,100-300k,murah,Setiap bulan,Harga,Marketplace,Selalu,Tertarik,Mungkin,biru,minimalis
+25-34,f,pakaian-pria,100-300k,murah,Setiap minggu,Trend,Sosmed,Selalu,Tertarik,Mungkin,putih,formal
+25-34,f,jas,<100k,murah,Setiap bulan,Trend,Web brand,Selalu,Tertarik,Tidak,earth,formal
+25-34,m,jaket,100-300k,murah,Jarang,Harga,Marketplace,Tak pernah,Tertarik,Ya,merah,kasual
+25-34,f,jas,100-300k,sedang,Jarang,Merek,Web brand,Sering,Tertarik,Ya,merah,formal
+25-34,m,pakaian-pria,100-300k,murah,Jarang,Merek,Offline,Kadang,Agak tertarik,Mungkin,abu,sporty
+25-34,f,jas,100-300k,sedang,Setiap bulan,Kualitas,Web brand,Tak pernah,Agak tertarik,Ya,earth,kasual
+25-34,f,pakaian-wanita,300-600k,sedang,Setiap minggu,Kualitas,Web brand,Sering,Tertarik,Ya,earth,vintage
+25-34,f,jas,300-600k,sedang,Jarang,Kualitas,Sosmed,Sering,Agak tertarik,Tidak,putih,minimalis
+25-34,f,kaos-polo,300-600k,sedang,Setiap bulan,Merek,Offline,Tak pernah,Tidak tertarik,Ya,pastel,formal
+25-34,m,celana,100-300k,sedang,Setiap minggu,Kualitas,Offline,Selalu,Tertarik,Ya,biru,minimalis
+25-34,f,pakaian-wanita,300-600k,sedang,Beberapa bulan,Harga,Marketplace,Tak pernah,Tertarik,Tidak,hitam,kasual
+25-34,f,pakaian-pria,100-300k,sedang,Jarang,Harga,Web brand,Kadang,Tidak tertarik,Mungkin,biru,minimalis
+25-34,f,pakaian-wanita,300-600k,sedang,Setiap minggu,Harga,Web brand,Tak pernah,Agak tertarik,Ya,hijau,vintage
+25-34,m,kaos-polo,<100k,murah,Beberapa bulan,Harga,Web brand,Kadang,Agak tertarik,Ya,pastel,minimalis
+25-34,m,pakaian-wanita,300-600k,sedang,Beberapa bulan,Kualitas,Marketplace,Kadang,Tertarik,Ya,coklat,kasual
+25-34,m,kaos,300-600k,sedang,Setiap bulan,Kualitas,Marketplace,Sering,Tertarik,Mungkin,hitam,minimalis
+25-34,m,sweater,<100k,murah,Beberapa bulan,Trend,Offline,Selalu,Agak tertarik,Ya,netral,minimalis
+25-34,m,kaos,100-300k,murah,Setiap minggu,Kualitas,Offline,Kadang,Tidak tertarik,Mungkin,coklat,minimalis
+25-34,m,kaos,300-600k,sedang,Setiap minggu,Kualitas,Offline,Kadang,Tidak tertarik,Mungkin,abu,vintage
+25-34,m,jas,100-300k,sedang,Setiap minggu,Harga,Marketplace,Tak pernah,Tertarik,Ya,coklat,minimalis
+25-34,m,kaos-kaki,100-300k,sedang,Setiap minggu,Merek,Sosmed,Tak pernah,Tidak tertarik,Ya,abu,formal
+25-34,m,kaos-polo,100-300k,sedang,Setiap bulan,Kualitas,Offline,Tak pernah,Tertarik,Tidak,vibrant,sporty
+25-34,f,jaket,100-300k,murah,Jarang,Kualitas,Marketplace,Kadang,Agak tertarik,Tidak,pastel,vintage
+25-34,m,jaket,300-600k,sedang,Beberapa bulan,Harga,Offline,Kadang,Tidak tertarik,Mungkin,abu,kasual
+25-34,f,kaos-kaki,100-300k,sedang,Setiap bulan,Kualitas,Offline,Kadang,Tertarik,Ya,netral,vintage
+25-34,f,pakaian-wanita,300-600k,sedang,Beberapa bulan,Kualitas,Marketplace,Selalu,Tidak tertarik,Ya,hitam,sporty
+25-34,f,kaos,100-300k,murah,Jarang,Kualitas,Offline,Kadang,Agak tertarik,Mungkin,netral,vintage
+25-34,f,kaos,100-300k,murah,Setiap minggu,Merek,Web brand,Selalu,Agak tertarik,Tidak,pastel,vintage
+25-34,m,jaket,300-600k,sedang,Setiap bulan,Harga,Web brand,Selalu,Agak tertarik,Ya,putih,vintage
+25-34,m,jas,<100k,murah,Jarang,Merek,Marketplace,Kadang,Tidak tertarik,Ya,hitam,minimalis
+25-34,f,pakaian-pria,100-300k,sedang,Beberapa bulan,Kualitas,Web brand,Sering,Agak tertarik,Mungkin,merah,kasual
+25-34,f,pakaian-wanita,300-600k,sedang,Beberapa bulan,Kualitas,Offline,Tak pernah,Tertarik,Ya,hitam,kasual
+25-34,m,pakaian-pria,300-600k,sedang,Setiap minggu,Harga,Marketplace,Kadang,Tidak tertarik,Mungkin,hitam,kasual
+25-34,f,jaket,300-600k,sedang,Setiap bulan,Harga,Offline,Kadang,Agak tertarik,Tidak,earth,sporty
+25-34,f,pakaian-pria,<100k,murah,Setiap bulan,Merek,Marketplace,Kadang,Agak tertarik,Ya,biru,kasual
+25-34,m,kaos,100-300k,sedang,Jarang,Kualitas,Web brand,Tak pernah,Tertarik,Ya,hitam,formal
+25-34,f,pakaian-pria,100-300k,murah,Setiap minggu,Merek,Marketplace,Sering,Tidak tertarik,Tidak,pink,kasual
+25-34,m,jaket,300-600k,sedang,Setiap minggu,Harga,Web brand,Tak pernah,Tidak tertarik,Tidak,merah,minimalis
+25-34,m,pakaian-pria,100-300k,murah,Setiap minggu,Merek,Marketplace,Tak pernah,Tertarik,Ya,pink,vintage
+25-34,m,kaos,300-600k,sedang,Jarang,Trend,Sosmed,Kadang,Tidak tertarik,Tidak,earth,formal
+25-34,f,\N,>600k,mahal,Beberapa bulan,Kualitas,Offline,Kadang,Tidak tertarik,Ya,vibrant,vintage
+25-34,f,\N,>600k,mahal,Setiap minggu,Kualitas,Offline,Sering,Tidak tertarik,Tidak,putih,formal
+25-34,m,pakaian-pria,300-600k,sedang,Beberapa bulan,Harga,Web brand,Sering,Tidak tertarik,Mungkin,coklat,sporty
+25-34,f,kaos,<100k,murah,Beberapa bulan,Merek,Sosmed,Kadang,Agak tertarik,Mungkin,vibrant,kasual
+25-34,f,kaos-polo,100-300k,sedang,Jarang,Merek,Marketplace,Kadang,Tertarik,Ya,biru,formal
+25-34,m,jas,100-300k,sedang,Beberapa bulan,Kualitas,Sosmed,Sering,Tertarik,Mungkin,pink,kasual
+25-34,f,kaos,<100k,murah,Jarang,Merek,Web brand,Selalu,Agak tertarik,Ya,coklat,kasual
+25-34,m,jaket,100-300k,murah,Beberapa bulan,Merek,Offline,Tak pernah,Agak tertarik,Mungkin,pastel,vintage
+25-34,f,kaos,<100k,murah,Jarang,Trend,Sosmed,Kadang,Tidak tertarik,Ya,putih,vintage
+25-34,f,sweater,100-300k,murah,Jarang,Kualitas,Offline,Tak pernah,Tidak tertarik,Mungkin,putih,minimalis
+25-34,f,pakaian-wanita,300-600k,sedang,Beberapa bulan,Kualitas,Offline,Kadang,Tidak tertarik,Tidak,pastel,sporty
+25-34,m,kaos,300-600k,sedang,Setiap minggu,Trend,Web brand,Tak pernah,Agak tertarik,Tidak,biru,kasual
+25-34,m,kaos,300-600k,sedang,Beberapa bulan,Merek,Sosmed,Sering,Agak tertarik,Mungkin,hitam,kasual
+25-34,f,aksesori,<100k,murah,Setiap minggu,Merek,Sosmed,Selalu,Tidak tertarik,Tidak,pink,kasual
+25-34,f,kemeja-casual,300-600k,sedang,Jarang,Harga,Sosmed,Selalu,Tidak tertarik,Ya,biru,formal
+25-34,f,pakaian-pria,<100k,murah,Setiap bulan,Kualitas,Web brand,Tak pernah,Agak tertarik,Ya,kuning,kasual
+25-34,f,kaos,300-600k,sedang,Jarang,Harga,Web brand,Selalu,Tidak tertarik,Ya,hitam,formal
+25-34,f,pakaian-wanita,<100k,murah,Setiap minggu,Kualitas,Web brand,Selalu,Tertarik,Ya,biru,sporty
+25-34,m,kaos,300-600k,sedang,Beberapa bulan,Trend,Web brand,Tak pernah,Agak tertarik,Mungkin,netral,minimalis
+25-34,f,pakaian-wanita,300-600k,sedang,Setiap minggu,Harga,Sosmed,Sering,Agak tertarik,Mungkin,pink,kasual
+25-34,m,kemeja-casual,300-600k,sedang,Beberapa bulan,Harga,Offline,Sering,Tertarik,Ya,hijau,vintage
+25-34,m,jaket,100-300k,murah,Jarang,Merek,Offline,Sering,Agak tertarik,Mungkin,putih,sporty
+25-34,f,sweater,300-600k,sedang,Setiap bulan,Merek,Sosmed,Selalu,Tertarik,Mungkin,pastel,minimalis
+25-34,m,kaos,100-300k,murah,Setiap minggu,Harga,Sosmed,Sering,Tertarik,Ya,vibrant,vintage
+25-34,m,sweater,300-600k,sedang,Setiap bulan,Harga,Sosmed,Kadang,Tertarik,Ya,pink,formal
+25-34,m,kaos-polo,<100k,murah,Jarang,Trend,Web brand,Selalu,Agak tertarik,Tidak,coklat,kasual
+25-34,m,jas,100-300k,sedang,Beberapa bulan,Harga,Offline,Kadang,Tertarik,Tidak,biru,kasual
+25-34,m,jaket,300-600k,sedang,Jarang,Merek,Web brand,Sering,Agak tertarik,Tidak,biru,minimalis
+25-34,f,pakaian-wanita,300-600k,sedang,Setiap minggu,Harga,Sosmed,Kadang,Tertarik,Mungkin,netral,vintage
+25-34,f,jas,100-300k,sedang,Setiap bulan,Harga,Offline,Tak pernah,Tertarik,Tidak,abu,kasual
+25-34,m,sweater,<100k,murah,Setiap bulan,Trend,Sosmed,Tak pernah,Tidak tertarik,Tidak,pink,formal
+25-34,f,aksesori,<100k,murah,Setiap minggu,Kualitas,Offline,Kadang,Agak tertarik,Tidak,vibrant,vintage
+25-34,m,kaos,300-600k,sedang,Jarang,Harga,Sosmed,Selalu,Agak tertarik,Tidak,pastel,minimalis
+25-34,f,celana,100-300k,sedang,Setiap minggu,Kualitas,Offline,Sering,Tidak tertarik,Tidak,putih,kasual
+25-34,m,jaket,100-300k,murah,Setiap minggu,Harga,Marketplace,Tak pernah,Tidak tertarik,Mungkin,pastel,vintage
+25-34,f,pakaian-wanita,300-600k,sedang,Beberapa bulan,Merek,Offline,Selalu,Agak tertarik,Ya,vibrant,kasual
+25-34,m,celana,100-300k,sedang,Beberapa bulan,Harga,Web brand,Selalu,Agak tertarik,Ya,merah,minimalis
+25-34,f,celana,100-300k,sedang,Beberapa bulan,Trend,Marketplace,Selalu,Agak tertarik,Mungkin,earth,vintage
+25-34,m,pakaian-wanita,300-600k,sedang,Beberapa bulan,Kualitas,Sosmed,Selalu,Tertarik,Ya,vibrant,formal
+25-34,f,kaos,300-600k,sedang,Beberapa bulan,Kualitas,Web brand,Kadang,Agak tertarik,Mungkin,hijau,minimalis
+25-34,f,celana,100-300k,sedang,Setiap bulan,Trend,Marketplace,Sering,Tidak tertarik,Ya,pastel,sporty
+25-34,m,kaos-kaki,100-300k,sedang,Jarang,Merek,Sosmed,Selalu,Agak tertarik,Tidak,vibrant,kasual
+25-34,m,pakaian-wanita,300-600k,sedang,Beberapa bulan,Trend,Marketplace,Tak pernah,Tidak tertarik,Ya,vibrant,vintage
+25-34,f,jas,100-300k,sedang,Jarang,Merek,Sosmed,Tak pernah,Tertarik,Mungkin,vibrant,vintage
+25-34,m,pakaian-pria,<100k,murah,Setiap minggu,Trend,Sosmed,Kadang,Agak tertarik,Tidak,hitam,minimalis
+25-34,f,jaket,100-300k,murah,Setiap minggu,Harga,Marketplace,Kadang,Agak tertarik,Tidak,hitam,kasual
+25-34,m,jas,300-600k,sedang,Setiap bulan,Harga,Sosmed,Tak pernah,Tidak tertarik,Tidak,pastel,formal
+25-34,f,pakaian-wanita,300-600k,sedang,Setiap bulan,Merek,Offline,Tak pernah,Tertarik,Tidak,hitam,vintage
+25-34,m,jas,<100k,murah,Jarang,Merek,Marketplace,Kadang,Tidak tertarik,Ya,abu,minimalis
+25-34,m,jaket,300-600k,sedang,Setiap bulan,Kualitas,Offline,Tak pernah,Agak tertarik,Ya,coklat,vintage
+25-34,m,pakaian-pria,100-300k,murah,Jarang,Trend,Web brand,Tak pernah,Agak tertarik,Tidak,hitam,minimalis
+25-34,f,jaket,100-300k,murah,Setiap minggu,Merek,Offline,Tak pernah,Agak tertarik,Tidak,pastel,sporty
+25-34,f,pakaian-wanita,300-600k,sedang,Beberapa bulan,Merek,Web brand,Selalu,Agak tertarik,Mungkin,earth,vintage
+25-34,f,sweater,300-600k,sedang,Setiap minggu,Trend,Offline,Kadang,Tertarik,Tidak,vibrant,kasual
+25-34,m,pakaian-pria,300-600k,sedang,Jarang,Merek,Offline,Kadang,Tertarik,Tidak,hijau,minimalis
+25-34,f,jas,100-300k,sedang,Setiap minggu,Kualitas,Offline,Sering,Tidak tertarik,Tidak,putih,vintage
+25-34,f,pakaian-wanita,100-300k,sedang,Beberapa bulan,Kualitas,Offline,Tak pernah,Tertarik,Ya,earth,kasual
+25-34,f,kaos,<100k,murah,Jarang,Kualitas,Web brand,Kadang,Tertarik,Ya,earth,vintage
+25-34,f,kaos,300-600k,sedang,Beberapa bulan,Kualitas,Web brand,Tak pernah,Agak tertarik,Mungkin,netral,kasual
+25-34,f,jas,100-300k,sedang,Jarang,Kualitas,Marketplace,Tak pernah,Agak tertarik,Mungkin,merah,kasual
+25-34,f,kaos,300-600k,sedang,Beberapa bulan,Harga,Sosmed,Sering,Agak tertarik,Mungkin,hitam,kasual
+25-34,f,kaos,100-300k,murah,Setiap bulan,Kualitas,Marketplace,Tak pernah,Agak tertarik,Tidak,hijau,kasual
+25-34,m,kaos,300-600k,sedang,Setiap bulan,Kualitas,Marketplace,Sering,Tertarik,Mungkin,hitam,minimalis
+25-34,m,pakaian-wanita,300-600k,sedang,Setiap bulan,Trend,Offline,Kadang,Tidak tertarik,Tidak,pink,formal
+25-34,m,jas,300-600k,sedang,Beberapa bulan,Harga,Offline,Sering,Agak tertarik,Ya,pastel,kasual
+25-34,f,pakaian-wanita,300-600k,sedang,Beberapa bulan,Kualitas,Web brand,Kadang,Agak tertarik,Ya,pastel,sporty
+25-34,m,jaket,300-600k,sedang,Setiap bulan,Merek,Sosmed,Kadang,Tidak tertarik,Mungkin,netral,vintage
+25-34,f,sweater,<100k,murah,Setiap minggu,Kualitas,Sosmed,Selalu,Tertarik,Ya,merah,kasual
+25-34,f,pakaian-pria,100-300k,murah,Setiap minggu,Trend,Offline,Sering,Tidak tertarik,Ya,earth,minimalis
+25-34,f,pakaian-wanita,100-300k,murah,Setiap minggu,Trend,Web brand,Sering,Tertarik,Mungkin,putih,kasual
+25-34,f,jas,100-300k,sedang,Setiap minggu,Merek,Sosmed,Kadang,Agak tertarik,Tidak,abu,kasual
+25-34,f,pakaian-pria,100-300k,sedang,Jarang,Kualitas,Web brand,Selalu,Agak tertarik,Ya,earth,sporty
+25-34,f,kaos,<100k,murah,Setiap bulan,Trend,Web brand,Sering,Agak tertarik,Mungkin,pastel,vintage
+25-34,m,jas,<100k,murah,Jarang,Trend,Offline,Tak pernah,Tidak tertarik,Ya,pastel,formal
+25-34,m,jas,100-300k,sedang,Jarang,Merek,Sosmed,Selalu,Tertarik,Ya,netral,vintage
+25-34,f,pakaian-pria,100-300k,sedang,Beberapa bulan,Harga,Web brand,Tak pernah,Tidak tertarik,Mungkin,pastel,sporty
+25-34,m,kaos,300-600k,sedang,Setiap minggu,Trend,Web brand,Kadang,Tidak tertarik,Mungkin,coklat,sporty
+25-34,f,pakaian-wanita,300-600k,sedang,Setiap minggu,Trend,Web brand,Selalu,Tertarik,Ya,biru,minimalis
+25-34,m,kaos,300-600k,sedang,Jarang,Harga,Web brand,Tak pernah,Tidak tertarik,Ya,earth,formal
+25-34,f,kaos,300-600k,sedang,Beberapa bulan,Trend,Offline,Kadang,Tidak tertarik,Mungkin,earth,kasual
+25-34,f,sweater,<100k,murah,Jarang,Merek,Web brand,Selalu,Agak tertarik,Mungkin,netral,minimalis
+25-34,f,pakaian-pria,<100k,murah,Jarang,Harga,Web brand,Tak pernah,Tidak tertarik,Mungkin,hitam,formal
+25-34,m,kaos,300-600k,sedang,Setiap minggu,Harga,Marketplace,Tak pernah,Tidak tertarik,Mungkin,pastel,kasual
+25-34,f,pakaian-pria,<100k,murah,Jarang,Trend,Sosmed,Kadang,Tertarik,Ya,earth,sporty
+25-34,f,kaos,100-300k,murah,Jarang,Trend,Marketplace,Tak pernah,Tertarik,Ya,abu,formal
+25-34,m,kaos,300-600k,sedang,Jarang,Merek,Sosmed,Selalu,Agak tertarik,Ya,pastel,sporty
+25-34,f,kemeja-casual,300-600k,sedang,Jarang,Trend,Marketplace,Sering,Tertarik,Ya,putih,vintage
+25-34,f,jaket,300-600k,sedang,Beberapa bulan,Trend,Marketplace,Sering,Tidak tertarik,Mungkin,putih,kasual
+25-34,m,kaos,300-600k,sedang,Beberapa bulan,Harga,Web brand,Tak pernah,Agak tertarik,Tidak,pastel,sporty
+25-34,f,pakaian-pria,<100k,murah,Setiap minggu,Kualitas,Offline,Kadang,Agak tertarik,Tidak,vibrant,minimalis
+25-34,m,jas,100-300k,sedang,Beberapa bulan,Merek,Marketplace,Tak pernah,Tidak tertarik,Ya,coklat,sporty
+25-34,m,pakaian-pria,<100k,murah,Beberapa bulan,Kualitas,Marketplace,Kadang,Tertarik,Tidak,abu,sporty
+25-34,f,sweater,100-300k,murah,Jarang,Harga,Marketplace,Kadang,Agak tertarik,Mungkin,merah,kasual
+25-34,f,kaos-polo,300-600k,sedang,Beberapa bulan,Merek,Web brand,Selalu,Tertarik,Ya,putih,vintage
+25-34,f,pakaian-wanita,100-300k,sedang,Setiap minggu,Harga,Marketplace,Kadang,Agak tertarik,Tidak,hitam,minimalis
+25-34,f,pakaian-wanita,300-600k,sedang,Setiap bulan,Trend,Offline,Kadang,Tertarik,Ya,earth,vintage
+25-34,f,celana,100-300k,sedang,Setiap minggu,Trend,Offline,Kadang,Tertarik,Ya,biru,formal
+25-34,f,jas,100-300k,sedang,Setiap bulan,Kualitas,Web brand,Kadang,Tidak tertarik,Ya,earth,vintage
+25-34,f,pakaian-wanita,100-300k,sedang,Setiap bulan,Merek,Marketplace,Selalu,Tertarik,Tidak,putih,vintage
+25-34,f,dress,300-600k,sedang,Jarang,Kualitas,Web brand,Selalu,Tertarik,Mungkin,merah,kasual
+25-34,m,pakaian-pria,<100k,murah,Beberapa bulan,Harga,Marketplace,Kadang,Agak tertarik,Tidak,putih,sporty
+25-34,m,pakaian-pria,100-300k,murah,Setiap bulan,Kualitas,Web brand,Selalu,Tidak tertarik,Ya,biru,vintage
+25-34,m,sweater,100-300k,murah,Setiap bulan,Kualitas,Marketplace,Sering,Tidak tertarik,Tidak,merah,vintage
+25-34,m,kaos,<100k,murah,Jarang,Harga,Sosmed,Tak pernah,Tidak tertarik,Ya,netral,kasual
+25-34,f,kaos,300-600k,sedang,Setiap bulan,Trend,Offline,Kadang,Tertarik,Tidak,netral,kasual
+25-34,m,pakaian-pria,100-300k,murah,Setiap bulan,Trend,Offline,Selalu,Agak tertarik,Mungkin,netral,vintage
+25-34,f,sweater,<100k,murah,Beberapa bulan,Harga,Marketplace,Selalu,Tidak tertarik,Mungkin,vibrant,formal
+25-34,f,jaket,300-600k,sedang,Jarang,Merek,Marketplace,Selalu,Tertarik,Tidak,pastel,minimalis
+25-34,m,jas,100-300k,sedang,Jarang,Merek,Offline,Kadang,Agak tertarik,Mungkin,vibrant,sporty
+25-34,f,kaos,300-600k,sedang,Beberapa bulan,Harga,Web brand,Tak pernah,Agak tertarik,Ya,pastel,kasual
+25-34,f,kaos,100-300k,murah,Beberapa bulan,Kualitas,Marketplace,Selalu,Tidak tertarik,Ya,hitam,sporty
+25-34,m,celana,100-300k,sedang,Setiap bulan,Merek,Web brand,Sering,Agak tertarik,Ya,pastel,kasual
+25-34,m,kaos,<100k,murah,Setiap bulan,Kualitas,Sosmed,Tak pernah,Tidak tertarik,Ya,hitam,vintage
+25-34,f,jas,100-300k,sedang,Beberapa bulan,Harga,Sosmed,Selalu,Tidak tertarik,Mungkin,vibrant,minimalis
+25-34,m,kaos,300-600k,sedang,Setiap minggu,Kualitas,Offline,Selalu,Agak tertarik,Tidak,pastel,vintage
+25-34,f,kaos,100-300k,murah,Setiap bulan,Trend,Offline,Kadang,Agak tertarik,Ya,biru,kasual
+25-34,m,celana,100-300k,sedang,Setiap minggu,Kualitas,Sosmed,Tak pernah,Tidak tertarik,Tidak,netral,vintage
+25-34,f,jaket,100-300k,murah,Beberapa bulan,Merek,Web brand,Selalu,Tidak tertarik,Mungkin,hitam,sporty
+25-34,m,celana,300-600k,sedang,Beberapa bulan,Harga,Marketplace,Tak pernah,Tidak tertarik,Ya,merah,kasual
+25-34,m,pakaian-pria,100-300k,murah,Beberapa bulan,Merek,Marketplace,Kadang,Tidak tertarik,Ya,netral,vintage
+25-34,f,jas,100-300k,sedang,Jarang,Trend,Marketplace,Tak pernah,Tertarik,Ya,netral,kasual
+25-34,f,jas,100-300k,sedang,Setiap bulan,Merek,Marketplace,Kadang,Agak tertarik,Ya,earth,sporty
+25-34,f,jaket,300-600k,sedang,Setiap minggu,Harga,Sosmed,Sering,Agak tertarik,Ya,biru,minimalis
+25-34,f,kaos,100-300k,murah,Setiap bulan,Kualitas,Offline,Tak pernah,Tertarik,Ya,netral,kasual
+25-34,m,jas,300-600k,sedang,Setiap minggu,Harga,Offline,Tak pernah,Tertarik,Ya,vibrant,minimalis
+25-34,m,jas,100-300k,sedang,Beberapa bulan,Merek,Offline,Sering,Agak tertarik,Mungkin,hitam,minimalis
+25-34,f,jas,<100k,murah,Beberapa bulan,Merek,Marketplace,Kadang,Tidak tertarik,Tidak,earth,formal
+25-34,f,pakaian-wanita,100-300k,murah,Setiap minggu,Trend,Web brand,Sering,Tertarik,Mungkin,putih,vintage
+25-34,m,jas,<100k,murah,Jarang,Trend,Offline,Tak pernah,Tertarik,Ya,vibrant,sporty
+25-34,f,kaos,100-300k,murah,Jarang,Trend,Sosmed,Tak pernah,Tidak tertarik,Mungkin,earth,kasual
+25-34,m,sweater,300-600k,sedang,Beberapa bulan,Kualitas,Web brand,Tak pernah,Tertarik,Ya,putih,sporty
+25-34,f,pakaian-pria,100-300k,murah,Beberapa bulan,Trend,Marketplace,Sering,Tidak tertarik,Mungkin,putih,kasual
+25-34,f,kaos,100-300k,murah,Jarang,Trend,Offline,Kadang,Agak tertarik,Tidak,coklat,kasual
+25-34,m,jas,100-300k,sedang,Beberapa bulan,Kualitas,Offline,Tak pernah,Tidak tertarik,Mungkin,biru,formal
+25-34,f,jaket,300-600k,sedang,Setiap minggu,Merek,Sosmed,Kadang,Agak tertarik,Tidak,abu,kasual
+25-34,f,pakaian-pria,100-300k,murah,Jarang,Kualitas,Marketplace,Selalu,Tertarik,Tidak,pastel,minimalis
+25-34,f,kaos-polo,300-600k,sedang,Setiap minggu,Merek,Sosmed,Kadang,Tidak tertarik,Ya,vibrant,minimalis
+25-34,m,kaos,100-300k,sedang,Jarang,Trend,Web brand,Tak pernah,Tidak tertarik,Ya,biru,formal
+25-34,f,kaos,300-600k,sedang,Setiap bulan,Merek,Offline,Selalu,Agak tertarik,Mungkin,pink,formal
+25-34,m,jas,100-300k,sedang,Jarang,Merek,Offline,Sering,Tertarik,Ya,hitam,minimalis
+25-34,m,kaos-polo,300-600k,sedang,Beberapa bulan,Merek,Offline,Selalu,Tertarik,Mungkin,hijau,kasual
+25-34,f,jas,<100k,murah,Setiap bulan,Kualitas,Sosmed,Sering,Agak tertarik,Ya,vibrant,kasual
+25-34,m,pakaian-pria,100-300k,murah,Setiap minggu,Harga,Marketplace,Sering,Tidak tertarik,Mungkin,merah,sporty
+25-34,m,sweater,<100k,murah,Setiap minggu,Trend,Web brand,Sering,Tidak tertarik,Tidak,earth,minimalis
+25-34,m,jaket,300-600k,sedang,Jarang,Harga,Marketplace,Selalu,Tertarik,Tidak,kuning,minimalis
+25-34,f,kaos,100-300k,murah,Jarang,Harga,Web brand,Selalu,Tertarik,Tidak,netral,minimalis
+25-34,m,pakaian-pria,<100k,murah,Jarang,Trend,Marketplace,Sering,Agak tertarik,Ya,hitam,vintage
+25-34,m,pakaian-pria,<100k,murah,Beberapa bulan,Harga,Offline,Sering,Tertarik,Ya,pastel,formal
+25-34,f,pakaian-wanita,300-600k,sedang,Beberapa bulan,Kualitas,Sosmed,Tak pernah,Tidak tertarik,Mungkin,abu,sporty
+25-34,f,pakaian-wanita,300-600k,sedang,Jarang,Trend,Sosmed,Tak pernah,Tertarik,Tidak,pink,kasual
+25-34,m,jas,<100k,murah,Setiap minggu,Trend,Web brand,Tak pernah,Agak tertarik,Tidak,earth,kasual
+25-34,m,celana,300-600k,sedang,Setiap minggu,Trend,Marketplace,Tak pernah,Agak tertarik,Mungkin,vibrant,vintage
+25-34,m,jas,100-300k,sedang,Setiap bulan,Harga,Offline,Kadang,Tertarik,Mungkin,biru,kasual
+25-34,f,sweater,100-300k,sedang,Beberapa bulan,Harga,Sosmed,Tak pernah,Tidak tertarik,Ya,hijau,kasual
+25-34,f,kaos,300-600k,sedang,Setiap bulan,Harga,Sosmed,Sering,Tidak tertarik,Ya,putih,kasual
+25-34,f,jas,300-600k,sedang,Setiap bulan,Kualitas,Offline,Kadang,Tidak tertarik,Mungkin,netral,sporty
+25-34,m,pakaian-pria,100-300k,sedang,Setiap minggu,Trend,Marketplace,Selalu,Tertarik,Tidak,vibrant,kasual
+25-34,m,jas,100-300k,sedang,Setiap minggu,Kualitas,Web brand,Tak pernah,Tertarik,Tidak,pastel,kasual
+25-34,m,pakaian-pria,<100k,murah,Setiap bulan,Trend,Web brand,Kadang,Tidak tertarik,Ya,abu,kasual
+25-34,m,pakaian-wanita,100-300k,sedang,Setiap bulan,Trend,Offline,Selalu,Tertarik,Tidak,earth,sporty
+25-34,f,kaos,100-300k,murah,Setiap bulan,Trend,Offline,Kadang,Agak tertarik,Ya,biru,minimalis
+25-34,m,kaos,300-600k,sedang,Jarang,Merek,Marketplace,Kadang,Tidak tertarik,Ya,abu,vintage
+25-34,m,pakaian-pria,100-300k,sedang,Jarang,Kualitas,Marketplace,Selalu,Tidak tertarik,Tidak,hitam,minimalis
+25-34,m,pakaian-pria,<100k,murah,Setiap bulan,Kualitas,Offline,Sering,Tertarik,Mungkin,hijau,sporty
+25-34,m,kaos,300-600k,sedang,Beberapa bulan,Kualitas,Web brand,Selalu,Tertarik,Ya,abu,kasual
+25-34,f,pakaian-pria,300-600k,sedang,Jarang,Harga,Offline,Sering,Tertarik,Ya,pastel,formal
+25-34,f,jas,100-300k,sedang,Jarang,Merek,Marketplace,Tak pernah,Tertarik,Tidak,hitam,vintage
+25-34,f,jaket,300-600k,sedang,Setiap bulan,Harga,Web brand,Tak pernah,Tidak tertarik,Tidak,pink,formal
+25-34,f,kaos,100-300k,murah,Setiap bulan,Merek,Marketplace,Kadang,Tertarik,Mungkin,putih,vintage
+25-34,m,kaos,300-600k,sedang,Setiap minggu,Kualitas,Web brand,Kadang,Tertarik,Mungkin,putih,minimalis
+25-34,f,kemeja-casual,300-600k,sedang,Beberapa bulan,Harga,Marketplace,Kadang,Tertarik,Mungkin,merah,sporty
+25-34,f,dress,300-600k,sedang,Setiap minggu,Harga,Sosmed,Selalu,Tertarik,Tidak,hitam,sporty
+25-34,f,celana,100-300k,sedang,Beberapa bulan,Merek,Sosmed,Selalu,Tertarik,Ya,netral,formal
+25-34,m,pakaian-pria,<100k,murah,Setiap bulan,Harga,Marketplace,Selalu,Tertarik,Mungkin,hijau,vintage
+25-34,m,kaos-polo,300-600k,sedang,Jarang,Trend,Web brand,Sering,Tertarik,Tidak,kuning,kasual
+25-34,f,pakaian-wanita,100-300k,murah,Setiap bulan,Kualitas,Sosmed,Sering,Agak tertarik,Tidak,merah,formal
+25-34,f,sweater,<100k,murah,Setiap bulan,Trend,Web brand,Kadang,Tertarik,Ya,earth,sporty
+25-34,m,kaos,300-600k,sedang,Setiap minggu,Trend,Offline,Sering,Agak tertarik,Tidak,earth,sporty
+25-34,f,aksesori,<100k,murah,Setiap minggu,Merek,Sosmed,Selalu,Tidak tertarik,Tidak,pink,kasual
+25-34,f,sweater,<100k,murah,Setiap bulan,Kualitas,Sosmed,Tak pernah,Tidak tertarik,Mungkin,kuning,vintage
+25-34,m,pakaian-wanita,300-600k,sedang,Setiap minggu,Harga,Web brand,Kadang,Tertarik,Mungkin,netral,sporty
+25-34,m,dress,300-600k,sedang,Setiap bulan,Trend,Marketplace,Tak pernah,Tertarik,Tidak,hitam,vintage
+25-34,f,pakaian-wanita,100-300k,sedang,Beberapa bulan,Merek,Marketplace,Tak pernah,Tertarik,Ya,pastel,vintage
+25-34,m,pakaian-pria,300-600k,sedang,Jarang,Trend,Marketplace,Selalu,Agak tertarik,Ya,putih,formal
+25-34,f,sweater,100-300k,murah,Setiap minggu,Harga,Sosmed,Kadang,Tertarik,Mungkin,earth,vintage
+25-34,m,jaket,300-600k,sedang,Jarang,Trend,Offline,Kadang,Agak tertarik,Mungkin,earth,vintage
+25-34,f,sweater,300-600k,sedang,Beberapa bulan,Harga,Marketplace,Kadang,Tertarik,Mungkin,merah,kasual
+25-34,f,kaos-kaki,100-300k,sedang,Jarang,Merek,Marketplace,Tak pernah,Tertarik,Tidak,hitam,kasual
+25-34,f,jaket,100-300k,murah,Jarang,Harga,Offline,Kadang,Agak tertarik,Ya,merah,sporty
+25-34,f,kaos,<100k,murah,Beberapa bulan,Kualitas,Marketplace,Kadang,Tidak tertarik,Ya,pink,kasual
+25-34,m,kaos,300-600k,sedang,Beberapa bulan,Trend,Web brand,Kadang,Tidak tertarik,Ya,hijau,formal
+25-34,m,kemeja-casual,300-600k,sedang,Setiap bulan,Harga,Offline,Sering,Tertarik,Ya,hitam,formal
+25-34,m,pakaian-pria,100-300k,sedang,Beberapa bulan,Kualitas,Offline,Selalu,Tidak tertarik,Ya,kuning,minimalis
+25-34,m,kemeja-casual,300-600k,sedang,Jarang,Trend,Offline,Tak pernah,Tertarik,Ya,vibrant,kasual
+25-34,m,kaos-kaki,100-300k,sedang,Beberapa bulan,Trend,Web brand,Tak pernah,Tidak tertarik,Mungkin,vibrant,vintage
+25-34,m,kaos,<100k,murah,Beberapa bulan,Merek,Marketplace,Kadang,Tidak tertarik,Ya,earth,vintage
+25-34,m,pakaian-pria,100-300k,sedang,Jarang,Trend,Marketplace,Kadang,Agak tertarik,Ya,merah,sporty
+25-34,f,pakaian-pria,<100k,murah,Beberapa bulan,Harga,Web brand,Kadang,Tertarik,Ya,hijau,kasual
+25-34,f,jaket,100-300k,murah,Setiap minggu,Merek,Web brand,Selalu,Agak tertarik,Tidak,pastel,vintage
+25-34,m,pakaian-pria,100-300k,murah,Beberapa bulan,Harga,Sosmed,Kadang,Tidak tertarik,Tidak,merah,kasual
+25-34,f,pakaian-pria,300-600k,sedang,Beberapa bulan,Harga,Offline,Selalu,Tertarik,Tidak,coklat,vintage
+25-34,f,kaos,<100k,murah,Jarang,Harga,Offline,Kadang,Agak tertarik,Ya,merah,minimalis
+25-34,f,sweater,<100k,murah,Jarang,Trend,Web brand,Kadang,Tidak tertarik,Ya,earth,kasual
+25-34,m,jaket,100-300k,murah,Jarang,Kualitas,Marketplace,Kadang,Tidak tertarik,Tidak,netral,vintage
+25-34,m,jas,300-600k,sedang,Beberapa bulan,Trend,Sosmed,Kadang,Tertarik,Tidak,netral,formal
+25-34,m,pakaian-wanita,300-600k,sedang,Jarang,Trend,Web brand,Sering,Tertarik,Tidak,kuning,kasual
+25-34,m,jas,300-600k,sedang,Setiap bulan,Harga,Web brand,Tak pernah,Tidak tertarik,Ya,netral,minimalis
+25-34,m,sweater,<100k,murah,Setiap minggu,Trend,Marketplace,Kadang,Agak tertarik,Ya,netral,vintage
+25-34,m,pakaian-pria,100-300k,sedang,Jarang,Harga,Web brand,Kadang,Agak tertarik,Mungkin,abu,minimalis
+25-34,f,kaos,300-600k,sedang,Beberapa bulan,Merek,Web brand,Selalu,Tidak tertarik,Mungkin,earth,vintage
+25-34,m,kaos,300-600k,sedang,Beberapa bulan,Trend,Offline,Kadang,Tertarik,Tidak,netral,minimalis
+25-34,f,kaos,100-300k,murah,Jarang,Trend,Sosmed,Tak pernah,Tertarik,Mungkin,coklat,minimalis
+25-34,f,pakaian-pria,100-300k,sedang,Jarang,Harga,Sosmed,Sering,Tertarik,Tidak,abu,formal
+25-34,m,celana,300-600k,sedang,Beberapa bulan,Trend,Web brand,Selalu,Agak tertarik,Mungkin,earth,vintage
+25-34,m,pakaian-pria,300-600k,sedang,Setiap minggu,Kualitas,Sosmed,Sering,Tidak tertarik,Ya,merah,kasual
+25-34,f,sweater,300-600k,sedang,Setiap bulan,Harga,Sosmed,Kadang,Agak tertarik,Mungkin,putih,minimalis
+25-34,f,kaos,300-600k,sedang,Jarang,Merek,Web brand,Sering,Tidak tertarik,Mungkin,netral,kasual
+25-34,f,pakaian-pria,100-300k,sedang,Setiap minggu,Harga,Web brand,Selalu,Tidak tertarik,Mungkin,pastel,formal
+25-34,m,kemeja-casual,300-600k,sedang,Setiap minggu,Harga,Web brand,Kadang,Tidak tertarik,Ya,putih,formal
+25-34,m,pakaian-pria,300-600k,sedang,Jarang,Kualitas,Sosmed,Sering,Tertarik,Tidak,kuning,vintage
+25-34,f,kaos,300-600k,sedang,Jarang,Trend,Sosmed,Tak pernah,Agak tertarik,Ya,merah,sporty
+25-34,f,jas,<100k,murah,Beberapa bulan,Harga,Sosmed,Tak pernah,Tidak tertarik,Mungkin,pastel,kasual
+25-34,f,pakaian-wanita,300-600k,sedang,Jarang,Merek,Web brand,Tak pernah,Tidak tertarik,Ya,pastel,kasual
+25-34,f,jas,100-300k,sedang,Beberapa bulan,Harga,Sosmed,Sering,Tidak tertarik,Mungkin,pink,minimalis
+25-34,f,kaos,300-600k,sedang,Beberapa bulan,Trend,Marketplace,Tak pernah,Agak tertarik,Ya,earth,formal
+25-34,f,pakaian-pria,100-300k,murah,Jarang,Merek,Web brand,Kadang,Agak tertarik,Ya,kuning,vintage
+25-34,m,jas,300-600k,sedang,Setiap minggu,Harga,Web brand,Kadang,Tidak tertarik,Ya,hijau,kasual
+25-34,m,aksesori,<100k,murah,Setiap bulan,Harga,Offline,Kadang,Tertarik,Mungkin,pastel,formal
+25-34,m,kaos-polo,300-600k,sedang,Jarang,Trend,Sosmed,Selalu,Tertarik,Ya,netral,formal
+25-34,f,jaket,300-600k,sedang,Setiap bulan,Kualitas,Sosmed,Tak pernah,Tidak tertarik,Ya,hitam,kasual
+25-34,f,kaos,100-300k,murah,Setiap bulan,Kualitas,Web brand,Tak pernah,Tidak tertarik,Tidak,abu,minimalis
+25-34,f,pakaian-pria,100-300k,murah,Setiap minggu,Trend,Web brand,Tak pernah,Agak tertarik,Ya,hijau,minimalis
+25-34,f,kaos,300-600k,sedang,Setiap bulan,Harga,Sosmed,Tak pernah,Tidak tertarik,Ya,merah,minimalis
+25-34,f,pakaian-pria,100-300k,murah,Jarang,Merek,Offline,Kadang,Tertarik,Tidak,putih,kasual
+25-34,m,kaos,300-600k,sedang,Jarang,Merek,Offline,Sering,Tidak tertarik,Mungkin,earth,sporty
+25-34,m,pakaian-pria,300-600k,sedang,Jarang,Kualitas,Web brand,Tak pernah,Agak tertarik,Ya,hijau,kasual
+25-34,f,kaos,100-300k,sedang,Beberapa bulan,Trend,Web brand,Kadang,Tertarik,Mungkin,pastel,kasual
+25-34,m,sweater,300-600k,sedang,Setiap minggu,Harga,Marketplace,Sering,Tidak tertarik,Tidak,abu,vintage
+25-34,m,kaos,300-600k,sedang,Jarang,Harga,Marketplace,Selalu,Tertarik,Tidak,biru,sporty
+25-34,m,sweater,100-300k,sedang,Setiap bulan,Trend,Web brand,Sering,Agak tertarik,Ya,hitam,vintage
+25-34,f,pakaian-wanita,100-300k,murah,Beberapa bulan,Harga,Sosmed,Tak pernah,Agak tertarik,Ya,abu,vintage
+25-34,m,pakaian-wanita,300-600k,sedang,Jarang,Trend,Offline,Tak pernah,Tidak tertarik,Ya,pastel,vintage
+25-34,f,kaos-kaki,100-300k,sedang,Beberapa bulan,Harga,Offline,Tak pernah,Tertarik,Ya,earth,kasual
+25-34,f,pakaian-wanita,300-600k,sedang,Setiap minggu,Kualitas,Offline,Kadang,Tertarik,Mungkin,putih,kasual
+25-34,m,kaos,100-300k,murah,Setiap bulan,Trend,Offline,Selalu,Tertarik,Tidak,netral,sporty
+25-34,f,kemeja-casual,300-600k,sedang,Beberapa bulan,Kualitas,Marketplace,Selalu,Tertarik,Ya,netral,sporty
+25-34,m,sweater,<100k,murah,Setiap minggu,Kualitas,Web brand,Sering,Tertarik,Ya,netral,kasual
+25-34,m,pakaian-wanita,300-600k,sedang,Beberapa bulan,Harga,Sosmed,Tak pernah,Agak tertarik,Mungkin,putih,formal
+25-34,f,kaos-kaki,300-600k,sedang,Jarang,Trend,Sosmed,Kadang,Tidak tertarik,Mungkin,netral,sporty
+25-34,m,jas,<100k,murah,Setiap minggu,Kualitas,Marketplace,Selalu,Agak tertarik,Tidak,pastel,kasual
+25-34,f,jas,300-600k,sedang,Beberapa bulan,Kualitas,Offline,Sering,Tidak tertarik,Ya,pink,kasual
+25-34,f,pakaian-pria,300-600k,sedang,Beberapa bulan,Harga,Web brand,Kadang,Tertarik,Ya,netral,formal
+25-34,f,jaket,300-600k,sedang,Setiap bulan,Harga,Marketplace,Sering,Tertarik,Tidak,putih,kasual
+25-34,m,pakaian-wanita,300-600k,sedang,Setiap minggu,Harga,Web brand,Selalu,Tertarik,Ya,merah,sporty
+25-34,m,jaket,300-600k,sedang,Jarang,Merek,Sosmed,Selalu,Agak tertarik,Tidak,hitam,vintage
+25-34,m,pakaian-pria,300-600k,sedang,Setiap minggu,Trend,Offline,Sering,Agak tertarik,Tidak,biru,sporty
+25-34,f,kaos,100-300k,murah,Beberapa bulan,Harga,Web brand,Tak pernah,Agak tertarik,Mungkin,netral,sporty
+25-34,f,kaos-polo,100-300k,sedang,Beberapa bulan,Harga,Sosmed,Tak pernah,Tertarik,Tidak,abu,sporty
+25-34,f,kaos,100-300k,murah,Setiap minggu,Trend,Sosmed,Kadang,Agak tertarik,Ya,coklat,kasual
+25-34,f,sweater,100-300k,murah,Beberapa bulan,Harga,Offline,Selalu,Tertarik,Ya,pastel,sporty
+25-34,m,kaos,<100k,murah,Setiap minggu,Trend,Marketplace,Tak pernah,Agak tertarik,Tidak,kuning,formal
+25-34,f,kaos,300-600k,sedang,Setiap minggu,Harga,Marketplace,Sering,Tidak tertarik,Ya,pastel,kasual
+25-34,f,pakaian-wanita,100-300k,sedang,Jarang,Trend,Marketplace,Sering,Tertarik,Ya,putih,vintage
+25-34,f,pakaian-wanita,100-300k,sedang,Setiap minggu,Kualitas,Offline,Sering,Tidak tertarik,Tidak,putih,formal
+25-34,f,pakaian-wanita,100-300k,sedang,Jarang,Trend,Marketplace,Sering,Tertarik,Ya,vibrant,formal
+25-34,f,jas,100-300k,sedang,Setiap minggu,Trend,Marketplace,Selalu,Agak tertarik,Mungkin,hitam,kasual
+25-34,f,jaket,100-300k,murah,Jarang,Kualitas,Sosmed,Sering,Agak tertarik,Tidak,pastel,minimalis
+25-34,f,kaos,100-300k,murah,Setiap minggu,Kualitas,Web brand,Kadang,Agak tertarik,Ya,netral,kasual
+25-34,m,pakaian-pria,<100k,murah,Setiap bulan,Kualitas,Offline,Sering,Tertarik,Mungkin,vibrant,sporty
+25-34,f,sweater,100-300k,murah,Jarang,Kualitas,Offline,Selalu,Agak tertarik,Ya,biru,minimalis
+25-34,m,kaos,100-300k,murah,Beberapa bulan,Trend,Web brand,Tak pernah,Tidak tertarik,Mungkin,netral,vintage
+25-34,f,jas,100-300k,sedang,Setiap bulan,Merek,Offline,Tak pernah,Tidak tertarik,Tidak,netral,sporty
+25-34,f,kaos,300-600k,sedang,Jarang,Harga,Offline,Kadang,Tidak tertarik,Ya,hitam,vintage
+25-34,f,kaos,100-300k,sedang,Jarang,Harga,Sosmed,Selalu,Tidak tertarik,Mungkin,pastel,vintage
+25-34,f,pakaian-wanita,100-300k,sedang,Setiap minggu,Kualitas,Offline,Sering,Tidak tertarik,Tidak,putih,vintage
+25-34,m,kaos,<100k,murah,Setiap bulan,Harga,Offline,Selalu,Tertarik,Ya,hitam,vintage
+25-34,f,pakaian-wanita,300-600k,sedang,Setiap minggu,Harga,Sosmed,Sering,Agak tertarik,Mungkin,hijau,kasual
+25-34,m,kaos,100-300k,murah,Setiap minggu,Kualitas,Offline,Kadang,Tidak tertarik,Mungkin,hitam,minimalis
+25-34,m,pakaian-pria,300-600k,sedang,Setiap minggu,Kualitas,Offline,Sering,Tertarik,Mungkin,merah,formal
+25-34,f,celana,100-300k,sedang,Setiap minggu,Trend,Offline,Kadang,Tertarik,Tidak,vibrant,kasual
+25-34,f,pakaian-pria,100-300k,murah,Setiap minggu,Harga,Sosmed,Selalu,Tidak tertarik,Mungkin,netral,sporty
+25-34,m,pakaian-pria,100-300k,sedang,Beberapa bulan,Harga,Sosmed,Tak pernah,Agak tertarik,Ya,hitam,vintage
+25-34,m,sweater,100-300k,murah,Beberapa bulan,Merek,Sosmed,Sering,Agak tertarik,Mungkin,hitam,kasual
+25-34,m,pakaian-pria,100-300k,murah,Setiap minggu,Trend,Web brand,Kadang,Tertarik,Mungkin,earth,minimalis
+25-34,m,sweater,<100k,murah,Beberapa bulan,Kualitas,Offline,Tak pernah,Tidak tertarik,Mungkin,vibrant,minimalis
+25-34,f,pakaian-wanita,<100k,murah,Beberapa bulan,Merek,Web brand,Selalu,Agak tertarik,Mungkin,kuning,vintage
+25-34,m,jas,300-600k,sedang,Setiap minggu,Harga,Web brand,Kadang,Tidak tertarik,Ya,putih,kasual
+25-34,f,jas,100-300k,sedang,Beberapa bulan,Trend,Sosmed,Sering,Tertarik,Ya,netral,vintage
+25-34,f,celana,100-300k,sedang,Setiap bulan,Trend,Offline,Selalu,Agak tertarik,Tidak,coklat,vintage
+25-34,m,kaos-polo,100-300k,sedang,Jarang,Merek,Marketplace,Tak pernah,Agak tertarik,Tidak,abu,minimalis
+25-34,f,kaos,300-600k,sedang,Beberapa bulan,Merek,Sosmed,Kadang,Tidak tertarik,Ya,pastel,kasual
+25-34,m,celana,100-300k,sedang,Setiap bulan,Merek,Web brand,Sering,Agak tertarik,Ya,putih,kasual
+25-34,m,pakaian-wanita,300-600k,sedang,Jarang,Kualitas,Web brand,Kadang,Tidak tertarik,Ya,pastel,formal
+25-34,m,pakaian-pria,100-300k,sedang,Setiap minggu,Trend,Marketplace,Selalu,Tertarik,Tidak,biru,kasual
+25-34,f,pakaian-pria,100-300k,sedang,Setiap minggu,Trend,Web brand,Sering,Agak tertarik,Mungkin,merah,vintage
+25-34,m,pakaian-wanita,300-600k,sedang,Setiap minggu,Kualitas,Sosmed,Selalu,Tertarik,Mungkin,putih,sporty
+25-34,f,kaos,300-600k,sedang,Jarang,Harga,Web brand,Selalu,Tidak tertarik,Ya,hitam,sporty
+25-34,f,jaket,300-600k,sedang,Beberapa bulan,Merek,Offline,Selalu,Tertarik,Tidak,vibrant,kasual
+25-34,m,kaos,300-600k,sedang,Setiap bulan,Merek,Marketplace,Selalu,Agak tertarik,Ya,netral,sporty
+25-34,m,pakaian-wanita,300-600k,sedang,Jarang,Harga,Marketplace,Selalu,Tertarik,Tidak,kuning,formal
+25-34,m,kaos,<100k,murah,Setiap bulan,Harga,Marketplace,Selalu,Agak tertarik,Ya,coklat,sporty
+25-34,f,pakaian-pria,<100k,murah,Setiap bulan,Harga,Web brand,Sering,Tidak tertarik,Mungkin,pastel,vintage
+25-34,m,sweater,300-600k,sedang,Setiap minggu,Harga,Offline,Tak pernah,Agak tertarik,Mungkin,coklat,sporty
+25-34,m,jaket,100-300k,murah,Setiap minggu,Harga,Offline,Tak pernah,Agak tertarik,Mungkin,coklat,sporty
+25-34,m,sweater,100-300k,sedang,Jarang,Merek,Offline,Selalu,Tertarik,Ya,hijau,minimalis
+25-34,m,jaket,100-300k,murah,Beberapa bulan,Kualitas,Offline,Kadang,Tertarik,Ya,coklat,kasual
+25-34,f,pakaian-wanita,300-600k,sedang,Setiap bulan,Trend,Marketplace,Sering,Tertarik,Ya,pink,kasual
+25-34,m,pakaian-wanita,100-300k,sedang,Beberapa bulan,Trend,Web brand,Tak pernah,Tertarik,Ya,putih,minimalis
+25-34,m,celana,100-300k,sedang,Setiap minggu,Merek,Marketplace,Sering,Agak tertarik,Mungkin,vibrant,formal
+25-34,m,jaket,300-600k,sedang,Jarang,Harga,Offline,Tak pernah,Agak tertarik,Mungkin,earth,sporty
+25-34,f,kaos,100-300k,murah,Jarang,Merek,Offline,Tak pernah,Tidak tertarik,Ya,netral,minimalis
+25-34,f,pakaian-wanita,100-300k,sedang,Jarang,Harga,Marketplace,Sering,Tidak tertarik,Tidak,hijau,minimalis
+25-34,m,kemeja-casual,300-600k,sedang,Setiap minggu,Trend,Web brand,Tak pernah,Tidak tertarik,Ya,coklat,kasual
+25-34,f,kaos,100-300k,murah,Jarang,Kualitas,Web brand,Kadang,Tertarik,Mungkin,earth,vintage
+25-34,f,sweater,300-600k,sedang,Setiap bulan,Harga,Offline,Tak pernah,Agak tertarik,Tidak,kuning,minimalis
+25-34,m,pakaian-wanita,300-600k,sedang,Jarang,Merek,Sosmed,Sering,Tidak tertarik,Tidak,vibrant,sporty
+25-34,m,jas,100-300k,sedang,Beberapa bulan,Harga,Marketplace,Kadang,Tidak tertarik,Tidak,putih,minimalis
+25-34,m,kaos,300-600k,sedang,Jarang,Harga,Web brand,Tak pernah,Agak tertarik,Tidak,netral,vintage
+25-34,m,kaos,100-300k,murah,Setiap bulan,Kualitas,Marketplace,Selalu,Tertarik,Mungkin,pastel,vintage
+25-34,m,aksesori,<100k,murah,Setiap bulan,Trend,Web brand,Kadang,Agak tertarik,Mungkin,putih,kasual
+25-34,f,pakaian-pria,<100k,murah,Jarang,Harga,Web brand,Selalu,Tertarik,Tidak,hitam,minimalis
+25-34,m,kaos,300-600k,sedang,Setiap bulan,Kualitas,Marketplace,Kadang,Tertarik,Mungkin,netral,kasual
+25-34,f,kaos,100-300k,murah,Setiap bulan,Harga,Offline,Kadang,Agak tertarik,Tidak,earth,sporty
+25-34,m,pakaian-wanita,300-600k,sedang,Beberapa bulan,Merek,Offline,Tak pernah,Agak tertarik,Ya,hitam,minimalis
+25-34,f,pakaian-wanita,300-600k,sedang,Beberapa bulan,Harga,Offline,Selalu,Tidak tertarik,Mungkin,coklat,sporty
+25-34,f,kaos,300-600k,sedang,Jarang,Merek,Marketplace,Tak pernah,Tertarik,Ya,putih,sporty
+25-34,m,celana,100-300k,sedang,Setiap bulan,Trend,Offline,Selalu,Tidak tertarik,Tidak,abu,vintage
+25-34,f,pakaian-wanita,300-600k,sedang,Beberapa bulan,Merek,Web brand,Selalu,Agak tertarik,Mungkin,kuning,vintage
+25-34,f,jas,100-300k,sedang,Jarang,Merek,Offline,Tak pernah,Tidak tertarik,Tidak,pastel,kasual
+25-34,f,pakaian-pria,100-300k,sedang,Jarang,Merek,Sosmed,Tak pernah,Tidak tertarik,Mungkin,hijau,vintage
+25-34,f,kaos,300-600k,sedang,Setiap minggu,Harga,Sosmed,Selalu,Tidak tertarik,Mungkin,putih,vintage
+25-34,f,pakaian-wanita,300-600k,sedang,Beberapa bulan,Harga,Offline,Kadang,Tertarik,Tidak,pastel,vintage
+25-34,m,aksesori,<100k,murah,Setiap minggu,Trend,Marketplace,Tak pernah,Agak tertarik,Tidak,kuning,vintage
+25-34,f,kaos-polo,300-600k,sedang,Setiap minggu,Merek,Marketplace,Sering,Tertarik,Tidak,merah,minimalis
+25-34,f,kaos,100-300k,murah,Setiap bulan,Kualitas,Web brand,Kadang,Tertarik,Tidak,putih,sporty
+25-34,f,pakaian-wanita,300-600k,sedang,Beberapa bulan,Kualitas,Web brand,Kadang,Tidak tertarik,Tidak,putih,kasual
+25-34,m,kaos,300-600k,sedang,Beberapa bulan,Kualitas,Sosmed,Kadang,Tertarik,Tidak,putih,kasual
+25-34,m,jas,100-300k,sedang,Beberapa bulan,Trend,Marketplace,Kadang,Tertarik,Tidak,putih,sporty
+25-34,m,kaos,100-300k,sedang,Beberapa bulan,Trend,Web brand,Selalu,Agak tertarik,Mungkin,pastel,sporty
+25-34,m,jaket,100-300k,murah,Setiap minggu,Harga,Marketplace,Selalu,Agak tertarik,Mungkin,hitam,vintage
+25-34,m,kaos-polo,300-600k,sedang,Setiap minggu,Kualitas,Web brand,Kadang,Tertarik,Mungkin,putih,kasual
+25-34,m,kemeja-casual,300-600k,sedang,Jarang,Merek,Offline,Selalu,Tidak tertarik,Mungkin,putih,minimalis
+25-34,m,pakaian-pria,300-600k,sedang,Jarang,Merek,Sosmed,Sering,Tidak tertarik,Tidak,pastel,formal
+25-34,f,kaos,<100k,murah,Jarang,Merek,Sosmed,Tak pernah,Tertarik,Mungkin,vibrant,vintage
+25-34,m,kaos,100-300k,sedang,Setiap minggu,Trend,Web brand,Selalu,Agak tertarik,Tidak,abu,minimalis
+25-34,f,jaket,100-300k,murah,Beberapa bulan,Harga,Sosmed,Tak pernah,Tertarik,Tidak,abu,kasual
+25-34,f,kaos,<100k,murah,Setiap bulan,Merek,Web brand,Sering,Agak tertarik,Mungkin,abu,formal
+25-34,m,kaos,<100k,murah,Beberapa bulan,Trend,Marketplace,Tak pernah,Agak tertarik,Mungkin,pastel,kasual
+25-34,f,jas,100-300k,sedang,Beberapa bulan,Harga,Web brand,Tak pernah,Agak tertarik,Ya,hitam,kasual
+25-34,f,jaket,100-300k,murah,Setiap bulan,Kualitas,Marketplace,Kadang,Tidak tertarik,Mungkin,putih,vintage
+25-34,f,pakaian-wanita,300-600k,sedang,Jarang,Merek,Marketplace,Tak pernah,Tertarik,Ya,hitam,vintage
+25-34,m,jas,300-600k,sedang,Setiap bulan,Kualitas,Marketplace,Kadang,Tidak tertarik,Ya,kuning,minimalis
+25-34,f,sweater,100-300k,sedang,Setiap bulan,Kualitas,Marketplace,Tak pernah,Agak tertarik,Mungkin,pastel,formal
+25-34,f,pakaian-wanita,300-600k,sedang,Setiap minggu,Merek,Marketplace,Tak pernah,Tidak tertarik,Ya,putih,minimalis
+25-34,f,pakaian-pria,<100k,murah,Setiap bulan,Harga,Sosmed,Kadang,Agak tertarik,Mungkin,pastel,formal
+25-34,m,kaos,<100k,murah,Setiap minggu,Trend,Marketplace,Selalu,Tertarik,Tidak,biru,minimalis
+25-34,m,jas,100-300k,sedang,Jarang,Trend,Offline,Tak pernah,Tertarik,Ya,vibrant,kasual
+25-34,f,pakaian-pria,<100k,murah,Beberapa bulan,Harga,Web brand,Kadang,Agak tertarik,Mungkin,putih,minimalis
+25-34,m,kaos,100-300k,sedang,Jarang,Trend,Web brand,Tak pernah,Tidak tertarik,Ya,biru,vintage
+25-34,m,jaket,300-600k,sedang,Beberapa bulan,Kualitas,Marketplace,Sering,Agak tertarik,Tidak,coklat,minimalis
+25-34,m,pakaian-pria,<100k,murah,Jarang,Merek,Sosmed,Sering,Tertarik,Ya,pastel,sporty
+25-34,f,kaos,<100k,murah,Jarang,Kualitas,Web brand,Selalu,Tertarik,Ya,earth,minimalis
+25-34,f,pakaian-wanita,300-600k,sedang,Setiap minggu,Kualitas,Offline,Selalu,Tidak tertarik,Tidak,vibrant,sporty
+25-34,m,sweater,300-600k,sedang,Beberapa bulan,Harga,Sosmed,Tak pernah,Agak tertarik,Ya,pastel,vintage
+25-34,m,kaos-polo,300-600k,sedang,Setiap bulan,Harga,Offline,Selalu,Agak tertarik,Ya,pastel,sporty
+25-34,f,kaos,300-600k,sedang,Beberapa bulan,Merek,Offline,Kadang,Tidak tertarik,Mungkin,vibrant,sporty
+25-34,m,pakaian-wanita,300-600k,sedang,Setiap minggu,Harga,Web brand,Kadang,Tertarik,Mungkin,netral,kasual
+25-34,m,pakaian-wanita,300-600k,sedang,Jarang,Trend,Web brand,Sering,Agak tertarik,Ya,hijau,minimalis
+25-34,m,jas,300-600k,sedang,Setiap minggu,Harga,Sosmed,Kadang,Tertarik,Tidak,hitam,kasual
+25-34,m,jas,300-600k,sedang,Setiap bulan,Merek,Offline,Selalu,Agak tertarik,Ya,hitam,minimalis
+25-34,f,kaos-polo,300-600k,sedang,Setiap minggu,Kualitas,Sosmed,Kadang,Tidak tertarik,Tidak,hitam,formal
+25-34,f,jas,<100k,murah,Beberapa bulan,Harga,Web brand,Selalu,Tidak tertarik,Tidak,biru,minimalis
+25-34,m,jaket,300-600k,sedang,Setiap minggu,Merek,Offline,Kadang,Agak tertarik,Tidak,pastel,kasual
+25-34,m,sweater,100-300k,murah,Setiap minggu,Harga,Marketplace,Tak pernah,Tidak tertarik,Mungkin,pastel,kasual
+25-34,f,pakaian-pria,<100k,murah,Jarang,Kualitas,Offline,Selalu,Agak tertarik,Tidak,hitam,kasual
+25-34,m,pakaian-pria,100-300k,sedang,Setiap minggu,Kualitas,Web brand,Tak pernah,Tertarik,Ya,netral,kasual
+25-34,f,pakaian-wanita,300-600k,sedang,Setiap minggu,Harga,Offline,Sering,Tidak tertarik,Ya,abu,minimalis
+25-34,f,pakaian-wanita,300-600k,sedang,Jarang,Trend,Sosmed,Tak pernah,Agak tertarik,Mungkin,putih,sporty
+25-34,m,kaos,100-300k,murah,Jarang,Kualitas,Marketplace,Tak pernah,Tidak tertarik,Ya,abu,kasual
+25-34,f,kaos,300-600k,sedang,Jarang,Kualitas,Sosmed,Tak pernah,Agak tertarik,Mungkin,coklat,sporty
+25-34,m,sweater,100-300k,murah,Setiap minggu,Trend,Web brand,Tak pernah,Tertarik,Ya,hijau,formal
+25-34,m,celana,100-300k,sedang,Setiap bulan,Trend,Marketplace,Kadang,Tertarik,Mungkin,netral,sporty
+25-34,m,jaket,100-300k,murah,Setiap bulan,Kualitas,Marketplace,Tak pernah,Agak tertarik,Mungkin,vibrant,formal
+25-34,m,pakaian-pria,<100k,murah,Setiap minggu,Kualitas,Sosmed,Sering,Tidak tertarik,Ya,merah,minimalis
+25-34,f,kaos,100-300k,sedang,Beberapa bulan,Trend,Offline,Selalu,Tidak tertarik,Mungkin,vibrant,vintage
+25-34,m,sweater,300-600k,sedang,Setiap bulan,Harga,Sosmed,Kadang,Tertarik,Ya,pink,sporty
+25-34,f,sweater,100-300k,murah,Beberapa bulan,Kualitas,Offline,Tak pernah,Tertarik,Mungkin,coklat,formal
+25-34,m,\N,>600k,mahal,Beberapa bulan,Merek,Offline,Sering,Tidak tertarik,Mungkin,putih,formal
+25-34,f,pakaian-pria,100-300k,murah,Setiap bulan,Harga,Sosmed,Sering,Tidak tertarik,Tidak,pastel,vintage
+25-34,f,kaos,300-600k,sedang,Jarang,Trend,Sosmed,Kadang,Agak tertarik,Tidak,hitam,sporty
+25-34,f,kaos,300-600k,sedang,Jarang,Harga,Marketplace,Kadang,Tidak tertarik,Mungkin,netral,minimalis
+25-34,f,jaket,100-300k,murah,Setiap minggu,Merek,Sosmed,Kadang,Tidak tertarik,Ya,vibrant,vintage
+25-34,f,kaos,300-600k,sedang,Setiap minggu,Merek,Web brand,Tak pernah,Agak tertarik,Ya,putih,minimalis
+25-34,m,kaos,300-600k,sedang,Setiap bulan,Harga,Offline,Tak pernah,Tidak tertarik,Ya,coklat,minimalis
+25-34,m,kaos,300-600k,sedang,Jarang,Merek,Marketplace,Kadang,Tidak tertarik,Ya,abu,vintage
+25-34,f,jas,300-600k,sedang,Setiap bulan,Harga,Sosmed,Sering,Tidak tertarik,Tidak,pastel,kasual
+25-34,f,sweater,100-300k,sedang,Setiap minggu,Harga,Sosmed,Selalu,Tidak tertarik,Mungkin,netral,minimalis
+25-34,f,pakaian-pria,100-300k,murah,Jarang,Harga,Marketplace,Kadang,Tidak tertarik,Mungkin,hitam,kasual
+25-34,f,pakaian-pria,<100k,murah,Setiap minggu,Kualitas,Web brand,Sering,Tidak tertarik,Tidak,coklat,minimalis
+25-34,m,celana,100-300k,sedang,Jarang,Harga,Sosmed,Kadang,Tertarik,Ya,putih,formal
+25-34,m,kaos,100-300k,murah,Setiap minggu,Harga,Web brand,Selalu,Tertarik,Ya,merah,sporty
+25-34,f,kaos,300-600k,sedang,Beberapa bulan,Kualitas,Offline,Tak pernah,Tertarik,Tidak,hitam,minimalis
+25-34,m,jas,300-600k,sedang,Beberapa bulan,Harga,Marketplace,Selalu,Agak tertarik,Ya,kuning,vintage
+25-34,f,pakaian-wanita,100-300k,sedang,Beberapa bulan,Harga,Marketplace,Tak pernah,Tertarik,Mungkin,earth,kasual
+25-34,f,jas,100-300k,sedang,Beberapa bulan,Trend,Sosmed,Selalu,Agak tertarik,Tidak,netral,formal
+25-34,m,kaos-polo,<100k,murah,Setiap bulan,Harga,Offline,Tak pernah,Tidak tertarik,Ya,coklat,vintage
+25-34,m,pakaian-pria,300-600k,sedang,Jarang,Trend,Sosmed,Selalu,Tertarik,Ya,abu,sporty
+25-34,f,celana,100-300k,sedang,Setiap minggu,Merek,Offline,Tak pernah,Agak tertarik,Tidak,netral,sporty
+25-34,f,kaos,100-300k,murah,Setiap bulan,Harga,Sosmed,Kadang,Agak tertarik,Mungkin,pastel,formal
+25-34,f,kaos-polo,300-600k,sedang,Beberapa bulan,Harga,Sosmed,Tak pernah,Tidak tertarik,Mungkin,pastel,kasual
+25-34,f,\N,>600k,mahal,Jarang,Merek,Offline,Tak pernah,Tidak tertarik,Tidak,vibrant,kasual
+25-34,m,pakaian-pria,<100k,murah,Setiap bulan,Merek,Web brand,Selalu,Tertarik,Ya,vibrant,kasual
+25-34,f,kemeja-casual,300-600k,sedang,Jarang,Harga,Offline,Kadang,Agak tertarik,Ya,biru,sporty
+25-34,m,jas,100-300k,sedang,Setiap bulan,Harga,Sosmed,Selalu,Agak tertarik,Mungkin,vibrant,vintage
+25-34,f,jas,100-300k,sedang,Setiap bulan,Harga,Marketplace,Sering,Tertarik,Ya,vibrant,minimalis
+25-34,m,pakaian-pria,100-300k,murah,Jarang,Trend,Web brand,Tak pernah,Agak tertarik,Ya,vibrant,sporty
+25-34,f,sweater,<100k,murah,Jarang,Trend,Marketplace,Selalu,Agak tertarik,Ya,biru,formal
+25-34,f,celana,100-300k,sedang,Setiap bulan,Trend,Offline,Selalu,Agak tertarik,Tidak,coklat,sporty
+25-34,f,kaos,300-600k,sedang,Jarang,Trend,Sosmed,Tak pernah,Tidak tertarik,Tidak,coklat,sporty
+25-34,f,kaos,300-600k,sedang,Beberapa bulan,Harga,Web brand,Tak pernah,Tidak tertarik,Mungkin,pastel,sporty
+25-34,f,jaket,300-600k,sedang,Setiap bulan,Harga,Offline,Kadang,Tidak tertarik,Mungkin,netral,formal
+25-34,f,sweater,100-300k,murah,Setiap bulan,Merek,Web brand,Sering,Agak tertarik,Ya,abu,sporty
+25-34,m,jas,<100k,murah,Setiap bulan,Trend,Offline,Kadang,Tidak tertarik,Tidak,pink,formal
+25-34,f,kaos,300-600k,sedang,Beberapa bulan,Trend,Web brand,Kadang,Tidak tertarik,Tidak,netral,vintage
+25-34,m,pakaian-pria,100-300k,murah,Setiap minggu,Trend,Marketplace,Sering,Tidak tertarik,Ya,putih,formal
+25-34,f,pakaian-pria,100-300k,murah,Setiap minggu,Harga,Sosmed,Tak pernah,Agak tertarik,Mungkin,netral,minimalis
+25-34,m,pakaian-wanita,300-600k,sedang,Jarang,Merek,Offline,Kadang,Tertarik,Tidak,hijau,minimalis
+25-34,f,pakaian-pria,100-300k,murah,Jarang,Merek,Marketplace,Selalu,Tidak tertarik,Mungkin,kuning,minimalis
+25-34,f,sweater,100-300k,sedang,Setiap bulan,Trend,Marketplace,Selalu,Agak tertarik,Tidak,abu,formal
+25-34,m,pakaian-wanita,300-600k,sedang,Jarang,Kualitas,Sosmed,Kadang,Tidak tertarik,Ya,abu,kasual
+25-34,m,kaos,300-600k,sedang,Jarang,Kualitas,Web brand,Tak pernah,Tertarik,Ya,putih,formal
+25-34,m,jas,300-600k,sedang,Setiap minggu,Kualitas,Sosmed,Selalu,Tertarik,Mungkin,vibrant,vintage
+25-34,m,kaos-kaki,300-600k,sedang,Beberapa bulan,Kualitas,Marketplace,Kadang,Tertarik,Tidak,abu,vintage
+25-34,f,kaos,300-600k,sedang,Setiap minggu,Trend,Web brand,Tak pernah,Agak tertarik,Ya,hijau,kasual
+25-34,f,pakaian-pria,100-300k,sedang,Jarang,Merek,Marketplace,Kadang,Tertarik,Ya,hitam,vintage
+25-34,f,jas,100-300k,sedang,Setiap bulan,Trend,Sosmed,Selalu,Agak tertarik,Mungkin,pastel,kasual
+25-34,m,aksesori,<100k,murah,Jarang,Trend,Web brand,Sering,Tertarik,Tidak,merah,vintage
+25-34,f,pakaian-wanita,300-600k,sedang,Jarang,Kualitas,Sosmed,Sering,Tidak tertarik,Mungkin,merah,vintage
+25-34,f,jaket,300-600k,sedang,Beberapa bulan,Kualitas,Web brand,Tak pernah,Tidak tertarik,Mungkin,earth,minimalis
+25-34,m,sweater,100-300k,sedang,Beberapa bulan,Merek,Offline,Sering,Tidak tertarik,Mungkin,putih,vintage
+25-34,m,\N,>600k,mahal,Setiap bulan,Trend,Marketplace,Sering,Tertarik,Tidak,vibrant,vintage
+25-34,m,pakaian-wanita,300-600k,sedang,Setiap minggu,Merek,Marketplace,Kadang,Agak tertarik,Ya,vibrant,minimalis
+25-34,f,jas,100-300k,sedang,Setiap bulan,Merek,Marketplace,Tak pernah,Tertarik,Tidak,putih,kasual
+25-34,m,sweater,100-300k,murah,Beberapa bulan,Trend,Web brand,Selalu,Tidak tertarik,Tidak,coklat,sporty
+25-34,m,pakaian-pria,100-300k,murah,Beberapa bulan,Merek,Sosmed,Kadang,Agak tertarik,Tidak,earth,vintage
+25-34,f,jaket,100-300k,murah,Beberapa bulan,Harga,Offline,Selalu,Tertarik,Tidak,putih,sporty
+25-34,m,jas,300-600k,sedang,Beberapa bulan,Merek,Sosmed,Tak pernah,Tidak tertarik,Tidak,netral,vintage
+25-34,m,pakaian-pria,<100k,murah,Beberapa bulan,Harga,Sosmed,Kadang,Tidak tertarik,Ya,pastel,sporty
+25-34,m,jaket,100-300k,murah,Jarang,Harga,Marketplace,Sering,Tidak tertarik,Ya,earth,minimalis
+25-34,f,pakaian-pria,100-300k,sedang,Setiap bulan,Harga,Web brand,Sering,Tidak tertarik,Mungkin,pastel,kasual
+25-34,f,pakaian-pria,<100k,murah,Setiap minggu,Harga,Sosmed,Tak pernah,Agak tertarik,Tidak,hitam,vintage
+25-34,f,kaos,300-600k,sedang,Setiap minggu,Trend,Sosmed,Selalu,Tertarik,Ya,netral,sporty
+25-34,f,jas,100-300k,sedang,Beberapa bulan,Harga,Web brand,Sering,Tertarik,Mungkin,hitam,formal
+25-34,m,pakaian-pria,100-300k,murah,Setiap minggu,Merek,Marketplace,Sering,Tertarik,Mungkin,kuning,formal
+25-34,m,kaos,300-600k,sedang,Beberapa bulan,Kualitas,Web brand,Selalu,Tertarik,Tidak,vibrant,formal
+25-34,m,kaos-polo,300-600k,sedang,Jarang,Merek,Offline,Sering,Agak tertarik,Mungkin,coklat,sporty
+25-34,m,jas,100-300k,sedang,Beberapa bulan,Trend,Sosmed,Kadang,Tertarik,Tidak,biru,formal
+25-34,m,\N,>600k,mahal,Beberapa bulan,Merek,Offline,Sering,Tidak tertarik,Mungkin,earth,formal
+25-34,f,pakaian-pria,100-300k,murah,Jarang,Merek,Marketplace,Selalu,Agak tertarik,Mungkin,earth,vintage
+25-34,f,pakaian-pria,300-600k,sedang,Jarang,Merek,Sosmed,Selalu,Tidak tertarik,Ya,kuning,kasual
+25-34,m,jaket,300-600k,sedang,Setiap minggu,Trend,Offline,Sering,Tertarik,Ya,earth,sporty
+25-34,m,pakaian-pria,<100k,murah,Beberapa bulan,Harga,Marketplace,Kadang,Agak tertarik,Tidak,putih,minimalis
+25-34,f,jas,100-300k,sedang,Setiap minggu,Harga,Sosmed,Tak pernah,Tertarik,Ya,pastel,minimalis
+25-34,m,celana,100-300k,sedang,Setiap minggu,Harga,Web brand,Selalu,Tidak tertarik,Tidak,kuning,kasual
+25-34,m,pakaian-wanita,300-600k,sedang,Setiap bulan,Kualitas,Web brand,Kadang,Agak tertarik,Ya,putih,minimalis
+25-34,m,jas,300-600k,sedang,Jarang,Trend,Offline,Tak pernah,Tertarik,Ya,vibrant,minimalis
+25-34,f,kaos-polo,<100k,murah,Setiap minggu,Harga,Web brand,Tak pernah,Agak tertarik,Ya,hijau,vintage
+25-34,m,kaos,<100k,murah,Beberapa bulan,Trend,Web brand,Sering,Tidak tertarik,Tidak,biru,kasual
+25-34,m,jaket,100-300k,murah,Jarang,Trend,Sosmed,Kadang,Agak tertarik,Tidak,netral,formal
+25-34,m,pakaian-wanita,300-600k,sedang,Beberapa bulan,Harga,Marketplace,Selalu,Tertarik,Tidak,putih,vintage
+25-34,m,sweater,300-600k,sedang,Jarang,Trend,Offline,Selalu,Tidak tertarik,Mungkin,netral,minimalis
+25-34,m,jaket,300-600k,sedang,Beberapa bulan,Merek,Offline,Tak pernah,Agak tertarik,Mungkin,pastel,vintage
+25-34,f,kaos-polo,<100k,murah,Setiap bulan,Merek,Web brand,Kadang,Tidak tertarik,Ya,earth,kasual
+25-34,f,pakaian-pria,<100k,murah,Setiap minggu,Merek,Sosmed,Sering,Tertarik,Mungkin,hitam,kasual
+25-34,f,pakaian-pria,100-300k,murah,Beberapa bulan,Kualitas,Marketplace,Tak pernah,Tertarik,Tidak,putih,kasual
+25-34,f,sweater,<100k,murah,Setiap bulan,Trend,Sosmed,Sering,Tidak tertarik,Tidak,vibrant,sporty
+25-34,m,jaket,300-600k,sedang,Beberapa bulan,Merek,Web brand,Tak pernah,Agak tertarik,Mungkin,abu,sporty
+25-34,m,dress,300-600k,sedang,Setiap minggu,Merek,Marketplace,Kadang,Tidak tertarik,Mungkin,coklat,vintage
+25-34,m,jas,300-600k,sedang,Beberapa bulan,Merek,Offline,Selalu,Tertarik,Tidak,netral,sporty
+25-34,f,kaos,100-300k,murah,Setiap minggu,Trend,Web brand,Tak pernah,Agak tertarik,Ya,hijau,kasual
+25-34,f,jas,300-600k,sedang,Jarang,Merek,Marketplace,Selalu,Tidak tertarik,Mungkin,kuning,minimalis
+25-34,m,sweater,<100k,murah,Setiap bulan,Merek,Sosmed,Kadang,Tidak tertarik,Tidak,abu,kasual
+25-34,m,jas,300-600k,sedang,Jarang,Merek,Offline,Kadang,Agak tertarik,Mungkin,abu,kasual
+25-34,f,jas,100-300k,sedang,Setiap bulan,Trend,Sosmed,Selalu,Agak tertarik,Mungkin,vibrant,kasual
+25-34,m,pakaian-wanita,300-600k,sedang,Jarang,Kualitas,Offline,Kadang,Tidak tertarik,Ya,vibrant,kasual
+25-34,m,pakaian-wanita,100-300k,sedang,Setiap bulan,Merek,Marketplace,Kadang,Tidak tertarik,Tidak,hitam,formal
+25-34,f,jas,100-300k,sedang,Beberapa bulan,Merek,Marketplace,Selalu,Tertarik,Mungkin,hitam,vintage
+25-34,m,pakaian-pria,300-600k,sedang,Jarang,Trend,Sosmed,Sering,Tidak tertarik,Mungkin,coklat,minimalis
+25-34,f,pakaian-pria,300-600k,sedang,Jarang,Kualitas,Marketplace,Tak pernah,Tidak tertarik,Mungkin,hijau,kasual
+25-34,f,jaket,100-300k,murah,Jarang,Kualitas,Web brand,Kadang,Agak tertarik,Mungkin,hijau,kasual
+25-34,f,jas,<100k,murah,Setiap bulan,Harga,Marketplace,Sering,Tertarik,Tidak,abu,kasual
+25-34,m,jaket,100-300k,murah,Jarang,Trend,Web brand,Selalu,Agak tertarik,Tidak,earth,kasual
+25-34,f,kaos-kaki,100-300k,sedang,Setiap minggu,Trend,Web brand,Kadang,Agak tertarik,Tidak,hijau,formal
+25-34,m,pakaian-pria,100-300k,murah,Setiap bulan,Harga,Offline,Selalu,Agak tertarik,Ya,hijau,minimalis
+25-34,m,sweater,<100k,murah,Jarang,Kualitas,Offline,Selalu,Agak tertarik,Ya,pink,minimalis
+25-34,m,kemeja-casual,300-600k,sedang,Setiap bulan,Trend,Offline,Selalu,Tertarik,Tidak,earth,sporty
+25-34,m,pakaian-wanita,300-600k,sedang,Setiap bulan,Merek,Offline,Sering,Tidak tertarik,Tidak,netral,formal
+25-34,f,pakaian-wanita,300-600k,sedang,Setiap bulan,Kualitas,Offline,Selalu,Tidak tertarik,Ya,netral,sporty
+25-34,m,dress,300-600k,sedang,Setiap bulan,Trend,Sosmed,Kadang,Agak tertarik,Tidak,netral,sporty
+25-34,f,pakaian-wanita,300-600k,sedang,Setiap bulan,Merek,Offline,Sering,Agak tertarik,Tidak,netral,formal
+25-34,m,jas,100-300k,sedang,Beberapa bulan,Kualitas,Offline,Tak pernah,Tidak tertarik,Mungkin,biru,formal
+25-34,m,jas,100-300k,sedang,Beberapa bulan,Merek,Offline,Selalu,Tertarik,Mungkin,hijau,sporty
+25-34,f,celana,100-300k,sedang,Beberapa bulan,Kualitas,Offline,Selalu,Tertarik,Tidak,coklat,kasual
+25-34,m,pakaian-pria,<100k,murah,Jarang,Harga,Marketplace,Kadang,Tertarik,Tidak,pastel,sporty
+25-34,m,jaket,100-300k,murah,Setiap bulan,Kualitas,Offline,Tak pernah,Tertarik,Tidak,abu,kasual
+25-34,m,pakaian-pria,100-300k,murah,Setiap minggu,Harga,Marketplace,Kadang,Agak tertarik,Mungkin,putih,kasual
+25-34,f,kemeja-casual,300-600k,sedang,Setiap minggu,Harga,Marketplace,Sering,Tidak tertarik,Mungkin,pink,vintage
+25-34,m,kaos,300-600k,sedang,Jarang,Merek,Marketplace,Kadang,Tidak tertarik,Ya,abu,minimalis
+25-34,f,jas,300-600k,sedang,Setiap bulan,Trend,Web brand,Sering,Agak tertarik,Tidak,kuning,vintage
+25-34,m,kaos-kaki,300-600k,sedang,Setiap bulan,Merek,Marketplace,Selalu,Tertarik,Mungkin,pink,minimalis
+25-34,m,\N,>600k,mahal,Setiap minggu,Kualitas,Offline,Sering,Agak tertarik,Tidak,putih,vintage
+25-34,m,pakaian-pria,300-600k,sedang,Setiap minggu,Kualitas,Offline,Tak pernah,Tidak tertarik,Mungkin,abu,minimalis
+25-34,m,kaos,100-300k,murah,Beberapa bulan,Harga,Offline,Kadang,Tidak tertarik,Mungkin,abu,kasual
+25-34,m,pakaian-wanita,300-600k,sedang,Setiap minggu,Trend,Sosmed,Tak pernah,Tidak tertarik,Tidak,hijau,minimalis
+25-34,m,pakaian-pria,300-600k,sedang,Beberapa bulan,Merek,Web brand,Kadang,Tidak tertarik,Tidak,hitam,formal
+25-34,m,kaos-kaki,300-600k,sedang,Beberapa bulan,Merek,Offline,Selalu,Tertarik,Mungkin,hijau,sporty
+25-34,m,kaos,<100k,murah,Setiap minggu,Kualitas,Offline,Kadang,Agak tertarik,Mungkin,earth,kasual
+25-34,f,kaos-polo,300-600k,sedang,Jarang,Harga,Web brand,Kadang,Tidak tertarik,Mungkin,biru,kasual
+25-34,f,jaket,100-300k,murah,Beberapa bulan,Harga,Marketplace,Tak pernah,Tidak tertarik,Ya,earth,sporty
+25-34,f,pakaian-pria,300-600k,sedang,Jarang,Harga,Sosmed,Kadang,Agak tertarik,Mungkin,pink,vintage
+25-34,m,pakaian-pria,300-600k,sedang,Jarang,Merek,Sosmed,Sering,Tidak tertarik,Tidak,pastel,formal
+25-34,f,kaos,300-600k,sedang,Jarang,Harga,Web brand,Kadang,Tertarik,Mungkin,merah,vintage
+25-34,m,sweater,<100k,murah,Jarang,Merek,Offline,Selalu,Tertarik,Tidak,pastel,vintage
+25-34,f,pakaian-wanita,<100k,murah,Setiap minggu,Kualitas,Sosmed,Sering,Tertarik,Ya,hijau,kasual
+25-34,m,kaos,100-300k,murah,Beberapa bulan,Merek,Sosmed,Kadang,Tidak tertarik,Mungkin,putih,minimalis
+25-34,m,jas,<100k,murah,Setiap bulan,Kualitas,Sosmed,Sering,Agak tertarik,Ya,abu,kasual
+25-34,m,kaos,100-300k,sedang,Beberapa bulan,Kualitas,Sosmed,Selalu,Tertarik,Mungkin,earth,vintage
+25-34,f,kaos,<100k,murah,Beberapa bulan,Kualitas,Web brand,Tak pernah,Agak tertarik,Mungkin,putih,sporty
+25-34,f,pakaian-pria,100-300k,murah,Setiap bulan,Harga,Web brand,Tak pernah,Tidak tertarik,Mungkin,earth,kasual
+25-34,f,kaos,<100k,murah,Jarang,Merek,Offline,Selalu,Tertarik,Tidak,netral,minimalis
+25-34,m,pakaian-wanita,300-600k,sedang,Jarang,Kualitas,Marketplace,Selalu,Tertarik,Tidak,hitam,vintage
+25-34,f,kaos,100-300k,murah,Setiap bulan,Harga,Web brand,Sering,Agak tertarik,Mungkin,pastel,vintage
+25-34,m,jas,100-300k,sedang,Beberapa bulan,Trend,Web brand,Selalu,Agak tertarik,Mungkin,pastel,vintage
+25-34,m,pakaian-pria,100-300k,sedang,Jarang,Kualitas,Offline,Sering,Agak tertarik,Mungkin,vibrant,minimalis
+25-34,f,jas,100-300k,sedang,Beberapa bulan,Trend,Marketplace,Sering,Tidak tertarik,Ya,vibrant,vintage
+25-34,f,pakaian-pria,300-600k,sedang,Beberapa bulan,Kualitas,Marketplace,Selalu,Agak tertarik,Tidak,biru,kasual
+25-34,f,celana,100-300k,sedang,Jarang,Kualitas,Offline,Tak pernah,Tidak tertarik,Mungkin,hitam,formal
+25-34,m,sweater,<100k,murah,Setiap minggu,Merek,Web brand,Sering,Agak tertarik,Mungkin,vibrant,minimalis
+25-34,m,kaos,300-600k,sedang,Setiap bulan,Merek,Sosmed,Kadang,Tidak tertarik,Tidak,abu,kasual
+25-34,f,kaos,100-300k,murah,Setiap minggu,Kualitas,Web brand,Kadang,Tidak tertarik,Mungkin,biru,formal
+25-34,f,kemeja-casual,300-600k,sedang,Setiap minggu,Trend,Offline,Tak pernah,Agak tertarik,Tidak,vibrant,formal
+25-34,f,pakaian-wanita,300-600k,sedang,Setiap bulan,Harga,Marketplace,Tak pernah,Tertarik,Mungkin,hijau,formal
+25-34,m,kaos,<100k,murah,Setiap bulan,Harga,Marketplace,Selalu,Tertarik,Mungkin,abu,kasual
+25-34,f,kaos,300-600k,sedang,Beberapa bulan,Merek,Offline,Selalu,Tertarik,Tidak,vibrant,kasual
+25-34,m,jas,<100k,murah,Jarang,Harga,Marketplace,Selalu,Tertarik,Tidak,biru,formal
+25-34,f,pakaian-wanita,100-300k,murah,Setiap bulan,Trend,Sosmed,Sering,Tidak tertarik,Ya,vibrant,minimalis
+25-34,f,pakaian-wanita,300-600k,sedang,Setiap minggu,Trend,Web brand,Kadang,Agak tertarik,Tidak,hijau,kasual
+25-34,f,pakaian-pria,100-300k,murah,Setiap minggu,Kualitas,Web brand,Sering,Tidak tertarik,Mungkin,vibrant,kasual
+25-34,f,kaos,100-300k,murah,Setiap bulan,Harga,Sosmed,Tak pernah,Agak tertarik,Mungkin,biru,kasual
+25-34,m,kaos,100-300k,murah,Beberapa bulan,Kualitas,Sosmed,Kadang,Tertarik,Tidak,putih,minimalis
+25-34,m,kaos,100-300k,murah,Jarang,Trend,Offline,Selalu,Agak tertarik,Tidak,biru,minimalis
+25-34,f,kemeja-casual,300-600k,sedang,Setiap bulan,Harga,Web brand,Sering,Tidak tertarik,Mungkin,earth,kasual
+25-34,f,kaos,<100k,murah,Beberapa bulan,Kualitas,Web brand,Sering,Tidak tertarik,Ya,hijau,formal
+25-34,f,jas,300-600k,sedang,Setiap bulan,Trend,Web brand,Sering,Agak tertarik,Tidak,kuning,kasual
+25-34,m,kaos,<100k,murah,Jarang,Trend,Offline,Sering,Tertarik,Tidak,hijau,sporty
+25-34,f,dress,300-600k,sedang,Setiap minggu,Harga,Marketplace,Sering,Agak tertarik,Ya,earth,formal
+25-34,f,pakaian-pria,<100k,murah,Setiap minggu,Merek,Marketplace,Sering,Tidak tertarik,Tidak,pink,kasual
+25-34,f,kaos-kaki,300-600k,sedang,Beberapa bulan,Merek,Offline,Tak pernah,Tidak tertarik,Tidak,putih,kasual
+25-34,m,jas,100-300k,sedang,Beberapa bulan,Trend,Sosmed,Kadang,Tertarik,Tidak,netral,formal
+25-34,f,jas,100-300k,sedang,Beberapa bulan,Kualitas,Marketplace,Selalu,Tidak tertarik,Tidak,vibrant,vintage
+25-34,m,jas,100-300k,sedang,Setiap minggu,Trend,Offline,Sering,Agak tertarik,Tidak,biru,sporty
+25-34,f,kaos-kaki,100-300k,sedang,Setiap bulan,Kualitas,Web brand,Kadang,Tertarik,Tidak,putih,sporty
+25-34,f,kaos,100-300k,murah,Beberapa bulan,Kualitas,Web brand,Tak pernah,Agak tertarik,Tidak,kuning,kasual
+25-34,m,jas,<100k,murah,Beberapa bulan,Kualitas,Marketplace,Kadang,Tertarik,Tidak,abu,sporty
+25-34,f,jaket,100-300k,murah,Jarang,Merek,Marketplace,Selalu,Tertarik,Mungkin,putih,minimalis
+25-34,m,pakaian-pria,100-300k,murah,Beberapa bulan,Merek,Offline,Tak pernah,Tidak tertarik,Mungkin,pink,kasual
+25-34,m,jaket,100-300k,murah,Jarang,Trend,Offline,Sering,Tertarik,Tidak,hitam,vintage
+25-34,f,celana,100-300k,sedang,Beberapa bulan,Trend,Web brand,Sering,Tidak tertarik,Mungkin,vibrant,sporty
+25-34,m,jaket,100-300k,murah,Setiap bulan,Kualitas,Web brand,Selalu,Tidak tertarik,Tidak,netral,vintage
+25-34,f,kaos-polo,300-600k,sedang,Beberapa bulan,Kualitas,Marketplace,Selalu,Agak tertarik,Tidak,biru,kasual
+25-34,m,aksesori,<100k,murah,Jarang,Kualitas,Offline,Tak pernah,Tidak tertarik,Mungkin,hijau,minimalis
+25-34,f,kaos-polo,300-600k,sedang,Beberapa bulan,Kualitas,Marketplace,Selalu,Tidak tertarik,Ya,hitam,kasual
+25-34,m,kemeja-casual,300-600k,sedang,Beberapa bulan,Merek,Sosmed,Kadang,Tidak tertarik,Mungkin,earth,minimalis
+25-34,f,pakaian-pria,100-300k,murah,Setiap minggu,Trend,Web brand,Sering,Agak tertarik,Mungkin,netral,vintage
+25-34,m,jas,300-600k,sedang,Setiap bulan,Kualitas,Marketplace,Kadang,Tidak tertarik,Ya,netral,minimalis
+25-34,m,kaos-polo,100-300k,sedang,Setiap minggu,Trend,Offline,Kadang,Agak tertarik,Tidak,hijau,formal
+25-34,m,sweater,100-300k,sedang,Setiap minggu,Trend,Web brand,Kadang,Tidak tertarik,Mungkin,coklat,vintage
+25-34,m,pakaian-wanita,300-600k,sedang,Jarang,Trend,Offline,Kadang,Agak tertarik,Mungkin,earth,minimalis
+25-34,m,jas,<100k,murah,Setiap minggu,Harga,Marketplace,Kadang,Tidak tertarik,Tidak,earth,minimalis
+25-34,f,sweater,100-300k,sedang,Setiap minggu,Harga,Sosmed,Selalu,Tidak tertarik,Mungkin,putih,minimalis
+25-34,m,jas,300-600k,sedang,Jarang,Merek,Web brand,Sering,Agak tertarik,Tidak,merah,vintage
+25-34,f,pakaian-pria,100-300k,murah,Jarang,Kualitas,Offline,Selalu,Tertarik,Ya,netral,kasual
+25-34,m,pakaian-pria,100-300k,murah,Setiap minggu,Trend,Marketplace,Sering,Tertarik,Tidak,hitam,formal
+25-34,m,kaos,300-600k,sedang,Setiap minggu,Merek,Marketplace,Kadang,Tidak tertarik,Mungkin,coklat,vintage
+25-34,f,jaket,300-600k,sedang,Beberapa bulan,Trend,Web brand,Kadang,Tertarik,Tidak,netral,vintage
+25-34,m,jas,100-300k,sedang,Setiap minggu,Merek,Offline,Sering,Tertarik,Ya,netral,minimalis
+25-34,m,jaket,300-600k,sedang,Jarang,Harga,Sosmed,Sering,Agak tertarik,Ya,merah,kasual
+25-34,f,pakaian-pria,300-600k,sedang,Jarang,Trend,Sosmed,Sering,Tidak tertarik,Mungkin,hitam,minimalis
+25-34,m,aksesori,<100k,murah,Jarang,Merek,Offline,Kadang,Tertarik,Tidak,hijau,kasual
+25-34,f,pakaian-pria,100-300k,murah,Setiap minggu,Harga,Sosmed,Selalu,Tidak tertarik,Tidak,coklat,kasual
+25-34,m,kaos,100-300k,murah,Beberapa bulan,Harga,Marketplace,Kadang,Tidak tertarik,Tidak,putih,sporty
+25-34,m,sweater,<100k,murah,Jarang,Merek,Marketplace,Selalu,Tertarik,Tidak,hitam,vintage
+25-34,f,pakaian-wanita,300-600k,sedang,Setiap minggu,Merek,Sosmed,Sering,Tertarik,Ya,pink,minimalis
+25-34,m,kaos,100-300k,murah,Beberapa bulan,Harga,Sosmed,Tak pernah,Agak tertarik,Ya,vibrant,kasual
+25-34,m,jas,100-300k,sedang,Jarang,Merek,Web brand,Kadang,Tertarik,Tidak,hijau,kasual
+25-34,m,kaos,100-300k,murah,Beberapa bulan,Kualitas,Offline,Selalu,Agak tertarik,Tidak,biru,formal
+25-34,m,kaos,100-300k,murah,Setiap bulan,Harga,Offline,Kadang,Agak tertarik,Tidak,hitam,minimalis
+25-34,f,kaos,<100k,murah,Beberapa bulan,Harga,Web brand,Kadang,Agak tertarik,Tidak,vibrant,sporty
+25-34,f,jas,100-300k,sedang,Setiap bulan,Merek,Marketplace,Tak pernah,Agak tertarik,Ya,vibrant,minimalis
+25-34,f,jas,100-300k,sedang,Setiap minggu,Merek,Sosmed,Kadang,Agak tertarik,Tidak,netral,kasual
+25-34,f,kaos,<100k,murah,Beberapa bulan,Harga,Web brand,Selalu,Tidak tertarik,Tidak,biru,minimalis
+25-34,m,kemeja-casual,300-600k,sedang,Setiap bulan,Trend,Web brand,Sering,Tertarik,Tidak,hitam,vintage
+25-34,m,kaos-polo,100-300k,sedang,Beberapa bulan,Harga,Sosmed,Tak pernah,Tertarik,Tidak,merah,formal
+25-34,m,pakaian-wanita,<100k,murah,Setiap minggu,Harga,Marketplace,Kadang,Tidak tertarik,Mungkin,pastel,minimalis
+25-34,f,jaket,300-600k,sedang,Beberapa bulan,Kualitas,Web brand,Tak pernah,Agak tertarik,Tidak,vibrant,vintage
+25-34,m,pakaian-wanita,300-600k,sedang,Setiap bulan,Trend,Offline,Kadang,Tertarik,Ya,merah,sporty
+25-34,m,jas,300-600k,sedang,Setiap minggu,Merek,Sosmed,Sering,Tidak tertarik,Mungkin,earth,minimalis
+25-34,m,pakaian-wanita,300-600k,sedang,Setiap minggu,Trend,Marketplace,Sering,Tertarik,Tidak,pastel,formal
+25-34,m,pakaian-wanita,300-600k,sedang,Setiap bulan,Merek,Marketplace,Selalu,Agak tertarik,Tidak,pink,sporty
+25-34,f,kaos,<100k,murah,Jarang,Kualitas,Marketplace,Selalu,Tertarik,Tidak,pastel,minimalis
+25-34,m,pakaian-pria,100-300k,murah,Jarang,Harga,Marketplace,Selalu,Tertarik,Tidak,biru,minimalis
+25-34,f,jaket,100-300k,murah,Setiap minggu,Kualitas,Sosmed,Tak pernah,Agak tertarik,Ya,kuning,formal
+25-34,f,sweater,300-600k,sedang,Jarang,Trend,Marketplace,Sering,Agak tertarik,Tidak,hijau,kasual
+25-34,m,aksesori,<100k,murah,Setiap bulan,Merek,Marketplace,Kadang,Tidak tertarik,Tidak,netral,formal
+25-34,m,jas,100-300k,sedang,Beberapa bulan,Trend,Marketplace,Kadang,Tertarik,Tidak,netral,minimalis
+25-34,f,jaket,300-600k,sedang,Setiap bulan,Kualitas,Sosmed,Tak pernah,Tidak tertarik,Ya,hitam,kasual
+25-34,f,kaos,100-300k,murah,Setiap minggu,Trend,Web brand,Selalu,Tertarik,Ya,pastel,minimalis
+25-34,f,jas,100-300k,sedang,Setiap minggu,Kualitas,Offline,Kadang,Agak tertarik,Ya,biru,sporty
+25-34,f,kaos-polo,300-600k,sedang,Jarang,Merek,Offline,Tak pernah,Tertarik,Ya,netral,kasual
+25-34,f,celana,100-300k,sedang,Beberapa bulan,Merek,Sosmed,Kadang,Tertarik,Mungkin,kuning,minimalis
+25-34,m,pakaian-pria,<100k,murah,Setiap bulan,Kualitas,Offline,Sering,Tertarik,Mungkin,vibrant,minimalis
+25-34,f,jas,<100k,murah,Beberapa bulan,Kualitas,Marketplace,Selalu,Agak tertarik,Tidak,biru,kasual
+25-34,f,pakaian-pria,<100k,murah,Jarang,Trend,Marketplace,Tak pernah,Tertarik,Ya,netral,formal
+25-34,m,pakaian-wanita,300-600k,sedang,Jarang,Kualitas,Offline,Selalu,Agak tertarik,Ya,putih,minimalis
+25-34,m,sweater,<100k,murah,Setiap minggu,Merek,Web brand,Sering,Agak tertarik,Mungkin,coklat,formal
+25-34,m,pakaian-wanita,100-300k,sedang,Beberapa bulan,Harga,Marketplace,Tak pernah,Agak tertarik,Ya,kuning,kasual
+25-34,f,jaket,300-600k,sedang,Beberapa bulan,Harga,Offline,Selalu,Tidak tertarik,Mungkin,coklat,sporty
+25-34,m,sweater,300-600k,sedang,Jarang,Harga,Offline,Tak pernah,Tertarik,Ya,putih,vintage
+25-34,f,kaos,300-600k,sedang,Setiap bulan,Harga,Offline,Tak pernah,Tertarik,Tidak,abu,kasual
+25-34,m,pakaian-wanita,300-600k,sedang,Setiap minggu,Harga,Web brand,Tak pernah,Tidak tertarik,Ya,hitam,kasual
+25-34,f,pakaian-wanita,100-300k,murah,Setiap minggu,Trend,Sosmed,Tak pernah,Tertarik,Mungkin,hitam,kasual
+25-34,m,jaket,100-300k,murah,Jarang,Trend,Web brand,Tak pernah,Agak tertarik,Ya,vibrant,sporty
+25-34,m,pakaian-pria,100-300k,sedang,Setiap minggu,Merek,Offline,Tak pernah,Tidak tertarik,Mungkin,biru,minimalis
+25-34,m,pakaian-pria,100-300k,murah,Setiap bulan,Merek,Sosmed,Selalu,Tertarik,Mungkin,coklat,minimalis
+25-34,m,kemeja-casual,300-600k,sedang,Jarang,Merek,Offline,Selalu,Tidak tertarik,Mungkin,putih,kasual
+25-34,m,pakaian-wanita,300-600k,sedang,Setiap bulan,Kualitas,Offline,Tak pernah,Tertarik,Tidak,abu,kasual
+25-34,m,jas,100-300k,sedang,Jarang,Trend,Web brand,Tak pernah,Tidak tertarik,Ya,hijau,vintage
+25-34,m,celana,100-300k,sedang,Setiap minggu,Kualitas,Sosmed,Tak pernah,Tidak tertarik,Tidak,earth,vintage
+25-34,m,pakaian-pria,300-600k,sedang,Setiap minggu,Merek,Offline,Tak pernah,Tidak tertarik,Mungkin,pastel,minimalis
+25-34,f,kemeja-casual,300-600k,sedang,Setiap minggu,Harga,Sosmed,Selalu,Tertarik,Tidak,netral,kasual
+25-34,m,pakaian-pria,300-600k,sedang,Jarang,Merek,Marketplace,Tak pernah,Tidak tertarik,Mungkin,hitam,formal
+25-34,m,kaos,<100k,murah,Jarang,Kualitas,Sosmed,Sering,Tertarik,Tidak,biru,vintage
+25-34,f,jas,100-300k,sedang,Setiap minggu,Harga,Sosmed,Selalu,Tidak tertarik,Tidak,netral,kasual
+25-34,f,sweater,300-600k,sedang,Beberapa bulan,Kualitas,Sosmed,Tak pernah,Tidak tertarik,Mungkin,abu,sporty
+25-34,f,kaos,100-300k,murah,Beberapa bulan,Kualitas,Offline,Selalu,Tertarik,Tidak,hitam,kasual
+25-34,m,pakaian-pria,100-300k,murah,Setiap minggu,Trend,Web brand,Kadang,Tertarik,Mungkin,earth,vintage
+25-34,f,kaos,<100k,murah,Setiap minggu,Kualitas,Sosmed,Sering,Agak tertarik,Tidak,netral,vintage
+25-34,m,kaos,100-300k,murah,Setiap minggu,Harga,Sosmed,Sering,Agak tertarik,Mungkin,hijau,vintage
+25-34,m,jas,300-600k,sedang,Setiap minggu,Harga,Web brand,Sering,Tertarik,Tidak,vibrant,minimalis
+25-34,m,pakaian-pria,100-300k,murah,Jarang,Kualitas,Offline,Sering,Agak tertarik,Mungkin,vibrant,sporty
+25-34,m,kaos,100-300k,sedang,Setiap bulan,Harga,Web brand,Selalu,Agak tertarik,Mungkin,vibrant,minimalis
+25-34,f,pakaian-wanita,100-300k,sedang,Jarang,Trend,Web brand,Kadang,Agak tertarik,Tidak,merah,kasual
+25-34,m,pakaian-pria,300-600k,sedang,Setiap minggu,Merek,Web brand,Kadang,Agak tertarik,Tidak,earth,sporty
+25-34,f,kaos,100-300k,murah,Beberapa bulan,Harga,Offline,Kadang,Tertarik,Mungkin,vibrant,vintage
+25-34,f,celana,100-300k,sedang,Jarang,Trend,Offline,Sering,Agak tertarik,Mungkin,pink,minimalis
+25-34,f,sweater,100-300k,murah,Beberapa bulan,Harga,Sosmed,Selalu,Agak tertarik,Ya,biru,minimalis
+25-34,m,pakaian-pria,<100k,murah,Jarang,Trend,Sosmed,Tak pernah,Tertarik,Ya,earth,formal
+25-34,m,pakaian-pria,300-600k,sedang,Beberapa bulan,Trend,Marketplace,Kadang,Tertarik,Ya,netral,kasual
+25-34,m,kaos,300-600k,sedang,Jarang,Trend,Offline,Sering,Agak tertarik,Mungkin,vibrant,minimalis
+25-34,f,kaos,<100k,murah,Setiap bulan,Kualitas,Web brand,Kadang,Tertarik,Tidak,putih,sporty
+25-34,f,jaket,100-300k,sedang,Jarang,Merek,Marketplace,Tak pernah,Agak tertarik,Tidak,pink,minimalis
+25-34,f,sweater,<100k,murah,Jarang,Kualitas,Sosmed,Sering,Agak tertarik,Tidak,pastel,sporty
+25-34,f,pakaian-pria,100-300k,sedang,Jarang,Merek,Offline,Kadang,Tertarik,Tidak,hijau,minimalis
+25-34,m,jas,300-600k,sedang,Beberapa bulan,Merek,Offline,Tak pernah,Agak tertarik,Ya,hitam,minimalis
+25-34,m,pakaian-pria,<100k,murah,Setiap minggu,Merek,Marketplace,Selalu,Tidak tertarik,Tidak,vibrant,vintage
+25-34,m,jas,100-300k,sedang,Setiap bulan,Merek,Sosmed,Tak pernah,Tertarik,Tidak,kuning,sporty
+25-34,f,pakaian-wanita,300-600k,sedang,Jarang,Kualitas,Web brand,Kadang,Tertarik,Ya,earth,sporty
+25-34,m,kaos-polo,<100k,murah,Beberapa bulan,Kualitas,Offline,Selalu,Agak tertarik,Tidak,biru,formal
+25-34,f,jas,300-600k,sedang,Beberapa bulan,Trend,Sosmed,Selalu,Agak tertarik,Ya,pastel,vintage
+25-34,f,kaos-polo,<100k,murah,Setiap bulan,Kualitas,Web brand,Kadang,Tertarik,Tidak,putih,kasual
+25-34,f,jas,100-300k,sedang,Setiap bulan,Kualitas,Sosmed,Tak pernah,Tidak tertarik,Ya,hitam,kasual
+25-34,f,kaos,300-600k,sedang,Jarang,Merek,Web brand,Selalu,Agak tertarik,Mungkin,netral,kasual
+25-34,f,pakaian-pria,<100k,murah,Setiap bulan,Trend,Offline,Kadang,Tertarik,Tidak,pink,kasual
+25-34,m,kaos,300-600k,sedang,Jarang,Harga,Web brand,Tak pernah,Tidak tertarik,Ya,earth,minimalis
+25-34,f,jas,100-300k,sedang,Jarang,Kualitas,Marketplace,Tak pernah,Agak tertarik,Mungkin,putih,kasual
+25-34,f,pakaian-pria,300-600k,sedang,Beberapa bulan,Kualitas,Web brand,Kadang,Agak tertarik,Ya,pink,formal
+25-34,f,kaos-kaki,300-600k,sedang,Setiap minggu,Harga,Marketplace,Sering,Tidak tertarik,Ya,pink,kasual
+25-34,m,kaos,300-600k,sedang,Beberapa bulan,Merek,Web brand,Sering,Agak tertarik,Mungkin,earth,vintage
+25-34,f,kaos,100-300k,murah,Beberapa bulan,Kualitas,Marketplace,Sering,Tidak tertarik,Tidak,abu,formal
+25-34,m,sweater,300-600k,sedang,Setiap bulan,Trend,Offline,Selalu,Tidak tertarik,Tidak,earth,vintage
+25-34,f,jaket,100-300k,murah,Jarang,Merek,Marketplace,Tak pernah,Agak tertarik,Tidak,pink,minimalis
+25-34,m,kaos,<100k,murah,Beberapa bulan,Trend,Sosmed,Kadang,Tertarik,Tidak,netral,vintage
+25-34,f,pakaian-pria,100-300k,murah,Setiap bulan,Kualitas,Marketplace,Tak pernah,Agak tertarik,Tidak,merah,kasual
+25-34,f,kaos,100-300k,murah,Setiap bulan,Kualitas,Web brand,Kadang,Tidak tertarik,Ya,pastel,vintage
+25-34,f,kaos,300-600k,sedang,Setiap minggu,Merek,Web brand,Tak pernah,Agak tertarik,Ya,putih,formal
+25-34,f,pakaian-pria,100-300k,sedang,Beberapa bulan,Kualitas,Web brand,Sering,Agak tertarik,Mungkin,biru,kasual
+25-34,f,pakaian-pria,100-300k,sedang,Setiap bulan,Merek,Offline,Tak pernah,Tidak tertarik,Ya,biru,kasual
+25-34,f,celana,100-300k,sedang,Setiap bulan,Trend,Offline,Selalu,Agak tertarik,Tidak,coklat,kasual
+25-34,m,pakaian-pria,300-600k,sedang,Setiap bulan,Harga,Offline,Selalu,Agak tertarik,Tidak,hitam,formal
+25-34,f,jas,300-600k,sedang,Jarang,Kualitas,Sosmed,Sering,Agak tertarik,Tidak,pastel,kasual
+25-34,f,jaket,300-600k,sedang,Jarang,Kualitas,Sosmed,Kadang,Tidak tertarik,Tidak,earth,sporty
+25-34,m,kaos,<100k,murah,Jarang,Trend,Marketplace,Tak pernah,Tidak tertarik,Tidak,merah,vintage
+25-34,m,pakaian-wanita,300-600k,sedang,Jarang,Kualitas,Offline,Kadang,Tidak tertarik,Ya,vibrant,sporty
+25-34,f,kaos-polo,100-300k,sedang,Beberapa bulan,Harga,Sosmed,Tak pernah,Agak tertarik,Tidak,netral,formal
+25-34,m,kaos,<100k,murah,Beberapa bulan,Trend,Web brand,Tak pernah,Agak tertarik,Mungkin,hitam,formal
+25-34,f,kemeja-casual,300-600k,sedang,Setiap bulan,Merek,Web brand,Kadang,Tidak tertarik,Ya,earth,formal
+25-34,m,pakaian-pria,100-300k,murah,Setiap minggu,Harga,Marketplace,Tak pernah,Agak tertarik,Ya,hitam,kasual
+25-34,m,pakaian-pria,100-300k,murah,Setiap minggu,Merek,Web brand,Kadang,Agak tertarik,Tidak,earth,sporty
+25-34,m,pakaian-wanita,300-600k,sedang,Beberapa bulan,Merek,Web brand,Tak pernah,Tertarik,Ya,earth,minimalis
+25-34,m,jaket,100-300k,sedang,Setiap bulan,Harga,Offline,Kadang,Tertarik,Mungkin,pastel,sporty
+25-34,m,kaos,<100k,murah,Jarang,Trend,Marketplace,Tak pernah,Tidak tertarik,Tidak,merah,vintage
+25-34,m,sweater,100-300k,murah,Setiap bulan,Harga,Offline,Sering,Tertarik,Ya,hitam,formal
+25-34,m,pakaian-pria,300-600k,sedang,Jarang,Merek,Sosmed,Sering,Tertarik,Tidak,hijau,kasual
+25-34,f,kaos,300-600k,sedang,Beberapa bulan,Kualitas,Web brand,Tak pernah,Agak tertarik,Tidak,earth,formal
+25-34,f,kaos-polo,300-600k,sedang,Setiap bulan,Trend,Web brand,Selalu,Agak tertarik,Ya,hitam,sporty
+25-34,m,jaket,100-300k,murah,Setiap bulan,Merek,Web brand,Sering,Agak tertarik,Ya,pastel,sporty
+25-34,f,kaos,300-600k,sedang,Setiap minggu,Merek,Web brand,Tak pernah,Agak tertarik,Ya,netral,kasual
+25-34,f,sweater,100-300k,sedang,Setiap minggu,Kualitas,Web brand,Kadang,Agak tertarik,Ya,hitam,formal
+25-34,m,kaos,300-600k,sedang,Setiap bulan,Harga,Offline,Tak pernah,Tidak tertarik,Ya,coklat,vintage
+25-34,m,kaos,100-300k,murah,Setiap minggu,Harga,Sosmed,Sering,Tertarik,Ya,vibrant,kasual
+25-34,f,kaos,300-600k,sedang,Setiap minggu,Kualitas,Web brand,Tak pernah,Agak tertarik,Tidak,putih,minimalis
+25-34,m,kaos,<100k,murah,Setiap bulan,Merek,Offline,Selalu,Agak tertarik,Ya,hitam,minimalis
+25-34,f,pakaian-pria,300-600k,sedang,Beberapa bulan,Merek,Marketplace,Kadang,Tidak tertarik,Tidak,pastel,sporty
+25-34,m,pakaian-pria,100-300k,murah,Setiap minggu,Merek,Marketplace,Tak pernah,Tertarik,Ya,putih,vintage
+25-34,f,kaos,300-600k,sedang,Beberapa bulan,Kualitas,Web brand,Tak pernah,Agak tertarik,Mungkin,putih,sporty
+25-34,f,pakaian-pria,300-600k,sedang,Setiap bulan,Trend,Web brand,Kadang,Tertarik,Ya,earth,vintage
+25-34,f,kaos,100-300k,murah,Setiap minggu,Trend,Sosmed,Tak pernah,Tidak tertarik,Mungkin,hitam,minimalis
+25-34,m,pakaian-wanita,300-600k,sedang,Setiap bulan,Kualitas,Web brand,Kadang,Tertarik,Ya,putih,sporty
+25-34,m,celana,300-600k,sedang,Setiap bulan,Kualitas,Sosmed,Kadang,Tertarik,Mungkin,earth,vintage
+25-34,m,sweater,100-300k,murah,Beberapa bulan,Kualitas,Offline,Tak pernah,Tidak tertarik,Mungkin,vibrant,formal
+25-34,m,kemeja-casual,300-600k,sedang,Setiap bulan,Trend,Marketplace,Tak pernah,Tertarik,Tidak,coklat,sporty
+25-34,m,jaket,300-600k,sedang,Setiap bulan,Merek,Sosmed,Kadang,Agak tertarik,Ya,earth,vintage
+25-34,m,sweater,100-300k,murah,Beberapa bulan,Kualitas,Offline,Tak pernah,Tidak tertarik,Mungkin,pastel,formal
+25-34,m,pakaian-wanita,300-600k,sedang,Jarang,Merek,Marketplace,Selalu,Tertarik,Tidak,hitam,vintage
+25-34,m,jaket,100-300k,sedang,Jarang,Trend,Sosmed,Kadang,Agak tertarik,Ya,hijau,sporty
+25-34,f,kaos-polo,300-600k,sedang,Setiap minggu,Kualitas,Sosmed,Tak pernah,Tidak tertarik,Ya,putih,minimalis
+25-34,f,pakaian-pria,300-600k,sedang,Beberapa bulan,Trend,Sosmed,Kadang,Tidak tertarik,Ya,pastel,minimalis
+25-34,m,kaos,100-300k,murah,Setiap minggu,Kualitas,Sosmed,Kadang,Tidak tertarik,Tidak,pastel,sporty
+25-34,f,pakaian-pria,100-300k,murah,Setiap bulan,Merek,Web brand,Sering,Agak tertarik,Mungkin,abu,formal
+25-34,f,pakaian-pria,300-600k,sedang,Jarang,Merek,Sosmed,Tak pernah,Tertarik,Ya,biru,sporty
+25-34,m,jaket,100-300k,murah,Setiap bulan,Kualitas,Marketplace,Tak pernah,Agak tertarik,Mungkin,hitam,formal
+25-34,f,kaos,300-600k,sedang,Setiap bulan,Kualitas,Sosmed,Kadang,Agak tertarik,Mungkin,pink,sporty
+25-34,m,kaos,300-600k,sedang,Setiap minggu,Kualitas,Offline,Sering,Agak tertarik,Tidak,putih,sporty
+25-34,m,jas,300-600k,sedang,Beberapa bulan,Trend,Sosmed,Kadang,Tertarik,Tidak,netral,formal
+25-34,f,pakaian-pria,300-600k,sedang,Setiap bulan,Harga,Marketplace,Selalu,Tidak tertarik,Mungkin,merah,formal
+25-34,m,sweater,100-300k,murah,Setiap bulan,Harga,Web brand,Tak pernah,Tidak tertarik,Tidak,abu,kasual
+25-34,m,jas,300-600k,sedang,Setiap minggu,Harga,Web brand,Selalu,Tertarik,Ya,merah,sporty
+25-34,m,pakaian-pria,100-300k,sedang,Beberapa bulan,Harga,Sosmed,Tak pernah,Agak tertarik,Mungkin,putih,sporty
+25-34,m,pakaian-wanita,300-600k,sedang,Setiap minggu,Merek,Marketplace,Kadang,Agak tertarik,Ya,earth,sporty
+25-34,m,kaos,300-600k,sedang,Setiap bulan,Trend,Offline,Tak pernah,Tertarik,Ya,merah,kasual
+25-34,f,pakaian-pria,<100k,murah,Jarang,Trend,Sosmed,Kadang,Tidak tertarik,Tidak,netral,kasual
+25-34,m,kaos,300-600k,sedang,Beberapa bulan,Merek,Web brand,Tak pernah,Agak tertarik,Mungkin,abu,sporty
+25-34,m,kaos,100-300k,murah,Jarang,Kualitas,Web brand,Selalu,Tidak tertarik,Ya,merah,kasual
+25-34,m,jas,100-300k,sedang,Setiap bulan,Harga,Offline,Sering,Tertarik,Ya,hitam,kasual
+25-34,f,jaket,300-600k,sedang,Jarang,Kualitas,Sosmed,Sering,Agak tertarik,Tidak,pastel,kasual
+25-34,m,kaos,<100k,murah,Beberapa bulan,Merek,Sosmed,Tak pernah,Tertarik,Ya,coklat,minimalis
+25-34,m,kaos,300-600k,sedang,Setiap bulan,Kualitas,Offline,Tak pernah,Tertarik,Tidak,vibrant,sporty
+25-34,f,jaket,300-600k,sedang,Jarang,Trend,Marketplace,Kadang,Tertarik,Mungkin,abu,sporty
+25-34,m,kaos,<100k,murah,Jarang,Kualitas,Web brand,Selalu,Agak tertarik,Mungkin,earth,vintage
+25-34,f,kaos,100-300k,murah,Setiap bulan,Merek,Marketplace,Selalu,Tidak tertarik,Ya,pink,minimalis
+25-34,f,jaket,300-600k,sedang,Beberapa bulan,Trend,Marketplace,Sering,Tidak tertarik,Ya,vibrant,kasual
+25-34,f,sweater,100-300k,sedang,Setiap minggu,Merek,Marketplace,Sering,Tidak tertarik,Tidak,pink,sporty
+25-34,f,celana,100-300k,sedang,Setiap minggu,Harga,Offline,Kadang,Tertarik,Tidak,biru,sporty
+25-34,m,kaos-polo,100-300k,sedang,Beberapa bulan,Harga,Marketplace,Kadang,Agak tertarik,Tidak,putih,sporty
+25-34,m,pakaian-wanita,<100k,murah,Setiap minggu,Harga,Marketplace,Kadang,Tidak tertarik,Mungkin,pastel,kasual
+25-34,f,sweater,300-600k,sedang,Setiap bulan,Harga,Sosmed,Kadang,Agak tertarik,Mungkin,putih,kasual
+25-34,m,aksesori,<100k,murah,Setiap bulan,Harga,Web brand,Selalu,Agak tertarik,Ya,putih,vintage
+25-34,m,jaket,100-300k,murah,Beberapa bulan,Merek,Marketplace,Kadang,Tidak tertarik,Tidak,earth,formal
+25-34,f,kaos,100-300k,murah,Setiap bulan,Kualitas,Marketplace,Tak pernah,Agak tertarik,Tidak,hijau,formal
+25-34,f,jaket,300-600k,sedang,Jarang,Trend,Marketplace,Selalu,Agak tertarik,Ya,biru,formal
+25-34,m,jas,100-300k,sedang,Beberapa bulan,Kualitas,Marketplace,Tak pernah,Tertarik,Mungkin,coklat,kasual
+25-34,f,jaket,100-300k,murah,Jarang,Harga,Offline,Kadang,Agak tertarik,Ya,merah,minimalis
+25-34,f,kaos-polo,300-600k,sedang,Beberapa bulan,Harga,Marketplace,Kadang,Tertarik,Mungkin,earth,kasual
+25-34,m,jas,300-600k,sedang,Beberapa bulan,Merek,Marketplace,Kadang,Tidak tertarik,Ya,earth,vintage
+25-34,m,celana,100-300k,sedang,Beberapa bulan,Kualitas,Offline,Tak pernah,Tidak tertarik,Mungkin,biru,minimalis
+25-34,m,jaket,100-300k,murah,Setiap bulan,Kualitas,Sosmed,Kadang,Tertarik,Mungkin,hitam,vintage
+25-34,m,jas,<100k,murah,Setiap bulan,Harga,Sosmed,Selalu,Agak tertarik,Mungkin,vibrant,sporty
+25-34,m,pakaian-pria,100-300k,sedang,Setiap minggu,Merek,Sosmed,Sering,Tidak tertarik,Mungkin,vibrant,formal
+25-34,m,pakaian-pria,100-300k,sedang,Beberapa bulan,Harga,Sosmed,Tak pernah,Agak tertarik,Ya,pastel,vintage
+25-34,m,pakaian-wanita,300-600k,sedang,Setiap bulan,Trend,Marketplace,Selalu,Tidak tertarik,Mungkin,pink,minimalis
+25-34,f,pakaian-wanita,300-600k,sedang,Jarang,Harga,Sosmed,Kadang,Agak tertarik,Tidak,abu,minimalis
+25-34,m,kaos,100-300k,murah,Beberapa bulan,Merek,Offline,Sering,Tidak tertarik,Tidak,vibrant,kasual
+25-34,m,kaos,300-600k,sedang,Beberapa bulan,Trend,Web brand,Selalu,Tidak tertarik,Ya,putih,sporty
+25-34,f,celana,100-300k,sedang,Beberapa bulan,Harga,Offline,Selalu,Tertarik,Tidak,putih,vintage
+25-34,m,kaos-polo,300-600k,sedang,Setiap bulan,Merek,Offline,Selalu,Agak tertarik,Ya,vibrant,vintage
+25-34,f,pakaian-wanita,100-300k,murah,Setiap minggu,Trend,Sosmed,Tak pernah,Tertarik,Mungkin,merah,kasual
+25-34,m,pakaian-pria,<100k,murah,Setiap minggu,Kualitas,Sosmed,Sering,Tidak tertarik,Ya,coklat,minimalis
+25-34,f,jaket,100-300k,murah,Setiap minggu,Harga,Sosmed,Selalu,Tidak tertarik,Tidak,coklat,kasual
+25-34,m,pakaian-pria,<100k,murah,Setiap minggu,Kualitas,Marketplace,Sering,Agak tertarik,Tidak,netral,formal
+25-34,m,kaos,300-600k,sedang,Beberapa bulan,Kualitas,Web brand,Tak pernah,Tertarik,Ya,kuning,kasual
+25-34,m,kaos,100-300k,murah,Jarang,Trend,Offline,Tak pernah,Tidak tertarik,Ya,pastel,vintage
+25-34,m,kaos-polo,300-600k,sedang,Jarang,Merek,Offline,Sering,Agak tertarik,Mungkin,putih,sporty
+25-34,m,kaos,<100k,murah,Setiap bulan,Merek,Sosmed,Selalu,Agak tertarik,Tidak,vibrant,minimalis
+25-34,m,pakaian-pria,100-300k,murah,Jarang,Trend,Offline,Tak pernah,Agak tertarik,Ya,hitam,minimalis
+25-34,f,jas,<100k,murah,Beberapa bulan,Kualitas,Offline,Kadang,Tidak tertarik,Tidak,pastel,formal
+25-34,m,kaos,300-600k,sedang,Setiap minggu,Harga,Web brand,Tak pernah,Tidak tertarik,Ya,hitam,sporty
+25-34,m,celana,100-300k,sedang,Setiap minggu,Merek,Offline,Tak pernah,Tertarik,Mungkin,kuning,formal
+25-34,f,kaos-polo,300-600k,sedang,Setiap bulan,Kualitas,Web brand,Tak pernah,Tertarik,Ya,merah,sporty
+25-34,m,pakaian-wanita,300-600k,sedang,Setiap bulan,Kualitas,Sosmed,Sering,Agak tertarik,Ya,abu,formal
+25-34,m,jas,100-300k,sedang,Beberapa bulan,Trend,Sosmed,Sering,Agak tertarik,Tidak,vibrant,minimalis
+25-34,m,dress,300-600k,sedang,Setiap bulan,Harga,Sosmed,Tak pernah,Tidak tertarik,Tidak,earth,vintage
+25-34,m,pakaian-pria,100-300k,murah,Setiap minggu,Kualitas,Web brand,Kadang,Tertarik,Mungkin,putih,minimalis
+18-24,m,jaket,100-300k,murah,Setiap bulan,Harga,Marketplace,Sering,Agak tertarik,Mungkin,netral,kasual
+25-34,f,jaket,300-600k,sedang,Beberapa bulan,Kualitas,Offline,Kadang,Tidak tertarik,Mungkin,hitam,sporty
+25-34,m,\N,>600k,mahal,Beberapa bulan,Merek,Offline,Sering,Tidak tertarik,Mungkin,earth,vintage
+25-34,f,kaos,<100k,murah,Setiap minggu,Kualitas,Sosmed,Sering,Tertarik,Ya,hijau,kasual
+25-34,m,jas,100-300k,sedang,Jarang,Merek,Marketplace,Selalu,Tertarik,Tidak,hitam,vintage
+25-34,m,jaket,300-600k,sedang,Setiap bulan,Harga,Web brand,Sering,Tertarik,Tidak,pastel,vintage
+25-34,f,pakaian-wanita,100-300k,sedang,Setiap minggu,Merek,Sosmed,Kadang,Tertarik,Mungkin,pastel,minimalis
+25-34,f,kaos,<100k,murah,Setiap bulan,Merek,Sosmed,Selalu,Tertarik,Mungkin,pastel,vintage
+25-34,f,celana,100-300k,sedang,Jarang,Harga,Web brand,Sering,Tidak tertarik,Mungkin,coklat,formal
+25-34,m,kaos,100-300k,murah,Jarang,Trend,Web brand,Sering,Agak tertarik,Tidak,netral,minimalis
+25-34,f,pakaian-pria,100-300k,sedang,Jarang,Trend,Sosmed,Kadang,Tidak tertarik,Ya,putih,vintage
+25-34,f,kaos,100-300k,murah,Setiap bulan,Harga,Sosmed,Kadang,Agak tertarik,Mungkin,pastel,kasual
+25-34,m,jas,300-600k,sedang,Beberapa bulan,Harga,Sosmed,Kadang,Tidak tertarik,Ya,pastel,formal
+25-34,f,jas,100-300k,sedang,Jarang,Kualitas,Marketplace,Tak pernah,Agak tertarik,Mungkin,merah,formal
+25-34,m,jas,100-300k,sedang,Beberapa bulan,Kualitas,Web brand,Selalu,Agak tertarik,Mungkin,merah,kasual
+25-34,m,celana,100-300k,sedang,Setiap minggu,Merek,Offline,Kadang,Tertarik,Mungkin,coklat,vintage
+25-34,f,pakaian-pria,300-600k,sedang,Setiap bulan,Kualitas,Sosmed,Kadang,Tidak tertarik,Tidak,netral,vintage
+25-34,f,jaket,100-300k,murah,Setiap bulan,Harga,Sosmed,Kadang,Agak tertarik,Mungkin,pastel,minimalis
+25-34,f,jaket,100-300k,murah,Setiap bulan,Kualitas,Marketplace,Selalu,Tertarik,Tidak,abu,minimalis
+25-34,m,pakaian-wanita,100-300k,murah,Jarang,Harga,Web brand,Sering,Tidak tertarik,Mungkin,pastel,vintage
+25-34,f,pakaian-pria,100-300k,murah,Setiap bulan,Kualitas,Web brand,Sering,Tidak tertarik,Ya,netral,kasual
+25-34,f,kaos,100-300k,murah,Beberapa bulan,Harga,Sosmed,Kadang,Tertarik,Tidak,hijau,minimalis
+25-34,m,jas,300-600k,sedang,Setiap bulan,Merek,Web brand,Sering,Tidak tertarik,Mungkin,merah,kasual
+25-34,f,sweater,300-600k,sedang,Beberapa bulan,Kualitas,Sosmed,Tak pernah,Tidak tertarik,Mungkin,abu,kasual
+25-34,m,kaos,<100k,murah,Setiap minggu,Harga,Marketplace,Selalu,Agak tertarik,Ya,hijau,sporty
+25-34,f,jas,100-300k,sedang,Setiap bulan,Trend,Web brand,Selalu,Tertarik,Mungkin,vibrant,formal
+25-34,f,pakaian-wanita,300-600k,sedang,Setiap bulan,Trend,Offline,Kadang,Tertarik,Ya,earth,minimalis
+25-34,f,sweater,100-300k,murah,Setiap minggu,Kualitas,Sosmed,Sering,Tidak tertarik,Tidak,earth,vintage
+25-34,f,sweater,100-300k,sedang,Setiap bulan,Trend,Marketplace,Selalu,Agak tertarik,Tidak,biru,formal
+25-34,m,pakaian-wanita,300-600k,sedang,Setiap bulan,Trend,Web brand,Tak pernah,Tertarik,Mungkin,hijau,minimalis
+25-34,m,pakaian-pria,300-600k,sedang,Jarang,Harga,Sosmed,Selalu,Agak tertarik,Mungkin,hijau,formal
+25-34,f,aksesori,<100k,murah,Setiap bulan,Harga,Sosmed,Tak pernah,Agak tertarik,Mungkin,pink,kasual
+25-34,f,jas,300-600k,sedang,Jarang,Trend,Marketplace,Sering,Agak tertarik,Tidak,hijau,kasual
+25-34,m,jaket,300-600k,sedang,Setiap bulan,Harga,Sosmed,Selalu,Tertarik,Ya,biru,sporty
+25-34,f,sweater,<100k,murah,Setiap minggu,Harga,Marketplace,Selalu,Agak tertarik,Ya,netral,vintage
+25-34,f,celana,100-300k,sedang,Jarang,Trend,Marketplace,Kadang,Tertarik,Mungkin,netral,vintage
+25-34,f,pakaian-wanita,100-300k,sedang,Jarang,Merek,Web brand,Tak pernah,Agak tertarik,Ya,putih,formal
+25-34,f,pakaian-pria,<100k,murah,Setiap bulan,Trend,Web brand,Kadang,Tertarik,Mungkin,pastel,minimalis
+25-34,m,pakaian-wanita,300-600k,sedang,Jarang,Trend,Offline,Kadang,Agak tertarik,Mungkin,putih,minimalis
+25-34,f,kaos,300-600k,sedang,Beberapa bulan,Harga,Web brand,Tak pernah,Agak tertarik,Mungkin,vibrant,sporty
