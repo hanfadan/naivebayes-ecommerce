@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="{{ asset('assets/css/reset.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/responsive.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/marketplace.css') }}">
 </head>
 <body class="js">
     <div class="preloader">
@@ -68,8 +69,8 @@
                         <div class="search-top">
                             <div class="top-search"><a href="javascript:void(0);"><i class="ti-search"></i></a></div>
                             <div class="search-top">
-                                <form class="search-form">
-                                    <input type="text" placeholder="Cari di sini..." name="search">
+                                <form class="search-form" action="{{ route('product') }}">
+                                    <input type="text" placeholder="Cari produk, toko, atau kategori..." name="search" aria-label="Cari produk">
                                     <button value="search" type="submit"><i class="ti-search"></i></button>
                                 </form>
                             </div>
@@ -79,14 +80,14 @@
                     <div class="col-lg-8 col-md-7 col-12">
                         <div class="search-bar-top">
                             <div class="search-bar">
-                                <select id="cat">
-                                    <option selected="selected">Semua Kategori</option>
+                                <select id="cat" aria-label="Pilih kategori">
+                                    <option value="" selected="selected">Semua Kategori</option>
                                     {!! $categories ?? '' !!}
                                 </select>
                                 <form action="{{ route('product') }}">
-                                    <input name="search" placeholder="Cari Produk Disini....." type="search">
-                                    <input name="category" type="hidden" id="category">
-                                    <button class="btnn"><i class="ti-search"></i></button>
+                                    <input name="search" placeholder="Cari produk, toko, atau kategori..." type="search" aria-label="Cari produk" value="{{ request('search') }}">
+                                    <input name="category" type="hidden" id="category" value="{{ request('category') }}">
+                                    <button class="btnn" aria-label="Cari"><i class="ti-search"></i></button>
                                 </form>
                             </div>
                         </div>
@@ -122,7 +123,7 @@
                                             <span>Total</span>
                                             <span class="total-amount">{{ price($cartTotal ?? 0) }}</span>
                                         </div>
-                                        <a href="{{ route('checkout') }}" class="btn animate">Periksa</a>
+                                        <a href="{{ route('checkout') }}" class="btn animate">Lanjut Checkout</a>
                                     </div>
                                 </div>
                             </div>
@@ -182,11 +183,16 @@
                                 <h2 id="name"></h2>
                                 <div class="quickview-ratting-review">
                                     <div class="quickview-ratting-wrap">
-                                        <div class="quickview-ratting"><span id="category"></span></div>
+                                        <div class="quickview-ratting"><span id="category-label"></span></div>
                                     </div>
                                 </div>
                                 <h3 id="price"></h3>
                                 <div class="quickview-peragraph"><p id="info"></p></div>
+                                <div class="marketplace-meta-box">
+                                    <p><strong>Toko terpercaya</strong> <span id="brand-label">Toko lokal</span></p>
+                                    <p><strong>Produk dikirim dari</strong> toko lokal</p>
+                                    <p><strong>Stok tersedia</strong> <span id="stock-label">-</span></p>
+                                </div>
                                 <div class="quantity mb-3">
                                     <div class="input-group">
                                         <div class="button minus">
@@ -199,7 +205,7 @@
                                     </div>
                                 </div>
                                 <div class="add-to-cart">
-                                    <a href="javascript:void(0);" class="btn add-cart-modal" data-product="" data-price="">Masukkan ke Keranjang</a>
+                                    <a href="javascript:void(0);" class="btn add-cart-modal" data-product="" data-price="">+ Keranjang</a>
                                     <a href="javascript:void(0);" class="btn min add-wishlist-modal" data-product=""><i class="ti-heart"></i></a>
                                 </div>
                             </div>
@@ -250,7 +256,6 @@
     <script src="{{ asset('assets/js/jquery-ui.min.js') }}"></script>
     <script src="{{ asset('assets/js/popper.min.js') }}"></script>
     <script src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
-    <script src="{{ asset('assets/js/colors.js') }}"></script>
     <script src="{{ asset('assets/js/datepicker.min.js') }}"></script>
     <script src="{{ asset('assets/js/slicknav.min.js') }}"></script>
     <script src="{{ asset('assets/js/owl-carousel.js') }}"></script>
@@ -273,15 +278,27 @@
         $(document).on('click', '.btn-view, .btn-cart', function (e) {
             e.preventDefault();
             const $btn = $(this), prodId = getProductId($btn), price = $btn.data('price');
+            const priceLabel = $btn.data('price-label') || price;
             const $modal = $('#modal-view');
             $modal.find('.img-product').attr('src', $btn.data('image')).prop('alt', $btn.data('name'));
             $('#name').text($btn.data('name'));
-            $('#price').text(price);
+            $('#price').text('Rp' + priceLabel);
             $('#info').text($btn.data('info'));
+            $('#category-label').text($btn.data('category') || 'Fashion lokal');
+            $('#brand-label').text($btn.data('brand') || 'Toko lokal');
+            $('#stock-label').text($btn.data('stok') || '-');
             $modal.find('.add-cart-modal').data({ product: prodId, price: price });
             $modal.find('.add-wishlist-modal').data('product', prodId);
             $modal.modal('show');
         });
+
+        $('#cat').on('change', function () {
+            $('#category').val($(this).val());
+        });
+
+        if ($('#category').val()) {
+            $('#cat').val($('#category').val()).niceSelect('update');
+        }
 
         $(document).on('click', '.add-cart-modal', function () {
             const qty = parseInt($('.modal-qty').val(), 10) || 1;

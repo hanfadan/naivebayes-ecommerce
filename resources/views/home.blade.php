@@ -1,190 +1,157 @@
 @extends('layouts.app')
 
 @section('content')
-@php
-function h_selected($src, $key, $val) {
-    return !empty($src[$key]) && $src[$key]===$val ? 'selected' : '';
-}
-@endphp
+<main class="marketplace-page">
+    <div class="container">
+        <section class="marketplace-section marketplace-hero">
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                    <span class="marketplace-badge">Marketplace fashion lokal</span>
+                    <h1>Temukan produk yang cocok dengan gaya belanjamu.</h1>
+                    <p>Jelajahi kategori populer, dapatkan rekomendasi personal, lalu tambah produk ke keranjang tanpa ribet.</p>
+                </div>
+                <div class="col-lg-5 mt-3 mt-lg-0">
+                    <form action="{{ route('product') }}" class="d-flex">
+                        <input type="search" name="search" class="form-control mr-2" placeholder="Cari produk, toko, atau kategori..." aria-label="Cari produk">
+                        <button class="btn" type="submit">Cari</button>
+                    </form>
+                </div>
+            </div>
+        </section>
 
-<section class="hero-slider">
-    <div class="single-slider">
-        <div class="container"></div>
-    </div>
-</section>
+        <section class="marketplace-section">
+            <div class="marketplace-title-row">
+                <div>
+                    <h2>Kategori Populer</h2>
+                    <p>Pilih kategori dan mulai jelajah produk fashion.</p>
+                </div>
+                <a href="{{ route('product') }}">Lihat semua</a>
+            </div>
+            @include('components.category-shortcuts', ['categories' => $categoryShortcuts ?? []])
+        </section>
 
-<div class="container">
-    <div class="bg-white shadow-sm rounded p-4 mb-4">
-        <div class="row">
-            <div class="col-12">
-                <div class="section-title">
+        <section class="marketplace-section marketplace-panel">
+            <div class="marketplace-title-row">
+                <div>
                     <h2>Dapatkan Rekomendasi Produk</h2>
+                    <p>Isi preferensimu agar sistem membantu memilih produk yang lebih relevan.</p>
                 </div>
             </div>
-        </div>
 
-        <form method="post" class="mb-5">
-            @csrf
-            <div class="row">
-                <div class="col-md-4">
-                    <fieldset class="border rounded-3 p-3 mb-4">
-                        <legend class="small text-muted px-2">Kelompok Umur</legend>
-                        <select name="umur" class="form-select" required>
-                            <option value="" disabled {{ empty($formInput['umur']) ? 'selected' : '' }}>Pilih Kelompok Umur</option>
-                            @foreach (['18-24','25-34','35+'] as $age)
-                                <option value="{{ $age }}" {{ h_selected($formInput, 'umur', $age) }}>{{ $age }}</option>
-                            @endforeach
-                        </select>
-                    </fieldset>
-                </div>
-                <div class="col-md-4">
-                    <fieldset class="border rounded-3 p-3 mb-4">
-                        <legend class="small text-muted px-2">Gender</legend>
-                        <select name="gender" class="form-select" required>
-                            <option value="" disabled {{ empty($formInput['gender']) ? 'selected' : '' }}>Pilih Gender</option>
-                            @foreach (['m' => 'Laki-laki','f' => 'Perempuan'] as $val => $label)
-                                <option value="{{ $val }}" {{ h_selected($formInput, 'gender', $val) }}>{{ $label }}</option>
-                            @endforeach
-                        </select>
-                    </fieldset>
-                </div>
-                <div class="col-md-4">
-                    <fieldset class="border rounded p-3 mb-4">
-                        <legend class="w-auto small text-muted">Gaya / Kategori Favorit</legend>
-                        <select name="kategori" class="form-select" required>
-                            <option value="" disabled {{ empty($formInput['kategori']) ? 'selected' : '' }}>Pilih Kategori</option>
-                            @foreach ($kategoriList as $slug => $label)
-                                <option value="{{ $slug }}" {{ isset($formInput['kategori']) && $formInput['kategori']===$slug ? 'selected' : '' }}>{{ $label }}</option>
-                            @endforeach
-                        </select>
-                    </fieldset>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <fieldset class="border rounded-3 p-3 mb-4">
-                        <legend class="small text-muted px-2">Frekuensi Belanja</legend>
-                        <select name="buy_freq" class="form-select" required>
-                            <option value="" disabled {{ empty($formInput['buy_freq']) ? 'selected' : '' }}>Pilih Frekuensi Belanja</option>
-                            @foreach ($buyFreqList as $f)
-                                <option value="{{ $f }}" {{ h_selected($formInput, 'buy_freq', $f) }}>{{ $f }}</option>
-                            @endforeach
-                        </select>
-                    </fieldset>
-                </div>
-                <div class="col-md-4">
-                    <fieldset class="border rounded-3 p-3 mb-4">
-                        <legend class="small text-muted px-2">Budget per Transaksi</legend>
-                        <select name="budget_band" class="form-select" required>
-                            <option value="" disabled {{ empty($formInput['budget_band']) ? 'selected' : '' }}>Pilih Budget per Transaksi</option>
-                            @foreach ($budgetBandList as $b)
-                                <option value="{{ $b }}" {{ h_selected($formInput, 'budget_band', $b) }}>{{ $b }}</option>
-                            @endforeach
-                        </select>
-                    </fieldset>
-                </div>
-            </div>
-            <div class="d-flex justify-content-end">
-                <button type="submit" class="btn btn-primary">Tampilkan</button>
-            </div>
-        </form>
-    </div>
-
-    @if(request()->isMethod('POST') && !empty($naivebayes))
-        <div class="row">
-            <div class="col-12">
-                <div class="section-title"><h2>Rekomendasi Produk Terbaik Untukmu</h2></div>
-            </div>
-        </div>
-        <div class="row">
-            @foreach ($naivebayes as $product)
-                <div class="col-xl-3 col-lg-4 col-md-4 col-12">
-                    <div class="single-product">
-                        <div class="product-img">
-                            <a href="javascript:void(0);">
-                                <img class="default-img" src="{{ productImage('03_', $product['image']) }}" alt="{{ htmlspecialchars($product['name']) }}">
-                                <img class="hover-img"   src="{{ productImage('03_', $product['image']) }}" alt="{{ htmlspecialchars($product['name']) }}">
-                            </a>
-                            <div class="button-head">
-                                <div class="product-action">
-                                    <a title="Detail Produk" href="javascript:void(0);" class="btn-view"
-                                       data-id="{{ $product['id'] }}" data-name="{{ $product['name'] }}"
-                                       data-info="{{ $product['description'] }}" data-stok="{{ price($product['stok']) }}"
-                                       data-price="{{ price($product['price']) }}" data-image="{{ productImage('05_', $product['image']) }}"
-                                       data-category="{{ $product['category'] }}"><i class="ti-eye"></i><span>Detail Produk</span></a>
-                                    <a title="Daftar Keinginan" href="javascript:void(0);" class="btn-wishlist" data-product="{{ $product['id'] }}"><i class="ti-heart"></i><span>Tambahkan ke Daftar Keinginan</span></a>
-                                </div>
-                                <div class="product-action-2">
-                                    <a href="#" class="btn-cart" data-url="{{ route('home.addCart') }}" data-product="{{ $product['id'] }}" data-qty="1" data-price="{{ $product['price'] }}">Tambah ke Keranjang</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product-content">
-                            <h3><a href="javascript:void(0);">{{ $product['name'] }}</a></h3>
-                            <div class="product-price"><span>{{ price($product['price']) }}</span></div>
+            <form method="post">
+                @csrf
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="umur">Kelompok Umur</label>
+                            <select id="umur" name="umur" class="form-control" required>
+                                <option value="" disabled {{ empty($formInput['umur']) ? 'selected' : '' }}>Pilih kelompok umur</option>
+                                @foreach (['18-24','25-34','35+'] as $age)
+                                    <option value="{{ $age }}" {{ !empty($formInput['umur']) && $formInput['umur'] === $age ? 'selected' : '' }}>{{ $age }}</option>
+                                @endforeach
+                            </select>
                         </div>
                     </div>
-                </div>
-            @endforeach
-        </div>
-    @elseif(request()->isMethod('POST'))
-        <div class="row">
-            <div class="col-12">
-                <div class="alert alert-info w-100 text-center py-4">
-                    Belum ada rekomendasi untuk pilihanmu.<br>Coba ubah kategori atau parameter lain, ya!
-                </div>
-            </div>
-        </div>
-    @endif
-
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class="section-title"><h2>Produk Terbaru</h2></div>
-            </div>
-        </div>
-        <div class="row">
-            @foreach ($products as $product)
-                <div class="col-xl-3 col-lg-4 col-md-4 col-12">
-                    <div class="single-product">
-                        <div class="product-img">
-                            <a href="javascript:void(0);">
-                                <img class="default-img" src="{{ productImage('03_', $product['image']) }}" alt="{{ htmlspecialchars($product['name']) }}">
-                                <img class="hover-img"   src="{{ productImage('03_', $product['image']) }}" alt="{{ htmlspecialchars($product['name']) }}">
-                            </a>
-                            <div class="button-head">
-                                <div class="product-action">
-                                    <a title="Detail Produk" href="javascript:void(0);" class="btn-view"
-                                       data-id="{{ $product['id'] }}" data-name="{{ $product['name'] }}"
-                                       data-info="{{ $product['description'] }}" data-stok="{{ price($product['stok']) }}"
-                                       data-price="{{ price($product['price']) }}" data-image="{{ productImage('05_', $product['image']) }}"
-                                       data-category="{{ $product['category'] }}"><i class="ti-eye"></i><span>Detail Produk</span></a>
-                                    <a title="Daftar Keinginan" href="javascript:void(0);" class="btn-wishlist" data-product="{{ $product['id'] }}"><i class="ti-heart"></i><span>Tambahkan ke Daftar Keinginan</span></a>
-                                </div>
-                                <div class="product-action-2">
-                                    <a href="#" class="btn-cart" data-url="{{ route('home.addCart') }}" data-product="{{ $product['id'] }}" data-qty="1" data-price="{{ $product['price'] }}">Tambah ke Keranjang</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product-content">
-                            <h3><a href="javascript:void(0);">{{ $product['name'] }}</a></h3>
-                            <div class="product-price"><span>{{ price($product['price']) }}</span></div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="gender">Gender</label>
+                            <select id="gender" name="gender" class="form-control" required>
+                                <option value="" disabled {{ empty($formInput['gender']) ? 'selected' : '' }}>Pilih gender</option>
+                                @foreach (['m' => 'Laki-laki','f' => 'Perempuan'] as $val => $label)
+                                    <option value="{{ $val }}" {{ !empty($formInput['gender']) && $formInput['gender'] === $val ? 'selected' : '' }}>{{ $label }}</option>
+                                @endforeach
+                            </select>
                         </div>
                     </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="kategori">Gaya / Kategori Favorit</label>
+                            <select id="kategori" name="kategori" class="form-control" required>
+                                <option value="" disabled {{ empty($formInput['kategori']) ? 'selected' : '' }}>Pilih kategori</option>
+                                @foreach ($kategoriList as $slug => $label)
+                                    <option value="{{ $slug }}" {{ !empty($formInput['kategori']) && $formInput['kategori'] === $slug ? 'selected' : '' }}>{{ $label }}</option>
+                                @endforeach
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group mb-md-0">
+                            <label for="buy_freq">Frekuensi Belanja</label>
+                            <select id="buy_freq" name="buy_freq" class="form-control" required>
+                                <option value="" disabled {{ empty($formInput['buy_freq']) ? 'selected' : '' }}>Pilih frekuensi</option>
+                                @foreach ($buyFreqList as $freq)
+                                    <option value="{{ $freq }}" {{ !empty($formInput['buy_freq']) && $formInput['buy_freq'] === $freq ? 'selected' : '' }}>{{ $freq }}</option>
+                                @endforeach
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group mb-md-0">
+                            <label for="budget_band">Budget per Transaksi</label>
+                            <select id="budget_band" name="budget_band" class="form-control" required>
+                                <option value="" disabled {{ empty($formInput['budget_band']) ? 'selected' : '' }}>Pilih budget</option>
+                                @foreach ($budgetBandList as $budget)
+                                    <option value="{{ $budget }}" {{ !empty($formInput['budget_band']) && $formInput['budget_band'] === $budget ? 'selected' : '' }}>{{ $budget }}</option>
+                                @endforeach
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-4 d-flex align-items-end">
+                        <button type="submit" class="btn btn-block">Tampilkan Rekomendasi</button>
+                    </div>
                 </div>
-            @endforeach
-        </div>
-    </div>
-</div>
+            </form>
+        </section>
 
-<section class="shop-services section home">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-3 col-md-6 col-12"><div class="single-service"><i class="ti-rocket"></i><h4>Bebas biaya kirim</h4><p>Pesanan lebih dari 1000K</p></div></div>
-            <div class="col-lg-3 col-md-6 col-12"><div class="single-service"><i class="ti-reload"></i><h4>Pengembalian Gratis</h4><p>Dalam waktu 2 hari kembali</p></div></div>
-            <div class="col-lg-3 col-md-6 col-12"><div class="single-service"><i class="ti-lock"></i><h4>Pembayaran yang aman</h4><p>Pembayaran aman 100%.</p></div></div>
-            <div class="col-lg-3 col-md-6 col-12"><div class="single-service"><i class="ti-tag"></i><h4>Harga Terbaik</h4><p>Harga terjamin</p></div></div>
-        </div>
+        @if(request()->isMethod('POST'))
+            <section class="marketplace-section">
+                <div class="marketplace-title-row">
+                    <div>
+                        <h2>Rekomendasi Untukmu</h2>
+                        <p>Produk pilihan berdasarkan preferensi belanjamu.</p>
+                    </div>
+                </div>
+                @if(!empty($naivebayes))
+                    <div class="row marketplace-grid">
+                        @foreach ($naivebayes as $product)
+                            @include('components.product-card', ['product' => $product, 'imagePrefix' => '03_'])
+                        @endforeach
+                    </div>
+                @else
+                    @include('components.empty-state', [
+                        'icon' => 'ti-search',
+                        'title' => 'Belum ada rekomendasi',
+                        'message' => 'Coba ubah kategori atau preferensi lain, ya.',
+                        'actionUrl' => route('product'),
+                        'actionLabel' => 'Jelajah Produk'
+                    ])
+                @endif
+            </section>
+        @endif
+
+        <section class="marketplace-section">
+            <div class="marketplace-title-row">
+                <div>
+                    <h2>Produk Terbaru</h2>
+                    <p>Barang baru yang siap kamu masukkan ke keranjang.</p>
+                </div>
+                <a href="{{ route('product') }}">Lihat semua produk</a>
+            </div>
+            @if(!empty($products))
+                <div class="row marketplace-grid">
+                    @foreach ($products as $product)
+                        @include('components.product-card', ['product' => $product, 'imagePrefix' => '03_'])
+                    @endforeach
+                </div>
+            @else
+                @include('components.empty-state', [
+                    'title' => 'Belum ada produk',
+                    'message' => 'Produk akan tampil di sini setelah toko menambahkannya.'
+                ])
+            @endif
+        </section>
     </div>
-</section>
+</main>
+
+@include('components.trust-strip')
 @endsection

@@ -1,82 +1,81 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="breadcrumbs">
+<main class="marketplace-page">
     <div class="container">
-        <div class="row"><div class="col-12"><div class="bread-inner"><ul class="bread-list">
-            <li><a href="{{ route('home') }}">Beranda<i class="ti-arrow-right"></i></a></li>
-            <li class="active"><a href="{{ route('cart') }}">Keranjang</a></li>
-        </ul></div></div></div>
-    </div>
-</div>
-<div class="shopping-cart section">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <table class="table shopping-summery">
-                    <thead>
-                        <tr class="main-hading">
-                            <th width="150">&nbsp;</th>
-                            <th>NAMA BARANG</th>
-                            <th width="100" class="text-right">HARGA</th>
-                            <th width="100" class="text-center">QTY</th>
-                            <th width="100" class="text-right">TOTAL</th>
-                            <th width="50" class="text-center"><i class="ti-trash remove-icon"></i></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        @php $total = 0; @endphp
-                        @foreach($carts as $val)
-                            @php $total += intval($val['qty']) * intval($val['price']); @endphp
-                            <tr>
-                                <td class="image" data-title="No">
-                                    <img src="{{ productImage('02_', $val['image']) }}" alt="{{ htmlspecialchars($val['name']) }}">
-                                </td>
-                                <td class="product-des" data-title="Description">
-                                    <p class="product-name"><a href="javascript:void(0);">{{ $val['name'] }}</a></p>
-                                    <p class="product-des">{{ $val['description'] }}</p>
-                                </td>
-                                <td class="text-right" data-title="Harga"><span>{{ price($val['price']) }}</span></td>
-                                <td class="qty" data-title="Qty">
+        <section class="marketplace-section marketplace-hero">
+            <span class="marketplace-badge">Keranjang Belanja</span>
+            <h1>Review produk sebelum checkout.</h1>
+            <p>Pastikan jumlah dan total belanja sudah sesuai sebelum membuat pesanan.</p>
+        </section>
+
+        @php
+            $total = 0;
+            foreach ($carts as $cart) {
+                $total += intval($cart['qty']) * intval($cart['price']);
+            }
+        @endphp
+
+        @if(empty($carts))
+            @include('components.empty-state', [
+                'icon' => 'ti-shopping-cart',
+                'title' => 'Keranjang masih kosong',
+                'message' => 'Yuk, temukan produk yang kamu butuhkan.',
+                'actionUrl' => route('product'),
+                'actionLabel' => 'Cari Produk'
+            ])
+        @else
+            <div class="cart-layout">
+                <section>
+                    @foreach($carts as $item)
+                        <article class="cart-item-card">
+                            <img src="{{ productImage('02_', $item['image']) }}" alt="{{ e($item['name']) }}">
+                            <div>
+                                <h3>{{ $item['name'] }}</h3>
+                                <p>{{ $item['category'] }}</p>
+                                <p class="mt-2">{{ \Illuminate\Support\Str::limit($item['description'], 110) }}</p>
+                                <div class="marketplace-price mt-2">Rp{{ price($item['price']) }}</div>
+                            </div>
+                            <div class="cart-item-actions text-right">
+                                <div class="qty mb-3">
                                     <div class="input-group">
                                         <div class="button minus">
-                                            <button type="button" class="btn btn-primary btn-number" data-type="minus" data-field="quant[{{ $val['id'] }}]"><i class="ti-minus"></i></button>
+                                            <button type="button" class="btn btn-primary btn-number" data-type="minus" data-field="quant[{{ $item['id'] }}]" aria-label="Kurangi jumlah"><i class="ti-minus"></i></button>
                                         </div>
-                                        <input type="text" name="quant[{{ $val['id'] }}]" class="input-number input-qty" data-min="1" data-max="100" value="{{ $val['qty'] }}" data-product="{{ $val['product'] }}">
+                                        <input type="text" name="quant[{{ $item['id'] }}]" class="input-number input-qty" data-min="1" data-max="100" value="{{ $item['qty'] }}" data-product="{{ $item['product'] }}" aria-label="Jumlah {{ $item['name'] }}">
                                         <div class="button plus">
-                                            <button type="button" class="btn btn-primary btn-number" data-type="plus" data-field="quant[{{ $val['id'] }}]"><i class="ti-plus"></i></button>
+                                            <button type="button" class="btn btn-primary btn-number" data-type="plus" data-field="quant[{{ $item['id'] }}]" aria-label="Tambah jumlah"><i class="ti-plus"></i></button>
                                         </div>
                                     </div>
-                                </td>
-                                <td class="text-right" data-title="Total"><span>{{ price(intval($val['qty']) * intval($val['price'])) }}</span></td>
-                                <td class="action" data-title="Hapus"><a href="javascript:void(0);" class="btn-cart-remove" data-product="{{ $val['id'] }}"><i class="ti-trash remove-icon"></i></a></td>
-                            </tr>
-                        @endforeach
-                        @if(empty($carts))
-                            <tr><td colspan="6" class="text-center">Pilih produk untuk dimasukan ke keranjang belanja</td></tr>
-                        @endif
-                    </tbody>
-                </table>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12">
-                <div class="total-amount">
-                    <div class="row">
-                        <div class="col-lg-8 col-md-5 col-12"></div>
-                        <div class="col-lg-4 col-md-7 col-12">
-                            <div class="right">
-                                <ul><li>Subtotal<span>{{ price($total) }}</span></li></ul>
-                                <div class="button5">
-                                    <a href="{{ route('checkout') }}" class="btn">Pembayaran</a>
-                                    <a href="{{ route('product') }}" class="btn">Lanjutkan Belanja</a>
                                 </div>
+                                <p class="summary-row mb-2"><span>Total</span><strong>Rp{{ price(intval($item['qty']) * intval($item['price'])) }}</strong></p>
+                                <a href="javascript:void(0);" class="btn marketplace-icon-btn btn-cart-remove" data-product="{{ $item['id'] }}">
+                                    <i class="ti-trash"></i> Hapus
+                                </a>
                             </div>
-                        </div>
+                        </article>
+                    @endforeach
+                </section>
+
+                <aside class="cart-summary">
+                    <h3 class="mb-3">Ringkasan Belanja</h3>
+                    <div class="summary-row">
+                        <span>Subtotal</span>
+                        <strong>Rp{{ price($total) }}</strong>
                     </div>
-                </div>
+                    <div class="summary-row">
+                        <span>Voucher</span>
+                        <strong>Belum digunakan</strong>
+                    </div>
+                    <div class="summary-row summary-total">
+                        <span>Total</span>
+                        <strong>Rp{{ price($total) }}</strong>
+                    </div>
+                    <a href="{{ route('checkout') }}" class="btn btn-block mt-3">Lanjut Checkout</a>
+                    <a href="{{ route('product') }}" class="btn marketplace-icon-btn btn-block mt-2">Lanjut Belanja</a>
+                </aside>
             </div>
-        </div>
+        @endif
     </div>
-</div>
+</main>
 @endsection

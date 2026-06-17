@@ -1,127 +1,122 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="breadcrumbs">
+<main class="marketplace-page">
     <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class="bread-inner">
-                    <ul class="bread-list">
-                        <li><a href="{{ route('home') }}">Beranda<i class="ti-arrow-right"></i></a></li>
-                        <li class="active"><a href="{{ route('product') }}">Produk</a></li>
-                    </ul>
+        <section class="marketplace-section marketplace-hero">
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                    <span class="marketplace-badge">Pusat produk fashion</span>
+                    <h1>
+                        @if(request('search'))
+                            Hasil pencarian "{{ request('search') }}"
+                        @elseif(request('category'))
+                            Kategori {{ ucwords(str_replace('-', ' ', request('category'))) }}
+                        @else
+                            Jelajahi Produk
+                        @endif
+                    </h1>
+                    <p>Cari produk yang pas, cek stok, simpan favorit, lalu lanjut checkout saat sudah siap.</p>
+                </div>
+                <div class="col-lg-5 mt-3 mt-lg-0">
+                    <form action="{{ route('product') }}" class="d-flex">
+                        <input type="search" name="search" class="form-control mr-2" value="{{ request('search') }}" placeholder="Cari produk, toko, atau kategori..." aria-label="Cari produk">
+                        @if(request('category'))
+                            <input type="hidden" name="category" value="{{ request('category') }}">
+                        @endif
+                        <button class="btn" type="submit">Cari</button>
+                    </form>
                 </div>
             </div>
-        </div>
-    </div>
-</div>
-<section class="product-area shop-sidebar shop section">
-    <div class="container">
+        </section>
+
+        <section class="marketplace-section">
+            <div class="marketplace-title-row">
+                <div>
+                    <h2>Kategori Cepat</h2>
+                    <p>Filter produk berdasarkan kategori yang tersedia.</p>
+                </div>
+                @if(request('category') || request('search'))
+                    <a href="{{ route('product') }}">Reset filter</a>
+                @endif
+            </div>
+            @include('components.category-shortcuts', ['categories' => $categoryShortcuts ?? []])
+        </section>
+
         <div class="row">
-            <div class="col-lg-3 col-md-4 col-12">
-                <div class="shop-sidebar">
+            <aside class="col-lg-3 col-md-4 col-12 mb-4">
+                <div class="marketplace-sidebar shop-sidebar">
                     <div class="single-widget category">
                         <h3 class="title">Kategori</h3>
                         {!! $sidebars !!}
                     </div>
                 </div>
-            </div>
+            </aside>
+
             <div class="col-lg-9 col-md-8 col-12">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="shop-top">
-                            <h4 class="mb-3">
+                <section class="marketplace-section marketplace-panel">
+                    <div class="marketplace-title-row">
+                        <div>
+                            <h2>
                                 @if(request('category'))
-                                    Terlaris di Kategori "{{ ucwords(str_replace('-',' ',request('category'))) }}"
+                                    Terlaris di kategori ini
                                 @else
-                                    Produk Terlaris di Toko
+                                    Produk terlaris
                                 @endif
-                            </h4>
-                            @if(!empty($bestSellers))
-                                <div class="row">
-                                    @foreach ($bestSellers as $bs)
-                                        <div class="col-md-4 col-lg-3 col-6 mb-3">
-                                            <a href="javascript:void(0);" class="text-decoration-none text-dark btn-view"
-                                               data-id="{{ $bs['id'] }}" data-name="{{ $bs['name'] }}"
-                                               data-info="{{ $bs['description'] }}" data-stok="{{ price($bs['stok']) }}"
-                                               data-price="{{ price($bs['price']) }}" data-image="{{ productImage('05_', $bs['image']) }}"
-                                               data-category="{{ $bs['category'] }}">
-                                                <div class="card border-0 shadow-sm h-100">
-                                                    <img src="{{ productImage('03_', $bs['image']) }}" class="card-img-top" alt="{{ htmlspecialchars($bs['name']) }}">
-                                                    <div class="card-body p-2">
-                                                        <p class="card-title small mb-1">{{ $bs['name'] }}</p>
-                                                        <p class="mb-0 text-primary fw-bold">{{ price($bs['price']) }}</p>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    @endforeach
-                                </div>
-                            @else
-                                <div class="alert alert-info">Belum ada data penjualan di kategori ini.</div>
-                            @endif
+                            </h2>
+                            <p>Ringkasan produk yang paling sering dibeli.</p>
                         </div>
                     </div>
-                </div>
-                <div class="row">
-                    @foreach ($products as $product)
-                        <div class="col-lg-4 col-md-6 col-12">
-                            <div class="single-product">
-                                <div class="product-img">
-                                    <a href="javascript:void(0);">
-                                        <img class="default-img" src="{{ productImage('04_', $product['image']) }}" alt="{{ htmlspecialchars($product['name']) }}">
-                                        <img class="hover-img"   src="{{ productImage('04_', $product['image']) }}" alt="{{ $product['name'] }}">
-                                    </a>
-                                    <div class="button-head">
-                                        <div class="product-action">
-                                            <a title="Detail Produk" href="javascript:void(0);" class="btn-view"
-                                               data-id="{{ $product['id'] }}" data-name="{{ $product['name'] }}"
-                                               data-info="{{ $product['description'] }}" data-stok="{{ price($product['stok']) }}"
-                                               data-price="{{ price($product['price']) }}" data-image="{{ productImage('05_', $product['image']) }}"
-                                               data-category="{{ $product['category'] }}"><i class="ti-eye"></i><span>Detail Produk</span></a>
-                                            <a title="Daftar Keinginan" href="javascript:void(0);" class="btn-wishlist" data-product="{{ $product['id'] }}"><i class="ti-heart"></i><span>Tambahkan ke Daftar Keinginan</span></a>
-                                        </div>
-                                        <div class="product-action-2">
-                                            <a href="#" title="Tambah ke Keranjang" class="btn-cart"
-                                               data-url="{{ route('home.addCart') }}" data-product="{{ $product['id'] }}"
-                                               data-qty="1" data-price="{{ $product['price'] }}"
-                                               data-name="{{ htmlspecialchars($product['name']) }}"
-                                               data-image="{{ productImage('05_', $product['image']) }}"
-                                               data-info="{{ htmlspecialchars($product['description']) }}">
-                                               Tambah ke Keranjang
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="product-content">
-                                    <h3><a href="javascript:void(0);">{{ $product['name'] }}</a></h3>
-                                    <div class="product-price"><span>{{ price($product['price']) }}</span></div>
-                                </div>
-                            </div>
+
+                    @if(!empty($bestSellers))
+                        <div class="row marketplace-grid">
+                            @foreach ($bestSellers as $bestSeller)
+                                @include('components.product-card', [
+                                    'product' => $bestSeller,
+                                    'imagePrefix' => '03_',
+                                    'columnClass' => 'col-xl-4 col-lg-4 col-md-6 col-6'
+                                ])
+                            @endforeach
                         </div>
-                    @endforeach
-                </div>
+                    @else
+                        @include('components.empty-state', [
+                            'icon' => 'ti-bar-chart',
+                            'title' => 'Belum ada data terlaris',
+                            'message' => 'Produk populer akan tampil setelah ada transaksi.'
+                        ])
+                    @endif
+                </section>
+
+                <section class="marketplace-section">
+                    <div class="marketplace-title-row">
+                        <div>
+                            <h2>Semua Produk</h2>
+                            <p>{{ count($products) }} produk tersedia untuk filter saat ini.</p>
+                        </div>
+                    </div>
+
+                    @if(!empty($products))
+                        <div class="row marketplace-grid">
+                            @foreach ($products as $product)
+                                @include('components.product-card', [
+                                    'product' => $product,
+                                    'imagePrefix' => '04_',
+                                    'columnClass' => 'col-xl-4 col-lg-4 col-md-6 col-6'
+                                ])
+                            @endforeach
+                        </div>
+                    @else
+                        @include('components.empty-state', [
+                            'icon' => 'ti-search',
+                            'title' => 'Produk tidak ditemukan',
+                            'message' => 'Coba gunakan kata kunci lain atau cek kategori populer.',
+                            'actionUrl' => route('product'),
+                            'actionLabel' => 'Reset Pencarian'
+                        ])
+                    @endif
+                </section>
             </div>
         </div>
     </div>
-</section>
-@endsection
-
-@section('scripts')
-<script>
-$(document).on('click', '.btn-cart', function(e){
-    e.preventDefault();
-    const $btn = $(this);
-    $('.img-product').each(function(){
-        $(this).prop('alt', $btn.closest('.single-product').find('h3 a').text());
-        $(this).attr('src', $btn.closest('.single-product').find('img.default-img').attr('src'));
-    });
-    $('#name').html($btn.closest('.single-product').find('h3 a').text());
-    $('#price').html($btn.data('price'));
-    $('#info').html('');
-    $('.add-cart-modal').attr('data-price', $btn.data('price')).attr('data-product', $btn.data('product'));
-    $('.add-wishlist-modal').attr('data-product', $btn.data('product'));
-    $('#modal-view').modal('show');
-});
-</script>
+</main>
 @endsection

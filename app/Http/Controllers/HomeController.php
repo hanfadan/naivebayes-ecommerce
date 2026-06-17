@@ -22,6 +22,11 @@ class HomeController extends Controller
         $treeOpts  = Category::selectTreeHtml();
 
         $allCats     = Category::orderBy('parent_id')->get(['id', 'name', 'slug', 'parent_id'])->toArray();
+        $categoryShortcuts = Category::where('parent_id', '!=', 0)
+            ->orderBy('name')
+            ->limit(12)
+            ->get(['name', 'slug'])
+            ->toArray();
         $kategoriList = [];
         foreach ($allCats as $c) {
             if ((int) $c['parent_id'] !== 0) {
@@ -46,7 +51,7 @@ class HomeController extends Controller
 
         return view('home', compact(
             'carts', 'count', 'products', 'dropdowns', 'treeOpts',
-            'kategoriList', 'buyFreqList', 'budgetBandList', 'formInput', 'naivebayes'
+            'kategoriList', 'categoryShortcuts', 'buyFreqList', 'budgetBandList', 'formInput', 'naivebayes'
         ));
     }
 
@@ -58,7 +63,10 @@ class HomeController extends Controller
 
         $userId    = session('user');
         $productId = $request->input('product');
-        $price     = str_replace('.', '', $request->input('price'));
+        $priceInput = $request->input('price');
+        $price     = $priceInput !== null
+            ? str_replace('.', '', (string) $priceInput)
+            : Product::whereKey($productId)->value('price');
         $qty       = (int) $request->input('qty', 1);
 
         $cart = Cart::where('user_id', $userId)->where('product_id', $productId)->first();

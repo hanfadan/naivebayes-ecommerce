@@ -21,6 +21,11 @@ class ProductController extends Controller
         $products    = Product::findHome($search, $category);
         $bestSellers = Product::bestSellers($category ?: null, 5);
         $categories  = Category::class;
+        $categoryShortcuts = Category::where('parent_id', '!=', 0)
+            ->orderBy('name')
+            ->limit(12)
+            ->get(['name', 'slug'])
+            ->toArray();
 
         if (!empty($search)) {
             $entry = Search::where('name', $search)->first();
@@ -41,6 +46,7 @@ class ProductController extends Controller
             'bestSellers' => $bestSellers,
             'dropdowns'   => Category::dropdownMenuHtml(),
             'categories'  => Category::selectTreeHtml(),
+            'categoryShortcuts' => $categoryShortcuts,
         ]);
     }
 }

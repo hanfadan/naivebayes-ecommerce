@@ -1,22 +1,50 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="breadcrumbs">
+<main class="marketplace-page">
     <div class="container">
-        <div class="row"><div class="col-12"><div class="bread-inner"><ul class="bread-list">
-            <li><a href="{{ route('home') }}">Beranda<i class="ti-arrow-right"></i></a></li>
-            <li class="active"><a href="{{ route('profile') }}">Akun Saya</a></li>
-        </ul></div></div></div>
+        <section class="marketplace-section marketplace-hero">
+            <span class="marketplace-badge">Akun Saya</span>
+            <h1>Kelola pengalaman belanjamu.</h1>
+            <p>Akses keranjang, wishlist, dan lanjutkan belanja dari satu tempat.</p>
+        </section>
+
+        <section class="marketplace-panel">
+            <div class="marketplace-title-row">
+                <div>
+                    <h2>{{ $user['name'] ?? 'Akun Belanja' }}</h2>
+                    <p>{{ $user['email'] ?? '' }}{{ !empty($user['phone']) ? ' · ' . $user['phone'] : '' }}</p>
+                </div>
+            </div>
+            @if(!empty($user['address']))
+                <div class="checkout-section-card">
+                    <h3>Alamat Utama</h3>
+                    <p class="mb-0">{{ $user['address'] }}</p>
+                </div>
+            @endif
+            <div class="row">
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <a href="{{ route('cart') }}" class="category-chip w-100 justify-content-center">
+                        <span class="category-chip-icon"><i class="ti-shopping-cart"></i></span>
+                        Keranjang Saya
+                    </a>
+                </div>
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <a href="{{ route('wishlist') }}" class="category-chip w-100 justify-content-center">
+                        <span class="category-chip-icon"><i class="ti-heart"></i></span>
+                        Daftar Keinginan
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="{{ route('product') }}" class="category-chip w-100 justify-content-center">
+                        <span class="category-chip-icon"><i class="ti-search"></i></span>
+                        Jelajah Produk
+                    </a>
+                </div>
+            </div>
+        </section>
     </div>
-</div>
-<section class="shop-services section home">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-3 col-md-6 col-12"><div class="single-service"><i class="ti-rocket"></i><h4>Bebas biaya kirim</h4><p>Pesanan lebih dari 1000K</p></div></div>
-            <div class="col-lg-3 col-md-6 col-12"><div class="single-service"><i class="ti-reload"></i><h4>Pengembalian Gratis</h4><p>Dalam waktu 2 hari kembali</p></div></div>
-            <div class="col-lg-3 col-md-6 col-12"><div class="single-service"><i class="ti-lock"></i><h4>Pembayaran yang aman</h4><p>Pembayaran aman 100%.</p></div></div>
-            <div class="col-lg-3 col-md-6 col-12"><div class="single-service"><i class="ti-tag"></i><h4>Harga Terbaik</h4><p>Harga terjamin</p></div></div>
-        </div>
-    </div>
-</section>
+</main>
+
+@include('components.trust-strip')
 @endsection

@@ -15,6 +15,7 @@ class Wishlist extends Model
     {
         return self::select(
             'wishlists.id',
+            'products.id as product',
             'products.name', 'products.image', 'products.price', 'products.description',
             'categories.name as category'
         )

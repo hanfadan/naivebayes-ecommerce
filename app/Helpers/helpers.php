@@ -33,8 +33,12 @@ if (!function_exists('dateToSql')) {
 }
 
 if (!function_exists('productImage')) {
-    function productImage(string $prefix, string $image): string
+    function productImage(string $prefix, ?string $image): string
     {
+        if (empty($image)) {
+            return asset('images/no-image.jpg');
+        }
+
         if (filter_var($image, FILTER_VALIDATE_URL)) {
             return $image;
         }

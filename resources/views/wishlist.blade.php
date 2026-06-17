@@ -1,48 +1,54 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="breadcrumbs">
+<main class="marketplace-page">
     <div class="container">
-        <div class="row"><div class="col-12"><div class="bread-inner"><ul class="bread-list">
-            <li><a href="{{ route('home') }}">Beranda<i class="ti-arrow-right"></i></a></li>
-            <li class="active"><a href="{{ route('wishlist') }}">Daftar Keinginan</a></li>
-        </ul></div></div></div>
+        <section class="marketplace-section marketplace-hero">
+            <span class="marketplace-badge">Daftar Keinginan</span>
+            <h1>Produk yang kamu simpan.</h1>
+            <p>Cek kembali produk favoritmu dan tambahkan ke keranjang saat sudah siap.</p>
+        </section>
+
+        @if(empty($wishlists))
+            @include('components.empty-state', [
+                'icon' => 'ti-heart',
+                'title' => 'Belum ada produk tersimpan',
+                'message' => 'Simpan produk favorit agar mudah ditemukan lagi.',
+                'actionUrl' => route('product'),
+                'actionLabel' => 'Jelajah Produk'
+            ])
+        @else
+            <section class="marketplace-panel">
+                @foreach($wishlists as $item)
+                    <article class="wishlist-item-card">
+                        <img src="{{ productImage('02_', $item['image']) }}" alt="{{ e($item['name']) }}">
+                        <div>
+                            <span class="marketplace-badge">{{ $item['category'] }}</span>
+                            <h3>{{ $item['name'] }}</h3>
+                            <p>{{ \Illuminate\Support\Str::limit($item['description'], 120) }}</p>
+                            <div class="marketplace-price mt-2">Rp{{ price($item['price']) }}</div>
+                        </div>
+                        <div class="wishlist-item-actions text-right">
+                            <a href="javascript:void(0);"
+                               class="btn btn-cart mb-2"
+                               data-product="{{ $item['product'] }}"
+                               data-name="{{ e($item['name']) }}"
+                               data-info="{{ e($item['description']) }}"
+                               data-price="{{ $item['price'] }}"
+                               data-price-label="{{ price($item['price']) }}"
+                               data-image="{{ productImage('05_', $item['image']) }}"
+                               data-category="{{ e($item['category']) }}"
+                               data-brand="Toko lokal">
+                                + Keranjang
+                            </a>
+                            <a href="javascript:void(0);" class="btn marketplace-icon-btn btn-wishlist-remove" data-product="{{ $item['id'] }}">
+                                <i class="ti-trash"></i> Hapus
+                            </a>
+                        </div>
+                    </article>
+                @endforeach
+            </section>
+        @endif
     </div>
-</div>
-<div class="shopping-cart section">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <table class="table shopping-summery">
-                    <thead>
-                        <tr class="main-hading">
-                            <th width="150">&nbsp;</th>
-                            <th>NAMA BARANG</th>
-                            <th width="100" class="text-right">HARGA</th>
-                            <th width="50" class="text-center"><i class="ti-trash remove-icon"></i></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        @foreach($wishlists as $val)
-                            <tr>
-                                <td class="image" data-title="No">
-                                    <img src="{{ productImage('02_', $val['image']) }}" alt="{{ htmlspecialchars($val['name']) }}">
-                                </td>
-                                <td class="product-des" data-title="Description">
-                                    <p class="product-name"><a href="javascript:void(0);">{{ $val['name'] }}</a></p>
-                                    <p class="product-des">{{ $val['description'] }}</p>
-                                </td>
-                                <td class="text-right" data-title="Harga"><span>{{ price($val['price']) }}</span></td>
-                                <td class="action" data-title="Hapus"><a href="javascript:void(0);" class="btn-wishlist-remove" data-product="{{ $val['id'] }}"><i class="ti-trash remove-icon"></i></a></td>
-                            </tr>
-                        @endforeach
-                        @if(empty($wishlists))
-                            <tr><td colspan="4" class="text-center">Pilih produk untuk dimasukan ke daftar keinginan</td></tr>
-                        @endif
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </div>
-</div>
+</main>
 @endsection
